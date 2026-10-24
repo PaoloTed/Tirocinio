@@ -1,0 +1,14 @@
+# dati e output pesanti: non versionare
+data/
+results/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# pacchetti scaricati
+*.zip
+pt-lintr-pkg/
+
+# non versionare i PDF? sì, versionali: pesano pochi MB e servono offline
+!docs/letteratura/*.pdf
