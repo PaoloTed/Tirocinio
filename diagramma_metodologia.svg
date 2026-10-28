@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1280" width="100%" height="auto" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#475569"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a"/>
+    </marker>
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1280" rx="14" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="500" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">Metodologia Operativa Prog2 — E2EGit (Manutenzione ed Esecuzione Test E2E)</text>
+
+  <!-- ==================== FASE 1 ==================== -->
+  <rect x="30" y="58" width="940" height="175" rx="12" fill="#eff6ff" stroke="#93c5fd" stroke-width="2" filter="url(#shadow)"/>
+  <text x="50" y="86" font-size="15" font-weight="700" fill="#1d4ed8">FASE 1 — ESTRAZIONE DATI DA E2EGit.db (Già Pronta)</text>
+
+  <!-- DB Box -->
+  <rect x="60" y="110" width="210" height="95" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="165" y="145" text-anchor="middle" font-size="16" font-weight="700" fill="#1e3a8a">E2EGit.db (v3)</text>
+  <text x="165" y="168" text-anchor="middle" font-size="12" fill="#1e40af">SQLite Zenodo (2,4 GB)</text>
+  <text x="165" y="187" text-anchor="middle" font-size="12" fill="#1e40af">5 Tabelle verificate</text>
+
+  <line x1="270" y1="157" x2="340" y2="157" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- CSV Box -->
+  <rect x="345" y="102" width="595" height="112" rx="10" fill="#ffffff" stroke="#60a5fa" stroke-width="2"/>
+  <text x="365" y="127" font-size="14" font-weight="700" fill="#1e3a8a">Estrazione dei 5 file CSV operativi (src/01_estrai_repository.py):</text>
+  <text x="365" y="150" font-size="13" fill="#334155">• <tspan font-weight="700">repos_gui.csv</tspan>: 472 repository con test E2E GUI (Selenium, Playwright, Cypress, Puppeteer)</text>
+  <text x="365" y="172" font-size="13" fill="#334155">• <tspan font-weight="700">tests_gui.csv</tspan>: 8.601 file di test (43.670 test totali) con percorso relativo pulito (<tspan font-family="Consolas, monospace">test_path_rel</tspan>)</text>
+  <text x="365" y="194" font-size="13" fill="#334155">• <tspan font-weight="700">repos_commit.csv</tspan>: commit dello snapshot <tspan font-family="Consolas, monospace" font-weight="700">last_commit_sha</tspan> (<tspan font-weight="700">t0 = Marzo 2024</tspan>) + URL e licenza</text>
+
+  <line x1="500" y1="233" x2="500" y2="268" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== FASE 2 ==================== -->
+  <rect x="30" y="273" width="940" height="340" rx="12" fill="#fefce8" stroke="#fde047" stroke-width="2" filter="url(#shadow)"/>
+  <text x="50" y="301" font-size="15" font-weight="700" fill="#a16207">FASE 2 — ANALISI STORICA GIT &amp; PYDRILLER (Senza Docker, da t0 Marzo 2024 → HEAD Oggi)</text>
+
+  <!-- Clone Light -->
+  <rect x="230" y="315" width="540" height="54" rx="8" fill="#ffffff" stroke="#eab308" stroke-width="2"/>
+  <text x="500" y="338" text-anchor="middle" font-size="14" font-weight="700" fill="#713f12">Clone leggero della storia Git su tutti i 472 repository</text>
+  <text x="500" y="358" text-anchor="middle" font-size="13" font-family="Consolas, monospace" fill="#854d0e">git clone --filter=blob:none https://github.com/owner/repo</text>
+
+  <line x1="500" y1="369" x2="500" y2="398" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Question 1 -->
+  <rect x="260" y="402" width="480" height="48" rx="24" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+  <text x="500" y="431" text-anchor="middle" font-size="14" font-weight="700" fill="#713f12">1. Il file di test (test_path_rel) esiste ancora a HEAD?</text>
+
+  <!-- Branch NO -> Deleted -->
+  <path d="M 260 426 L 155 426 L 155 510" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrow-red)"/>
+  <text x="205" y="418" text-anchor="middle" font-size="12" font-weight="700" fill="#dc2626">NO (Cancellato)</text>
+
+  <rect x="50" y="515" width="215" height="82" rx="8" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="157" y="540" text-anchor="middle" font-size="13" font-weight="700" fill="#991b1b">1. TEST RIMOSSO / MIGRATO</text>
+  <text x="157" y="560" text-anchor="middle" font-size="12" fill="#7f1d1d">Misura il tasso di mortalità</text>
+  <text x="157" y="578" text-anchor="middle" font-size="12" fill="#7f1d1d">o cambio di framework E2E</text>
+
+  <!-- Branch SI -> Question 2 -->
+  <path d="M 500 450 L 500 476" fill="none" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <text x="555" y="468" font-size="12" font-weight="700" fill="#16a34a">SÌ (Sopravvissuto)</text>
+
+  <rect x="310" y="480" width="460" height="44" rx="22" fill="#fef08a" stroke="#ca8a04" stroke-width="2"/>
+  <text x="540" y="507" text-anchor="middle" font-size="13" font-weight="700" fill="#713f12">2. Il file di test ha subito commit tra t0 (2024) e HEAD?</text>
+
+  <!-- Modificato -->
+  <path d="M 430 524 L 430 548" fill="none" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="385" y="542" font-size="12" font-weight="700" fill="#0369a1">SÌ (&gt;0 commit)</text>
+
+  <rect x="290" y="552" width="290" height="50" rx="8" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="435" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#0c4a6e">2. TEST MANTENUTO (PyDriller)</text>
+  <text x="435" y="592" text-anchor="middle" font-size="11.5" fill="#075985">Cambiati selettori, wait o asserzioni?</text>
+
+  <!-- Congelato -->
+  <path d="M 660 524 L 775 524 L 775 548" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="735" y="516" font-size="12" font-weight="700" fill="#b45309">NO (0 commit sul test)</text>
+
+  <rect x="605" y="552" width="345" height="50" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="2.5"/>
+  <text x="777" y="574" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">3. TEST CONGELATO (Focus Tesi)</text>
+  <text x="777" y="592" text-anchor="middle" font-size="11.5" fill="#7c2d12">Codice app evoluto ma test fermo (Lag test-codice)</text>
+
+  <line x1="500" y1="613" x2="500" y2="648" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== FASE 3 ==================== -->
+  <rect x="30" y="653" width="940" height="275" rx="12" fill="#f0fdf4" stroke="#86efac" stroke-width="2" filter="url(#shadow)"/>
+  <text x="50" y="681" font-size="15" font-weight="700" fill="#15803d">FASE 3 — CAMPIONAMENTO ED ESECUZIONE EMPIRICA IN DOCKER (Campione ~100 Repository)</text>
+
+  <!-- Sample + Pilot -->
+  <rect x="55" y="700" width="420" height="68" rx="8" fill="#ffffff" stroke="#22c55e" stroke-width="2"/>
+  <text x="265" y="726" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Selezione Stratificata (~100 Repo + Riserve)</text>
+  <text x="265" y="748" text-anchor="middle" font-size="12" fill="#166534">Bilanciata per Framework (Selenium/Playwright/Cypress) e Stack</text>
+
+  <line x1="475" y1="734" x2="525" y2="734" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <rect x="530" y="700" width="415" height="68" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="737" y="726" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">Pilota su 10 Repository (Gate GO / NO-GO)</text>
+  <text x="737" y="748" text-anchor="middle" font-size="12" fill="#166534">Misura tasso di eseguibilità reale e tempo medio per repo</text>
+
+  <line x1="737" y1="768" x2="737" y2="795" stroke="#475569" stroke-width="2.5"/>
+  <line x1="737" y1="795" x2="500" y2="795" stroke="#475569" stroke-width="2.5"/>
+  <line x1="500" y1="795" x2="500" y2="812" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Docker Setup -->
+  <rect x="270" y="816" width="460" height="46" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+  <text x="500" y="838" text-anchor="middle" font-size="13.5" font-weight="700" fill="#14532d">Setup Container Docker (Time-box max 45 min per repo)</text>
+  <text x="500" y="854" text-anchor="middle" font-size="11.5" fill="#166534">Immagini Maven / Gradle / Node / Python — Checkout a t0 e/o HEAD</text>
+
+  <!-- Setup Failed -->
+  <path d="M 270 839 L 170 839 L 170 870" fill="none" stroke="#dc2626" stroke-width="2.5" marker-end="url(#arrow-red)"/>
+  <rect x="55" y="874" width="250" height="42" rx="6" fill="#fee2e2" stroke="#ef4444" stroke-width="1.8"/>
+  <text x="180" y="899" text-anchor="middle" font-size="12.5" font-weight="700" fill="#991b1b">setup_failed (Catalogazione causa)</text>
+
+  <!-- Run Tests -->
+  <path d="M 730 839 L 810 839 L 810 870" fill="none" stroke="#16a34a" stroke-width="2.5" marker-end="url(#arrow-green)"/>
+  <rect x="545" y="874" width="400" height="42" rx="6" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+  <text x="745" y="894" text-anchor="middle" font-size="12.5" font-weight="700" fill="#14532d">Esecuzione E2E Headless + Rerun (2-3x) per Flakiness</text>
+  <text x="745" y="909" text-anchor="middle" font-size="11" fill="#166534">Raccolta report XML/JSON (Pass / Fail / Skip)</text>
+
+  <line x1="500" y1="928" x2="500" y2="963" stroke="#475569" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ==================== FASE 4 ==================== -->
+  <rect x="30" y="968" width="940" height="285" rx="12" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="2" filter="url(#shadow)"/>
+  <text x="50" y="996" font-size="15" font-weight="700" fill="#6d28d9">FASE 4 — INCROCIO STORIA GIT × ESITO ESECUZIONE (Matrice 2×2 e Risposta Scientifica)</text>
+
+  <!-- Table Header -->
+  <rect x="55" y="1014" width="890" height="36" rx="6" fill="#ddd6fe" stroke="#8b5cf6" stroke-width="1.5"/>
+  <text x="175" y="1037" text-anchor="middle" font-size="13" font-weight="700" fill="#4c1d95">Stato Storico del Test (Fase 2)</text>
+  <text x="415" y="1037" text-anchor="middle" font-size="13" font-weight="700" fill="#4c1d95">Esito Esecuzione Docker (Fase 3)</text>
+  <text x="725" y="1037" text-anchor="middle" font-size="13" font-weight="700" fill="#4c1d95">Classificazione e Significato nella Tesi</text>
+
+  <!-- Row 1 -->
+  <rect x="55" y="1054" width="890" height="36" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="175" y="1077" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">Test CONGELATO (0 modifiche)</text>
+  <text x="415" y="1077" text-anchor="middle" font-size="13" font-weight="700" fill="#15803d">PASSA (Verde)</text>
+  <text x="725" y="1077" text-anchor="middle" font-size="13" fill="#1e293b"><tspan font-weight="700">Test "di facciata"</tspan> (asserzioni deboli/generiche) o area app stabile</text>
+
+  <!-- Row 2 -->
+  <rect x="55" y="1094" width="890" height="36" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="175" y="1117" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">Test CONGELATO (0 modifiche)</text>
+  <text x="415" y="1117" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">FALLISCE sempre (Rosso 3/3)</text>
+  <text x="725" y="1117" text-anchor="middle" font-size="13" fill="#1e293b"><tspan font-weight="700" fill="#dc2626">TEST OBSOLETO</tspan> — L'interfaccia web è cambiata ma il test è abbandonato</text>
+
+  <!-- Row 3 -->
+  <rect x="55" y="1134" width="890" height="36" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="175" y="1157" text-anchor="middle" font-size="13" font-weight="700" fill="#0369a1">Test MANTENUTO (&gt;0 commit)</text>
+  <text x="415" y="1157" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">FALLISCE sempre (Rosso 3/3)</text>
+  <text x="725" y="1157" text-anchor="middle" font-size="13" fill="#1e293b"><tspan font-weight="700">Regressione genuina</tspan> (bug reale nell'applicazione o nel test recente)</text>
+
+  <!-- Row 4 -->
+  <rect x="55" y="1174" width="890" height="36" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="175" y="1197" text-anchor="middle" font-size="13" font-weight="600" fill="#475569">Congelato o Mantenuto</text>
+  <text x="415" y="1197" text-anchor="middle" font-size="13" font-weight="700" fill="#d97706">Alterna Verde / Rosso nei rerun</text>
+  <text x="725" y="1197" text-anchor="middle" font-size="13" fill="#1e293b"><tspan font-weight="700" fill="#d97706">TEST FLAKY</tspan> — Instabile per timing asincrono, rete o concorrenza</text>
+
+  <!-- Row 5 -->
+  <rect x="55" y="1214" width="890" height="30" rx="4" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="175" y="1234" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">Test CONGELATO</text>
+  <text x="415" y="1234" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">SKIPPATO / NON ESEGUITO</text>
+  <text x="725" y="1234" text-anchor="middle" font-size="13" fill="#1e293b"><tspan font-weight="700">Test Disabilitato</tspan> (<tspan font-family="Consolas, monospace">.skip</tspan> / <tspan font-family="Consolas, monospace">@Ignore</tspan>) o rimosso dalla pipeline CI</text>
+</svg>
+
