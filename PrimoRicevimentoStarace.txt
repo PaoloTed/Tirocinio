@@ -1,0 +1,7 @@
+Per il prossimo ricevimento martedi 3
+vedere progetti node con piu test, numero commit, test che cambiano piu spesso tanti commit inziiare a fare un alista iniziale dei 472, 
+con container dockerfile per rieseguire i test, con script per determinata versione ecc DA VEDERE SE FARLO FORSE TROPPO DIFFICILE,  
+vedere ciclo di vita di un test quando nasce e quante versioni dell'applicazioni ci sono tra quando viene creato/modificato a quando vien modificato di nuovo, 
+se il test non va da quale versione dell'applicazione, se viene corretto in quello dopo,
+iniziare con un paio di programmi testarli e raccogliere i dati,
+Nome del progetto Implementazione di un tool per l'analisi automatica di test e2e web in repository software
