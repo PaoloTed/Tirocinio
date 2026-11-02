@@ -1,45 +1,53 @@
-# Tirocinio — Indice
+# Tirocinio — Implementazione di un tool per l'analisi automatica di test e2e web in repository software
 
-Due proposte di tirocinio, una cartella ciascuna. La scelta va fatta **prima** del ricevimento di martedì 27 ottobre 2026.
+**Studente**: Paolo  
+**Università**: Università degli Studi di Napoli Federico II  
+**Docente / Tutor**: Prof. Luigi Libero Lucio Starace  
+**Progetto**: Analisi empirica ed evoluzione dei test End-to-End (E2E) sul dataset **E2EGit**.
 
-| Cartella | Progetto | Guida | Orizzonte |
-|---|---|---|---|
-| [`01-AgentSkills-Mining/`](01-AgentSkills-Mining/) | Tool di analisi per Agent Skills (GitSkills · MSR 2027) | [Guida-Prog1-AgentSkills.md](01-AgentSkills-Mining/Guida-Prog1-AgentSkills.md) | 16 settimane, 26/10/2026 → 12/02/2027 |
-| [`02-E2EGit-TestE2E/`](02-E2EGit-TestE2E/) | Esecuzione e manutenzione di test E2E (E2EGit, 100 repository) | [Guida-Prog2-E2EGit.md](02-E2EGit-TestE2E/Guida-Prog2-E2EGit.md) | 20 settimane, 26/10/2026 → 12/03/2027 |
+---
 
-I nomi delle cartelle dicono il contenuto, il prefisso numerico tiene l'ordine delle due proposte. Nei testi e nelle email i progetti restano "Prog1" e "Prog2", come li chiama il professore.
+## 📁 Struttura del Progetto
 
-## Documenti condivisi (restano qui)
-
-- [`ProgTirocinio.txt`](ProgTirocinio.txt) — la traccia originale del professore.
-- [`analisitirociniomd.md`](analisitirociniomd.md) — l'analisi comparativa completa dei due progetti.
-
-Sono alla radice perché riguardano entrambi i progetti: se li sposti in una delle due cartelle, perdi il confronto.
-
-## Struttura di ogni cartella
+Il codice, i dati e la documentazione del tirocinio sono organizzati all'interno della cartella [`02-E2EGit-TestE2E/`](02-E2EGit-TestE2E/):
 
 ```text
-01-AgentSkills-Mining/
-├─ Guida-Prog1-AgentSkills.md    piano di lavoro + calendario dei martedì
-├─ docs/
-│  ├─ letteratura/               paper già scaricati (PDF) + figure estratte
-│  └─ verbali/                   un file per ogni ricevimento
-├─ data/                         dataset (escluso da Git, pesante)
-├─ src/                          codice
-└─ results/                      output di analisi
+02-E2EGit-TestE2E/
+├── Guida-Prog2-E2EGit.md       # Guida operativa completa e roadmap del progetto
+├── data/                       # Dataset SQLite (E2EGit.db ~2.3GB), liste dipendenze e CSV
+├── docs/                       # Documentazione tecnica, paper scientifici e schemi
+│   ├── Metodologia_e_Concetti_Chiave.md  # Metodologia PyDriller, clone parziale e flakiness
+│   ├── diagramma_metodologia.svg         # Diagramma di flusso a 4 fasi
+│   ├── 02_schema.md                      # Schema delle tabelle SQLite
+│   ├── 03_dizionario_csv.md              # Dizionario dei campi CSV estratti
+│   ├── letteratura/                      # Paper originali e tradotti (MSR 2025, IST 2025, ecc.)
+│   └── archivio/                         # Documentazione preliminare (confronto iniziale Prog1/Prog2)
+├── src/                        # Pipeline di script Python
+│   ├── 01_estrai_repository.py # Estrazione dati dal DB e generazione CSV
+│   └── 02_storia_test.py       # Analisi della storia Git e co-evoluzione dei test
+├── results/                    # Risultati dell'analisi ed estratti CSV
+├── ricevimenti/                # Verbali e appunti degli incontri con il professore
+│   ├── ProgTirocinio.txt                 # Traccia iniziale del docente
+│   ├── PrimoRicevimentoStarace.txt       # Appunti ricevimento (titolo e obiettivi fissati)
+│   └── Domande_Primo_Ricevimento.md      # Domande discusse nel primo incontro
+└── burocrazia_tirocinio/       # Modulistica Unina (progetto formativo, convenzioni, guide)
 ```
 
-La struttura di `02-E2EGit-TestE2E/` è identica, con `E2EGit.db` (2,27 GB) in `data/`.
+---
 
-## Cosa fare adesso
+## 🚀 Avvio Rapido
 
-1. Leggi il §0 di entrambe le guide (2 minuti ciascuna).
-2. Apri il §3 della guida che ti convince di più e leggi il paper già scaricato in `docs/letteratura/`. Nel progetto 02 c'è anche la traduzione italiana del paper E2EGit.
-3. Prepara le domande del §13 (Prog2) o §11 (Prog1) per martedì 27/10.
+### 1. Database E2EGit
+Il database `E2EGit.db` (~2,3 GB) è memorizzato in `02-E2EGit-TestE2E/data/E2EGit.db` (escluso dal versionamento Git tramite `.gitignore`).
 
-## Nota sulle date
+### 2. Estrazione Metadati
+```bash
+cd 02-E2EGit-TestE2E
+python3 src/01_estrai_repository.py
+```
 
-Le scadenze sono reali e verificate il 23/10/2026 sulle fonti ufficiali:
-
-- **MSR 2027 Mining Challenge** (solo Prog1): abstract **18/12/2026**, paper **23/12/2026**, conferenza a Dublino 26–27/04/2027.
-- **Prog2**: nessuna deadline esterna. Il rischio è opposto: senza scadenze intermedie il progetto slitta. I gate sono nelle settimane 4, 7 e 13.
+### 3. Analisi della Storia Git dei Test
+```bash
+cd 02-E2EGit-TestE2E
+python3 src/02_storia_test.py --limit 5
+```

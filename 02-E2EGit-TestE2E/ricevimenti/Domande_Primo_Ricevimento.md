@@ -73,7 +73,7 @@ Per trasformare l'esecuzione dei test in un lavoro solido (ed eventualmente pubb
 
 ## 🗺️ Diagramma della Metodologia Proposta (da mostrare o discutere col Professore)
 
-![Diagramma della Metodologia Prog2 E2EGit](./diagramma_metodologia.svg)
+![Diagramma della Metodologia Prog2 E2EGit](../docs/diagramma_metodologia.svg)
 
 
 ---
