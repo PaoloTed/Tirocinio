@@ -3,6 +3,8 @@
 data/*.db
 02-E2EGit-TestE2E/data/*.db
 02-E2EGit-TestE2E/data/clones/
+repositories/**/repo/
+**/repositories/**/repo/
 
 # Python cache e bytecode
 __pycache__/

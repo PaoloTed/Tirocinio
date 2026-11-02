@@ -1,0 +1,3 @@
+Attesa avvio server Angular su porta 4300...
+yarn run v1.22.19
+$ ng serve --port 4300

@@ -1,0 +1,1724 @@
+Attesa avvio server Angular su porta 4300...
+yarn run v1.22.19
+$ ng serve --port 4300
+
+Initial Chunk Files | Names         |  Raw Size
+main.js             | main          |   8.02 MB |
+styles.css          | styles        | 507.66 kB |
+scripts.js          | scripts       | 137.07 kB |
+polyfills.js        | polyfills     | 108 bytes |
+
+                    | Initial Total |   8.65 MB
+
+Application bundle generation complete. [9.740 seconds]
+  ➜  Local:   http://127.0.0.1:4300/
+Watch mode enabled. Watching for file changes...
+Server pronto! Avvio tutti i test Cypress (senza 000-*)...
+[STARTED] Task without title.
+[TITLE]  Verified Cypress!       /root/.cache/Cypress/12.16.0/Cypress
+[SUCCESS]  Verified Cypress!       /root/.cache/Cypress/12.16.0/Cypress
+
+================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        12.16.0                                                                        │
+  │ Browser:        Chrome 107 (headless)                                                          │
+  │ Node Version:   v16.16.0 (/usr/local/bin/node)                                                 │
+  │ Specs:          33 found (example01.cy.ts, example02.cy.ts, example03.cy.ts, example04.cy.ts,  │
+  │                 example05.cy.ts, example06.cy.ts, example07.cy.ts, example08.cy.ts, example09. │
+  │                 cy.ts, example10.cy.ts, example11.cy.ts, example12.cy.ts, example13.cy.ts, exa │
+  │                 mple14.cy.ts, example15...)                                                    │
+  │ Searched:       e2e/example*.cy.ts, e2e/home.cy.ts                                             │
+  │ Experiments:    experimentalRunAllSpecs=true                                                   │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example01.cy.ts                                                                (1 of 33)
+
+
+  Example 1 - Basic Grids
+    ✓ should display Example title (4148ms)
+    ✓ should have 2 grids of size 800 by 225px (56ms)
+    ✓ should have exact column titles on 1st grid (28ms)
+    ✓ should hover over the Title column and click on "Sort Descending" command (309ms)
+    ✓ should hover over the "Title" column of 2nd grid and click on "Sort Ascending" command (369ms)
+    ✓ should hover over the "Duration" column of 2nd grid, Sort Ascending and have 2 sorts (274ms)
+    ✓ should clear sorting of grid2 using the Grid Menu "Clear all Sorting" command (141ms)
+    ✓ should have no sorting in 2nd grid (back to default sorted by id) (197ms)
+    ✓ should retain sorting in 1st grid (16ms)
+    ✓ should have Pagination displayed and set on Grid2 (25ms)
+    ✓ should change Page Number 52 and expect the Pagination to have correct values (339ms)
+    ✓ should open the Grid Menu on 1st Grid and expect all Columns to be checked (80ms)
+    ✓ should then hide "Title" column from same 1st Grid and expect the column to be removed from 1st Grid (148ms)
+    ✓ should open the Grid Menu off 2nd Grid and expect all Columns to still be all checked (79ms)
+    ✓ should then hide "% Complete" column from this same 2nd Grid and expect the column to be removed from 2nd Grid (150ms)
+    ✓ should go back to 1st Grid and open its Grid Menu and we expect this grid to stil have the "Title" column be hidden (unchecked) (76ms)
+    ✓ should hide "Start" column from 1st Grid and expect to have 2 hidden columns (Title, Start) (146ms)
+    ✓ should open Column Picker of 2nd Grid and show the "% Complete" column back to visible (332ms)
+    ✓ should open the Grid Menu on 2nd Grid and expect all Columns to be checked (80ms)
+    ✓ should still expect 1st Grid to be unchanged from previous state and still have only 4 columns shown (16ms)
+    ✓ should open the Grid Menu on 1st Grid and also expect to only have 4 columns checked (visible) (137ms)
+
+
+  21 passing (7s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        21                                                                               │
+  │ Passing:      21                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     example01.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example02.cy.ts                                                                (2 of 33)
+
+
+  Example 2 - Grid with Formatters
+    ✓ should display Example title (1459ms)
+    ✓ should show a custom text in the grid footer left portion (24ms)
+    ✓ should have some metrics shown in the grid footer (15ms)
+
+
+  3 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        3                                                                                │
+  │ Passing:      3                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     1 second                                                                         │
+  │ Spec Ran:     example02.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example03.cy.ts                                                                (3 of 33)
+
+
+  Example 3 - Grid with Editors
+    ✓ should display Example title (1500ms)
+    ✓ should have exact Column Titles in the grid (87ms)
+    ✓ should be able to change Title with Custom Editor and expect to save when changing the value and then mouse clicking on a different cell (422ms)
+    ✓ should be able to undo the editor and expect it to be opened, then clicking on Escape should reveal the cell to have rolled back text of "Task 1" (216ms)
+    ✓ should enable "Auto Commit Edit" (153ms)
+    ✓ should be able to change all values of 3rd row (1639ms)
+    ✓ should dynamically add 2x new "Title" columns (327ms)
+    ✓ should be able to change value of 1st row "Title" column and expect same value set in all 3 "Title" columns (1547ms)
+    ✓ should be able to filter and search "Task 2222" in the new column and expect only 1 row showing in the grid (245ms)
+    ✓ should hover over the last "Title" column and click on "Clear Filter" and expect grid to have all rows shown (283ms)
+    ✓ should be able to dynamically remove last 2 added Title columns (272ms)
+    ✓ should be able to change values again of 1st row "Title" column and expect same value set in all 3 "Title" columns (1170ms)
+    ✓ should open the "Prerequisites" Filter then choose "Task 3", "Task 4" and "Task 8" from the list and expect to see 2 rows of data in the grid (660ms)
+
+
+  13 passing (9s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        13                                                                               │
+  │ Passing:      13                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     example03.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example04.cy.ts                                                                (4 of 33)
+
+
+  Example 4 - Client Side Sort/Filter Grid
+    ✓ should display Example title (1607ms)
+    Load Grid with Presets
+      ✓ should have "Duration" fields within the inclusive range of the preset filters and be displayed in the Filter itself (147ms)
+      ✓ should have US Date Short within the range of the preset filters (112ms)
+      ✓ should have some metrics shown in the grid footer well below 1500 items (15ms)
+      ✓ should expect the grid to be sorted by "Duration" descending and "% Complete" ascending (178ms)
+    Set Dymamic Filters
+      ✓ should click on Set Dynamic Filters (176ms)
+      ✓ should have "% Complete" fields within the exclusive range of the filters presets (29ms)
+      ✓ should have "Duration" fields within the inclusive range of the dynamic filters (28ms)
+      ✓ should have Start Date within the range of the dynamic filters (39ms)
+    Set Dynamic Sorting
+      ✓ should click on "Clear Filters" then "Set Dynamic Sorting" buttons (243ms)
+      ✓ should have some metrics shown in the grid footer (10ms)
+      ✓ should expect the grid to be sorted by "Duration" ascending and "Start" descending (185ms)
+
+
+  12 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        12                                                                               │
+  │ Passing:      12                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     example04.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example05.cy.ts                                                                (5 of 33)
+
+
+  Example 5 - OData Grid
+    ✓ should display Example title (1357ms)
+    when "enableCount" is set
+      ✓ should have default OData query (103ms)
+      ✓ should change Pagination to next page (206ms)
+      ✓ should change Pagination to first page with 10 items (307ms)
+      ✓ should change Pagination to last page (197ms)
+      ✓ should change Pagination to first page using the external button (189ms)
+      ✓ should change Pagination to last page using the external button (179ms)
+      ✓ should Clear all Filters and expect to go back to first page (274ms)
+      ✓ should Clear all Sorting (264ms)
+      ✓ should use "substringof" when OData version is set to 2 (772ms)
+      ✓ should use "contains" when OData version is set to 4 (840ms)
+      ✓ should click on Set Dynamic Filter and expect query and filters to be changed (176ms)
+      ✓ should use a range filter when searching with ".." (1204ms)
+    when "enableCount" is unchecked (not set)
+      ✓ should Clear all Filters and Sortings, set 20 items per page & uncheck "enableCount" (653ms)
+      ✓ should change Pagination to next page (166ms)
+      ✓ should change Pagination to first page with 10 items (280ms)
+      ✓ should change Pagination to last page (183ms)
+      ✓ should click on "Name" column to sort it Ascending (176ms)
+      ✓ should Clear all Sorting (228ms)
+      ✓ should click on Set Dynamic Filter and expect query and filters to be changed (184ms)
+      ✓ should use "substringof" when OData version is set to 2 (850ms)
+      ✓ should use "contains" when OData version is set to 4 (846ms)
+    General Pagination Behaviors
+      ✓ should type a filter which returns an empty dataset (735ms)
+      ✓ should display page 0 of 0 but hide pagination from/to numbers when filtered data "xy" returns an empty dataset (20ms)
+      ✓ should erase part of the filter so that it filters with "x" (656ms)
+      ✓ should display page 1 of 1 with 2 items after erasing part of the filter to be "x" which should return 1 page (70ms)
+    Set Dynamic Sorting
+      ✓ should click on "Set Filters Dynamically" then on "Set Sorting Dynamically" (347ms)
+      ✓ should expect the grid to be sorted by "Name" descending (36ms)
+      ✓ should display an error when trying to sort by "Company" and the query & sort icons should remain the same (119ms)
+      ✓ should change Gender filter to "female" and still expect previous sort (before the error) to still be in query (282ms)
+      (Attempt 1 of 3) should try the "Company" filter and expect an error to throw and also expect the filter to reset to empty after the error is displayed
+      ✓ should try the "Company" filter and expect an error to throw and also expect the filter to reset to empty after the error is displayed (190ms)
+      (Attempt 1 of 3) should clear the "Name" filter and expect query to be successfull with just 1 filter "Gender" to be filled but without the previous failed filter
+      (Attempt 2 of 3) should clear the "Name" filter and expect query to be successfull with just 1 filter "Gender" to be filled but without the previous failed filter
+      1) should clear the "Name" filter and expect query to be successfull with just 1 filter "Gender" to be filled but without the previous failed filter
+      (Attempt 1 of 3) should display error when clicking on the "Throw Error..." button and not expect query and page to change
+      (Attempt 2 of 3) should display error when clicking on the "Throw Error..." button and not expect query and page to change
+      2) should display error when clicking on the "Throw Error..." button and not expect query and page to change
+      (Attempt 1 of 3) should display error when trying to change items per to 50,000 items and expect query & page to remain the same
+      (Attempt 2 of 3) should display error when trying to change items per to 50,000 items and expect query & page to remain the same
+      3) should display error when trying to change items per to 50,000 items and expect query & page to remain the same
+      (Attempt 1 of 3) should now go to next page without anymore problems and query & page should change as normal
+      (Attempt 2 of 3) should now go to next page without anymore problems and query & page should change as normal
+      4) should now go to next page without anymore problems and query & page should change as normal
+    Select and Expand Behaviors
+      ✓ should enable "enableSelect" and "enableExpand" and expect the query to select/expand all fields (384ms)
+      ✓ should try to sort and filter on "Category" and expect the query to be succesful (1297ms)
+
+
+  33 passing (1m)
+  4 failing
+
+  1) Example 5 - OData Grid
+       Set Dynamic Sorting
+         should clear the "Name" filter and expect query to be successfull with just 1 filter "Gender" to be filled but without the previous failed filter:
+     AssertionError: Timed out retrying after 4000ms: expected '<div.alert.alert-danger>' to contain 'finished'
+      at Context.eval (webpack:///./e2e/example05.cy.ts:567:0)
+
+  2) Example 5 - OData Grid
+       Set Dynamic Sorting
+         should display error when clicking on the "Throw Error..." button and not expect query and page to change:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'$top=10&$orderby=Name desc&$filter=(startswith(Name, \'A\') and Gender eq \'female\')'
+      +'$top=10&$orderby=Name desc&$filter=(Gender eq \'female\')'
+      
+      at Context.eval (webpack:///./e2e/example05.cy.ts:591:0)
+
+  3) Example 5 - OData Grid
+       Set Dynamic Sorting
+         should display error when trying to change items per to 50,000 items and expect query & page to remain the same:
+
+      Timed out retrying after 4000ms
+      + expected - actual
+
+      -'$top=10&$orderby=Name desc&$filter=(startswith(Name, \'A\') and Gender eq \'female\')'
+      +'$top=10&$orderby=Name desc&$filter=(Gender eq \'female\')'
+      
+      at Context.eval (webpack:///./e2e/example05.cy.ts:611:0)
+
+  4) Example 5 - OData Grid
+       Set Dynamic Sorting
+         should now go to next page without anymore problems and query & page should change as normal:
+     CypressError: Timed out retrying after 4050ms: `cy.click()` failed because this element:
+
+`<a class="page-link icon-seek-next" aria-label="Next Page" role="button"></a>`
+
+has CSS `pointer-events: none`
+
+`pointer-events: none` prevents user mouse interaction.
+
+Fix this problem, or use {force: true} to disable error checking.
+
+https://on.cypress.io/element-cannot-be-interacted-with
+      at ensureElDoesNotHaveCSS (http://localhost:4300/__cypress/runner/cypress_runner.js:139652:74)
+      at ensureDescendents (http://localhost:4300/__cypress/runner/cypress_runner.js:139760:5)
+      at ensureDescendentsAndScroll (http://localhost:4300/__cypress/runner/cypress_runner.js:139768:14)
+      at ensureElIsNotCovered (http://localhost:4300/__cypress/runner/cypress_runner.js:139899:5)
+      at runAllChecks (http://localhost:4300/__cypress/runner/cypress_runner.js:140079:52)
+      at retryActionability (http://localhost:4300/__cypress/runner/cypress_runner.js:140116:16)
+      at tryCatcher (http://localhost:4300/__cypress/runner/cypress_runner.js:18744:23)
+      at Promise.attempt.Promise.try (http://localhost:4300/__cypress/runner/cypress_runner.js:16018:29)
+      at whenStable (http://localhost:4300/__cypress/runner/cypress_runner.js:156384:65)
+      at <unknown> (http://localhost:4300/__cypress/runner/cypress_runner.js:155825:14)
+      at tryCatcher (http://localhost:4300/__cypress/runner/cypress_runner.js:18744:23)
+      at Promise._settlePromiseFromHandler (http://localhost:4300/__cypress/runner/cypress_runner.js:16679:31)
+      at Promise._settlePromise (http://localhost:4300/__cypress/runner/cypress_runner.js:16736:18)
+      at Promise._settlePromise0 (http://localhost:4300/__cypress/runner/cypress_runner.js:16781:10)
+      at Promise._settlePromises (http://localhost:4300/__cypress/runner/cypress_runner.js:16861:18)
+      at Promise._fulfill (http://localhost:4300/__cypress/runner/cypress_runner.js:16805:18)
+      at <unknown> (http://localhost:4300/__cypress/runner/cypress_runner.js:18419:46)
+  From Your Spec Code:
+      at Context.eval (webpack:///./e2e/example05.cy.ts:626:0)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        37                                                                               │
+  │ Passing:      33                                                                               │
+  │ Failing:      4                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     1 minute, 9 seconds                                                              │
+  │ Spec Ran:     example05.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example06.cy.ts                                                                (6 of 33)
+
+
+  Example 6 - GraphQL Grid
+    ✓ should display Example title (1502ms)
+    ✓ should have a grid of size 900 by 200px (27ms)
+    ✓ should have English Text inside some of the Filters (18ms)
+    ✓ should have GraphQL query with defined Grid Presets (76ms)
+    ✓ should change Pagination to next page (179ms)
+    ✓ should change Pagination to last page (174ms)
+    ✓ should change Pagination to first page using the external button (164ms)
+    ✓ should change Pagination to last page using the external button (162ms)
+    ✓ should change Pagination to first page with 30 items (362ms)
+    ✓ should clear a single filter, that is not empty, by the header menu and expect query change (301ms)
+    ✓ should try clearing same filter, which is now empty, by the header menu and expect same query without loading spinner (243ms)
+    ✓ should clear the date range filter expect the query to have the 2 "finish" (GE, LE) filters removed (292ms)
+    ✓ should Clear all Filters & Sorts (177ms)
+    ✓ should click on "Name" column to sort it Ascending (176ms)
+    ✓ should click on Set Dynamic Filter and expect query and filters to be changed (155ms)
+    ✓ should use a range filter when searching with ".." (1193ms)
+    Set Dynamic Sorting
+      ✓ should click on "Clear all Filters & Sorting" then "Set Dynamic Sorting" buttons (195ms)
+      ✓ should expect the grid to be sorted by "Zip" descending then by "Company" ascending (29ms)
+    Translate by Language
+      ✓ should Clear all Filters & Sorts (129ms)
+      ✓ should have English Column Titles in the grid after switching locale (19ms)
+      ✓ should have English Column Grouping Titles in the grid after switching locale (13ms)
+      ✓ should hover over the "Title" column header menu and expect all commands be displayed in English (194ms)
+      ✓ should open the Grid Menu and expect all commands be displayed in English (128ms)
+      ✓ should switch locale to French (131ms)
+      ✓ should have French Column Titles in the grid after switching locale (24ms)
+      ✓ should have French Column Grouping Titles in the grid after switching locale (17ms)
+      ✓ should display Pagination in French (28ms)
+      ✓ should hover over the "Title" column header menu and expect all commands be displayed in French (196ms)
+      ✓ should open the Grid Menu and expect all commands be displayed in French (120ms)
+      ✓ should click on Set Dynamic Filter and expect query and filters to be changed (161ms)
+      ✓ should have French Text inside some of the Filters (176ms)
+
+
+  31 passing (7s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        31                                                                               │
+  │ Passing:      31                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     6 seconds                                                                        │
+  │ Spec Ran:     example06.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example07.cy.ts                                                                (7 of 33)
+
+
+  Example 7 - Header Button Plugin
+    Grid 1
+      ✓ should display Example title (1485ms)
+      ✓ should have exact Column Titles in the grid (44ms)
+      ✓ should go over the 3rd column "Column C" and expect to see negative number in red after clicking on the red header button (259ms)
+      ✓ should go over the 5th column "Column E" and not find the red header button (28ms)
+      ✓ should go over the last "Column J" and expect to find the button to have the disabled class and clicking it should not turn the negative numbers to red neither expect console log after clicking the disabled button (254ms)
+      ✓ should resize 1st column and make it wider (94ms)
+      ✓ should resize column to its previous size and still expect some icons to be hidden (25ms)
+      ✓ should go on the 2nd column "Hover me!" and expect the header button to appear only when doing hover over it (19ms)
+    Grid 2
+      ✓ should have exact Column Titles in the grid (24ms)
+      ✓ should go over the 3rd column "Column C" and expect to see negative number in red after clicking on the red header button (122ms)
+      ✓ should go over the 5th column "Column E" and not find the red header button (14ms)
+      ✓ should go over the last "Column J" and expect to find the button to have the disabled class and clicking it should not turn the negative numbers to red neither expect console log after clicking the disabled button (199ms)
+      ✓ should resize 1st column and make it wider (119ms)
+      ✓ should resize column to its previous size and still expect some icons to be hidden (25ms)
+      ✓ should go on the 2nd column "Hover me!" and expect the header button to appear only when doing hover over it (17ms)
+      ✓ should filter "Column C" with positive number only and not expect any more red values (233ms)
+      ✓ should hover over the "Column C" and click on "Clear Filter" and expect grid to have all rows shown (351ms)
+      ✓ should Clear all Sorting (248ms)
+      ✓ should hover over the "Column C" and click on "Sort Ascending" (300ms)
+      ✓ should expect first few items of "Column C" to be negative numbers and be red (103ms)
+
+
+  20 passing (4s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        20                                                                               │
+  │ Passing:      20                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     example07.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example08.cy.ts                                                                (8 of 33)
+
+
+  Example 8 - Header Menu Plugin
+    ✓ should display Example title (1451ms)
+    ✓ should have exact Column Titles in the grid (38ms)
+    ✓ should hover over the "Title" column and expect Sort & Hide commands to be disabled (200ms)
+    ✓ should be still be able to click on the Help command of 2nd column "Duration" and expect an alert (259ms)
+    ✓ should hover over "Duration" and execute "Sort Ascending" command and expect a sort icon (268ms)
+    ✓ should hover over "% Complete" and not expect to find the Help menu (163ms)
+    ✓ should execute "Sort Descending" command from the menu left open and expect 2 sort icons afterward and "% Completed" to be descending with >80 (151ms)
+    ✓ should hover over the "Completed" column and expect Help commands to be disabled (150ms)
+    ✓ should remain in the "Completed" column and execute "Hide Column" command and expect it gone from the grid (132ms)
+
+
+  9 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        9                                                                                │
+  │ Passing:      9                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     example08.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example09.cy.ts                                                                (9 of 33)
+
+
+  Example 9 - Grid Menu
+    ✓ should display Example title (1324ms)
+    use English locale
+      ✓ should have exact Column Titles in the grid (43ms)
+      ✓ should open the Grid Menu and expect a title for "Custom Menus" and for "Columns" (239ms)
+      ✓ should hover over the Title column and click on "Hide Column" command and remove 1st column from grid (176ms)
+      ✓ should hide a column from the picker and then open the Grid Menu and expect the "Command 1" to NOT be usable (319ms)
+      ✓ should type a filter and then open the Grid Menu and expect the "Command 2" to NOT be visible (297ms)
+      ✓ should clear all filters and expect no filters in the grid (223ms)
+      ✓ should clear the filters and then open the Grid Menu and expect the "Command 2" to now be visible (113ms)
+      ✓ should click on the Grid Menu to show the Title as 1st column again (311ms)
+      ✓ should now expect the "Command 1" to be usable since all columns are visible (225ms)
+      ✓ should hover over the Title column and click on "Hide Column" command and remove 1st column from grid (168ms)
+      ✓ should click on the External Grid Menu to show the Title as 1st column again (380ms)
+    switch to French language
+      ✓ should switch locale to French and have column header titles in French (87ms)
+      ✓ should hover over the Title column and click on "Cacher la colonne" command and remove 1st column from grid (174ms)
+      ✓ should click on the Grid Menu to show the Title as 1st column again (203ms)
+      ✓ should hover over the Title column and click on "Hide Column" command and remove 1st column from grid (176ms)
+      ✓ should click on the External Grid Menu to show the Title as 1st column again (369ms)
+
+
+  17 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        17                                                                               │
+  │ Passing:      17                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     example09.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example10.cy.ts                                                               (10 of 33)
+
+
+  Example 10 - Multiple Grids with Row Selection
+    ✓ should display Example title (1574ms)
+    ✓ should have 2 grids of width of 800px and different height (32ms)
+    ✓ should have exact Titles on 1st grid (29ms)
+    ✓ should have 1 rows (Task 3) pre-selected in 2nd grid on its first page but 5 rows selected in the entire dataset (61ms)
+    ✓ should have 2 rows (Task 12,Task 13) selected in 2nd grid after typing in a search filter (341ms)
+    ✓ should make sure that first column is hidden from the Grid Menu (1st column definition has "excludeFromGridMenu" set) on 1st grid (180ms)
+    ✓ should hide Title from the Grid Menu and expect 1 less column in the 1st grid (309ms)
+    ✓ should show the Title column again from the Column Picker in the 1st grid (407ms)
+    Pagination
+      ✓ should Clear all Filters on 2nd Grid (305ms)
+      ✓ should have Pagination displayed and set on Grid1 and Grid2 (57ms)
+      ✓ should change Page Number in Grid1 and expect the Pagination to have correct values (391ms)
+      ✓ should change Page Number and Page Size in Grid2 and expect the Pagination to have correct values (538ms)
+      ✓ should go back to Grid1 and expect the same value before changing Pagination of Grid2 (28ms)
+      ✓ should display page 0 of 0 with 0 items when applied filter returning an empty dataset (232ms)
+      ✓ should erase part of the filter to have "00" and expect 4 items in total with 1 page (108ms)
+      ✓ should also expect Grid2 to be unchanged (after changing Pagination in Grid1 in previous tests) (20ms)
+      ✓ should have 4 rows (Task 3,Task 12,Task 13,Task 522) selected in the entire 2nd grid BUT only 1 selected in current Page 1 (79ms)
+      ✓ should go to Page 3 of 2nd Grid and have 2 rows selected in that Page and also have 4 rows selected in the entire grid (Task 3,Task 12,Task 13,Task 522) (556ms)
+      ✓ should go to last Page of 2nd Grid and have 1 rows selected in that Page and also have 4 rows selected in the entire grid (Task 3,Task 12,Task 13,Task 522) (157ms)
+      ✓ should go to first Page of 2nd Grid and select another row (Task 1) in that Page, wich will now be (Task1,Task3) and now have 5 rows selected in the entire grid (Task 1,Task 3,Task 12,Task 13,Task 522) (236ms)
+      ✓ should go back to Page 3 of 2nd Grid and have 2 rows selected in that Page and also retain 5 selected rows in the entire grid (Task 1,Task 3,Task 12,Task 13,Task 522) (534ms)
+      ✓ should go to last Page of 2nd Grid and still have 1 row selected in that Page and also retain 5 selected rows in the entire grid (Task 1,Task 3,Task 12,Task 13,Task 522) (155ms)
+    Row Selection
+      ✓ should click on 3rd row and of the Grid1 and expect to see "Task 300" selected (81ms)
+      ✓ should remove the filter from Grid1 (189ms)
+      ✓ should go to Page 61 of Grid1 and expect to find "Task 300" still be selected (367ms)
+      ✓ should go to a different page for next test to confirm that it will then go to page 1 (374ms)
+      ✓ should have 2 rows (Task 3,Task 13) selected in 2nd grid after typing in a search filter (3) (348ms)
+      ✓ should remove filter from Grid2 (93ms)
+    Remove Pagination
+      ✓ should remove Pagination and not expect any DOM elements of it (115ms)
+      ✓ should have 5 rows (Task 1,Task 3,Task 12,Task 13,Task 522) selected in the entire 2nd grid BUT only 2 shown in the DOM in the top portion of the grid (because SlickGrid uses virtual rendering) (84ms)
+      ✓ should scroll to the bottom of 2nd Grid and still have 5 rows (Task 1,Task 3,Task 12,Task 13,Task 522) selected and find 2 row selected because we now have 2 rows that got rendered (first and last) (98ms)
+      ✓ should have 2 rows (Task 3,Task 13) selected in 2nd grid after typing in a search filter (3) (306ms)
+      ✓ should remove filter from Grid2 (100ms)
+    Re-enable Pagination
+      ✓ should re-enable the Pagination and expect to see it show it again below the grid at Page 1 (232ms)
+      ✓ should have 2 rows (Task 3,Task 13) selected in 2nd grid after typing in a search filter (3) (251ms)
+      ✓ should Select All and expect all pages to no longer have any row selected (66ms)
+      ✓ should go to the next 2 pages and expect all rows selected in each page (219ms)
+      ✓ should uncheck 1 row and expect current and next page to have "Select All" uncheck (183ms)
+      ✓ should go back to previous page, select the row that was unchecked and expect "Select All" to be selected again (276ms)
+      ✓ should Unselect All and expect all pages to no longer have any row selected (275ms)
+
+
+  40 passing (10s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        40                                                                               │
+  │ Passing:      40                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     10 seconds                                                                       │
+  │ Spec Ran:     example10.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example11.cy.ts                                                               (11 of 33)
+
+
+  Example 11 - Add / Update / Highlight a Datagrid Item
+    ✓ should display Example title (1260ms)
+    ✓ should have exact column titles on 1st grid (34ms)
+    ✓ should expect Task 0 to Task 4 on first 5 rows (64ms)
+    ✓ should delete first row Task 0 from the grid (189ms)
+    ✓ should add 2 rows on the top of the grid (246ms)
+    ✓ should add 2 rows on the bottom of the grid (124ms)
+    ✓ should click on highlight "Duration over 40" and expect few rows being highlighted in purple (118ms)
+    ✓ should scroll to bottom and expect last row to be "Task 1002" (109ms)
+    ✓ should scroll to top and expect certain rows on top (1267ms)
+
+
+  9 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        9                                                                                │
+  │ Passing:      9                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     3 seconds                                                                        │
+  │ Spec Ran:     example11.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example12.cy.ts                                                               (12 of 33)
+
+
+  Example 12: Localization (i18n)
+    ✓ should display Example title (1295ms)
+    English Locale
+      ✓ should have exact English Column Titles in the grid (63ms)
+      ✓ should have 0 row selection count shown in the grid left footer (16ms)
+      ✓ should have some metrics shown in the grid right footer (17ms)
+      ✓ should filter certain tasks with the word "ask 1" and expect filter to use contain/include text (378ms)
+    French locale
+      ✓ should reset filters and switch locale to French (355ms)
+      ✓ should have French Column Titles in the grid after switching locale (25ms)
+      ✓ should have 0 row selection count shown in the grid left footer (15ms)
+      ✓ should have some metrics shown in the grid right footer (15ms)
+      ✓ should filter certain tasks (363ms)
+      ✓ should reset filters before filtering duration (232ms)
+      (Attempt 1 of 2) should filter duration with slider filter
+      ✓ should filter duration with slider filter (441ms)
+    Row Selection
+      ✓ should switch locale back to English and reset all Filters (375ms)
+      ✓ should hover over the Title column and click on "Sort Descending" command (335ms)
+      ✓ should select the row with "Task 1497" and expect the Grid State to be called with it in the console (125ms)
+      ✓ should scroll to bottom of the grid then select "Task 4" (116ms)
+      ✓ should filter the Tasks column with number 4 and expect only "Task 4" visible in the grid (419ms)
+      ✓ should scroll back to the top and expect to see "Task 1497" still selected (265ms)
+      ✓ should have 2 row selection count shown in the grid left footer (15ms)
+
+
+  19 passing (9s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        19                                                                               │
+  │ Passing:      19                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     9 seconds                                                                        │
+  │ Spec Ran:     example12.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example13.cy.ts                                                               (13 of 33)
+
+
+  Example 13 - Custom Backend Server Pagination
+    ✓ should display Example title (1391ms)
+    ✓ should have exact column titles in grid (31ms)
+    ✓ should be on 1st page and have default query string (21ms)
+    ✓ should go on next page and expect query to be updated accordingly (121ms)
+    - should filter with "New" Status and expect query string to contains the search and the page to be back to Page 1
+    - should go to last page 5 and expect query to be updated accordingly
+
+
+  4 passing (2s)
+  2 pending
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        6                                                                                │
+  │ Passing:      4                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      2                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     1 second                                                                         │
+  │ Spec Ran:     example13.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example14.cy.ts                                                               (14 of 33)
+
+
+  Example 14 - Grouping & Aggregators
+    ✓ should display Example title (1376ms)
+    ✓ should have exact column titles on 1st grid (37ms)
+    Grouping Tests
+      ✓ should "Group by Duration & sort groups by value" then Collapse All and expect only group titles (467ms)
+      ✓ should click on Expand All columns and expect 1st row as grouping title and 2nd row as a regular row (405ms)
+      ✓ should "Group by Duration then Effort-Driven" and expect 1st row to be expanded, 2nd row to be collapsed and 3rd row to have group totals (163ms)
+      ✓ should "Group by Duration then Effort-Driven then Percent" and expect fist 2 rows to be expanded, 3rd row to be collapsed then 4th row to have group total (189ms)
+
+
+  6 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        6                                                                                │
+  │ Passing:      6                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     example14.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example15.cy.ts                                                               (15 of 33)
+
+
+  Example 15 - Column Span & Header Grouping
+    ✓ should display Example title (1359ms)
+    ✓ should have exact Column Pre-Header & Column Header Titles in the grid (35ms)
+    ✓ should have a frozen grid on page load with 3 columns on the left and 4 columns on the right (63ms)
+    ✓ should have exact Column Pre-Header & Column Header Titles in the grid (21ms)
+    ✓ should click on the "Remove Frozen Columns" button to switch to a regular grid without frozen columns and expect 7 columns on the left container (136ms)
+    ✓ should have exact Column Pre-Header & Column Header Titles in the grid (34ms)
+    ✓ should click on the "Set 3 Frozen Columns" button to switch frozen columns grid and expect 3 frozen columns on the left and 4 columns on the right (143ms)
+    ✓ should have exact Column Pre-Header & Column Header Titles in the grid (20ms)
+    ✓ should click on the Grid Menu command "Unfreeze Columns/Rows" to switch to a regular grid without frozen columns and expect 7 columns on the left container (185ms)
+
+
+  9 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        9                                                                                │
+  │ Passing:      9                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     example15.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example16.cy.ts                                                               (16 of 33)
+
+
+  Example 16: Grid State & Presets using Local Storage
+    ✓ should display Example title (1506ms)
+    ✓ should reload the page (481ms)
+    ✓ should have exact Column Titles in the grid (27ms)
+    ✓ should have Pagination displayed with default values (30ms)
+    ✓ should drag "Title" column to 3rd position in the grid (444ms)
+    ✓ should hide the "Start" column from the Column Picker (429ms)
+    ✓ should filter certain tasks (305ms)
+    ✓ should click on "Title" column to sort it Ascending (171ms)
+    ✓ should hover over the "Duration" column click on "Sort Descending" command (304ms)
+    ✓ should select row (Task 105) (114ms)
+    ✓ should change Page Size and Page Number then expect the Pagination to have correct values (558ms)
+    ✓ should select row (Task 144) (107ms)
+    ✓ should reload the page (229ms)
+    ✓ should expect the same Grid State to persist after the page got reloaded (83ms)
+    ✓ should expect the same Pagination to persist after reload (67ms)
+    ✓ should expect row selection (Task 144) to be persisted (43ms)
+    ✓ should have French titles in Column Picker after switching to Language (373ms)
+    ✓ should have French titles in Grid Menu after switching to Language (222ms)
+    ✓ should hover over the "Terminé" column and click on "Cacher la colonne" remove the column from grid (266ms)
+    ✓ should be able to freeze "Description" column (280ms)
+    ✓ should reload the page (191ms)
+    ✓ should expect the same Grid State to persist after the page got reloaded, however we always load in English (151ms)
+    ✓ should expect row selection (Task 144) to be persisted (36ms)
+    ✓ should go back to first page and expect row selection (Task 105) to be persisted (167ms)
+    ✓ should have a persisted frozen column after "Description" and a grid with 4 containers on page load with 2 columns on the left and 3 columns on the right (24ms)
+    ✓ should click on the reset button and have exact Column Titles position as in beginning (181ms)
+    ✓ should reload the page (351ms)
+    ✓ should have same columns position after reload (19ms)
+    ✓ should be able to freeze "Description" 3rd column (287ms)
+    ✓ should swap "Duration" and "% Complete" columns (448ms)
+    ✓ should be able to freeze "% Complete" and expect 4th column to be freezed (298ms)
+    ✓ should have a persisted frozen column after "Description" and a grid with 4 containers on page load with 2 columns on the left and 3 columns on the right (31ms)
+
+
+  32 passing (9s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        32                                                                               │
+  │ Passing:      32                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     8 seconds                                                                        │
+  │ Spec Ran:     example16.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example17.cy.ts                                                               (17 of 33)
+
+
+  Example 17 - Row Move & Checkbox Selector Selector Plugins
+    ✓ should display Example title (1423ms)
+    ✓ should have exact Column Titles in the grid (40ms)
+    ✓ should have 4 rows selected count shown in the grid left footer (14ms)
+    ✓ should drag opened row to another position in the grid (133ms)
+    ✓ should expect the row to have moved to another row index (42ms)
+    ✓ should uncheck all rows (129ms)
+    ✓ should have 0 row selected count shown in the grid left footer (12ms)
+    ✓ should select 2 rows (Task 3,4), then move the rows and expect both rows to still be selected without any other rows (402ms)
+    ✓ should move "Duration" column to a different position in the grid (423ms)
+    ✓ should be able to hide "Duration" column (159ms)
+    ✓ should be able to click disable Filters functionality button and expect no Filters (323ms)
+    ✓ should expect "Clear all Filters" command to be hidden in the Grid Menu (120ms)
+    ✓ should be able to toggle Filters functionality (265ms)
+    ✓ should be able to toggle Sorting functionality (disable) and expect all header menu Sorting commands to be hidden and also not show Sort hint while hovering a column (296ms)
+    ✓ should expect "Clear Sorting" command to be hidden in the Grid Menu (153ms)
+    ✓ should be able to toggle Sorting functionality (re-enable) and expect all Sorting header menu commands to be hidden and also not show Sort hint while hovering a column (312ms)
+    ✓ should expect "Clear Sorting" command to be hidden in the Grid Menu (156ms)
+    ✓ should be able to click disable Sorting functionality button and expect all Sorting commands to be hidden and also not show Sort hint while hovering a column (388ms)
+    ✓ should be able to click disable Filter functionality button and expect all Filter commands to be hidden and also not show Sort hint while hovering a column (352ms)
+    ✓ should expect "Clear all Filters" command to be hidden in the Grid Menu (157ms)
+    ✓ should open Column Picker and show the "Duration" column back to visible and expect it to have kept its position after toggling filter/sorting (354ms)
+    ✓ should add Edit/Delete columns and expect 2 new columns added at the beginning of the grid (185ms)
+
+
+  22 passing (6s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        22                                                                               │
+  │ Passing:      22                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     example17.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example19.cy.ts                                                               (18 of 33)
+
+
+  Example 19 - Draggable Grouping & Aggregators
+    ✓ should display Example title (1372ms)
+    ✓ should have exact column titles on 1st grid (35ms)
+    Grouping Tests
+      ✓ should "Group by Duration & sort groups by value" then Collapse All and expect only group titles (457ms)
+      ✓ should click on Expand All columns and expect 1st row as grouping title and 2nd row as a regular row (400ms)
+      ✓ should show 1 column title (Duration) shown in the pre-header section (23ms)
+      ✓ should "Group by Duration then Effort-Driven" and expect 1st row to be expanded, 2nd row to be expanded and 3rd row to be a regular row (188ms)
+      ✓ should show 2 column titles (Duration, Effort-Driven) shown in the pre-header section & same select dropdown (38ms)
+      ✓ should be able to drag and swap grouped column titles inside the pre-header (447ms)
+      ✓ should expect the grouping to be swapped as well in the grid (28ms)
+      ✓ should expand all rows with "Expand All" from context menu and expect all the Groups to be expanded and the Toogle All icon to be collapsed (203ms)
+      ✓ should collapse all rows with "Collapse All" from context menu and expect all the Groups to be collapsed and the Toogle All icon to be collapsed (195ms)
+      ✓ should use the preheader Toggle All button and expect all groups to now be expanded (127ms)
+      ✓ should use the preheader Toggle All button again and expect all groups to now be collapsed (126ms)
+      ✓ should clear all groups with "Clear all Grouping" from context menu and expect all the Groups to be collapsed and the Toogle All icon to be collapsed (184ms)
+      ✓ should add 500 items and expect 500 of 500 items displayed (112ms)
+      ✓ should clear all grouping and expect all select dropdown to be cleared too (116ms)
+
+
+  16 passing (4s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        16                                                                               │
+  │ Passing:      16                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     example19.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example20.cy.ts                                                               (19 of 33)
+
+
+  Example 20 - Frozen Grid
+    ✓ should display Example title (1424ms)
+    ✓ should have exact column titles on 1st grid (43ms)
+    ✓ should have exact Column Header Titles in the grid (23ms)
+    ✓ should have a frozen grid with 4 containers on page load with 3 columns on the left and 4 columns on the right (93ms)
+    ✓ should hide "Title" column from Grid Menu and expect last frozen column to be "% Complete" (261ms)
+    ✓ should show again "Title" column from Grid Menu and expect last frozen column to still be "% Complete" (232ms)
+    ✓ should hide "Title" column from Header Menu and expect last frozen column to be "% Complete" (375ms)
+    ✓ should show again "Title" column from Column Picker and expect last frozen column to still be "% Complete" (422ms)
+    ✓ should click on the "Remove Frozen Columns" button to switch to a regular grid without frozen columns and expect 7 columns on the left container (133ms)
+    ✓ should have exact Column Header Titles in the grid (24ms)
+    ✓ should click on the "Set 3 Frozen Columns" button to switch frozen columns grid and expect 3 frozen columns on the left and 4 columns on the right (134ms)
+    ✓ should have exact Column Header Titles in the grid (15ms)
+    ✓ should click on the Grid Menu command "Unfreeze Columns/Rows" to switch to a regular grid without frozen columns and expect 7 columns on the left container (194ms)
+
+
+  13 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        13                                                                               │
+  │ Passing:      13                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     3 seconds                                                                        │
+  │ Spec Ran:     example20.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example21.cy.ts                                                               (20 of 33)
+
+
+  Example 21 - Row Detail View
+    ✓ should display Example title (1257ms)
+    ✓ should have exact column titles on 1st grid (37ms)
+    ✓ should display first few rows of Task 0 to 5 (94ms)
+    (Attempt 1 of 2) should click anywhere on 3rd row to open its Row Detail and expect its title to be Task 2 in an H2 tag
+    1) should click anywhere on 3rd row to open its Row Detail and expect its title to be Task 2 in an H2 tag
+    (Attempt 1 of 2) should click on the "Click Me" button and expect the assignee name to showing in uppercase in an Alert
+    2) should click on the "Click Me" button and expect the assignee name to showing in uppercase in an Alert
+    (Attempt 1 of 2) should click on the "Call Parent Method" button and expect a Bootstrap Alert to show up with some text containing the Task 2
+    3) should click on the "Call Parent Method" button and expect a Bootstrap Alert to show up with some text containing the Task 2
+    (Attempt 1 of 2) should click on the "Delete Row" button and expect the Task 2 to be deleted from the grid
+    4) should click on the "Delete Row" button and expect the Task 2 to be deleted from the grid
+    (Attempt 1 of 2) should open a few Row Details and expect them to be closed after clicking on the "Close All Row Details" button
+    5) should open a few Row Details and expect them to be closed after clicking on the "Close All Row Details" button
+    (Attempt 1 of 2) should open a few Row Details, then sort by Title and expect all Row Details to be closed afterward
+    6) should open a few Row Details, then sort by Title and expect all Row Details to be closed afterward
+    (Attempt 1 of 2) should click open Row Detail of Task 102 then type a title filter of "Task 102" and expect Row Detail to be opened and still be rendered
+    7) should click open Row Detail of Task 102 then type a title filter of "Task 102" and expect Row Detail to be opened and still be rendered
+    (Attempt 1 of 2) should call "Clear all Filters" from Grid Menu and expect "Task 102" to still be rendered correctly
+    8) should call "Clear all Filters" from Grid Menu and expect "Task 102" to still be rendered correctly
+    (Attempt 1 of 2) should call "Clear all Sorting" from Grid Menu and expect "Task 102" to still be rendered correctly
+    9) should call "Clear all Sorting" from Grid Menu and expect "Task 102" to still be rendered correctly
+    ✓ should close all row details & make grid editable (367ms)
+    (Attempt 1 of 2) should click on 3rd row detail open icon and expect it to open
+    10) should click on 3rd row detail open icon and expect it to open
+    (Attempt 1 of 2) should click on 1st row "Title" cell to edit it and expect row detail to get closed
+    11) should click on 1st row "Title" cell to edit it and expect row detail to get closed
+
+
+  4 passing (1m)
+  11 failing
+
+  1) Example 21 - Row Detail View
+       should click anywhere on 3rd row to open its Row Detail and expect its title to be Task 2 in an H2 tag:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_2 .container_2`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:31:0)
+
+  2) Example 21 - Row Detail View
+       should click on the "Click Me" button and expect the assignee name to showing in uppercase in an Alert:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_2 .container_2`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:42:0)
+
+  3) Example 21 - Row Detail View
+       should click on the "Call Parent Method" button and expect a Bootstrap Alert to show up with some text containing the Task 2:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_2 .container_2`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:62:0)
+
+  4) Example 21 - Row Detail View
+       should click on the "Delete Row" button and expect the Task 2 to be deleted from the grid:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_2 .container_2`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:73:0)
+
+  5) Example 21 - Row Detail View
+       should open a few Row Details and expect them to be closed after clicking on the "Close All Row Details" button:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_3 .container_3`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:99:0)
+
+  6) Example 21 - Row Detail View
+       should open a few Row Details, then sort by Title and expect all Row Details to be closed afterward:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_0 .container_0`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:140:0)
+
+  7) Example 21 - Row Detail View
+       should click open Row Detail of Task 102 then type a title filter of "Task 102" and expect Row Detail to be opened and still be rendered:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_102 .container_102`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:207:0)
+
+  8) Example 21 - Row Detail View
+       should call "Clear all Filters" from Grid Menu and expect "Task 102" to still be rendered correctly:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_102 .container_102`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:227:0)
+
+  9) Example 21 - Row Detail View
+       should call "Clear all Sorting" from Grid Menu and expect "Task 102" to still be rendered correctly:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_102 .container_102`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:247:0)
+
+  10) Example 21 - Row Detail View
+       should click on 3rd row detail open icon and expect it to open:
+     AssertionError: Timed out retrying after 4000ms: Expected to find element: `.innerDetailView_100 .container_100`, but never found it. Queried from:
+
+              > cy.get(#grid21)
+      at Context.eval (webpack:///./e2e/example21.cy.ts:262:0)
+
+  11) Example 21 - Row Detail View
+       should click on 1st row "Title" cell to edit it and expect row detail to get closed:
+
+      AssertionError: expected 'Task 1' to equal 'Task 10'
+      + expected - actual
+
+      -'Task 1'
+      +'Task 10'
+      
+      at Context.eval (webpack:///./e2e/example21.cy.ts:274:0)
+
+
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        15                                                                               │
+  │ Passing:      4                                                                                │
+  │ Failing:      11                                                                               │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     1 minute, 25 seconds                                                             │
+  │ Spec Ran:     example21.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example22.cy.ts                                                               (21 of 33)
+
+
+  Example 22 - Use of Angular Components
+    ✓ should display Example title (1267ms)
+    ✓ should have exact column titles in grid (33ms)
+    ✓ should click on the last column "Action" dropdown of 2nd row, and then "Delete Row" and expect it to be removed from the grid (352ms)
+    ✓ should expect a Custom Angular ng-Select Dropdown Editor then select 1st option of 3 Assignee names (723ms)
+    ✓ should have 2 first rows with "Assignee" of "John" (0) then "Pierre" (1) (46ms)
+
+
+  5 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        5                                                                                │
+  │ Passing:      5                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     example22.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example23.cy.ts                                                               (22 of 33)
+
+
+  Example 23 - Grid AutoHeight
+    ✓ should display Example title (1272ms)
+    ✓ should have exact column titles in grid (27ms)
+    ✓ should search for Duration over 50 and expect rows to be that (380ms)
+    ✓ should search for Duration below 50 and expect rows to be that (324ms)
+    ✓ should search for Title ending with text "5" expect rows to be (Task 5, 15, 25, ...) (443ms)
+    ✓ should type a filter which returns an empty dataset (194ms)
+    ✓ should clear search input and expect empty dataset warning to go away and also expect data back (Task 0, 1, 2, ...) (110ms)
+
+
+  7 passing (3s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        7                                                                                │
+  │ Passing:      7                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     example23.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example24.cy.ts                                                               (23 of 33)
+
+
+  Example 24 - Grids in Bootstrap Tabs
+    ✓ should display Example title (1228ms)
+    ✓ should have exact column titles in grid (42ms)
+    ✓ should have "Task 0" incremented by 1 after each row (37ms)
+    ✓ should change open next Tab "Http-Client" and expect a grid with 3 columns (138ms)
+    ✓ should expect first 3 rows to be an exact match of data provided by the external JSON file (45ms)
+
+
+  5 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        5                                                                                │
+  │ Passing:      5                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     1 second                                                                         │
+  │ Spec Ran:     example24.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example25.cy.ts                                                               (24 of 33)
+
+
+  Example 25 - Range Filters
+    ✓ should display Example title (1397ms)
+    ✓ should expect the grid to be sorted by "% Complete" descending and then by "Duration" ascending (45ms)
+    ✓ should have "% Complete" fields within the range (inclusive) of the filters presets (88ms)
+    ✓ should have Finish Dates within the range (inclusive) of the filters presets (83ms)
+    ✓ should have "Duration" fields within the range (exclusive by default) of the filters presets (93ms)
+    (Attempt 1 of 2) should change "% Complete" filter range by using the slider left handle (min value) to make it a higher min value and expect all rows to be within new range
+    ✓ should change "% Complete" filter range by using the slider left handle (min value) to make it a higher min value and expect all rows to be within new range (427ms)
+    ✓ should change the "Finish" date in the picker and expect all rows to be within new dates range (160ms)
+    ✓ should change the "Duration" input filter and expect all rows to be within new range (309ms)
+    Set Dymamic Filters
+      ✓ should click on Set Dynamic Filters (138ms)
+      ✓ should have "% Complete" fields within the exclusive range of the filters presets (63ms)
+      ✓ should have "Duration" fields within the inclusive range of the dynamic filters (54ms)
+      ✓ should have Finish Dates within the range (inclusive) of the dynamic filters (62ms)
+      ✓ should change dynamic filters from the select and choose "Current Year Completed Tasks" and expect 2 filters set (215ms)
+    Set Dynamic Sorting
+      ✓ should click on "Clear Filters" then "Set Dynamic Sorting" buttons (244ms)
+      ✓ should expect the grid to be sorted by "Duration" ascending and "Start" descending (22ms)
+
+
+  15 passing (4s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        15                                                                               │
+  │ Passing:      15                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     3 seconds                                                                        │
+  │ Spec Ran:     example25.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example26.cy.ts                                                               (25 of 33)
+
+
+  Example 26 - Cell Menu & Context Menu Plugins
+    ✓ should display Example title (1387ms)
+    English Locale
+      ✓ should have exact Column Titles in the grid (44ms)
+      ✓ should have first row with "Task 0" and a Priority set to a Yellow Star (low) with the Action cell disabled and not clickable (34ms)
+      ✓ should expect the Context Menu to not have the "Help" menu when there is Completed set to True (95ms)
+      ✓ should be able to click on the Context Menu (x) close button, on top right corner, to close the menu (107ms)
+      ✓ should change "Task 0" Priority to "High" with Context Menu and expect the Action Menu to become clickable and usable (250ms)
+      ✓ should expect a "Command 2" to be disabled and not clickable (menu will remain open), in that same Action menu (67ms)
+      ✓ should change the Completed to "False" in that same Action and then expect the "Command 2" to enabled and clickable (279ms)
+      ✓ should expect the Context Menu now have the "Help" menu when Completed is set to False (180ms)
+      ✓ should be able to click on the Action Cell Menu (x) close button, on top right corner, to close the menu (175ms)
+      ✓ should click on the "Show Commands & Priority Options" button and see both list when opening Context Menu (274ms)
+      ✓ should click on the "Show Priority Options Only" button and see both list when opening Context Menu (275ms)
+      ✓ should click on the "Show Actions Commands & Completed Options" button and see both list when opening Action Cell Menu (273ms)
+      ✓ should open the Action Cell Menu and expect the Completed "null" option when this Effort is set to False (83ms)
+      ✓ should open the Action Cell Menu and not expect the Completed "null" option when this Effort is set to True (179ms)
+      ✓ should reset Completed to False for the next test to include all commands (111ms)
+      ✓ should click on the "Show Action Commands Only" button and see both list when opening Context Menu (283ms)
+      ✓ should be able to delete first row by using the "Delete Row" command from the Context Menu (189ms)
+      ✓ should be able to delete the 3rd row "Task 3" by using the "Delete Row" command from the Action Cell Menu (191ms)
+      ✓ should check Context Menu "menuUsabilityOverride" condition and expect to not be able to open Context Menu from rows than are >= to Task 21 (124ms)
+      ✓ should scroll back to top row and be able to open Context Menu (225ms)
+    French Locale
+      ✓ should switch locale to French (106ms)
+      ✓ should show both Commands & Options on the Action Cell Menu (102ms)
+      ✓ should have exact Column Titles in the grid (22ms)
+      ✓ should have first row with "Tâche 1" and a Priority set to a Orange Star (medium) with the Action cell disabled and not clickable (28ms)
+      ✓ should expect the Context Menu to not have the "Aide" menu when there is Completed set to False (90ms)
+      ✓ should be able to click on the Context Menu (x) close button, on top right corner, to close the menu (107ms)
+      ✓ should change "Tâche 1" Priority to "Haut" with Context Menu and expect the Action Menu to become clickable and usable (248ms)
+      ✓ should expect a "Command 2" to be enabled and clickable in that same Action menu (182ms)
+      ✓ should expect the Context Menu now have the "Aide" menu when Completed is set to False (178ms)
+      ✓ should be able to click on the Action Cell Menu (x) close button, on top right corner, to close the menu (177ms)
+      ✓ should click on the "Show Commands & Priority Options" button and see both list when opening Context Menu (262ms)
+      ✓ should click on the "Show Priority Options Only" button and see both list when opening Context Menu (260ms)
+      ✓ should click on the "Show Actions Commands & Completed Options" button and see both list when opening Action Cell Menu (263ms)
+      ✓ should open the Action Cell Menu and expect the Completed "null" option when this Effort is set to Faux (91ms)
+      ✓ should open the Action Cell Menu and not expect the Completed "null" option when this Effort is set to True (171ms)
+      ✓ should reset Completed to Faux for the next test to include all commands (102ms)
+      ✓ should click on the "Show Action Commands Only" button and see both list when opening Context Menu (265ms)
+      ✓ should be able to delete first row by using the "Supprimer la ligne" command from the Context Menu (177ms)
+      ✓ should be able to delete the 4th row "Tâche 6" by using the "Supprimer la ligne" command from the Action Cell Menu (177ms)
+
+
+  40 passing (8s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        40                                                                               │
+  │ Passing:      40                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     7 seconds                                                                        │
+  │ Spec Ran:     example26.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example27.cy.ts                                                               (26 of 33)
+
+
+  Example 27 - GraphQL Basic API without Pagination
+    ✓ should display Example title (1232ms)
+    ✓ should display a processing alert which will change to done (438ms)
+    ✓ should have exact Column Pre-Header & Column Header Titles in the grid (51ms)
+    ✓ should expect first 3 rows to be an exact match of data provided by the external GraphQL API (114ms)
+    ✓ should sort by country name and expect first 2 rows as Afghanistan and Albania (159ms)
+    ✓ should filter by Language Codes "fr, de" and expect 2 rows of data in the grid (745ms)
+    ✓ should Clear all Filters and expect all rows to be back (211ms)
+    ✓ should be able to filter "Country of Origin" with a text range filter "b..e" and expect to see only Canada showing up (694ms)
+    ✓ should filter Language Native with "Aymar" and expect only 1 row in the grid (548ms)
+    ✓ should Clear all Filters and expect all rows to be back (244ms)
+    ✓ should filter Language Native with "French" language and expect only 40 rows in the grid (582ms)
+
+
+  11 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        11                                                                               │
+  │ Passing:      11                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     example27.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example28.cy.ts                                                               (27 of 33)
+
+
+  Example 28 - Tree Data (from a flat dataset with parentId references)
+    ✓ should display Example title (1296ms)
+    ✓ should have exact column titles in grid (132ms)
+    ✓ should expect all rows to be collapsed on first page load (33ms)
+    ✓ should have a Grid Preset Filter on 3rd column "% Complete" and expect all rows to be filtered as well (22ms)
+    ✓ should expand all rows from "Expand All" button (144ms)
+    ✓ should collapsed all rows from "Collapse All" button (137ms)
+    ✓ should collapsed all rows from "Collapse All" context menu (228ms)
+    ✓ should collapsed all rows from "Expand All" context menu (244ms)
+    ✓ should have data filtered, with "% Complete" >=25, and not show the full item count in the footer (21ms)
+    ✓ should open the Grid Menu "Clear all Filters" command (274ms)
+    ✓ should no longer have filters and it should show the full item count in the footer (20ms)
+    ✓ should click on the "Dynamically Change Filter" button and expect all child items to have a "% Complete" lower than 40 (229ms)
+    ✓ should open the Grid Menu "Clear all Filters" command (263ms)
+    ✓ should add an item (Task 500) in the first parent it finds and so we should expect it to be inserted at tree level 1 (197ms)
+    ✓ should be able to update the 1st row item (Task 0) (150ms)
+    ✓ should collapse the Tree and not expect to see the newly inserted item (Task 500) because all child will be collapsed (178ms)
+    ✓ should open the Grid Menu "Clear all Filters" command (253ms)
+    ✓ should be able to open "Task 1" and "Task 3" parents (160ms)
+    ✓ should be able to click on the "Collapse All (wihout event)" button (106ms)
+    ✓ should be able to click on the "Reapply Previous Toggled Items" button and expect "Task 1" and "Task 3" parents to become open (via Grid State change) while every other parents remains collapsed (93ms)
+    ✓ should be able to click on "Dynamically Toggle First Parent" expect only the first parent item to get collapsed (115ms)
+
+
+  21 passing (4s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        21                                                                               │
+  │ Passing:      21                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     example28.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example29.cy.ts                                                               (28 of 33)
+
+
+  Example 29 - Tree Data (from a Hierarchical Dataset)
+    ✓ should display Example title (1272ms)
+    ✓ should have exact column titles on 1st grid (83ms)
+    ✓ should expect the "pdf" folder to be closed by the collapsed items grid preset (52ms)
+    ✓ should expand "pdf" folder and expect all folders to be expanded (125ms)
+    ✓ should have default Files list (52ms)
+    ✓ should be able to add 2 new pop songs into the Music folder (368ms)
+    ✓ should filter the Files column with the word "map" and expect only 4 rows left (241ms)
+    ✓ should add filter with "Size < 3" and expect 3 rows left (323ms)
+    ✓ should add filter with Size >3 and expect 3 rows left (158ms)
+    ✓ should add filter with Size <=3.1 and expect 3 rows left (337ms)
+    ✓ should Clear all Filters and default list (265ms)
+    ✓ should click on "Files" column to sort descending (157ms)
+    ✓ should filter the Files by the input search string and expect 4 rows and 1st column to have  (210ms)
+    ✓ should clear search string and expect default list (146ms)
+    ✓ should be able to add a 3rd new pop song into the Music folder and see it show up in the UI (253ms)
+    ✓ should return 8 rows when filtering the word "pop" music without excluding children (211ms)
+    ✓ should return 6 rows when using same filter "pop" music AND selecting checkbox to "Exclude Children when Filtering Tree" (123ms)
+    ✓ should change filter to the word "music" and expect only 1 row (the music folder) to show up when still Excluding Children from the Tree (306ms)
+    ✓ should use same filter "music" and now expect to see 10 rows (entire music folder content) to show up when "Exclude Children when Filtering Tree" becomes uncheck (122ms)
+    ✓ should use same filter "music" and add extra filter of "size >= 50" and expect 1+ songs (>=6 rows) to show up in the grid when "Exclude Children when Filtering Tree" is unchecked and "Skip Other Criteria..." is checked (376ms)
+    ✓ should use same filter "music" and "size > 70" then uncked "Skip Other Criteria..." and now expect 0 rows in the grid because there 0 rows having these 2 filters criteria (105ms)
+
+
+  21 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        21                                                                               │
+  │ Passing:      21                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     5 seconds                                                                        │
+  │ Spec Ran:     example29.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example30.cy.ts                                                               (29 of 33)
+
+
+  Example 30  Composite Editor Modal
+    ✓ should display Example title (1335ms)
+    ✓ should have exact Column Pre-Header & Column Header Titles in the grid (81ms)
+    ✓ should have "TASK 0" (uppercase) incremented by 1 after each row (35ms)
+    ✓ should be able to change "Duration" values of first 4 rows (713ms)
+    ✓ should be able to change "Title" values of row indexes 1-3 (835ms)
+    ✓ should be able to change "% Complete" values of row indexes 2-4 (249ms)
+    ✓ should not be able to change the "Finish" dates on first 2 rows (222ms)
+    ✓ should be able to change "Completed" values of row indexes 2-4 (626ms)
+    ✓ should be able to change "Finish" values of row indexes 0-2 (659ms)
+    ✓ should undo last edit and expect the date editor to be opened as well when clicking the associated last undo with editor button (146ms)
+    ✓ should undo last edit and expect the date editor to NOT be opened when clicking undo last edit button (148ms)
+    ✓ should click on the "Save" button and expect 2 console log calls with the queued items & also expect no more unsaved cells (110ms)
+    ✓ should be able to toggle the grid to readonly (139ms)
+    ✓ should be able to toggle back the grid to editable (291ms)
+    ✓ should open the Composite Editor (Create Item) and expect all form inputs to be empty (149ms)
+    ✓ should not be able to save, neither expect the modal window to close when having invalid fields (121ms)
+    ✓ should fill in the (Create Item) form inputs and expect a new row in the grid (3055ms)
+    ✓ should have new TASK 8888 displayed on first row (35ms)
+    ✓ should open the Composite Editor (Edit Item) and expect all form inputs to be filled with TASK 8888 data of previous create item (1280ms)
+    ✓ should have new TASK 8888 displayed on first row (55ms)
+    ✓ should open the Composite Editor (Mass Update) and be able to change some of the inputs in the form (1778ms)
+    ✓ should have updated values in the entire grid (71ms)
+    ✓ should open the Composite Editor (Mass Update) change some inputs (1501ms)
+    ✓ should be able to clear the "Country of Origin" autocomplete field in the modal form via the Clear button from the editor (119ms)
+    ✓ should be able to click on the "Reset Form" button from the (Mass Update) and expect the form to be empty and not be able to Save (337ms)
+    ✓ should have the "Mass Selection" button disabled when no rows are selected (13ms)
+    ✓ should select row 1 and 2 (402ms)
+    ✓ should be able to open the Composite Editor (Mass Selection) and be able to change some of the inputs in the form (944ms)
+    ✓ should not have any row selected after the mass-selection save is over (118ms)
+    ✓ should have updated all the changed values BUT only on the 2 selected rows (66ms)
+    ✓ should open the Composite Editor (Mass Update) change "Percent Complete" to 100% and expect "Completed" to become checked and "Finish" date to be today's date (367ms)
+    ✓ should not have any row selected after the mass-update save is over (124ms)
+    ✓ should focus on first row and open the Composite Editor (Clone Item) and expect all form inputs to be filled with first row data (225ms)
+    ✓ should change the "Title" & "Duration" from the Clone form, then click on "Cancel" button and expect no changes in the grid (422ms)
+    ✓ should focus again on first row and open the Composite Editor (Clone Item) and expect all form inputs to be filled with first row data (202ms)
+    ✓ should change the "Title" & "Duration" from the Clone form, then click on "Clone" button and expect a new row to show up on top of the grid (1067ms)
+    ✓ should expect original, that was originally used to clone, to now be exist as that 2nd row in the grid (28ms)
+    ✓ should be able to clear the "Country of Origin" autocomplete field in the grid via the Clear button from the editor (222ms)
+
+
+  38 passing (19s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        38                                                                               │
+  │ Passing:      38                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     18 seconds                                                                       │
+  │ Spec Ran:     example30.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example31.cy.ts                                                               (30 of 33)
+
+
+  Example 31 - Columns Resize by Content
+    ✓ should display Example title (1412ms)
+    ✓ should have cell that fit the text content (349ms)
+    ✓ should make the grid readonly and expect to fit the text by content and expect column width to be the same as earlier (484ms)
+    ✓ should click on (default resize "autosizeColumns") and expect column to be much thinner and fit all its column within the grid container (479ms)
+    ✓ should double-click on the "Complexity" column resize handle and expect the column to become wider and show all text (179ms)
+    ✓ should open the "Product" header menu and click on "Resize by Content" and expect the column to become wider and show all text (329ms)
+    ✓ should change row selection across multiple pages, first page should have 2 selected (112ms)
+    ✓ should go to next page and expect 1 row selected in that second page (113ms)
+    ✓ should click on "Select All" checkbox and expect all rows selected in current page (176ms)
+    ✓ should go to the next 2 pages and expect all rows selected in each page (220ms)
+    ✓ should uncheck 1 row and expect current and next page to have "Select All" uncheck (189ms)
+    ✓ should go back to previous page, select the row that was unchecked and expect "Select All" to be selected again (284ms)
+    ✓ should Unselect All and expect all pages to no longer have any row selected (262ms)
+
+
+  13 passing (5s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        13                                                                               │
+  │ Passing:      13                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     example31.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example32.cy.ts                                                               (31 of 33)
+
+
+  Example 32 - Regular & Custom Tooltips
+    ✓ should display Example title (1304ms)
+    ✓ should have exact column titles on 1st grid (46ms)
+    ✓ should change server delay to 10ms for faster testing (231ms)
+    ✓ should mouse over 1st row checkbox column and NOT expect any tooltip to show since it is disabled on that column (111ms)
+    ✓ should mouse over Task 2 cell and expect async tooltip to show (179ms)
+    ✓ should mouse over Task 6 cell and expect async tooltip to show (164ms)
+    ✓ should mouse over Task 6 cell on "Start" column and expect a delayed tooltip opening via async process (166ms)
+    ✓ should mouse over 6th row Description and expect full cell content to show in a tooltip because cell has ellipsis and is too long for the cell itself (122ms)
+    ✓ should mouse over 6th row Description 2 and expect regular tooltip title + concatenated full cell content when using "useRegularTooltipFromFormatterOnly: true" (117ms)
+    ✓ should mouse over 2nd row Duration and expect a custom tooltip shown with 4 label/value pairs displayed (164ms)
+    ✓ should mouse over % Complete cell of Task 6 and expect regular tooltip to show with content "x %" where x is a number (130ms)
+    ✓ should mouse over Prerequisite cell of Task 6 and expect regular tooltip to show with content "Task 6, Task 5" (113ms)
+    ✓ should mouse over header-row (filter) 1st column checkbox and NOT expect any tooltip to show since it is disabled on that column (108ms)
+    ✓ should mouse over header-row (filter) 2nd column Title and expect a tooltip to show rendered from an headerRowFormatter (128ms)
+    ✓ should mouse over header-row (filter) Finish column and NOT expect any tooltip to show since it is disabled on that column (112ms)
+    ✓ should mouse over header-row (filter) Prerequisite column and expect to see tooltip of selected filter options (135ms)
+    ✓ should mouse over header title on 1st column with checkbox and NOT expect any tooltip to show since it is disabled on that column (113ms)
+    ✓ should mouse over header title on 2nd column with Title name and expect a tooltip to show rendered from an headerFormatter (141ms)
+    ✓ should mouse over header title on 2nd column with Finish name and NOT expect any tooltip to show since it is disabled on that column (109ms)
+    ✓ should click Prerequisite editor of 1st row (Task 2) and expect Task1 & 2 to be selected in the multiple-select drop (314ms)
+
+
+  20 passing (4s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        20                                                                               │
+  │ Passing:      20                                                                               │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     4 seconds                                                                        │
+  │ Spec Ran:     example32.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  example33.cy.ts                                                               (32 of 33)
+
+
+  Example 33 - Regular & Custom Tooltips
+    ✓ should display Example title (1202ms)
+    ✓ should have exact column titles on 1st grid (91ms)
+    ✓ should check first 5 rows and expect certain data (108ms)
+    ✓ should find multiple green & pink backgrounds to show gains & losses when in real-time mode (136ms)
+    ✓ should NOT find any green neither pink backgrounds when in real-time is stopped (311ms)
+    ✓ should Group by 1st column "Currency" and expect 2 groups with Totals when collapsed (251ms)
+
+
+  6 passing (2s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        6                                                                                │
+  │ Passing:      6                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     2 seconds                                                                        │
+  │ Spec Ran:     example33.cy.ts                                                                  │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  home.cy.ts                                                                    (33 of 33)
+
+
+  Home Page
+    ✓ should display Home Page (1179ms)
+
+
+  1 passing (1s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        1                                                                                │
+  │ Passing:      1                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     1 second                                                                         │
+  │ Spec Ran:     home.cy.ts                                                                       │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ ✔  example01.cy.ts                          00:07       21       21        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example02.cy.ts                          00:01        3        3        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example03.cy.ts                          00:08       13       13        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example04.cy.ts                          00:02       12       12        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  example05.cy.ts                          01:09       37       33        4        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example06.cy.ts                          00:06       31       31        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example07.cy.ts                          00:04       20       20        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example08.cy.ts                          00:02        9        9        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example09.cy.ts                          00:04       17       17        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example10.cy.ts                          00:10       40       40        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example11.cy.ts                          00:03        9        9        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example12.cy.ts                          00:09       19       19        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example13.cy.ts                          00:01        6        4        -        2        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example14.cy.ts                          00:02        6        6        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example15.cy.ts                          00:02        9        9        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example16.cy.ts                          00:08       32       32        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example17.cy.ts                          00:05       22       22        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example19.cy.ts                          00:04       16       16        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example20.cy.ts                          00:03       13       13        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✖  example21.cy.ts                          01:25       15        4       11        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example22.cy.ts                          00:02        5        5        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example23.cy.ts                          00:02        7        7        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example24.cy.ts                          00:01        5        5        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example25.cy.ts                          00:03       15       15        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example26.cy.ts                          00:07       40       40        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example27.cy.ts                          00:05       11       11        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example28.cy.ts                          00:04       21       21        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example29.cy.ts                          00:05       21       21        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example30.cy.ts                          00:18       38       38        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example31.cy.ts                          00:04       13       13        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example32.cy.ts                          00:04       20       20        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  example33.cy.ts                          00:02        6        6        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ ✔  home.cy.ts                               00:01        1        1        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    ✖  2 of 33 failed (6%)                      05:09      553      536       15        2        -  
+
