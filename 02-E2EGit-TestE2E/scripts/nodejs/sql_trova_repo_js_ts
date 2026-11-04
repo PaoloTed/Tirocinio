@@ -1,0 +1,29 @@
+sqlite3 -header -column 02-E2EGit-TestE2E/data/E2EGit_e2e.db "
+SELECT 
+    CASE 
+        WHEN (g.number_files_cypress_js + g.number_files_cypress_ts) > 0 
+         AND (g.number_files_playwright_js + g.number_files_playwright_ts) > 0 THEN 'Multi (Cypress + Playwright)'
+        WHEN (g.number_files_cypress_js + g.number_files_cypress_ts) > 0 THEN 'Cypress'
+        WHEN (g.number_files_playwright_js + g.number_files_playwright_ts) > 0 THEN 'Playwright'
+        WHEN (g.number_files_puppeteer_js + g.number_files_puppeteer_ts) > 0 THEN 'Puppeteer'
+        WHEN (g.number_files_selenium_js + g.number_files_selenium_ts) > 0 THEN 'Selenium'
+        ELSE 'Altro'
+    END AS framework_e2e,
+    r.name AS repository,
+    r.main_language AS linguaggio,
+    r.stargazers AS stelle,
+    r.releases AS versioni,
+    g.number_of_files AS file_test,
+    g.number_of_tests AS tot_test,
+    r.commits AS commits,
+    (g.number_files_cypress_js + g.number_files_cypress_ts) AS cypress,
+    (g.number_files_playwright_js + g.number_files_playwright_ts) AS playwright,
+    (g.number_files_puppeteer_js + g.number_files_puppeteer_ts) AS puppeteer,
+    (g.number_files_selenium_js + g.number_files_selenium_ts) AS selenium
+FROM repository r
+JOIN gui_testing_repo_details g ON r.name = g.repository_name
+WHERE r.main_language IN ('JavaScript', 'TypeScript') 
+  AND g.number_of_tests > 10 
+  AND r.releases > 5
+ORDER BY framework_e2e, r.stargazers DESC;
+" > 02-E2EGit-TestE2E/repositories/repo_nodejs/repository_node_js_ts_numtest_gr10_releses_gr5.txt

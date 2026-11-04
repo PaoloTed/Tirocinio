@@ -1,9 +1,0 @@
-repository,framework,test_file,exists_head,birth_date,birth_sha,total_modifications,n_mod_post_snapshot,main_causes
-ghiscoding/angular-slickgrid,Cypress,test/cypress/e2e/example01.cy.ts,1,2023-01-27,749aaf15,6,2,"Migrazione a TypeScript, Risoluzione Flakiness/Attese, Aggiornamento Icone/UI, Formattazione"
-ghiscoding/angular-slickgrid,Cypress,test/cypress/e2e/example02.cy.ts,1,2023-01-27,749aaf15,5,2,"Migrazione a TypeScript, Risoluzione Flakiness/Attese, Aggiornamento Icone/UI, Formattazione"
-ghiscoding/angular-slickgrid,Cypress,test/cypress/e2e/example03.cy.ts,1,2023-01-27,749aaf15,9,2,"Migrazione a TypeScript, Risoluzione Flakiness/Attese, Aggiornamento Icone/UI, Correzione Test Fallito (Fix), Formattazione"
-ghiscoding/angular-slickgrid,Cypress,test/cypress/e2e/example04.cy.ts,1,2023-01-27,749aaf15,11,8,"Migrazione a TypeScript, Risoluzione Flakiness/Attese, Aggiornamento Icone/UI, Correzione Test Fallito (Fix), Formattazione"
-ghiscoding/angular-slickgrid,Cypress,test/cypress/e2e/example05.cy.ts,1,2023-01-27,749aaf15,11,6,"Migrazione a TypeScript, Risoluzione Flakiness/Attese, Aggiornamento Icone/UI, Correzione Test Fallito (Fix), Formattazione"
-epam/ketcher,Playwright,ketcher-autotests/tests/API/api-set-get-molecule.spec.ts,0,2023-07-06,aae50caf,22,10,"Correzione Test Fallito (Fix), Refactoring test"
-epam/ketcher,Playwright,ketcher-autotests/tests/API/is-query-structure-selected.spec.ts,0,2023-11-30,1300afbb,1,1,Manutenzione ordinaria
-epam/ketcher,Playwright,ketcher-autotests/tests/Examples/ketcher-api.spec.ts,0,2023-07-06,aae50caf,3,1,Correzione Test Fallito (Fix)

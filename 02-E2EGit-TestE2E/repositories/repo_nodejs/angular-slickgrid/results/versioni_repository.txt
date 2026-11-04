@@ -1,0 +1,390 @@
+ELENCO VERSIONI REPOSITORY (Node.js): angular-slickgrid (Totale: 373)
+====================================================================================================
+
+Anno     | N. Versioni  | Prima Versione       | Ultima Versione     
+-----------------------------------------------------------------
+2017     | 20           | v0.2.6               | v0.7.5              
+2018     | 111          | v0.7.6               | v2.0.3              
+2019     | 65           | v2.1.3               | v2.14.4             
+2020     | 53           | v2.14.5              | v2.24.1             
+2021     | 27           | v2.25.0              | v4.0.0              
+2022     | 26           | v4.1.0               | v5.2.2              
+2023     | 33           | v5.3.0               | v7.2.0              
+2024     | 28           | v7.3.0               | v8.11.0             
+2025     | 10           | v8.12.0              | v8.14.1             
+
+#     | Versione                     | Data Rilascio   | Anno   | N. Pkg   | Percorsi package.json
+----------------------------------------------------------------------------------------------------
+1     | v0.2.6                       | 2017-10-06      | 2017   | 3        | package.json, demo/package.json, dist/package.json
+2     | beta                         | 2017-10-17      | 2017   | 2        | package.json, dist/package.json
+3     | v0.3.1                       | 2017-10-17      | 2017   | 2        | package.json, dist/package.json
+4     | v0.4.0                       | 2017-10-24      | 2017   | 2        | package.json, dist/package.json
+5     | v0.4.1                       | 2017-10-24      | 2017   | 2        | package.json, dist/package.json
+6     | v0.4.2                       | 2017-10-25      | 2017   | 2        | package.json, dist/package.json
+7     | v0.5.0                       | 2017-10-30      | 2017   | 2        | package.json, dist/package.json
+8     | v0.5.1                       | 2017-11-03      | 2017   | 2        | package.json, dist/package.json
+9     | v0.5.4                       | 2017-11-08      | 2017   | 2        | package.json, dist/package.json
+10    | v0.5.5                       | 2017-11-10      | 2017   | 2        | package.json, dist/package.json
+11    | v0.6.0                       | 2017-11-16      | 2017   | 2        | package.json, dist/package.json
+12    | v0.6.1                       | 2017-11-20      | 2017   | 2        | package.json, dist/package.json
+13    | v0.6.2                       | 2017-11-23      | 2017   | 2        | package.json, dist/package.json
+14    | v0.6.5                       | 2017-11-23      | 2017   | 2        | package.json, dist/package.json
+15    | v0.6.6                       | 2017-12-12      | 2017   | 2        | package.json, dist/package.json
+16    | v0.6.7                       | 2017-12-13      | 2017   | 2        | package.json, dist/package.json
+17    | v0.7.0                       | 2017-12-14      | 2017   | 2        | package.json, dist/package.json
+18    | v0.7.1                       | 2017-12-14      | 2017   | 2        | package.json, dist/package.json
+19    | v0.7.4                       | 2017-12-14      | 2017   | 2        | package.json, dist/package.json
+20    | v0.7.5                       | 2017-12-20      | 2017   | 2        | package.json, dist/package.json
+21    | v0.7.6                       | 2018-01-04      | 2018   | 2        | package.json, dist/package.json
+22    | v0.7.7                       | 2018-01-04      | 2018   | 2        | package.json, dist/package.json
+23    | v0.7.8                       | 2018-01-09      | 2018   | 2        | package.json, dist/package.json
+24    | v0.7.9                       | 2018-01-09      | 2018   | 2        | package.json, dist/package.json
+25    | v0.7.10                      | 2018-01-18      | 2018   | 2        | package.json, dist/package.json
+26    | v0.8.0                       | 2018-01-25      | 2018   | 2        | package.json, dist/package.json
+27    | v0.8.1                       | 2018-01-30      | 2018   | 2        | package.json, dist/package.json
+28    | 0.9.0                        | 2018-02-05      | 2018   | 2        | package.json, dist/package.json
+29    | 0.9.1                        | 2018-02-06      | 2018   | 2        | package.json, dist/package.json
+30    | v0.9.2                       | 2018-02-07      | 2018   | 2        | package.json, dist/package.json
+31    | v0.10.0                      | 2018-02-13      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+32    | v0.11.0                      | 2018-02-20      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+33    | v0.11.1                      | 2018-02-21      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+34    | v0.11.2                      | 2018-02-21      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+35    | v0.11.3                      | 2018-02-21      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+36    | v0.12.0                      | 2018-03-01      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+37    | v0.12.1                      | 2018-03-01      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+38    | v0.12.2                      | 2018-03-02      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+39    | v0.12.3                      | 2018-03-05      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+40    | v0.12.4                      | 2018-03-05      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+41    | v0.12.6                      | 2018-03-06      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+42    | v0.12.7                      | 2018-03-06      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+43    | v0.12.8                      | 2018-03-06      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+44    | v0.12.9                      | 2018-03-07      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+45    | v0.12.10                     | 2018-03-08      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+46    | v0.12.11                     | 2018-03-08      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+47    | v0.12.12                     | 2018-03-08      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+48    | v0.12.13                     | 2018-03-08      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+49    | v0.13.0                      | 2018-03-13      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+50    | v0.13.1                      | 2018-03-13      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+51    | v0.13.2                      | 2018-03-13      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+52    | v0.13.3                      | 2018-03-14      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+53    | v0.13.4                      | 2018-03-15      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+54    | v0.13.5                      | 2018-03-19      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+55    | v0.13.6                      | 2018-03-19      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+56    | v0.14.0                      | 2018-03-20      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+57    | v0.14.1                      | 2018-03-20      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+58    | v0.14.3                      | 2018-03-26      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+59    | v0.14.4                      | 2018-03-27      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+60    | v0.15.0                      | 2018-04-02      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+61    | v0.15.1                      | 2018-04-03      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+62    | v0.15.2                      | 2018-04-03      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+63    | v0.15.3                      | 2018-04-05      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+64    | v0.16.0                      | 2018-04-10      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+65    | v0.16.1                      | 2018-04-10      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+66    | v0.16.2                      | 2018-04-10      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+67    | v0.16.3                      | 2018-04-13      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+68    | v0.16.5                      | 2018-05-11      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+69    | v0.16.7                      | 2018-05-14      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+70    | v0.17.0                      | 2018-05-15      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+71    | v0.17.2                      | 2018-05-18      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+72    | v0.17.3                      | 2018-05-18      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+73    | v1.0.2-beta                  | 2018-05-30      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+74    | v1.0.3-beta                  | 2018-05-30      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+75    | v1.0.4-beta                  | 2018-05-30      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+76    | v1.0.6-beta                  | 2018-06-04      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+77    | v1.0.8-beta                  | 2018-06-05      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+78    | v1.0.12-beta                 | 2018-06-06      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+79    | v1.0.14-beta                 | 2018-06-06      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+80    | v1.0.15-beta                 | 2018-06-07      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+81    | v1.0.17-beta                 | 2018-06-11      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+82    | v1.0.19-beta                 | 2018-06-15      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+83    | v1.1.0                       | 2018-06-19      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+84    | v1.1.1                       | 2018-06-28      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+85    | v1.2.0                       | 2018-07-04      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+86    | v1.2.3                       | 2018-07-11      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+87    | v1.2.4                       | 2018-07-12      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+88    | v1.2.5                       | 2018-07-12      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+89    | v1.2.7                       | 2018-07-19      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+90    | v1.2.8                       | 2018-07-23      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+91    | v1.2.9                       | 2018-07-26      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+92    | v1.3.0                       | 2018-07-30      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+93    | v1.3.1                       | 2018-07-30      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+94    | v1.3.2                       | 2018-07-30      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+95    | v1.3.3                       | 2018-08-02      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+96    | v1.4.0                       | 2018-08-13      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+97    | v1.4.1                       | 2018-08-14      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+98    | v1.4.2                       | 2018-08-16      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+99    | v1.5.0                       | 2018-08-16      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+100   | v1.5.1                       | 2018-08-22      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+101   | v1.5.2                       | 2018-08-24      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+102   | v1.5.3                       | 2018-08-24      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+103   | v1.6.0                       | 2018-08-29      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+104   | v1.6.1                       | 2018-08-29      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+105   | v1.6.2                       | 2018-09-06      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+106   | v1.6.3                       | 2018-09-13      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+107   | v1.6.4                       | 2018-09-13      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+108   | v1.6.5                       | 2018-09-14      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+109   | v1.6.6                       | 2018-09-14      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+110   | v1.6.7                       | 2018-09-14      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+111   | v1.6.8                       | 2018-09-18      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+112   | v1.6.9                       | 2018-09-20      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+113   | v1.7.0                       | 2018-10-09      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+114   | v1.7.1                       | 2018-10-11      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+115   | v1.7.2                       | 2018-10-12      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+116   | v1.7.4                       | 2018-10-17      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+117   | v1.7.5                       | 2018-10-19      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+118   | v1.7.6                       | 2018-10-24      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+119   | v1.7.7                       | 2018-11-01      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+120   | v1.8.0                       | 2018-11-14      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+121   | v1.8.1                       | 2018-11-20      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+122   | v1.8.2                       | 2018-11-21      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+123   | v1.8.4                       | 2018-11-30      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+124   | v1.8.5                       | 2018-11-30      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+125   | v1.8.6                       | 2018-12-03      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+126   | v1.9.0                       | 2018-12-07      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+127   | v1.9.1                       | 2018-12-11      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+128   | v1.9.2                       | 2018-12-13      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+129   | v2.0.1                       | 2018-12-19      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+130   | v1.9.4                       | 2018-12-21      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+131   | v2.0.3                       | 2018-12-21      | 2018   | 4        | package.json, dist/package.json, dist/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+132   | v2.1.3                       | 2019-01-11      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+133   | v2.1.5                       | 2019-01-14      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+134   | v2.1.6                       | 2019-01-16      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+135   | v2.1.7                       | 2019-01-16      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+136   | v2.1.8                       | 2019-01-16      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+137   | v2.1.9                       | 2019-01-21      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+138   | v2.1.10                      | 2019-01-28      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+139   | v2.1.11                      | 2019-01-28      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+140   | v2.1.12                      | 2019-01-28      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+141   | v2.1.13                      | 2019-02-01      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+142   | v1.9.5                       | 2019-02-06      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+143   | v2.1.15                      | 2019-02-06      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+144   | v2.1.17                      | 2019-02-11      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+145   | v2.2.0                       | 2019-02-12      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+146   | v2.2.1                       | 2019-02-20      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+147   | v2.3.0                       | 2019-02-21      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+148   | v2.3.1                       | 2019-02-22      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+149   | v2.3.3                       | 2019-02-27      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+150   | v2.4.1                       | 2019-03-04      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+151   | v2.4.2                       | 2019-03-07      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+152   | v2.4.4                       | 2019-03-29      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+153   | v2.4.6                       | 2019-04-05      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+154   | v2.4.7                       | 2019-04-09      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+155   | v2.4.8                       | 2019-04-09      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+156   | v2.5.0                       | 2019-04-16      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+157   | v2.5.1                       | 2019-04-23      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+158   | v2.5.2                       | 2019-04-25      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+159   | v2.5.3                       | 2019-04-29      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+160   | v2.5.5                       | 2019-05-01      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+161   | v2.6.0                       | 2019-05-10      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+162   | v2.7.0                       | 2019-05-24      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+163   | v2.7.2                       | 2019-05-29      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+164   | v2.8.0                       | 2019-06-04      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+165   | v2.8.1                       | 2019-06-10      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+166   | v2.9.0                       | 2019-06-18      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+167   | v2.9.1                       | 2019-06-26      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+168   | v2.9.2                       | 2019-06-27      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+169   | v2.9.3                       | 2019-07-03      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+170   | v2.9.4                       | 2019-07-05      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+171   | v2.9.5                       | 2019-07-11      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+172   | v2.9.6                       | 2019-07-12      | 2019   | 2        | package.json, src/assets/lib/multiple-select/package.json
+173   | v2.9.7                       | 2019-07-19      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+174   | v2.9.8                       | 2019-07-24      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+175   | v2.9.9                       | 2019-07-29      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+176   | v2.10.0                      | 2019-08-19      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+177   | v2.10.1                      | 2019-08-19      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+178   | v2.10.2                      | 2019-08-26      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+179   | v2.10.3                      | 2019-08-29      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+180   | v2.10.4                      | 2019-08-29      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+181   | v2.10.5                      | 2019-08-29      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+182   | v2.11.0                      | 2019-10-02      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+183   | v2.11.1                      | 2019-10-04      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+184   | v2.11.2                      | 2019-10-07      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+185   | v2.11.3                      | 2019-10-08      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+186   | v2.12.0                      | 2019-10-17      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+187   | v2.12.1                      | 2019-10-21      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+188   | v2.12.2                      | 2019-10-21      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+189   | v2.12.3                      | 2019-10-29      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+190   | v2.13.0                      | 2019-11-07      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+191   | v2.13.1                      | 2019-11-12      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+192   | v2.14.0                      | 2019-11-21      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+193   | v2.14.1                      | 2019-11-26      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+194   | v2.14.2                      | 2019-11-27      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+195   | v2.14.3                      | 2019-11-29      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+196   | v2.14.4                      | 2019-12-06      | 2019   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+197   | v2.14.5                      | 2020-01-06      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+198   | v2.15.0                      | 2020-01-06      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+199   | v2.15.1                      | 2020-01-06      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+200   | v2.15.2                      | 2020-01-07      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+201   | v2.15.3                      | 2020-01-10      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+202   | v2.15.4                      | 2020-01-10      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+203   | v2.16.0                      | 2020-01-20      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+204   | v2.16.1                      | 2020-01-21      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+205   | v2.16.2                      | 2020-01-21      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+206   | v2.16.3                      | 2020-01-21      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+207   | v2.16.4                      | 2020-01-23      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+208   | v2.16.5                      | 2020-01-23      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+209   | v2.17.0                      | 2020-01-31      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+210   | v2.17.1                      | 2020-02-03      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+211   | v2.17.2                      | 2020-02-03      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+212   | v2.17.3                      | 2020-02-05      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+213   | v2.17.4                      | 2020-02-06      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+214   | v2.17.5                      | 2020-02-21      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+215   | v2.17.6                      | 2020-02-27      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+216   | v2.17.7                      | 2020-02-27      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+217   | v2.17.8                      | 2020-02-27      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+218   | v2.17.9                      | 2020-03-02      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+219   | v2.17.10                     | 2020-03-03      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+220   | v2.17.11                     | 2020-03-18      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+221   | v2.17.12                     | 2020-05-19      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+222   | v2.18.0                      | 2020-05-19      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+223   | v2.18.2                      | 2020-05-19      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+224   | v2.18.3                      | 2020-05-19      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+225   | v2.18.4                      | 2020-05-19      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+226   | v2.18.5                      | 2020-05-19      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+227   | v2.18.6                      | 2020-05-19      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+228   | v2.18.7                      | 2020-05-26      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+229   | v2.19.0                      | 2020-06-29      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+230   | v2.19.1                      | 2020-07-20      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+231   | v2.20.0                      | 2020-07-30      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+232   | v2.20.1                      | 2020-07-30      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+233   | v2.20.2                      | 2020-08-03      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+234   | v2.21.0                      | 2020-09-02      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+235   | v2.21.1                      | 2020-09-03      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+236   | v2.21.2                      | 2020-09-08      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+237   | v2.21.3                      | 2020-09-08      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+238   | v2.22.0                      | 2020-10-02      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+239   | v2.22.1                      | 2020-10-02      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+240   | v2.22.2                      | 2020-10-14      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+241   | v2.22.3                      | 2020-10-14      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+242   | v2.22.4                      | 2020-10-14      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+243   | v2.22.5                      | 2020-10-29      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+244   | v2.23.0                      | 2020-11-02      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+245   | v2.23.1                      | 2020-11-18      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+246   | v2.23.2                      | 2020-11-20      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+247   | v2.23.3                      | 2020-12-02      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+248   | v2.24.0                      | 2020-12-10      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+249   | v2.24.1                      | 2020-12-10      | 2020   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+250   | v2.25.0                      | 2021-01-06      | 2021   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+251   | v2.25.1                      | 2021-01-25      | 2021   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+252   | v2.26.0                      | 2021-02-16      | 2021   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+253   | v2.26.1                      | 2021-03-01      | 2021   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+254   | v2.27.0                      | 2021-03-23      | 2021   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+255   | v2.28.0                      | 2021-04-22      | 2021   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+256   | v2.28.1                      | 2021-04-22      | 2021   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+257   | v2.28.2                      | 2021-04-26      | 2021   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+258   | v2.29.0                      | 2021-05-19      | 2021   | 3        | package.json, test/cypress/package.json, src/assets/lib/multiple-select/package.json
+259   | v2.29.1                      | 2021-05-21      | 2021   | 4        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+260   | v2.30.0                      | 2021-06-29      | 2021   | 4        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+261   | v2.30.1                      | 2021-06-29      | 2021   | 4        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+262   | v2.30.2                      | 2021-06-30      | 2021   | 4        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+263   | v2.30.3                      | 2021-07-15      | 2021   | 4        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+264   | v2.30.4                      | 2021-07-16      | 2021   | 4        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+265   | v3.0.0                       | 2021-07-19      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+266   | v3.0.1                       | 2021-07-19      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+267   | v3.0.3                       | 2021-07-20      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+268   | v3.0.4                       | 2021-07-20      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+269   | v2.30.5                      | 2021-07-21      | 2021   | 4        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json, src/assets/lib/multiple-select/package.json
+270   | v3.0.5                       | 2021-07-23      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+271   | v3.1.0                       | 2021-09-09      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+272   | v3.2.0                       | 2021-09-29      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+273   | v3.3.0                       | 2021-10-28      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+274   | v3.3.1                       | 2021-11-15      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+275   | v3.3.2                       | 2021-11-19      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+276   | v4.0.0                       | 2021-12-10      | 2021   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+277   | v4.1.0                       | 2022-01-06      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+278   | v4.1.1                       | 2022-01-18      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+279   | v4.1.2                       | 2022-02-14      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+280   | v4.1.3                       | 2022-04-28      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+281   | v4.1.4                       | 2022-04-28      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+282   | v4.2.0                       | 2022-06-18      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+283   | v4.2.1                       | 2022-06-18      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+284   | v4.2.2                       | 2022-07-05      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+285   | v4.2.3                       | 2022-07-06      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+286   | v4.2.4                       | 2022-07-07      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+287   | v4.2.5                       | 2022-07-28      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+288   | v4.2.6                       | 2022-07-28      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+289   | v4.2.7                       | 2022-08-02      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+290   | v4.3.0                       | 2022-08-15      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+291   | v4.3.1                       | 2022-09-12      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+292   | v5.0.0-alpha.0               | 2022-10-15      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+293   | v5.0.0                       | 2022-10-17      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+294   | v5.0.1                       | 2022-10-18      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+295   | v5.0.2                       | 2022-10-18      | 2022   | 3        | package.json, test/cypress/package.json, docs/assets/lib/multiple-select/package.json
+296   | v5.1.0                       | 2022-11-17      | 2022   | 2        | package.json, test/cypress/package.json
+297   | v5.1.1                       | 2022-11-18      | 2022   | 2        | package.json, test/cypress/package.json
+298   | v5.1.2                       | 2022-12-01      | 2022   | 2        | package.json, test/cypress/package.json
+299   | v5.1.3                       | 2022-12-08      | 2022   | 2        | package.json, test/cypress/package.json
+300   | v5.2.0                       | 2022-12-21      | 2022   | 2        | package.json, test/cypress/package.json
+301   | v5.2.1                       | 2022-12-22      | 2022   | 2        | package.json, test/cypress/package.json
+302   | v5.2.2                       | 2022-12-23      | 2022   | 2        | package.json, test/cypress/package.json
+303   | v5.3.0                       | 2023-01-21      | 2023   | 2        | package.json, test/cypress/package.json
+304   | v5.4.0                       | 2023-02-04      | 2023   | 2        | package.json, test/cypress/package.json
+305   | v5.4.1                       | 2023-02-04      | 2023   | 2        | package.json, test/cypress/package.json
+306   | v5.5.0                       | 2023-02-16      | 2023   | 2        | package.json, test/cypress/package.json
+307   | v5.5.1                       | 2023-02-16      | 2023   | 2        | package.json, test/cypress/package.json
+308   | v5.6.0                       | 2023-02-23      | 2023   | 2        | package.json, test/cypress/package.json
+309   | v5.6.1                       | 2023-03-03      | 2023   | 2        | package.json, test/cypress/package.json
+310   | v5.6.3                       | 2023-03-22      | 2023   | 2        | package.json, test/cypress/package.json
+311   | v5.6.4                       | 2023-05-19      | 2023   | 2        | package.json, test/cypress/package.json
+312   | v6.0.0                       | 2023-05-29      | 2023   | 2        | package.json, test/cypress/package.json
+313   | v6.0.1                       | 2023-06-30      | 2023   | 2        | package.json, test/cypress/package.json
+314   | v6.1.0                       | 2023-07-20      | 2023   | 2        | package.json, test/cypress/package.json
+315   | v6.2.0                       | 2023-08-21      | 2023   | 2        | package.json, test/cypress/package.json
+316   | v6.2.1                       | 2023-09-05      | 2023   | 2        | package.json, test/cypress/package.json
+317   | v6.2.2                       | 2023-09-24      | 2023   | 2        | package.json, test/cypress/package.json
+318   | v6.3.0                       | 2023-10-05      | 2023   | 2        | package.json, test/cypress/package.json
+319   | v6.3.1                       | 2023-10-06      | 2023   | 2        | package.json, test/cypress/package.json
+320   | v6.4.0                       | 2023-11-02      | 2023   | 2        | package.json, test/cypress/package.json
+321   | v6.5.0                       | 2023-11-10      | 2023   | 1        | package.json
+322   | v6.5.1                       | 2023-11-13      | 2023   | 1        | package.json
+323   | v6.6.0                       | 2023-11-26      | 2023   | 1        | package.json
+324   | v6.6.1                       | 2023-11-26      | 2023   | 1        | package.json
+325   | v6.6.2                       | 2023-11-26      | 2023   | 1        | package.json
+326   | v6.6.3                       | 2023-12-08      | 2023   | 1        | package.json
+327   | v6.6.4                       | 2023-12-08      | 2023   | 1        | package.json
+328   | v6.6.5                       | 2023-12-12      | 2023   | 1        | package.json
+329   | v6.6.6                       | 2023-12-15      | 2023   | 1        | package.json
+330   | v7.0.0                       | 2023-12-15      | 2023   | 1        | package.json
+331   | v7.0.1                       | 2023-12-15      | 2023   | 1        | package.json
+332   | v7.0.2                       | 2023-12-16      | 2023   | 1        | package.json
+333   | v7.0.3                       | 2023-12-16      | 2023   | 1        | package.json
+334   | v7.1.0                       | 2023-12-21      | 2023   | 1        | package.json
+335   | v7.2.0                       | 2023-12-30      | 2023   | 1        | package.json
+336   | v7.3.0                       | 2024-01-21      | 2024   | 1        | package.json
+337   | v7.3.1                       | 2024-01-27      | 2024   | 1        | package.json
+338   | v7.4.0                       | 2024-02-13      | 2024   | 1        | package.json
+339   | v7.4.1                       | 2024-02-13      | 2024   | 1        | package.json
+340   | v7.5.0                       | 2024-03-05      | 2024   | 1        | package.json
+341   | v7.6.0                       | 2024-03-23      | 2024   | 1        | package.json
+342   | v7.6.1                       | 2024-04-01      | 2024   | 1        | package.json
+343   | v7.7.0                       | 2024-04-20      | 2024   | 1        | package.json
+344   | v8.0.0                       | 2024-05-23      | 2024   | 1        | package.json
+345   | v8.1.0                       | 2024-06-08      | 2024   | 1        | package.json
+346   | v8.2.0                       | 2024-06-18      | 2024   | 1        | package.json
+347   | v8.3.0                       | 2024-06-29      | 2024   | 1        | package.json
+348   | v8.3.1                       | 2024-07-06      | 2024   | 1        | package.json
+349   | v8.3.2                       | 2024-07-13      | 2024   | 1        | package.json
+350   | v8.4.0                       | 2024-07-20      | 2024   | 1        | package.json
+351   | v8.5.0                       | 2024-08-07      | 2024   | 1        | package.json
+352   | v8.5.1                       | 2024-08-17      | 2024   | 1        | package.json
+353   | v8.5.2                       | 2024-08-17      | 2024   | 1        | package.json
+354   | v8.6.0                       | 2024-08-24      | 2024   | 1        | package.json
+355   | v8.6.1                       | 2024-08-31      | 2024   | 1        | package.json
+356   | v8.6.2                       | 2024-09-14      | 2024   | 1        | package.json
+357   | v8.7.0                       | 2024-09-14      | 2024   | 1        | package.json
+358   | v8.8.1                       | 2024-09-29      | 2024   | 1        | package.json
+359   | v8.9.0                       | 2024-10-19      | 2024   | 1        | package.json
+360   | v8.10.0                      | 2024-11-02      | 2024   | 1        | package.json
+361   | v8.10.1                      | 2024-11-09      | 2024   | 1        | package.json
+362   | v8.10.2                      | 2024-11-30      | 2024   | 1        | package.json
+363   | v8.11.0                      | 2024-12-14      | 2024   | 1        | package.json
+364   | v8.12.0                      | 2025-01-21      | 2025   | 1        | package.json
+365   | v8.12.1                      | 2025-01-25      | 2025   | 1        | package.json
+366   | v8.13.0                      | 2025-02-08      | 2025   | 1        | package.json
+367   | v8.13.1                      | 2025-03-01      | 2025   | 1        | package.json
+368   | v8.13.2                      | 2025-03-19      | 2025   | 1        | package.json
+369   | v8.13.3                      | 2025-03-29      | 2025   | 1        | package.json
+370   | v8.13.4                      | 2025-04-02      | 2025   | 1        | package.json
+371   | v8.13.5                      | 2025-04-10      | 2025   | 1        | package.json
+372   | v8.14.0                      | 2025-04-26      | 2025   | 1        | package.json
+373   | v8.14.1                      | 2025-05-08      | 2025   | 1        | package.json

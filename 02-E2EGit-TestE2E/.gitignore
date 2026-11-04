@@ -1,4 +1,0 @@
-# dati e output pesanti: non versionare
-data/*.db
-.venv/
-venv/

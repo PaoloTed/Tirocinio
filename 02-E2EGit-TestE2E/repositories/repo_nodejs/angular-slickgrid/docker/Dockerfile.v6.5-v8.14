@@ -1,0 +1,15 @@
+# Dockerfile per ghiscoding/angular-slickgrid (Versioni v6.5.0 – v8.14.1)
+FROM cypress/browsers:node-20.14.0-chrome-126.0.6478.114-1-ff-127.0.2-edge-126.0.6478.114-1
+
+WORKDIR /app
+COPY . .
+
+# Installa le dipendenze e compila la libreria
+RUN yarn install --frozen-lockfile && \
+    (npx ng-packagr -p ng-package.json -c tsconfig.json || npx ng-packagr -p ng-package.json) && \
+    yarn copy:i18n
+
+EXPOSE 4300
+
+# Avvia il server su porta 4300 ed esegue i test Cypress
+CMD ["bash", "-c", "yarn start & until curl -s http://localhost:4300 >/dev/null; do sleep 2; done && npx cypress run --config-file test/cypress.config.ts --browser chrome --config screenshotOnRunFailure=false,video=false --spec 'test/cypress/e2e/example*.cy.ts,test/cypress/e2e/home.cy.ts'"]
