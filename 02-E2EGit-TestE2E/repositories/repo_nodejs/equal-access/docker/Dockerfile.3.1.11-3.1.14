@@ -1,6 +1,6 @@
 # Dockerfile auto-generato per equal-access (Cluster 2: 3.1.11 - 3.1.14)
 # Versioni coperte: 3.1.11, 3.1.12, 3.1.13, 3.1.14
-FROM cypress/browsers:node-14.0.0-chrome-latest
+FROM cypress/browsers:node14.19.0-chrome100-ff99-edge
 
 ARG APP_VERSION=v0.0.0
 ENV HUSKY=0

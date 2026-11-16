@@ -759,16 +759,36 @@ def cluster_analyses(analyses: list[VersionAnalysis]) -> list[dict[str, Any]]:
     return clusters
 
 
+CYPRESS_BASE_IMAGES = {
+    "12": "cypress/browsers:node12.18.3-chrome89-ff86",
+    "14": "cypress/browsers:node14.19.0-chrome100-ff99-edge",
+    "16": "cypress/browsers:node-16.18.1-chrome-110.0.5481.96-1-ff-109.0-edge-110.0.1587.41-1",
+    "18": "cypress/browsers:node-18.20.3-chrome-125.0.6422.141-1-ff-126.0.1-edge-125.0.2535.85-1",
+    "20": "cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1",
+    "22": "cypress/browsers:node-22.21.0-chrome-141.0.7390.107-1-ff-144.0-edge-141.0.3537.92-1",
+    "24": "cypress/browsers:node-24.22.1-chrome-156.0.8078.73-1-ff-159.0-edge-156.0.4314.50-1",
+}
+
+
 def select_base_image(rep: VersionAnalysis) -> tuple[str, bool]:
     """Sceglie l'immagine base Docker più adatta. Ritorna (image, need_browser_install)."""
     if rep.e2e_framework == "playwright" and rep.e2e_version:
-        # L'immagine ufficiale Playwright ha già Node + tutte le dipendenze OS dei browser
-        return f"mcr.microsoft.com/playwright:v{rep.e2e_version}-jammy", True
-    if rep.e2e_framework == "cypress":
-        major = rep.node_version.split(".")[0]
-        return f"cypress/browsers:node-{major}.0.0-chrome-latest", False
+        # Playwright >= 1.22 usa immagini -jammy; <= 1.21 usa -focal
+        pw_parts = [int(p) for p in rep.e2e_version.split(".")[:2] if p.isdigit()]
+        distro = "focal" if tuple(pw_parts) < (1, 22) else "jammy"
+        return f"mcr.microsoft.com/playwright:v{rep.e2e_version}-{distro}", True
     major = rep.node_version.split(".")[0]
-    return f"node:{major}-bookworm", False
+    if rep.e2e_framework == "cypress":
+        return CYPRESS_BASE_IMAGES.get(major, "cypress/browsers:latest"), False
+    try:
+        major_int = int(major)
+    except ValueError:
+        major_int = 20
+    if major_int <= 8:
+        return f"node:{major_int}-stretch", False
+    if major_int <= 14:
+        return f"node:{major_int}-bullseye", False
+    return f"node:{major_int}-bookworm", False
 
 
 def cluster_filename(cl_idx: int, versions: list[VersionAnalysis]) -> str:

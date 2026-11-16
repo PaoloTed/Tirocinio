@@ -1,5 +1,5 @@
 # Dockerfile per ghiscoding/angular-slickgrid (Versioni v6.5.0 – v8.14.1)
-FROM cypress/browsers:node-20.14.0-chrome-126.0.6478.114-1-ff-127.0.2-edge-126.0.6478.114-1
+FROM cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
 
 WORKDIR /app
 COPY . .

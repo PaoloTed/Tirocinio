@@ -1,6 +1,6 @@
 # Dockerfile auto-generato per webiny-js (Cluster 2: v6.1.0 - v6.2.0)
 # Versioni coperte: v6.1.0, v6.2.0
-FROM cypress/browsers:node-24.0.0-chrome-latest
+FROM cypress/browsers:node-24.22.1-chrome-156.0.8078.73-1-ff-159.0-edge-156.0.4314.50-1
 
 ARG APP_VERSION=v0.0.0
 ENV HUSKY=0

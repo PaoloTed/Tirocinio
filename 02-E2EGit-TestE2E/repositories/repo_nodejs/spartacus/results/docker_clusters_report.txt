@@ -15,7 +15,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 1] Dockerfile.6.0.0-6.0.3 (4 versioni)
   Versioni       : 6.0.0, 6.0.1, 6.0.2, 6.0.3
-  Base Image     : cypress/browsers:node-16.0.0-chrome-latest
+  Base Image     : cypress/browsers:node-16.18.1-chrome-110.0.5481.96-1-ff-109.0-edge-110.0.1587.41-1
   Node.js        : 16 (fonte: .github/workflows/config-check.yml)
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : cypress 12.6.0 (dir: projects/storefrontapp-e2e-cypress, cfg: projects/storefrontapp-e2e-cypress/cypress.config.ts)

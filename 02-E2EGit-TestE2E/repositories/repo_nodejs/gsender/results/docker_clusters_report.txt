@@ -32,7 +32,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 1] Dockerfile.v1.4.0-v1.4.7 (8 versioni)
   Versioni       : v1.4.0, v1.4.1, v1.4.2, v1.4.3, v1.4.4, v1.4.5, v1.4.6, v1.4.7
-  Base Image     : cypress/browsers:node-16.0.0-chrome-latest
+  Base Image     : cypress/browsers:node-16.18.1-chrome-110.0.5481.96-1-ff-109.0-edge-110.0.1587.41-1
   Node.js        : 16 (fonte: .github/workflows/CI.yml)
   Package Manager: npm (fonte: default (nessun lockfile root))
   Framework E2E  : cypress 13.4.0 (dir: ., cfg: cypress.config.js)
@@ -45,7 +45,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 2] Dockerfile.v1.4.8-v1.4.12 (5 versioni)
   Versioni       : v1.4.8, v1.4.9, v1.4.10, v1.4.11, v1.4.12
-  Base Image     : cypress/browsers:node-20.0.0-chrome-latest
+  Base Image     : cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
   Node.js        : 20 (fonte: .github/workflows/CI.yml)
   Package Manager: npm (fonte: default (nessun lockfile root))
   Framework E2E  : cypress 13.4.0 (dir: ., cfg: cypress.config.js)
@@ -58,7 +58,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 3] Dockerfile.v1.5.0-v1.5.7 (8 versioni)
   Versioni       : v1.5.0, v1.5.1, v1.5.2, v1.5.3, v1.5.4, v1.5.5, v1.5.6, v1.5.7
-  Base Image     : cypress/browsers:node-20.0.0-chrome-latest
+  Base Image     : cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
   Node.js        : 20 (fonte: .github/workflows/CI.yml)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : cypress 13.4.0 (dir: ., cfg: cypress.config.js)

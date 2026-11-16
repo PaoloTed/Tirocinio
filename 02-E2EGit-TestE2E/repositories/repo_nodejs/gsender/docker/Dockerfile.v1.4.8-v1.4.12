@@ -1,6 +1,6 @@
 # Dockerfile auto-generato per gsender (Cluster 2: v1.4.8 - v1.4.12)
 # Versioni coperte: v1.4.8, v1.4.9, v1.4.10, v1.4.11, v1.4.12
-FROM cypress/browsers:node-20.0.0-chrome-latest
+FROM cypress/browsers:node-20.18.0-chrome-130.0.6723.69-1-ff-131.0.3-edge-130.0.2849.52-1
 
 ARG APP_VERSION=v0.0.0
 ENV HUSKY=0

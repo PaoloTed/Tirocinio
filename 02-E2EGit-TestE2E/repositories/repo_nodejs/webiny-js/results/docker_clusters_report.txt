@@ -27,7 +27,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 1] Dockerfile.v6.0.0 (1 versioni)
   Versioni       : v6.0.0
-  Base Image     : cypress/browsers:node-24.0.0-chrome-latest
+  Base Image     : cypress/browsers:node-24.22.1-chrome-156.0.8078.73-1-ff-159.0-edge-156.0.4314.50-1
   Node.js        : 24 (fonte: .github/workflows/pullRequestsCommandE2e.yml)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : cypress 15.11.0 (dir: cypress-tests, cfg: -)
@@ -41,7 +41,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 2] Dockerfile.v6.1.0-v6.2.0 (2 versioni)
   Versioni       : v6.1.0, v6.2.0
-  Base Image     : cypress/browsers:node-24.0.0-chrome-latest
+  Base Image     : cypress/browsers:node-24.22.1-chrome-156.0.8078.73-1-ff-159.0-edge-156.0.4314.50-1
   Node.js        : 24 (fonte: .github/workflows/pullRequestsCommandE2e.yml)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : cypress 15.13.0 (dir: cypress-tests, cfg: -)
@@ -55,7 +55,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 3] Dockerfile.v6.3.0 (1 versioni)
   Versioni       : v6.3.0
-  Base Image     : cypress/browsers:node-24.0.0-chrome-latest
+  Base Image     : cypress/browsers:node-24.22.1-chrome-156.0.8078.73-1-ff-159.0-edge-156.0.4314.50-1
   Node.js        : 24 (fonte: .github/workflows/pullRequestsCommandE2e.yml)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : cypress 15.14.2 (dir: cypress-tests, cfg: -)
@@ -69,7 +69,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 4] Dockerfile.v6.4.0-v6.4.3 (4 versioni)
   Versioni       : v6.4.0, v6.4.1, v6.4.2, v6.4.3
-  Base Image     : cypress/browsers:node-24.0.0-chrome-latest
+  Base Image     : cypress/browsers:node-24.22.1-chrome-156.0.8078.73-1-ff-159.0-edge-156.0.4314.50-1
   Node.js        : 24 (fonte: .github/workflows/pullRequestsCommandE2e.yml)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : cypress 15.15.0 (dir: cypress-tests, cfg: -)
@@ -83,7 +83,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 5] Dockerfile.v6.4.4-v6.4.11 (8 versioni)
   Versioni       : v6.4.4, v6.4.5, v6.4.6, v6.4.7, v6.4.8, v6.4.9, v6.4.10, v6.4.11
-  Base Image     : cypress/browsers:node-24.0.0-chrome-latest
+  Base Image     : cypress/browsers:node-24.22.1-chrome-156.0.8078.73-1-ff-159.0-edge-156.0.4314.50-1
   Node.js        : 24 (fonte: .github/workflows/pullRequestsCommandE2e.yml)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : cypress 15.18.1 (dir: cypress-tests, cfg: -)

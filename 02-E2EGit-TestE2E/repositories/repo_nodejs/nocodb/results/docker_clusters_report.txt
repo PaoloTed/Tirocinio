@@ -18,7 +18,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 1] Dockerfile.0.84.7-0.84.14 (7 versioni)
   Versioni       : 0.84.7, 0.84.8, 0.84.9, 0.84.10, 0.84.12, 0.84.13, 0.84.14
-  Base Image     : cypress/browsers:node-14.0.0-chrome-latest
+  Base Image     : cypress/browsers:node14.19.0-chrome100-ff99-edge
   Node.js        : 14 (fonte: .github/workflows/ci-cd.yml)
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : cypress 9.2.0 (dir: ., cfg: scripts/cypress/cypress.json)
