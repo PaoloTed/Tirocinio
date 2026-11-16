@@ -1,0 +1,1630 @@
+{
+  "repository": "ketcher",
+  "from": "2.12",
+  "to": "3.0.0",
+  "only_stable": true,
+  "analyses": [
+    {
+      "tag": "v2.12.0",
+      "date": "2023-08-11",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-polymer-editor-react",
+        "packages/ketcher-react",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-polymer-editor-react/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.32.3",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.33.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.32.3, mentre ketcher-autotests/Dockerfile usava 1.33.0"
+      ]
+    },
+    {
+      "tag": "v2.13.0",
+      "date": "2023-09-27",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-polymer-editor-react",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-polymer-editor-react/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.35.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.35.0"
+      ]
+    },
+    {
+      "tag": "v2.14.0",
+      "date": "2023-11-02",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-polymer-editor-react",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-polymer-editor-react/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.36.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.36.0"
+      ]
+    },
+    {
+      "tag": "v2.14.1",
+      "date": "2023-12-07",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-polymer-editor-react",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-polymer-editor-react/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.36.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.36.0"
+      ]
+    },
+    {
+      "tag": "v2.15.0",
+      "date": "2023-11-06",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-polymer-editor-react",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-polymer-editor-react/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.36.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.36.0"
+      ]
+    },
+    {
+      "tag": "v2.15.1",
+      "date": "2023-12-11",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-polymer-editor-react",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-polymer-editor-react/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.36.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.36.0"
+      ]
+    },
+    {
+      "tag": "v2.16.0",
+      "date": "2024-03-04",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-polymer-editor-react",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-polymer-editor-react/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.37.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.37.0"
+      ]
+    },
+    {
+      "tag": "v2.17.0",
+      "date": "2024-03-01",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-polymer-editor-react",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-polymer-editor-react/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.37.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.37.0"
+      ]
+    },
+    {
+      "tag": "v2.18.0",
+      "date": "2024-03-01",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.37.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.37.0"
+      ]
+    },
+    {
+      "tag": "v2.19.0",
+      "date": "2024-04-29",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.37.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.37.0"
+      ]
+    },
+    {
+      "tag": "v2.20.0",
+      "date": "2024-04-30",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.37.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.37.0"
+      ]
+    },
+    {
+      "tag": "v2.21.0",
+      "date": "2024-06-28",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.36.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.37.0-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.37.0"
+      ]
+    },
+    {
+      "tag": "v2.22.0",
+      "date": "2024-09-03",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.44.0",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": [
+        "lock/pkg ha @playwright/test=1.44.0, mentre ketcher-autotests/Dockerfile usava 1.44.1"
+      ]
+    },
+    {
+      "tag": "v2.23.0",
+      "date": "2024-09-10",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.44.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true"
+      },
+      "notes": []
+    },
+    {
+      "tag": "v2.24.0",
+      "date": "2024-09-10",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "example-ssr/package-lock.json",
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "example-ssr",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example-ssr/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.44.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true",
+        "USE_SEPARATE_INDIGO_WASM": "true"
+      },
+      "notes": []
+    },
+    {
+      "tag": "v2.25.0",
+      "date": "2024-10-08",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "example-ssr/package-lock.json",
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "example-ssr",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example-ssr/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.44.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true",
+        "USE_SEPARATE_INDIGO_WASM": "true"
+      },
+      "notes": []
+    },
+    {
+      "tag": "v2.26.0",
+      "date": "2024-11-19",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "example-ssr/package-lock.json",
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "example-ssr",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example-ssr/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.44.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true",
+        "USE_SEPARATE_INDIGO_WASM": "true"
+      },
+      "notes": []
+    },
+    {
+      "tag": "v2.27.0",
+      "date": "2025-01-13",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "example-ssr/package-lock.json",
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "example-ssr",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example-ssr/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.44.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true",
+        "USE_SEPARATE_INDIGO_WASM": "true"
+      },
+      "notes": []
+    },
+    {
+      "tag": "v2.28.0",
+      "date": "2025-02-17",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "example-ssr/package-lock.json",
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "example-ssr",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example-ssr/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.44.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true",
+        "USE_SEPARATE_INDIGO_WASM": "true"
+      },
+      "notes": []
+    },
+    {
+      "tag": "v3.0.0",
+      "date": "2025-02-17",
+      "node_version": "18.12.0",
+      "node_source": ".github/workflows/playwright.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "example-ssr/package-lock.json",
+        "ketcher-autotests/package-lock.json",
+        "package-lock.json"
+      ],
+      "workspaces": [
+        "packages/ketcher-core",
+        "packages/ketcher-standalone",
+        "packages/ketcher-macromolecules",
+        "packages/ketcher-react",
+        "ketcher-autotests",
+        "example",
+        "example-ssr",
+        "demo"
+      ],
+      "package_jsons": [
+        "demo/package.json",
+        "example-ssr/package.json",
+        "example/package.json",
+        "ketcher-autotests/package.json",
+        "package.json",
+        "packages/ketcher-core/package.json",
+        "packages/ketcher-macromolecules/package.json",
+        "packages/ketcher-react/package.json",
+        "packages/ketcher-standalone/package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.44.1",
+      "e2e_pkg_dir": "ketcher-autotests",
+      "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+      "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+      "native_deps": [],
+      "needs_git_repo": true,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [
+        "npm run build:packages && npm run build:example:standalone"
+      ],
+      "serve_cmd": "cd example/ && npm run serve:standalone",
+      "serve_port": 4002,
+      "test_cmd": "cd ketcher-autotests && npx playwright test",
+      "ci_workflow": ".github/workflows/playwright.yml",
+      "ci_env": {
+        "CI": "false",
+        "MODE": "standalone",
+        "KETCHER_URL": "http://localhost:4002",
+        "DOCKER": "true",
+        "IGNORE_UNSTABLE_TESTS": "true",
+        "CI_ENVIRONMENT": "true",
+        "USE_SEPARATE_INDIGO_WASM": "true"
+      },
+      "notes": []
+    }
+  ],
+  "clusters": [
+    {
+      "id": 1,
+      "dockerfile": "Dockerfile.v2.12.0",
+      "versions": [
+        "v2.12.0"
+      ],
+      "representative": {
+        "tag": "v2.12.0",
+        "date": "2023-08-11",
+        "node_version": "18.12.0",
+        "node_source": ".github/workflows/playwright.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "ketcher-autotests/package-lock.json",
+          "package-lock.json"
+        ],
+        "workspaces": [
+          "packages/ketcher-core",
+          "packages/ketcher-standalone",
+          "packages/ketcher-polymer-editor-react",
+          "packages/ketcher-react",
+          "example",
+          "demo"
+        ],
+        "package_jsons": [
+          "demo/package.json",
+          "example/package.json",
+          "ketcher-autotests/package.json",
+          "package.json",
+          "packages/ketcher-core/package.json",
+          "packages/ketcher-polymer-editor-react/package.json",
+          "packages/ketcher-react/package.json",
+          "packages/ketcher-standalone/package.json"
+        ],
+        "e2e_framework": "playwright",
+        "e2e_pkg_name": "@playwright/test",
+        "e2e_version": "1.32.3",
+        "e2e_pkg_dir": "ketcher-autotests",
+        "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+        "existing_docker_base": "mcr.microsoft.com/playwright:v1.33.0-jammy",
+        "native_deps": [],
+        "needs_git_repo": true,
+        "install_cmds": [
+          "npm ci"
+        ],
+        "build_cmds": [
+          "npm run build"
+        ],
+        "serve_cmd": "cd example/ && npm run serve:standalone",
+        "serve_port": 4002,
+        "test_cmd": "cd ketcher-autotests && npx playwright test",
+        "ci_workflow": ".github/workflows/playwright.yml",
+        "ci_env": {
+          "CI": "false",
+          "MODE": "standalone",
+          "KETCHER_URL": "http://localhost:4002",
+          "DOCKER": "true",
+          "IGNORE_UNSTABLE_TESTS": "true"
+        },
+        "notes": [
+          "lock/pkg ha @playwright/test=1.32.3, mentre ketcher-autotests/Dockerfile usava 1.33.0"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "dockerfile": "Dockerfile.v2.13.0",
+      "versions": [
+        "v2.13.0"
+      ],
+      "representative": {
+        "tag": "v2.13.0",
+        "date": "2023-09-27",
+        "node_version": "18.12.0",
+        "node_source": ".github/workflows/playwright.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "ketcher-autotests/package-lock.json",
+          "package-lock.json"
+        ],
+        "workspaces": [
+          "packages/ketcher-core",
+          "packages/ketcher-standalone",
+          "packages/ketcher-polymer-editor-react",
+          "packages/ketcher-react",
+          "ketcher-autotests",
+          "example",
+          "demo"
+        ],
+        "package_jsons": [
+          "demo/package.json",
+          "example/package.json",
+          "ketcher-autotests/package.json",
+          "package.json",
+          "packages/ketcher-core/package.json",
+          "packages/ketcher-polymer-editor-react/package.json",
+          "packages/ketcher-react/package.json",
+          "packages/ketcher-standalone/package.json"
+        ],
+        "e2e_framework": "playwright",
+        "e2e_pkg_name": "@playwright/test",
+        "e2e_version": "1.36.1",
+        "e2e_pkg_dir": "ketcher-autotests",
+        "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+        "existing_docker_base": "mcr.microsoft.com/playwright:v1.35.0-jammy",
+        "native_deps": [],
+        "needs_git_repo": true,
+        "install_cmds": [
+          "npm ci"
+        ],
+        "build_cmds": [
+          "npm run build"
+        ],
+        "serve_cmd": "cd example/ && npm run serve:standalone",
+        "serve_port": 4002,
+        "test_cmd": "cd ketcher-autotests && npx playwright test",
+        "ci_workflow": ".github/workflows/playwright.yml",
+        "ci_env": {
+          "CI": "false",
+          "MODE": "standalone",
+          "KETCHER_URL": "http://localhost:4002",
+          "DOCKER": "true",
+          "IGNORE_UNSTABLE_TESTS": "true"
+        },
+        "notes": [
+          "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.35.0"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "dockerfile": "Dockerfile.v2.14.0-v2.21.0",
+      "versions": [
+        "v2.14.0",
+        "v2.14.1",
+        "v2.15.0",
+        "v2.15.1",
+        "v2.16.0",
+        "v2.17.0",
+        "v2.18.0",
+        "v2.19.0",
+        "v2.20.0",
+        "v2.21.0"
+      ],
+      "representative": {
+        "tag": "v2.14.0",
+        "date": "2023-11-02",
+        "node_version": "18.12.0",
+        "node_source": ".github/workflows/playwright.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "ketcher-autotests/package-lock.json",
+          "package-lock.json"
+        ],
+        "workspaces": [
+          "packages/ketcher-core",
+          "packages/ketcher-standalone",
+          "packages/ketcher-polymer-editor-react",
+          "packages/ketcher-react",
+          "ketcher-autotests",
+          "example",
+          "demo"
+        ],
+        "package_jsons": [
+          "demo/package.json",
+          "example/package.json",
+          "ketcher-autotests/package.json",
+          "package.json",
+          "packages/ketcher-core/package.json",
+          "packages/ketcher-polymer-editor-react/package.json",
+          "packages/ketcher-react/package.json",
+          "packages/ketcher-standalone/package.json"
+        ],
+        "e2e_framework": "playwright",
+        "e2e_pkg_name": "@playwright/test",
+        "e2e_version": "1.36.1",
+        "e2e_pkg_dir": "ketcher-autotests",
+        "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+        "existing_docker_base": "mcr.microsoft.com/playwright:v1.36.0-jammy",
+        "native_deps": [],
+        "needs_git_repo": true,
+        "install_cmds": [
+          "npm ci"
+        ],
+        "build_cmds": [
+          "npm run build:packages && npm run build:example:standalone"
+        ],
+        "serve_cmd": "cd example/ && npm run serve:standalone",
+        "serve_port": 4002,
+        "test_cmd": "cd ketcher-autotests && npx playwright test",
+        "ci_workflow": ".github/workflows/playwright.yml",
+        "ci_env": {
+          "CI": "false",
+          "MODE": "standalone",
+          "KETCHER_URL": "http://localhost:4002",
+          "DOCKER": "true",
+          "IGNORE_UNSTABLE_TESTS": "true",
+          "CI_ENVIRONMENT": "true"
+        },
+        "notes": [
+          "lock/pkg ha @playwright/test=1.36.1, mentre ketcher-autotests/Dockerfile usava 1.36.0"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "dockerfile": "Dockerfile.v2.22.0",
+      "versions": [
+        "v2.22.0"
+      ],
+      "representative": {
+        "tag": "v2.22.0",
+        "date": "2024-09-03",
+        "node_version": "18.12.0",
+        "node_source": ".github/workflows/playwright.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "ketcher-autotests/package-lock.json",
+          "package-lock.json"
+        ],
+        "workspaces": [
+          "packages/ketcher-core",
+          "packages/ketcher-standalone",
+          "packages/ketcher-macromolecules",
+          "packages/ketcher-react",
+          "ketcher-autotests",
+          "example",
+          "demo"
+        ],
+        "package_jsons": [
+          "demo/package.json",
+          "example/package.json",
+          "ketcher-autotests/package.json",
+          "package.json",
+          "packages/ketcher-core/package.json",
+          "packages/ketcher-macromolecules/package.json",
+          "packages/ketcher-react/package.json",
+          "packages/ketcher-standalone/package.json"
+        ],
+        "e2e_framework": "playwright",
+        "e2e_pkg_name": "@playwright/test",
+        "e2e_version": "1.44.0",
+        "e2e_pkg_dir": "ketcher-autotests",
+        "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+        "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+        "native_deps": [],
+        "needs_git_repo": true,
+        "install_cmds": [
+          "npm ci"
+        ],
+        "build_cmds": [
+          "npm run build:packages && npm run build:example:standalone"
+        ],
+        "serve_cmd": "cd example/ && npm run serve:standalone",
+        "serve_port": 4002,
+        "test_cmd": "cd ketcher-autotests && npx playwright test",
+        "ci_workflow": ".github/workflows/playwright.yml",
+        "ci_env": {
+          "CI": "false",
+          "MODE": "standalone",
+          "KETCHER_URL": "http://localhost:4002",
+          "DOCKER": "true",
+          "IGNORE_UNSTABLE_TESTS": "true",
+          "CI_ENVIRONMENT": "true"
+        },
+        "notes": [
+          "lock/pkg ha @playwright/test=1.44.0, mentre ketcher-autotests/Dockerfile usava 1.44.1"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "dockerfile": "Dockerfile.v2.23.0",
+      "versions": [
+        "v2.23.0"
+      ],
+      "representative": {
+        "tag": "v2.23.0",
+        "date": "2024-09-10",
+        "node_version": "18.12.0",
+        "node_source": ".github/workflows/playwright.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "ketcher-autotests/package-lock.json",
+          "package-lock.json"
+        ],
+        "workspaces": [
+          "packages/ketcher-core",
+          "packages/ketcher-standalone",
+          "packages/ketcher-macromolecules",
+          "packages/ketcher-react",
+          "ketcher-autotests",
+          "example",
+          "demo"
+        ],
+        "package_jsons": [
+          "demo/package.json",
+          "example/package.json",
+          "ketcher-autotests/package.json",
+          "package.json",
+          "packages/ketcher-core/package.json",
+          "packages/ketcher-macromolecules/package.json",
+          "packages/ketcher-react/package.json",
+          "packages/ketcher-standalone/package.json"
+        ],
+        "e2e_framework": "playwright",
+        "e2e_pkg_name": "@playwright/test",
+        "e2e_version": "1.44.1",
+        "e2e_pkg_dir": "ketcher-autotests",
+        "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+        "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+        "native_deps": [],
+        "needs_git_repo": true,
+        "install_cmds": [
+          "npm ci"
+        ],
+        "build_cmds": [
+          "npm run build:packages && npm run build:example:standalone"
+        ],
+        "serve_cmd": "cd example/ && npm run serve:standalone",
+        "serve_port": 4002,
+        "test_cmd": "cd ketcher-autotests && npx playwright test",
+        "ci_workflow": ".github/workflows/playwright.yml",
+        "ci_env": {
+          "CI": "false",
+          "MODE": "standalone",
+          "KETCHER_URL": "http://localhost:4002",
+          "DOCKER": "true",
+          "IGNORE_UNSTABLE_TESTS": "true",
+          "CI_ENVIRONMENT": "true"
+        },
+        "notes": []
+      }
+    },
+    {
+      "id": 6,
+      "dockerfile": "Dockerfile.v2.24.0-v3.0.0",
+      "versions": [
+        "v2.24.0",
+        "v2.25.0",
+        "v2.26.0",
+        "v2.27.0",
+        "v2.28.0",
+        "v3.0.0"
+      ],
+      "representative": {
+        "tag": "v2.24.0",
+        "date": "2024-09-10",
+        "node_version": "18.12.0",
+        "node_source": ".github/workflows/playwright.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "example-ssr/package-lock.json",
+          "ketcher-autotests/package-lock.json",
+          "package-lock.json"
+        ],
+        "workspaces": [
+          "packages/ketcher-core",
+          "packages/ketcher-standalone",
+          "packages/ketcher-macromolecules",
+          "packages/ketcher-react",
+          "ketcher-autotests",
+          "example",
+          "example-ssr",
+          "demo"
+        ],
+        "package_jsons": [
+          "demo/package.json",
+          "example-ssr/package.json",
+          "example/package.json",
+          "ketcher-autotests/package.json",
+          "package.json",
+          "packages/ketcher-core/package.json",
+          "packages/ketcher-macromolecules/package.json",
+          "packages/ketcher-react/package.json",
+          "packages/ketcher-standalone/package.json"
+        ],
+        "e2e_framework": "playwright",
+        "e2e_pkg_name": "@playwright/test",
+        "e2e_version": "1.44.1",
+        "e2e_pkg_dir": "ketcher-autotests",
+        "e2e_config_file": "ketcher-autotests/playwright.config.ts",
+        "existing_docker_base": "mcr.microsoft.com/playwright:v1.44.1-jammy",
+        "native_deps": [],
+        "needs_git_repo": true,
+        "install_cmds": [
+          "npm ci"
+        ],
+        "build_cmds": [
+          "npm run build:packages && npm run build:example:standalone"
+        ],
+        "serve_cmd": "cd example/ && npm run serve:standalone",
+        "serve_port": 4002,
+        "test_cmd": "cd ketcher-autotests && npx playwright test",
+        "ci_workflow": ".github/workflows/playwright.yml",
+        "ci_env": {
+          "CI": "false",
+          "MODE": "standalone",
+          "KETCHER_URL": "http://localhost:4002",
+          "DOCKER": "true",
+          "IGNORE_UNSTABLE_TESTS": "true",
+          "CI_ENVIRONMENT": "true",
+          "USE_SEPARATE_INDIGO_WASM": "true"
+        },
+        "notes": []
+      }
+    }
+  ]
+}

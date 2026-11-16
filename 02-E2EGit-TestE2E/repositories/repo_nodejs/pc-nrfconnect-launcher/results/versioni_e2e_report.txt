@@ -1,0 +1,30 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: nordicsemiconductor/pc-nrfconnect-launcher
+==============================================================================================================
+Tag analizzati (semver): 60 | Range completo: v2.0.0 (2017-06-29) -> v5.4.1 (2026-11-05)
+File di test E2E tracciati: 10 (di cui 5 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+N.Ver  | Tag Inizio           | Tag Fine             | Date                     | File  | Commit
+----------------------------------------------------------------------------------------------------
+11     | v4.2.0               | v5.2.1               | 2023-09-05 -> 2025-12-15 | 5     | 434
+5      | v4.0.0               | v4.1.2               | 2023-02-10 -> 2023-06-15 | 5     | 191
+5      | v3.8.0               | v3.9.3               | 2021-11-02 -> 2022-01-04 | 5     | 83
+5      | v5.3.0               | v5.4.1               | 2026-04-29 -> 2026-11-05 | 5     | 69
+4      | v3.11.0              | v3.12.1              | 2022-04-07 -> 2022-09-16 | 5     | 86
+4      | v3.4.0               | v3.5.0               | 2020-06-08 -> 2020-09-01 | 5     | 77
+3      | v3.7.0               | v3.7.2               | 2021-06-22 -> 2021-10-20 | 5     | 15
+2      | v3.6.0               | v3.6.1               | 2020-10-15 -> 2020-12-03 | 5     | 39
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------
+20     | 1    | v3.11.0 -> v5.2.1                    | 1260   | Attivo (modificato)       | test-e2e/launcher/installingApps.spec.ts
+16     | 2    | v4.0.0 -> v5.2.1                     | 781    | Attivo (modificato)       | test-e2e/launcher/appList.spec.ts
+16     | 2    | v4.0.0 -> v5.2.1                     | 781    | Attivo (modificato)       | test-e2e/launcher/engineVersionCheck.spec.ts
+16     | 2    | v4.0.0 -> v5.2.1                     | 781    | Attivo (modificato)       | test-e2e/launcher/launchAppsDirectly.spec.ts
+11     | 2    | v4.2.0 -> v5.2.1                     | 434    | Attivo (modificato)       | test-e2e/launcher/basicBehaviour.spec.ts
+6      | 3    | v3.8.0 -> v3.10.0                    | 112    | Rimosso dopo v3.10.0      | test-e2e/launcher/appList.test.js
+6      | 3    | v3.8.0 -> v3.10.0                    | 112    | Rimosso dopo v3.10.0      | test-e2e/launcher/basicBehaviour.test.js
+6      | 3    | v3.8.0 -> v3.10.0                    | 112    | Rimosso dopo v3.10.0      | test-e2e/launcher/installingApps.test.js
+6      | 3    | v3.8.0 -> v3.10.0                    | 112    | Rimosso dopo v3.10.0      | test-e2e/launcher/launchAppsDirectly.test.js
+5      | 4    | v3.8.0 -> v3.9.3                     | 83     | Rimosso dopo v3.10.0      | test-e2e/launcher/engineVersionCheck.test.js

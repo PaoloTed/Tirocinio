@@ -1,0 +1,57 @@
+ANALISI MULTI-VERSIONE E CLUSTERING DOCKER: pc-nrfconnect-launcher
+Versioni analizzate: 11 | Cluster individuati: 3
+===================================================================================================================
+
+Tag        | Data       | Node     | PM   | E2E                | Porta | Build
+-------------------------------------------------------------------------------------------------------------------
+v4.2.0     | 2023-09-05 | 18       | npm  | playwright 1.37.1  | -     | -
+v4.2.1     | 2023-09-28 | 18       | npm  | playwright 1.37.1  | -     | -
+v4.3.0     | 2023-12-07 | 18       | npm  | playwright 1.38.1  | -     | -
+v4.4.0     | 2024-02-07 | 18       | npm  | playwright 1.38.1  | -     | -
+v4.4.1     | 2024-03-13 | 18       | npm  | playwright 1.38.1  | -     | -
+v5.0.0     | 2024-05-13 | 18       | npm  | playwright 1.38.1  | -     | -
+v5.0.1     | 2024-07-09 | 18       | npm  | playwright 1.38.1  | -     | -
+v5.0.2     | 2024-07-24 | 18       | npm  | playwright 1.38.1  | -     | -
+v5.1.0     | 2024-11-10 | 18       | npm  | playwright 1.38.1  | -     | -
+v5.2.0     | 2025-05-19 | 20       | npm  | playwright 1.38.1  | -     | -
+v5.2.1     | 2025-12-15 | 20       | npm  | playwright 1.38.1  | -     | -
+
+===================================================================================================================
+DETTAGLIO CLUSTER (1 Dockerfile per cluster)
+===================================================================================================================
+
+[Cluster 1] Dockerfile.v4.2.0-v4.2.1 (2 versioni)
+  Versioni       : v4.2.0, v4.2.1
+  Base Image     : mcr.microsoft.com/playwright:v1.37.1-jammy
+  Node.js        : 18 (fonte: fallback-anno(2023))
+  Package Manager: npm (fonte: package-lock.json)
+  Framework E2E  : playwright 1.37.1 (dir: ., cfg: -)
+  CI Workflow    : -
+  Install        : npm ci
+  Build          : -
+  Serve          : - (porta: -)
+  Test           : jest src
+
+[Cluster 2] Dockerfile.v4.3.0-v5.1.0 (7 versioni)
+  Versioni       : v4.3.0, v4.4.0, v4.4.1, v5.0.0, v5.0.1, v5.0.2, v5.1.0
+  Base Image     : mcr.microsoft.com/playwright:v1.38.1-jammy
+  Node.js        : 18 (fonte: fallback-anno(2023))
+  Package Manager: npm (fonte: package-lock.json)
+  Framework E2E  : playwright 1.38.1 (dir: ., cfg: -)
+  CI Workflow    : .github/workflows/zoomin-publish-dev.yml
+  Install        : npm ci
+  Build          : -
+  Serve          : - (porta: -)
+  Test           : jest src
+
+[Cluster 3] Dockerfile.v5.2.0-v5.2.1 (2 versioni)
+  Versioni       : v5.2.0, v5.2.1
+  Base Image     : mcr.microsoft.com/playwright:v1.38.1-jammy
+  Node.js        : 20 (fonte: fallback-anno(2025))
+  Package Manager: npm (fonte: package-lock.json)
+  Framework E2E  : playwright 1.38.1 (dir: ., cfg: -)
+  CI Workflow    : .github/workflows/zoomin-publish-dev.yml
+  Install        : npm ci
+  Build          : -
+  Serve          : - (porta: -)
+  Test           : jest src

@@ -1,0 +1,42 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: sap/spartacus
+==============================================================================================================
+Tag analizzati (semver): 83 | Range completo: 2.1.9 (2021-05-10) -> 221121.22.0 (2026-10-28)
+File di test E2E tracciati: 491 (di cui 169 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+N.Ver  | Tag Inizio           | Tag Fine             | Date                     | File  | Commit
+----------------------------------------------------------------------------------------------------
+4      | 6.0.0                | 6.0.3                | 2023-04-12 -> 2023-06-21 | 176   | 9
+3      | 2211.46.0            | 2211.46.3            | 2025-04-02 -> 2025-04-02 | 237   | 1
+2      | 2211.20.0            | 2211.20.1            | 2024-03-12 -> 2024-03-28 | 183   | 6
+2      | 6.2.0                | 6.2.1                | 2023-07-04 -> 2023-07-14 | 161   | 5
+2      | 6.3.0                | 6.3.1                | 2023-08-04 -> 2023-10-10 | 164   | 4
+2      | 6.5.0                | 6.5.1                | 2023-10-02 -> 2023-10-10 | 166   | 4
+2      | 221121.15.0          | 221121.15.1          | 2026-07-03 -> 2026-07-10 | 276   | 4
+2      | 6.4.0                | 6.4.1                | 2023-09-05 -> 2023-10-10 | 165   | 3
+2      | 2211.29.0            | 2211.29.1            | 2024-10-03 -> 2024-10-08 | 210   | 3
+2      | 2211.32.0            | 2211.32.1            | 2024-12-10 -> 2024-12-16 | 213   | 3
+2      | 2211.36.0            | 2211.36.1            | 2025-02-14 -> 2025-02-18 | 219   | 3
+2      | 4.3.6                | 4.3.7                | 2022-06-30 -> 2022-08-10 | 1     | 2
+2      | 6.6.0                | 6.6.1                | 2023-11-07 -> 2023-12-04 | 171   | 2
+2      | 2211.38.0            | 2211.38.1            | 2025-04-15 -> 2025-04-16 | 237   | 2
+2      | 2211.41.0            | 2211.41.1            | 2025-05-30 -> 2025-06-26 | 253   | 2
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------
+67     | 0    | 6.1.0 -> 221121.22.0                 | 2545   | Attivo (mai modificato)   | projects/storefrontapp-e2e-cypress/cypress/e2e/b2b/regression/my-company/users.e2e-spec-flaky.cy.ts
+67     | 0    | 6.1.0 -> 221121.22.0                 | 2545   | Attivo (mai modificato)   | projects/storefrontapp-e2e-cypress/cypress/e2e/regression/product-search/product-search-rating-flow.e2e-spec-flaky.cy.ts
+67     | 0    | 6.1.0 -> 221121.22.0                 | 2545   | Attivo (mai modificato)   | projects/storefrontapp-e2e-cypress/cypress/e2e/regression/site-context/currency/currency-product-search.e2e-spec-flaky.cy.ts
+51     | 0    | 6.0.0 -> 2211.46.3                   | 1390   | Rimosso dopo 2211.46.3    | projects/storefrontapp-e2e-cypress/cypress/e2e/regression/product_configurator/product-configurator-vc-conflict-dialog-e2e-spec-flaky.cy.ts
+47     | 1    | 6.1.0 -> 2211.46.3                   | 1260   | Rimosso dopo 2211.46.3    | projects/storefrontapp-e2e-cypress/cypress/e2e/regression/product_configurator/product-configurator-vc.e2e-2205-spec-flaky.cy.ts
+35     | 2    | 2211.36.0 -> 221121.22.0             | 1381   | Attivo (modificato)       | projects/storefrontapp-e2e-cypress/cypress/e2e/regression/coupons/coupons.e2e-spec-flaky.cy.ts
+35     | 2    | 2211.36.0 -> 221121.22.0             | 1381   | Attivo (modificato)       | projects/storefrontapp-e2e-cypress/cypress/e2e/regression/coupons/my-coupons.e2e-spec-flaky.cy.ts
+35     | 2    | 2211.36.0 -> 221121.22.0             | 1381   | Attivo (modificato)       | projects/storefrontapp-e2e-cypress/cypress/e2e/b2b/regression/account-summary/b2b-account-summary.e2e-spec-flaky.cy.ts
+33     | 2    | 6.6.0 -> 2211.42.0                   | 1318   | Rimosso dopo 2211.46.3    | projects/storefrontapp-e2e-cypress/cypress/e2e/accessibility/group-skipping.core-e2e-spec-flaky.cy.ts
+28     | 3    | 2211.24.0 -> 2211.46.3               | 705    | Rimosso dopo 2211.46.3    | projects/storefrontapp-e2e-cypress/cypress/e2e/regression/product_configurator/product-configurator-vc-ov-filter-menu-e2e-spec-flaky.cy.ts
+28     | 3    | 2211.20.0 -> 2211.42.0               | 1110   | Rimosso dopo 2211.46.3    | projects/storefrontapp-e2e-cypress/cypress/e2e/accessibility/tabbing-order.e2e-spec-flaky.cy.ts
+24     | 4    | 2211.24.0 -> 2211.42.0               | 908    | Rimosso dopo 2211.46.3    | projects/storefrontapp-e2e-cypress/cypress/e2e/regression/product_configurator/product-configurator-vc-restart-dialog-e2e-spec-flaky.cy.ts
+22     | 4    | 2211.25.0 -> 2211.42.0               | 847    | Rimosso dopo 2211.46.3    | projects/storefrontapp-e2e-cypress/cypress/e2e/regression/product_configurator/product-configurator-vc-make-to-stock.e2e-spec-flaky.cy.ts
+20     | 1    | 2211.67.3 -> 221121.22.0             | 358    | Attivo (modificato)       | projects/storefrontapp-e2e-cypress/cypress/e2e/a11y/b2b/b2b-quick-order-keyboarding.e2e-spec-flaky.cy.ts
+20     | 1    | 2211.67.3 -> 221121.22.0             | 358    | Attivo (modificato)       | projects/storefrontapp-e2e-cypress/cypress/e2e/a11y/b2c/group-skipping.core-e2e-spec-flaky.cy.ts

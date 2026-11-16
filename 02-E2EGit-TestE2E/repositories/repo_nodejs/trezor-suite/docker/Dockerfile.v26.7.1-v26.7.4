@@ -1,0 +1,24 @@
+# Dockerfile auto-generato per trezor-suite (Cluster 1: v26.7.1 - v26.7.4)
+# Versioni coperte: v26.7.1, v26.7.2, v26.7.3, v26.7.4
+FROM mcr.microsoft.com/playwright:v1.60.0-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+# Dipendenze di compilazione per moduli nativi C/C++
+RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN yarn install --frozen-lockfile && \
+    (cd /app/packages/connect-web && yarn install --frozen-lockfile) && \
+    (cd /app/packages/connect-web && npx playwright install chromium) && \
+    tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop && \
+    rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension && \
+    # Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "(cd /app/packages/connect-web && yarn run test:e2e ${TEST_ARGS:-})"]

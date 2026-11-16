@@ -1,0 +1,32 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: epam/ketcher
+==============================================================================================================
+Tag analizzati (semver): 71 | Range completo: v2.1.0 (2021-01-11) -> v3.18.0 (2026-08-31)
+File di test E2E tracciati: 207 (di cui 169 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+N.Ver  | Tag Inizio           | Tag Fine             | Date                     | File  | Commit
+----------------------------------------------------------------------------------------------------
+2      | v3.0.2               | v3.0.3               | 2025-02-25 -> 2025-02-26 | 198   | 2
+2      | v2.14.0              | v2.14.1              | 2023-11-02 -> 2023-12-07 | 73    | 1
+2      | v2.15.0              | v2.15.1              | 2023-11-06 -> 2023-12-11 | 85    | 1
+2      | v3.0.0               | v3.0.1               | 2025-02-17 -> 2025-02-20 | 198   | 1
+2      | v3.4.0               | v3.4.1               | 2025-06-20 -> 2025-08-08 | 1     | 1
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------
+21     | 2    | v2.15.0 -> v3.2.0                    | 1024   | Rimosso dopo v3.2.0       | ketcher-autotests/tests/User-Interface/About/about-ui.spec.ts
+20     | 3    | v2.16.0 -> v3.3.0                    | 987    | Rimosso dopo v3.4.1       | ketcher-autotests/tests/utils/canvas/tools/selectNestedTool/example.spec.ts
+19     | 1    | v2.16.0 -> v3.2.0                    | 934    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/User-Interface/Save-Dialog/save-dialog.spec.ts
+19     | 0    | v2.16.0 -> v3.2.0                    | 934    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/Structure-Creating-&-Editing/Simple-Objects/simple-objects-ui-verification.spec.ts
+19     | 0    | v2.16.0 -> v3.2.0                    | 934    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/User-Interface/Abbreviation-Lookup/abbreviation-lookup.spec.ts
+19     | 0    | v2.16.0 -> v3.2.0                    | 934    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/User-Interface/Left-toolbar/left-toolbar-ui.spec.ts
+18     | 1    | v2.16.0 -> v3.1.0                    | 892    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/Reactions/Reaction-Validation/reaction-validation.spec.ts
+18     | 1    | v2.17.0 -> v3.2.0                    | 890    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/Structure-Creating-&-Editing/Atom/Atom-Tool/Atom-Generics/atom-generics-buttons.spec.ts
+17     | 2    | v2.17.0 -> v3.1.0                    | 848    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/File-Management/Open-And-Save-Files/open-save-files.spec.ts
+17     | 0    | v2.18.0 -> v3.2.0                    | 811    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/API/is-query-structure-selected.spec.ts
+16     | 2    | v2.19.0 -> v3.2.0                    | 736    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/Examples/ketcher-api.spec.ts
+16     | 2    | v2.19.0 -> v3.2.0                    | 736    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/File-Management/Open-And-Save-Files/MOL-Files/mol-with-rbc-sub-unc-queries.spec.ts
+16     | 3    | v2.19.0 -> v3.2.0                    | 736    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/Examples/ketcher-files.spec.ts
+16     | 5    | v2.19.0 -> v3.2.0                    | 736    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/Structure-Creating-&-Editing/Text-Tool/utf-8-svg-png.spec.ts
+16     | 2    | v2.19.0 -> v3.2.0                    | 736    | Rimosso dopo v3.2.0       | ketcher-autotests/tests/Structure-Creating-&-Editing/SMARTS-attributes/Custom-query-attributes/custom-query.spec.ts

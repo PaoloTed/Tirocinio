@@ -1,0 +1,105 @@
+ANALISI MULTI-VERSIONE E CLUSTERING DOCKER: monokle
+Versioni analizzate: 35 | Cluster individuati: 5
+===================================================================================================================
+
+Tag        | Data       | Node     | PM   | E2E                | Porta | Build
+-------------------------------------------------------------------------------------------------------------------
+v1.11.0    | 2022-09-30 | 18.7.0   | npm  | playwright 1.23.1  | -     | npm run build
+v1.11.1    | 2022-10-13 | 18.7.0   | npm  | playwright 1.23.1  | -     | npm run build
+v1.12.0    | 2022-10-21 | 18.7.0   | npm  | playwright 1.23.1  | -     | npm run build
+v1.13.0    | 2022-12-07 | 18.7.0   | npm  | playwright 1.23.1  | -     | npm run build
+v1.13.1    | 2022-12-14 | 18.7.0   | npm  | playwright 1.23.1  | -     | npm run build
+v1.13.2    | 2022-12-23 | 18.7.0   | npm  | playwright 1.23.1  | -     | npm run build
+v1.13.3    | 2023-01-12 | 18.7.0   | npm  | playwright 1.23.1  | -     | npm run build
+v1.13.4    | 2023-01-27 | 18.7.0   | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.0     | 2023-02-19 | 18.13.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.1     | 2023-02-23 | 18.13.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.2     | 2023-03-01 | 18.13.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.3     | 2023-03-09 | 18.13.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.4     | 2023-03-14 | 18.13.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.5     | 2023-03-20 | 18.13.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.6     | 2023-03-31 | 18.13.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.7     | 2023-04-06 | 18.13.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.8     | 2023-04-19 | 18.16.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.9     | 2023-04-20 | 18.16.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.0.10    | 2023-04-28 | 18.16.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.1.0     | 2023-05-11 | 18.16.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.1.1     | 2023-05-17 | 18.16.0  | npm  | playwright 1.23.1  | -     | npm run build
+v2.2.0     | 2023-06-07 | 18.16.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.3.0     | 2023-07-06 | 18.16.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.3.1     | 2023-07-07 | 18.16.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.3.2     | 2023-07-24 | 18.16.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.3.3     | 2023-07-26 | 18.16.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.4.0     | 2023-09-28 | 18.16.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.4.1     | 2023-10-11 | 18.16.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.4.2     | 2023-10-23 | 18.17.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.4.3     | 2023-12-08 | 18.17.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.4.4     | 2024-01-04 | 18.17.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.4.5     | 2024-02-28 | 18.17.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.4.6     | 2024-05-16 | 18.17.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.4.7     | 2024-05-16 | 18.17.0  | npm  | playwright 1.34.0  | -     | npm run build
+v2.4.8     | 2024-05-16 | 18.17.0  | npm  | playwright 1.34.0  | -     | npm run build
+
+===================================================================================================================
+DETTAGLIO CLUSTER (1 Dockerfile per cluster)
+===================================================================================================================
+
+[Cluster 1] Dockerfile.v1.11.0-v1.13.4 (8 versioni)
+  Versioni       : v1.11.0, v1.11.1, v1.12.0, v1.13.0, v1.13.1, v1.13.2, v1.13.3, v1.13.4
+  Base Image     : mcr.microsoft.com/playwright:v1.23.1-jammy
+  Node.js        : 18.7.0 (fonte: .nvmrc)
+  Package Manager: npm (fonte: package-lock.json)
+  Framework E2E  : playwright 1.23.1 (dir: ., cfg: playwright.config.ts)
+  CI Workflow    : -
+  Install        : npm ci
+  Build          : npm run build
+  Serve          : - (porta: -)
+  Test           : craco test --watchAll=false
+
+[Cluster 2] Dockerfile.v2.0.0-v2.0.7 (8 versioni)
+  Versioni       : v2.0.0, v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6, v2.0.7
+  Base Image     : mcr.microsoft.com/playwright:v1.23.1-jammy
+  Node.js        : 18.13.0 (fonte: .nvmrc)
+  Package Manager: npm (fonte: package-lock.json)
+  Framework E2E  : playwright 1.23.1 (dir: ., cfg: playwright.config.ts)
+  CI Workflow    : -
+  Install        : npm ci
+  Build          : npm run build
+  Serve          : - (porta: -)
+  Test           : craco test --watchAll=false
+
+[Cluster 3] Dockerfile.v2.0.8-v2.1.1 (5 versioni)
+  Versioni       : v2.0.8, v2.0.9, v2.0.10, v2.1.0, v2.1.1
+  Base Image     : mcr.microsoft.com/playwright:v1.23.1-jammy
+  Node.js        : 18.16.0 (fonte: .nvmrc)
+  Package Manager: npm (fonte: package-lock.json)
+  Framework E2E  : playwright 1.23.1 (dir: ., cfg: playwright.config.ts)
+  CI Workflow    : -
+  Install        : npm ci
+  Build          : npm run build
+  Serve          : - (porta: -)
+  Test           : craco test --watchAll=false
+
+[Cluster 4] Dockerfile.v2.2.0-v2.4.1 (7 versioni)
+  Versioni       : v2.2.0, v2.3.0, v2.3.1, v2.3.2, v2.3.3, v2.4.0, v2.4.1
+  Base Image     : mcr.microsoft.com/playwright:v1.34.0-jammy
+  Node.js        : 18.16.0 (fonte: .nvmrc)
+  Package Manager: npm (fonte: package-lock.json)
+  Framework E2E  : playwright 1.34.0 (dir: ., cfg: playwright.config.ts)
+  CI Workflow    : -
+  Install        : npm ci
+  Build          : npm run build
+  Serve          : - (porta: -)
+  Test           : craco test --watchAll=false
+
+[Cluster 5] Dockerfile.v2.4.2-v2.4.8 (7 versioni)
+  Versioni       : v2.4.2, v2.4.3, v2.4.4, v2.4.5, v2.4.6, v2.4.7, v2.4.8
+  Base Image     : mcr.microsoft.com/playwright:v1.34.0-jammy
+  Node.js        : 18.17.0 (fonte: .nvmrc)
+  Package Manager: npm (fonte: package-lock.json)
+  Framework E2E  : playwright 1.34.0 (dir: ., cfg: playwright.config.ts)
+  CI Workflow    : -
+  Install        : npm ci
+  Build          : npm run build
+  Serve          : - (porta: -)
+  Test           : craco test --watchAll=false

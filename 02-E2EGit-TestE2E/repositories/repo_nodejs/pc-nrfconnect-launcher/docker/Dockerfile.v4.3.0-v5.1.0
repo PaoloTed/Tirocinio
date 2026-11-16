@@ -1,0 +1,17 @@
+# Dockerfile auto-generato per pc-nrfconnect-launcher (Cluster 2: v4.3.0 - v5.1.0)
+# Versioni coperte: v4.3.0, v4.4.0, v4.4.1, v5.0.0, v5.0.1, v5.0.2, v5.1.0
+FROM mcr.microsoft.com/playwright:v1.38.1-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm ci && \
+    (npx playwright install chromium)
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "jest src ${TEST_ARGS:-}"]

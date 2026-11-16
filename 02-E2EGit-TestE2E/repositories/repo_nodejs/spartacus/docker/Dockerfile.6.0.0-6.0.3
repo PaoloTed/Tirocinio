@@ -1,0 +1,23 @@
+# Dockerfile auto-generato per spartacus (Cluster 1: 6.0.0 - 6.0.3)
+# Versioni coperte: 6.0.0, 6.0.1, 6.0.2, 6.0.3
+FROM cypress/browsers:node-16.0.0-chrome-latest
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+ENV CYPRESS_KEY=${{ secrets.CYPRESS_KEY }}
+ENV GH_TOKEN=${{ github.token }}
+ENV NODE_VERSION=16
+
+WORKDIR /app
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm ci && \
+    (cd /app/projects/storefrontapp-e2e-cypress && npm ci) && \
+    npm run build
+
+EXPOSE 4200
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "(cd /app/projects/storefrontapp-e2e-cypress && npx cypress run ${TEST_ARGS:-})"]

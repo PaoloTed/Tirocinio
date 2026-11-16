@@ -1,0 +1,24 @@
+# Dockerfile auto-generato per misskey (Cluster 4: 13.7.0 - 13.7.5)
+# Versioni coperte: 13.7.0, 13.7.1, 13.7.2, 13.7.3, 13.7.4, 13.7.5
+FROM cypress/browsers:node-18.0.0-chrome-latest
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+# Dipendenze di compilazione per moduli nativi C/C++
+RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN pnpm i --frozen-lockfile && \
+    pnpm i --frozen-lockfile && \
+    pnpm build && \
+    pnpm build
+
+EXPOSE 61812
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "(cd /app/packages/frontend && npx cypress run ${TEST_ARGS:-})"]

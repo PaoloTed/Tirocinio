@@ -1,0 +1,24 @@
+# Dockerfile auto-generato per xterm.js (Cluster 2: 6.0.0)
+# Versioni coperte: 6.0.0
+FROM mcr.microsoft.com/playwright:v1.37.1-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm ci && \
+    npm ci && \
+    npm ci && \
+    npm ci && \
+    npm ci && \
+    npm ci && \
+    (npx playwright install chromium) && \
+    npm run esbuild && \
+    npm run esbuild-demo
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "npm run test-unit ${TEST_ARGS:-}"]

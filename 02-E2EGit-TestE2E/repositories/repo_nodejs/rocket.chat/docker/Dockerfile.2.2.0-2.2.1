@@ -1,0 +1,19 @@
+# Dockerfile auto-generato per rocket.chat (Cluster 1: 2.2.0 - 2.2.1)
+# Versioni coperte: 2.2.0, 2.2.1
+FROM node:14-bookworm
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+# Dipendenze di compilazione per moduli nativi C/C++
+RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN yarn install --frozen-lockfile
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", " ${TEST_ARGS:-}"]

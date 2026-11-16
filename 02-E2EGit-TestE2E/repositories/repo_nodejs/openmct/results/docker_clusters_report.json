@@ -1,0 +1,129 @@
+{
+  "repository": "openmct",
+  "from": "v2.1.1",
+  "to": "v2.1.2",
+  "only_stable": true,
+  "analyses": [
+    {
+      "tag": "v2.1.1",
+      "date": "2022-10-06",
+      "node_version": "16",
+      "node_source": ".github/workflows/e2e-couchdb.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "default (nessun lockfile root)",
+      "lockfiles": [],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.25.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "npm install"
+      ],
+      "build_cmds": [],
+      "serve_cmd": "",
+      "serve_port": 5984,
+      "test_cmd": "npm run test:e2e:couchdb",
+      "ci_workflow": ".github/workflows/e2e-couchdb.yml",
+      "ci_env": {
+        "OPENMCT_DATABASE_NAME": "openmct",
+        "COUCH_ADMIN_USER": "admin",
+        "COUCH_ADMIN_PASSWORD": "password",
+        "COUCH_BASE_LOCAL": "http://localhost:5984",
+        "COUCH_NODE_NAME": "nonode@nohost"
+      },
+      "notes": []
+    },
+    {
+      "tag": "v2.1.2",
+      "date": "2022-10-31",
+      "node_version": "16",
+      "node_source": ".github/workflows/e2e-couchdb.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "default (nessun lockfile root)",
+      "lockfiles": [],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json"
+      ],
+      "e2e_framework": "playwright",
+      "e2e_pkg_name": "@playwright/test",
+      "e2e_version": "1.25.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "npm install"
+      ],
+      "build_cmds": [],
+      "serve_cmd": "",
+      "serve_port": 5984,
+      "test_cmd": "npm run test:e2e:couchdb",
+      "ci_workflow": ".github/workflows/e2e-couchdb.yml",
+      "ci_env": {
+        "OPENMCT_DATABASE_NAME": "openmct",
+        "COUCH_ADMIN_USER": "admin",
+        "COUCH_ADMIN_PASSWORD": "password",
+        "COUCH_BASE_LOCAL": "http://localhost:5984",
+        "COUCH_NODE_NAME": "nonode@nohost"
+      },
+      "notes": []
+    }
+  ],
+  "clusters": [
+    {
+      "id": 1,
+      "dockerfile": "Dockerfile.v2.1.1-v2.1.2",
+      "versions": [
+        "v2.1.1",
+        "v2.1.2"
+      ],
+      "representative": {
+        "tag": "v2.1.1",
+        "date": "2022-10-06",
+        "node_version": "16",
+        "node_source": ".github/workflows/e2e-couchdb.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "default (nessun lockfile root)",
+        "lockfiles": [],
+        "workspaces": [],
+        "package_jsons": [
+          "package.json"
+        ],
+        "e2e_framework": "playwright",
+        "e2e_pkg_name": "@playwright/test",
+        "e2e_version": "1.25.2",
+        "e2e_pkg_dir": ".",
+        "e2e_config_file": "",
+        "existing_docker_base": "",
+        "native_deps": [],
+        "needs_git_repo": false,
+        "install_cmds": [
+          "npm install"
+        ],
+        "build_cmds": [],
+        "serve_cmd": "",
+        "serve_port": 5984,
+        "test_cmd": "npm run test:e2e:couchdb",
+        "ci_workflow": ".github/workflows/e2e-couchdb.yml",
+        "ci_env": {
+          "OPENMCT_DATABASE_NAME": "openmct",
+          "COUCH_ADMIN_USER": "admin",
+          "COUCH_ADMIN_PASSWORD": "password",
+          "COUCH_BASE_LOCAL": "http://localhost:5984",
+          "COUCH_NODE_NAME": "nonode@nohost"
+        },
+        "notes": []
+      }
+    }
+  ]
+}

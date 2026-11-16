@@ -1,0 +1,21 @@
+# Dockerfile auto-generato per oneuptime (Cluster 1: 7.0.18)
+# Versioni coperte: 7.0.18
+FROM mcr.microsoft.com/playwright:v1.31.2-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm ci && \
+    (cd /app/Playwright && npm install && npx playwright install && npx playwright test) && \
+    (cd /app/Playwright && npx playwright install chromium) && \
+    npm run build
+
+EXPOSE 3000
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "npm run dev & until node -e \"require('http').get('http://localhost:3000', ()=>process.exit(0)).on('error', ()=>process.exit(1))\" 2>/dev/null; do sleep 2; done && (cd /app/Playwright && playwright test ${TEST_ARGS:-})"]

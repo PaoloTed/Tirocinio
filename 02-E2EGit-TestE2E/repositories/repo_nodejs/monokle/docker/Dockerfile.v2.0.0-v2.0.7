@@ -1,0 +1,18 @@
+# Dockerfile auto-generato per monokle (Cluster 2: v2.0.0 - v2.0.7)
+# Versioni coperte: v2.0.0, v2.0.1, v2.0.2, v2.0.3, v2.0.4, v2.0.5, v2.0.6, v2.0.7
+FROM mcr.microsoft.com/playwright:v1.23.1-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm ci && \
+    (npx playwright install chromium) && \
+    npm run build
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "craco test --watchAll=false ${TEST_ARGS:-}"]

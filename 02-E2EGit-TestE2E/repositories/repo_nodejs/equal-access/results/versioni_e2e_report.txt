@@ -1,0 +1,40 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: ibma/equal-access
+==============================================================================================================
+Tag analizzati (semver): 128 | Range completo: 3.0.3 (2020-05-22) -> 4.0.35 (2026-11-13)
+File di test E2E tracciati: 13 (di cui 4 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+N.Ver  | Tag Inizio           | Tag Fine             | Date                     | File  | Commit
+----------------------------------------------------------------------------------------------------
+35     | 3.1.7                | 3.1.41               | 2021-06-03 -> 2022-11-08 | 6     | 1485
+25     | 4.0.7                | 4.0.31               | 2025-07-24 -> 2026-08-21 | 5     | 323
+10     | 3.1.64               | 3.1.73               | 2023-11-10 -> 2024-06-17 | 9     | 584
+7      | 3.1.51               | 3.1.57               | 2023-07-02 -> 2023-07-07 | 8     | 8
+6      | 3.1.42               | 3.1.47               | 2023-01-11 -> 2023-03-31 | 7     | 280
+6      | 3.1.0                | 3.1.5                | 2020-10-07 -> 2021-03-03 | 6     | 137
+4      | 3.0.4                | 3.0.7                | 2020-05-22 -> 2020-07-17 | 5     | 217
+4      | 4.0.32               | 4.0.35               | 2026-09-03 -> 2026-11-13 | 6     | 22
+3      | 3.1.48               | 3.1.50               | 2023-05-15 -> 2023-06-05 | 7     | 37
+3      | 3.1.77               | 3.1.79               | 2024-11-06 -> 2024-12-12 | 9     | 20
+2      | 3.1.75               | 3.1.76               | 2024-08-30 -> 2024-10-01 | 9     | 155
+2      | 4.0.2                | 4.0.3                | 2025-02-27 -> 2025-03-27 | 5     | 56
+2      | 3.1.60               | 3.1.61               | 2023-08-30 -> 2023-09-19 | 9     | 47
+2      | 4.0.4                | 4.0.5                | 2025-04-24 -> 2025-06-02 | 5     | 16
+2      | 3.1.62               | 3.1.63               | 2023-10-12 -> 2023-10-18 | 9     | 3
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------
+64     | 0    | 3.1.58 -> 4.0.35                     | 1812   | Attivo (mai modificato)   | accessibility-checker/boilerplates/webdriverio/test/specs/example.e2e.ts
+63     | 1    | 3.1.59 -> 4.0.35                     | 1779   | Attivo (modificato)       | cypress-accessibility-checker/boilerplates/cypress/e2e/accessibility-checker-example.cy.js
+60     | 0    | 3.1.62 -> 4.0.35                     | 1647   | Attivo (mai modificato)   | cypress-accessibility-checker/test/cypress/e2e/achecker.cy.js
+54     | 5    | 3.0.3 -> 3.1.47                      | 3110   | Rimosso dopo 4.0.1        | accessibility-checker/test/mocha/aChecker.Fast/aChecker.Scans/aChecker.assertionCompliance.test.js
+51     | 1    | 3.1.0 -> 3.1.50                      | 2680   | Rimosso dopo 3.1.50       | cypress-accessibility-checker/boilerplates/cypress/integration/accessibility-checker-example.spec.js
+41     | 12   | 3.1.7 -> 3.1.47                      | 1887   | Rimosso dopo 4.0.1        | accessibility-checker/test/mocha/aChecker.Fast/aChecker.Scans/aChecker.Content.test.js
+41     | 12   | 3.1.7 -> 3.1.47                      | 1887   | Rimosso dopo 4.0.1        | accessibility-checker/test/mocha/aChecker.Fast/aChecker.Scans/aChecker.URL.test.js
+41     | 14   | 3.1.7 -> 3.1.47                      | 1887   | Rimosso dopo 4.0.1        | accessibility-checker/test/mocha/aChecker.Fast/aChecker.Scans/aChecker.Content.Puppeteer.test.js
+41     | 4    | 3.1.7 -> 3.1.47                      | 1887   | Rimosso dopo 3.1.59       | accessibility-checker/test/mocha/aChecker.Fast/aChecker.Scans/aChecker.Content.Zombie.test.js
+29     | 7    | 4.0.7 -> 4.0.35                      | 388    | Attivo (modificato)       | accessibility-checker/test/a11y-rule-test-able/aChecker.Content.Puppeteer.test.js
+29     | 11   | 4.0.7 -> 4.0.35                      | 388    | Attivo (modificato)       | accessibility-checker/test/webdriverio/test/specs/example.e2e.ts
+11     | 0    | 3.1.51 -> 3.1.61                     | 197    | Rimosso dopo 3.1.61       | cypress-accessibility-checker/test/cypress/integration/achecker.cy.js
+4      | 0    | 4.0.32 -> 4.0.35                     | 22     | Attivo (mai modificato)   | cypress-accessibility-checker/test/cypress/e2e/achecker-xlsx.cy.js

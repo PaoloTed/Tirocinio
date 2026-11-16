@@ -1,0 +1,2638 @@
+{
+  "repository": "rocket.chat",
+  "from": "2.2.0",
+  "to": "3.4.0",
+  "only_stable": true,
+  "analyses": [
+    {
+      "tag": "2.2.0",
+      "date": "2019-10-27",
+      "node_version": "14",
+      "node_source": "fallback-anno(2019)",
+      "pkg_manager": "yarn",
+      "pkg_manager_source": "yarn.lock",
+      "lockfiles": [
+        "package-lock.json",
+        "yarn.lock"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "yarn install --frozen-lockfile"
+      ],
+      "build_cmds": [],
+      "serve_cmd": "",
+      "serve_port": null,
+      "test_cmd": "",
+      "ci_workflow": "",
+      "ci_env": {},
+      "notes": []
+    },
+    {
+      "tag": "2.2.1",
+      "date": "2019-11-19",
+      "node_version": "14",
+      "node_source": "fallback-anno(2019)",
+      "pkg_manager": "yarn",
+      "pkg_manager_source": "yarn.lock",
+      "lockfiles": [
+        "package-lock.json",
+        "yarn.lock"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "yarn install --frozen-lockfile"
+      ],
+      "build_cmds": [],
+      "serve_cmd": "",
+      "serve_port": null,
+      "test_cmd": "",
+      "ci_workflow": "",
+      "ci_env": {},
+      "notes": []
+    },
+    {
+      "tag": "2.3.0",
+      "date": "2019-11-27",
+      "node_version": "14",
+      "node_source": "fallback-anno(2019)",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [],
+      "serve_cmd": "",
+      "serve_port": null,
+      "test_cmd": "",
+      "ci_workflow": "",
+      "ci_env": {},
+      "notes": []
+    },
+    {
+      "tag": "2.3.1",
+      "date": "2019-12-09",
+      "node_version": "14",
+      "node_source": "fallback-anno(2019)",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [],
+      "serve_cmd": "",
+      "serve_port": null,
+      "test_cmd": "",
+      "ci_workflow": "",
+      "ci_env": {},
+      "notes": []
+    },
+    {
+      "tag": "2.3.2",
+      "date": "2019-12-12",
+      "node_version": "14",
+      "node_source": "fallback-anno(2019)",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [],
+      "serve_cmd": "",
+      "serve_port": null,
+      "test_cmd": "",
+      "ci_workflow": "",
+      "ci_env": {},
+      "notes": []
+    },
+    {
+      "tag": "2.3.3",
+      "date": "2020-01-10",
+      "node_version": "14",
+      "node_source": "fallback-anno(2020)",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "npm ci"
+      ],
+      "build_cmds": [],
+      "serve_cmd": "",
+      "serve_port": null,
+      "test_cmd": "",
+      "ci_workflow": "",
+      "ci_env": {},
+      "notes": []
+    },
+    {
+      "tag": "2.4.0",
+      "date": "2019-12-27",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.1",
+      "date": "2020-01-10",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.2",
+      "date": "2020-01-17",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.3",
+      "date": "2020-01-28",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.4",
+      "date": "2020-01-29",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.5",
+      "date": "2020-01-29",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.6",
+      "date": "2020-01-31",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.7",
+      "date": "2020-02-03",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.8",
+      "date": "2020-02-07",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.9",
+      "date": "2020-02-10",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.10",
+      "date": "2020-02-20",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.11",
+      "date": "2020-02-26",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.12",
+      "date": "2020-05-11",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.13",
+      "date": "2020-12-05",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "2.4.14",
+      "date": "2020-12-18",
+      "node_version": "8.17.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "unknown",
+      "e2e_pkg_name": "",
+      "e2e_version": "",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.0",
+      "date": "2020-02-14",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.1",
+      "date": "2020-02-19",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.2",
+      "date": "2020-02-21",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.3",
+      "date": "2020-03-02",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.4",
+      "date": "2020-03-16",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.5",
+      "date": "2020-03-24",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.6",
+      "date": "2020-03-25",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.7",
+      "date": "2020-03-25",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.8",
+      "date": "2020-03-30",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.9",
+      "date": "2020-03-31",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.10",
+      "date": "2020-04-01",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.11",
+      "date": "2020-04-02",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.12",
+      "date": "2020-04-03",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.0.13",
+      "date": "2020-05-11",
+      "node_version": "12.14.0",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "3.8.3",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.1.0",
+      "date": "2020-04-09",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.1.1",
+      "date": "2020-04-14",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.1.2",
+      "date": "2020-04-27",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.1.3",
+      "date": "2020-05-11",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.2.0",
+      "date": "2020-04-27",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.2.1",
+      "date": "2020-05-01",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.2.2",
+      "date": "2020-05-11",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.3.0",
+      "date": "2020-05-27",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.3.1",
+      "date": "2020-06-10",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.3.2",
+      "date": "2020-06-10",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.3.3",
+      "date": "2020-06-11",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    },
+    {
+      "tag": "3.4.0",
+      "date": "2020-06-30",
+      "node_version": "12.16.1",
+      "node_source": ".github/workflows/build_and_test.yml",
+      "pkg_manager": "npm",
+      "pkg_manager_source": "package-lock.json",
+      "lockfiles": [
+        "package-lock.json"
+      ],
+      "workspaces": [],
+      "package_jsons": [
+        "package.json",
+        "private/node_scripts/package.json",
+        "private/node_scripts/unsubscribe_csv/package.json"
+      ],
+      "e2e_framework": "cypress",
+      "e2e_pkg_name": "cypress",
+      "e2e_version": "4.0.2",
+      "e2e_pkg_dir": ".",
+      "e2e_config_file": "tests/cypress.json",
+      "existing_docker_base": "",
+      "native_deps": [
+        "bcrypt",
+        "sharp"
+      ],
+      "needs_git_repo": false,
+      "install_cmds": [
+        "meteor npm install",
+        "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+        "npm i chromedriver",
+        "npm install",
+        "meteor npm install"
+      ],
+      "build_cmds": [
+        "meteor build --server-only --directory --debug /tmp/build-test",
+        "meteor build --server-only --directory /tmp/build-test",
+        "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+        "meteor build --server-only --directory /tmp/build-pr"
+      ],
+      "serve_cmd": "",
+      "serve_port": 27017,
+      "test_cmd": "npx cypress run",
+      "ci_workflow": ".github/workflows/build_and_test.yml",
+      "ci_env": {
+        "CI": "true",
+        "MONGO_URL": "mongodb://localhost:27017",
+        "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+      },
+      "notes": []
+    }
+  ],
+  "clusters": [
+    {
+      "id": 1,
+      "dockerfile": "Dockerfile.2.2.0-2.2.1",
+      "versions": [
+        "2.2.0",
+        "2.2.1"
+      ],
+      "representative": {
+        "tag": "2.2.0",
+        "date": "2019-10-27",
+        "node_version": "14",
+        "node_source": "fallback-anno(2019)",
+        "pkg_manager": "yarn",
+        "pkg_manager_source": "yarn.lock",
+        "lockfiles": [
+          "package-lock.json",
+          "yarn.lock"
+        ],
+        "workspaces": [],
+        "package_jsons": [
+          "package.json",
+          "private/node_scripts/package.json",
+          "private/node_scripts/unsubscribe_csv/package.json"
+        ],
+        "e2e_framework": "unknown",
+        "e2e_pkg_name": "",
+        "e2e_version": "",
+        "e2e_pkg_dir": ".",
+        "e2e_config_file": "",
+        "existing_docker_base": "",
+        "native_deps": [
+          "bcrypt",
+          "sharp"
+        ],
+        "needs_git_repo": false,
+        "install_cmds": [
+          "yarn install --frozen-lockfile"
+        ],
+        "build_cmds": [],
+        "serve_cmd": "",
+        "serve_port": null,
+        "test_cmd": "",
+        "ci_workflow": "",
+        "ci_env": {},
+        "notes": []
+      }
+    },
+    {
+      "id": 2,
+      "dockerfile": "Dockerfile.2.3.0-2.3.3",
+      "versions": [
+        "2.3.0",
+        "2.3.1",
+        "2.3.2",
+        "2.3.3"
+      ],
+      "representative": {
+        "tag": "2.3.0",
+        "date": "2019-11-27",
+        "node_version": "14",
+        "node_source": "fallback-anno(2019)",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "package-lock.json"
+        ],
+        "workspaces": [],
+        "package_jsons": [
+          "package.json",
+          "private/node_scripts/package.json",
+          "private/node_scripts/unsubscribe_csv/package.json"
+        ],
+        "e2e_framework": "unknown",
+        "e2e_pkg_name": "",
+        "e2e_version": "",
+        "e2e_pkg_dir": ".",
+        "e2e_config_file": "",
+        "existing_docker_base": "",
+        "native_deps": [
+          "bcrypt",
+          "sharp"
+        ],
+        "needs_git_repo": false,
+        "install_cmds": [
+          "npm ci"
+        ],
+        "build_cmds": [],
+        "serve_cmd": "",
+        "serve_port": null,
+        "test_cmd": "",
+        "ci_workflow": "",
+        "ci_env": {},
+        "notes": []
+      }
+    },
+    {
+      "id": 3,
+      "dockerfile": "Dockerfile.2.4.0-2.4.14",
+      "versions": [
+        "2.4.0",
+        "2.4.1",
+        "2.4.2",
+        "2.4.3",
+        "2.4.4",
+        "2.4.5",
+        "2.4.6",
+        "2.4.7",
+        "2.4.8",
+        "2.4.9",
+        "2.4.10",
+        "2.4.11",
+        "2.4.12",
+        "2.4.13",
+        "2.4.14"
+      ],
+      "representative": {
+        "tag": "2.4.0",
+        "date": "2019-12-27",
+        "node_version": "8.17.0",
+        "node_source": ".github/workflows/build_and_test.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "package-lock.json"
+        ],
+        "workspaces": [],
+        "package_jsons": [
+          "package.json",
+          "private/node_scripts/package.json",
+          "private/node_scripts/unsubscribe_csv/package.json"
+        ],
+        "e2e_framework": "unknown",
+        "e2e_pkg_name": "",
+        "e2e_version": "",
+        "e2e_pkg_dir": ".",
+        "e2e_config_file": "",
+        "existing_docker_base": "",
+        "native_deps": [
+          "bcrypt",
+          "sharp"
+        ],
+        "needs_git_repo": false,
+        "install_cmds": [
+          "meteor npm install",
+          "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+          "npm i chromedriver",
+          "npm install",
+          "meteor npm install"
+        ],
+        "build_cmds": [
+          "meteor build --server-only --directory --debug /tmp/build-test",
+          "meteor build --server-only --directory /tmp/build-test",
+          "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+          "meteor build --server-only --directory /tmp/build-pr"
+        ],
+        "serve_cmd": "",
+        "serve_port": 27017,
+        "test_cmd": "",
+        "ci_workflow": ".github/workflows/build_and_test.yml",
+        "ci_env": {
+          "CI": "true",
+          "MONGO_URL": "mongodb://localhost:27017",
+          "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+        },
+        "notes": []
+      }
+    },
+    {
+      "id": 4,
+      "dockerfile": "Dockerfile.3.0.0-3.0.13",
+      "versions": [
+        "3.0.0",
+        "3.0.1",
+        "3.0.2",
+        "3.0.3",
+        "3.0.4",
+        "3.0.5",
+        "3.0.6",
+        "3.0.7",
+        "3.0.8",
+        "3.0.9",
+        "3.0.10",
+        "3.0.11",
+        "3.0.12",
+        "3.0.13"
+      ],
+      "representative": {
+        "tag": "3.0.0",
+        "date": "2020-02-14",
+        "node_version": "12.14.0",
+        "node_source": ".github/workflows/build_and_test.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "package-lock.json"
+        ],
+        "workspaces": [],
+        "package_jsons": [
+          "package.json",
+          "private/node_scripts/package.json",
+          "private/node_scripts/unsubscribe_csv/package.json"
+        ],
+        "e2e_framework": "cypress",
+        "e2e_pkg_name": "cypress",
+        "e2e_version": "3.8.3",
+        "e2e_pkg_dir": ".",
+        "e2e_config_file": "tests/cypress.json",
+        "existing_docker_base": "",
+        "native_deps": [
+          "bcrypt",
+          "sharp"
+        ],
+        "needs_git_repo": false,
+        "install_cmds": [
+          "meteor npm install",
+          "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+          "npm i chromedriver",
+          "npm install",
+          "meteor npm install"
+        ],
+        "build_cmds": [
+          "meteor build --server-only --directory --debug /tmp/build-test",
+          "meteor build --server-only --directory /tmp/build-test",
+          "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+          "meteor build --server-only --directory /tmp/build-pr"
+        ],
+        "serve_cmd": "",
+        "serve_port": 27017,
+        "test_cmd": "npx cypress run",
+        "ci_workflow": ".github/workflows/build_and_test.yml",
+        "ci_env": {
+          "CI": "true",
+          "MONGO_URL": "mongodb://localhost:27017",
+          "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+        },
+        "notes": []
+      }
+    },
+    {
+      "id": 5,
+      "dockerfile": "Dockerfile.3.1.0-3.4.0",
+      "versions": [
+        "3.1.0",
+        "3.1.1",
+        "3.1.2",
+        "3.1.3",
+        "3.2.0",
+        "3.2.1",
+        "3.2.2",
+        "3.3.0",
+        "3.3.1",
+        "3.3.2",
+        "3.3.3",
+        "3.4.0"
+      ],
+      "representative": {
+        "tag": "3.1.0",
+        "date": "2020-04-09",
+        "node_version": "12.16.1",
+        "node_source": ".github/workflows/build_and_test.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "package-lock.json"
+        ],
+        "workspaces": [],
+        "package_jsons": [
+          "package.json",
+          "private/node_scripts/package.json",
+          "private/node_scripts/unsubscribe_csv/package.json"
+        ],
+        "e2e_framework": "cypress",
+        "e2e_pkg_name": "cypress",
+        "e2e_version": "4.0.2",
+        "e2e_pkg_dir": ".",
+        "e2e_config_file": "tests/cypress.json",
+        "existing_docker_base": "",
+        "native_deps": [
+          "bcrypt",
+          "sharp"
+        ],
+        "needs_git_repo": false,
+        "install_cmds": [
+          "meteor npm install",
+          "mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test",
+          "npm i chromedriver",
+          "npm install",
+          "meteor npm install"
+        ],
+        "build_cmds": [
+          "meteor build --server-only --directory --debug /tmp/build-test",
+          "meteor build --server-only --directory /tmp/build-test",
+          "cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -",
+          "meteor build --server-only --directory /tmp/build-pr"
+        ],
+        "serve_cmd": "",
+        "serve_port": 27017,
+        "test_cmd": "npx cypress run",
+        "ci_workflow": ".github/workflows/build_and_test.yml",
+        "ci_env": {
+          "CI": "true",
+          "MONGO_URL": "mongodb://localhost:27017",
+          "TOOL_NODE_FLAGS": "--max_old_space_size=4096"
+        },
+        "notes": []
+      }
+    }
+  ]
+}

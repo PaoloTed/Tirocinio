@@ -1,0 +1,24 @@
+# Dockerfile auto-generato per openmct (Cluster 1: v2.1.1 - v2.1.2)
+# Versioni coperte: v2.1.1, v2.1.2
+FROM mcr.microsoft.com/playwright:v1.25.2-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+ENV OPENMCT_DATABASE_NAME=openmct
+ENV COUCH_ADMIN_USER=admin
+ENV COUCH_ADMIN_PASSWORD=password
+ENV COUCH_BASE_LOCAL=http://localhost:5984
+ENV COUCH_NODE_NAME=nonode@nohost
+
+WORKDIR /app
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm install && \
+    (npx playwright install chromium)
+
+EXPOSE 5984
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "npm run test:e2e:couchdb ${TEST_ARGS:-}"]

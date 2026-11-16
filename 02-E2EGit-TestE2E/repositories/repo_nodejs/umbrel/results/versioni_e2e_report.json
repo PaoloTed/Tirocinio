@@ -1,0 +1,115 @@
+{
+  "repository": "getumbrel/umbrel",
+  "folder": "umbrel",
+  "tag_mode": "semver",
+  "n_tag_analizzati": 83,
+  "primo_tag": "v0.1.2 (2020-07-08)",
+  "ultimo_tag": "2.0.1 (2026-11-01)",
+  "n_file_e2e_distinti": 3,
+  "n_file_db": 3,
+  "suite_spans_top": [
+    {
+      "n_versioni": 16,
+      "tag_inizio": "v1.0.0",
+      "data_inizio": "2024-04-30",
+      "tag_fine": "1.5.0",
+      "data_fine": "2025-11-05",
+      "n_file_e2e": 3,
+      "n_commit": 460
+    }
+  ],
+  "per_file_stats_top": [
+    {
+      "test_path": "packages/ui/tests-examples/demo-todo-app.spec.ts",
+      "fonte": "E2EGit_db",
+      "nascita_tag": "v1.0.0",
+      "nascita_data": "2024-04-30",
+      "ultimo_tag": "1.5.0",
+      "versioni_vita": 16,
+      "n_modifiche": 0,
+      "max_ver_invariate": 16,
+      "max_gap_inizio": "v1.0.0",
+      "max_gap_fine": "1.5.0",
+      "max_gap_date": "2024-04-30 -> 2025-11-05",
+      "max_gap_commit": 460,
+      "stato": "Rimosso dopo 1.5.0"
+    },
+    {
+      "test_path": "packages/ui/tests/example.spec.ts",
+      "fonte": "E2EGit_db",
+      "nascita_tag": "v1.0.0",
+      "nascita_data": "2024-04-30",
+      "ultimo_tag": "1.5.0",
+      "versioni_vita": 16,
+      "n_modifiche": 0,
+      "max_ver_invariate": 16,
+      "max_gap_inizio": "v1.0.0",
+      "max_gap_fine": "1.5.0",
+      "max_gap_date": "2024-04-30 -> 2025-11-05",
+      "max_gap_commit": 460,
+      "stato": "Rimosso dopo 1.5.0"
+    },
+    {
+      "test_path": "packages/ui/tests/happy-path.spec.ts",
+      "fonte": "E2EGit_db",
+      "nascita_tag": "v1.0.0",
+      "nascita_data": "2024-04-30",
+      "ultimo_tag": "1.5.0",
+      "versioni_vita": 16,
+      "n_modifiche": 0,
+      "max_ver_invariate": 16,
+      "max_gap_inizio": "v1.0.0",
+      "max_gap_fine": "1.5.0",
+      "max_gap_date": "2024-04-30 -> 2025-11-05",
+      "max_gap_commit": 460,
+      "stato": "Rimosso dopo 1.5.0"
+    }
+  ],
+  "per_file_stats_all": [
+    {
+      "test_path": "packages/ui/tests-examples/demo-todo-app.spec.ts",
+      "fonte": "E2EGit_db",
+      "nascita_tag": "v1.0.0",
+      "nascita_data": "2024-04-30",
+      "ultimo_tag": "1.5.0",
+      "versioni_vita": 16,
+      "n_modifiche": 0,
+      "max_ver_invariate": 16,
+      "max_gap_inizio": "v1.0.0",
+      "max_gap_fine": "1.5.0",
+      "max_gap_date": "2024-04-30 -> 2025-11-05",
+      "max_gap_commit": 460,
+      "stato": "Rimosso dopo 1.5.0"
+    },
+    {
+      "test_path": "packages/ui/tests/example.spec.ts",
+      "fonte": "E2EGit_db",
+      "nascita_tag": "v1.0.0",
+      "nascita_data": "2024-04-30",
+      "ultimo_tag": "1.5.0",
+      "versioni_vita": 16,
+      "n_modifiche": 0,
+      "max_ver_invariate": 16,
+      "max_gap_inizio": "v1.0.0",
+      "max_gap_fine": "1.5.0",
+      "max_gap_date": "2024-04-30 -> 2025-11-05",
+      "max_gap_commit": 460,
+      "stato": "Rimosso dopo 1.5.0"
+    },
+    {
+      "test_path": "packages/ui/tests/happy-path.spec.ts",
+      "fonte": "E2EGit_db",
+      "nascita_tag": "v1.0.0",
+      "nascita_data": "2024-04-30",
+      "ultimo_tag": "1.5.0",
+      "versioni_vita": 16,
+      "n_modifiche": 0,
+      "max_ver_invariate": 16,
+      "max_gap_inizio": "v1.0.0",
+      "max_gap_fine": "1.5.0",
+      "max_gap_date": "2024-04-30 -> 2025-11-05",
+      "max_gap_commit": 460,
+      "stato": "Rimosso dopo 1.5.0"
+    }
+  ]
+}

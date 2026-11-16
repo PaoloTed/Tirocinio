@@ -1,0 +1,21 @@
+# Dockerfile auto-generato per css (Cluster 2: v2.0.1 - v2.0.4)
+# Versioni coperte: v2.0.1, v2.0.2, v2.0.3, v2.0.4
+FROM mcr.microsoft.com/playwright:v1.64.1-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm install && \
+    (cd /app/benchmarks && npx playwright install chromium) && \
+    bun run build:rust:wasm && \
+    bun run turbo run build --filter=@master/css-runtime --filter=@master/css-tooling --concurrency=2
+
+EXPOSE 3000
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "(cd /app/benchmarks && bun --bun vitest run tests ${TEST_ARGS:-})"]

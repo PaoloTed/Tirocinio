@@ -1,0 +1,18 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: xtermjs/xterm.js
+==============================================================================================================
+Tag analizzati (semver): 90 | Range completo: 0.9.1 (2014-04-10) -> 6.0.0 (2025-12-22)
+File di test E2E tracciati: 7 (di cui 5 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+Nessun intervallo di >= 2 versioni consecutive con suite E2E completamente invariata.
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------
+4      | 0    | 5.3.0 -> 6.0.0                       | 1059   | Attivo (mai modificato)   | test/playwright/CharWidth.test.ts
+3      | 1    | 5.4.0 -> 6.0.0                       | 673    | Attivo (modificato)       | test/playwright/InputHandler.test.ts
+3      | 1    | 5.4.0 -> 6.0.0                       | 673    | Attivo (modificato)       | test/playwright/Parser.test.ts
+3      | 0    | 5.4.0 -> 6.0.0                       | 673    | Attivo (mai modificato)   | test/playwright/Renderer.test.ts
+2      | 2    | 5.4.0 -> 5.5.0                       | 31     | Attivo (modificato)       | test/playwright/MouseTracking.test.ts
+2      | 2    | 5.4.0 -> 5.5.0                       | 31     | Attivo (modificato)       | test/playwright/Terminal.test.ts
+1      | 2    | 5.4.0 -> 5.4.0                       | 0      | Attivo (modificato)       | test/playwright/SharedRendererTests.ts

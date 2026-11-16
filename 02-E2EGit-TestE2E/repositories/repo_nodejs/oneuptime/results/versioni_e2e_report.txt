@@ -1,0 +1,42 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: oneuptime/oneuptime
+==============================================================================================================
+Tag analizzati (semver): 1266 | Range completo: v4.0.0 (2022-02-05) -> 14.2.0 (2026-11-15)
+File di test E2E tracciati: 504 (di cui 9 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+N.Ver  | Tag Inizio           | Tag Fine             | Date                     | File  | Commit
+----------------------------------------------------------------------------------------------------
+299    | 7.0.18               | 7.0.1195             | 2023-05-16 -> 2023-12-11 | 4     | 2331
+151    | 7.0.1225             | 7.0.2092             | 2023-12-14 -> 2024-04-25 | 4     | 1714
+140    | 7.0.3291             | 7.0.4395             | 2024-11-25 -> 2025-06-10 | 12    | 1692
+111    | 10.0.46              | 11.0.1               | 2026-04-07 -> 2026-06-12 | 13    | 1253
+64     | 7.0.2666             | 7.0.3260             | 2024-06-27 -> 2024-11-20 | 9     | 1126
+54     | 7.0.4415             | 7.0.4981             | 2025-06-11 -> 2025-08-16 | 12    | 871
+50     | 7.0.5007             | 8.0.5567             | 2025-08-19 -> 2025-11-07 | 13    | 1335
+46     | 7.0.2171             | 7.0.2363             | 2024-04-30 -> 2024-05-28 | 9     | 364
+29     | 11.0.12              | 11.3.22              | 2026-06-23 -> 2026-07-05 | 16    | 176
+22     | 7.0.2371             | 7.0.2525             | 2024-05-29 -> 2024-06-11 | 9     | 259
+20     | 10.0.18              | 10.0.42              | 2026-03-06 -> 2026-03-31 | 10    | 491
+18     | 9.3.2                | 9.4.6                | 2026-01-07 -> 2026-01-22 | 12    | 411
+16     | 9.4.11               | 10.0.17              | 2026-01-28 -> 2026-03-02 | 12    | 761
+14     | 8.0.5570             | 9.2.4                | 2025-11-10 -> 2025-12-04 | 12    | 404
+14     | 11.5.0               | 11.6.0               | 2026-07-12 -> 2026-07-22 | 19    | 276
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------
+611    | 4    | 7.0.2550 -> 13.0.6                   | 13610  | Rimosso dopo 13.0.6       | E2E/Tests/Home/SignIn.spec.ts
+611    | 4    | 7.0.2550 -> 13.0.6                   | 13610  | Rimosso dopo 13.0.6       | E2E/Tests/Home/SignUp.spec.ts
+610    | 4    | 7.0.2571 -> 13.0.6                   | 13565  | Rimosso dopo 13.0.6       | E2E/Tests/Accounts/Login.spec.ts
+534    | 3    | 7.0.3291 -> 13.0.6                   | 12258  | Rimosso dopo 13.0.6       | E2E/Tests/App/StatusCheck.spec.ts
+534    | 3    | 7.0.3291 -> 13.0.6                   | 12258  | Rimosso dopo 13.0.6       | E2E/Tests/StatusPage/Basic.spec.ts
+389    | 9    | 7.0.4415 -> 13.0.0                   | 9971   | Rimosso dopo 13.0.6       | E2E/Tests/Accounts/Register.spec.ts
+344    | 7    | 7.0.2550 -> 9.2.25                   | 6160   | Rimosso dopo 13.0.6       | E2E/Tests/Home/Navigation.spec.ts
+303    | 1    | 7.0.3291 -> 10.0.17                  | 6734   | Rimosso dopo 10.0.17      | E2E/Tests/IncomingRequestIngest/StatusCheck.spec.ts
+303    | 0    | 7.0.3291 -> 10.0.17                  | 6734   | Rimosso dopo 10.0.17      | E2E/Tests/ProbeIngest/StatusCheck.spec.ts
+299    | 0    | 7.0.18 -> 7.0.1195                   | 2331   | Rimosso dopo 7.0.1195     | Playwright/Tests/Home/Landing.spec.ts
+299    | 0    | 7.0.18 -> 7.0.1195                   | 2331   | Rimosso dopo 7.0.1195     | Playwright/Tests/Home/Navigation.spec.ts
+299    | 0    | 7.0.18 -> 7.0.1195                   | 2331   | Rimosso dopo 7.0.1195     | Playwright/Tests/Home/SignIn.spec.ts
+299    | 0    | 7.0.18 -> 7.0.1195                   | 2331   | Rimosso dopo 7.0.1195     | Playwright/Tests/Home/SignUp.spec.ts
+276    | 6    | 9.2.7 -> 13.0.6                      | 7829   | Rimosso dopo 13.0.6       | E2E/Tests/Home/Landing.spec.ts
+247    | 1    | 9.4.11 -> 13.0.6                     | 6285   | Rimosso dopo 13.0.6       | E2E/Tests/Home/Sitemap.spec.ts

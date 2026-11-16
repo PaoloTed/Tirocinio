@@ -1,0 +1,42 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: tldraw/tldraw
+==============================================================================================================
+Tag analizzati (semver): 294 | Range completo: v0.0.23 (2021-08-05) -> v5.6.0 (2026-10-28)
+File di test E2E tracciati: 73 (di cui 15 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+N.Ver  | Tag Inizio           | Tag Fine             | Date                     | File  | Commit
+----------------------------------------------------------------------------------------------------
+13     | v4.5.0               | v4.5.12              | 2026-03-18 -> 2026-05-13 | 37    | 31
+10     | v3.0.0               | v3.3.3               | 2024-09-13 -> 2024-11-01 | 17    | 123
+8      | v3.14.0              | v3.15.4              | 2025-07-03 -> 2025-08-28 | 29    | 142
+8      | v0.0.23              | v0.0.30              | 2021-08-05 -> 2021-08-08 | 1     | 52
+7      | v2.4.0               | v2.4.6               | 2024-07-22 -> 2024-08-29 | 18    | 13
+6      | v4.0.0               | v4.0.5               | 2025-09-18 -> 2026-05-13 | 31    | 21
+5      | v4.2.0               | v4.2.4               | 2025-11-19 -> 2026-05-13 | 35    | 18
+5      | v3.13.0              | v3.13.4              | 2025-05-22 -> 2025-06-30 | 25    | 17
+5      | v2.1.0               | v2.1.4               | 2024-04-23 -> 2024-04-29 | 19    | 11
+5      | v2.2.0               | v2.2.4               | 2024-06-11 -> 2024-06-24 | 19    | 8
+4      | v4.3.0               | v4.3.3               | 2026-01-21 -> 2026-05-13 | 35    | 21
+4      | v4.1.0               | v4.1.3               | 2025-10-15 -> 2026-05-13 | 31    | 18
+4      | v3.10.0              | v3.10.3              | 2025-03-11 -> 2025-03-18 | 25    | 11
+4      | v5.5.0               | v5.5.4               | 2026-09-30 -> 2026-10-28 | 55    | 9
+4      | v5.2.2               | v5.2.5               | 2026-07-02 -> 2026-07-15 | 51    | 6
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------
+122    | 1    | v2.1.0 -> v5.6.0                     | 4936   | Attivo (modificato)       | apps/examples/e2e/tests/test-canvas-events.spec.ts
+74     | 2    | v2.0.0 -> v4.0.5                     | 2401   | Attivo (modificato)       | apps/examples/e2e/tests/test-main-menu.spec.ts
+74     | 2    | v2.0.0 -> v4.0.5                     | 2401   | Attivo (modificato)       | apps/examples/e2e/tests/test-navigation-panel.spec.ts
+73     | 0    | v3.6.0 -> v5.1.1                     | 2814   | Rimosso dopo v5.1.1       | apps/dotcom/client/e2e/tests/client-too-old.spec.ts
+71     | 0    | v3.7.0 -> v5.1.1                     | 2747   | Rimosso dopo v5.1.1       | apps/dotcom/client/e2e/tests/legacy.spec.ts
+68     | 3    | v2.0.0 -> v3.15.6                    | 2155   | Attivo (modificato)       | apps/examples/e2e/tests/test-toolbar.spec.ts
+67     | 0    | v3.14.0 -> v5.6.0                    | 3141   | Attivo (mai modificato)   | apps/dotcom/client/e2e/tests/staging.spec.ts
+65     | 6    | v2.1.0 -> v3.15.6                    | 1944   | Attivo (modificato)       | apps/examples/e2e/tests/test-routes.spec.ts
+58     | 5    | v2.0.0 -> v3.13.4                    | 1647   | Attivo (modificato)       | apps/examples/e2e/tests/test-page-menu.spec.ts
+55     | 2    | v3.13.0 -> v5.1.1                    | 2234   | Rimosso dopo v5.1.1       | apps/dotcom/client/e2e/tests/not-logged-in.spec.ts
+53     | 3    | v3.0.0 -> v4.0.5                     | 1688   | Attivo (modificato)       | apps/examples/e2e/tests/test-smoke.spec.ts
+51     | 4    | v4.1.0 -> v5.6.0                     | 2671   | Attivo (modificato)       | apps/examples/e2e/tests/test-clipboard.spec.ts
+50     | 3    | v3.5.0 -> v4.2.4                     | 1695   | Attivo (modificato)       | apps/examples/e2e/tests/test-context-menu.spec.ts
+43     | 3    | v3.4.0 -> v4.0.5                     | 1511   | Attivo (modificato)       | apps/examples/e2e/tests/test-actions-menu.spec.ts
+42     | 6    | v4.3.0 -> v5.6.0                     | 2108   | Attivo (modificato)       | apps/examples/e2e/tests/test-shapes.spec.ts

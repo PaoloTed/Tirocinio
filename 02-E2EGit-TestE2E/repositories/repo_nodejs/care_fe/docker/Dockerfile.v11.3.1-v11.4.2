@@ -1,0 +1,17 @@
+# Dockerfile auto-generato per care_fe (Cluster 1: v11.3.1 - v11.4.2)
+# Versioni coperte: v11.3.1, v11.4.1, v11.4.2
+FROM cypress/browsers:node-14.0.0-chrome-latest
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm ci && \
+    npm run build
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "npx cypress run ${TEST_ARGS:-}"]

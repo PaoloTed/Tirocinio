@@ -1,0 +1,23 @@
+# Dockerfile auto-generato per novu (Cluster 1: v0.4.0 - v0.4.2)
+# Versioni coperte: v0.4.0, v0.4.1, v0.4.2
+FROM cypress/browsers:node-14.0.0-chrome-latest
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+# Dipendenze di compilazione per moduli nativi C/C++
+RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN pnpm install --frozen-lockfile && \
+    (cd /app/apps/web && pnpm install --frozen-lockfile) && \
+    CI='' pnpm build:api
+
+EXPOSE 4200
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "(cd /app/apps/api && pnpm test:e2e && pnpm test ${TEST_ARGS:-})"]

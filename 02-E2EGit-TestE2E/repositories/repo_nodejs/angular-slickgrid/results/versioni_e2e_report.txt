@@ -1,0 +1,42 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: ghiscoding/angular-slickgrid
+==============================================================================================================
+Tag analizzati (semver): 361 | Range completo: v0.2.6 (2017-10-06) -> v8.14.1 (2025-05-08)
+File di test E2E tracciati: 126 (di cui 35 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+N.Ver  | Tag Inizio           | Tag Fine             | Date                     | File  | Commit
+----------------------------------------------------------------------------------------------------
+19     | v2.4.7               | v2.9.6               | 2019-04-09 -> 2019-07-12 | 3     | 251
+8      | v2.17.12             | v2.18.7              | 2020-05-19 -> 2020-05-26 | 18    | 18
+6      | v7.3.0               | v7.6.0               | 2024-01-21 -> 2024-03-23 | 35    | 87
+6      | v2.30.0              | v2.30.5              | 2021-06-29 -> 2021-07-21 | 30    | 19
+6      | v2.17.5              | v2.17.10             | 2020-02-21 -> 2020-03-03 | 16    | 18
+5      | v4.2.2               | v4.2.6               | 2022-07-05 -> 2022-07-28 | 35    | 42
+5      | v6.5.0               | v6.6.2               | 2023-11-10 -> 2023-11-26 | 33    | 25
+5      | v3.0.0               | v3.0.5               | 2021-07-19 -> 2021-07-23 | 31    | 11
+4      | v5.6.0               | v5.6.4               | 2023-02-23 -> 2023-05-19 | 35    | 83
+4      | v2.23.3              | v2.25.0              | 2020-12-02 -> 2021-01-06 | 26    | 64
+4      | v4.1.1               | v4.1.4               | 2022-01-18 -> 2022-04-28 | 33    | 55
+4      | v8.13.2              | v8.13.5              | 2025-03-19 -> 2025-04-10 | 46    | 37
+4      | v5.2.0               | v5.3.0               | 2022-12-21 -> 2023-01-21 | 35    | 26
+4      | v2.11.0              | v2.11.3              | 2019-10-02 -> 2019-10-08 | 8     | 19
+4      | v2.10.2              | v2.10.5              | 2019-08-26 -> 2019-08-29 | 8     | 14
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------
+60     | 2    | v5.4.0 -> v8.11.0                    | 1119   | Attivo (modificato)       | test/cypress/e2e/home.cy.ts
+57     | 1    | v2.16.0 -> v2.29.1                   | 574    | Rimosso dopo v4.1.4       | test/cypress/integration/example02.spec.js
+55     | 3    | v2.16.2 -> v2.29.1                   | 558    | Rimosso dopo v4.1.4       | test/cypress/integration/example26.spec.js
+55     | 3    | v2.16.0 -> v2.28.2                   | 514    | Rimosso dopo v4.1.4       | test/cypress/integration/example09.spec.js
+49     | 3    | v2.14.3 -> v2.22.5                   | 401    | Rimosso dopo v4.1.4       | test/cypress/integration/home.spec.js
+49     | 3    | v2.16.2 -> v2.26.1                   | 431    | Rimosso dopo v4.1.4       | test/cypress/integration/example04.spec.js
+48     | 4    | v2.16.0 -> v2.25.0                   | 400    | Rimosso dopo v4.1.4       | test/cypress/integration/example21.spec.js
+45     | 8    | v2.17.0 -> v2.26.1                   | 410    | Rimosso dopo v4.1.4       | test/cypress/integration/example16.spec.js
+43     | 3    | v6.5.0 -> v8.11.0                    | 657    | Attivo (modificato)       | test/cypress/e2e/example09.cy.ts
+43     | 4    | v6.5.0 -> v8.11.0                    | 657    | Attivo (modificato)       | test/cypress/e2e/example22.cy.ts
+42     | 3    | v6.5.0 -> v8.10.2                    | 630    | Attivo (modificato)       | test/cypress/e2e/example02.cy.ts
+41     | 3    | v2.16.0 -> v2.22.5                   | 291    | Rimosso dopo v4.1.4       | test/cypress/integration/example07.spec.js
+41     | 4    | v6.5.0 -> v8.10.1                    | 601    | Attivo (modificato)       | test/cypress/e2e/example10.cy.ts
+38     | 4    | v2.14.1 -> v2.19.1                   | 324    | Rimosso dopo v4.1.4       | test/cypress/integration/example25.spec.js
+37     | 4    | v2.17.12 -> v2.28.2                  | 388    | Rimosso dopo v4.1.4       | test/cypress/integration/example29.spec.js

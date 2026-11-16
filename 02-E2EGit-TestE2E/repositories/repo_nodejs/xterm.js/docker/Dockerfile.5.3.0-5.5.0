@@ -1,0 +1,25 @@
+# Dockerfile auto-generato per xterm.js (Cluster 1: 5.3.0 - 5.5.0)
+# Versioni coperte: 5.3.0, 5.4.0, 5.5.0
+FROM mcr.microsoft.com/playwright:v1.37.1-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN yarn --frozen-lockfile && yarn install-addons && \
+    yarn --frozen-lockfile && yarn install-addons && \
+    yarn --frozen-lockfile && yarn install-addons && \
+    yarn --frozen-lockfile && yarn install-addons && \
+    yarn --frozen-lockfile && yarn install-addons && \
+    yarn --frozen-lockfile && yarn install-addons && \
+    yarn --frozen-lockfile && yarn install-addons && \
+    (npx playwright install chromium) && \
+    yarn setup && \
+    yarn build-demo
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "npm run test-unit ${TEST_ARGS:-}"]

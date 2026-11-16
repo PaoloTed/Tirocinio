@@ -1,0 +1,32 @@
+# Dockerfile auto-generato per rocket.chat (Cluster 3: 2.4.0 - 2.4.14)
+# Versioni coperte: 2.4.0, 2.4.1, 2.4.2, 2.4.3, 2.4.4, 2.4.5, 2.4.6, 2.4.7, 2.4.8, 2.4.9, 2.4.10, 2.4.11, 2.4.12, 2.4.13, 2.4.14
+FROM node:8-bookworm
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+ENV CI=true
+ENV MONGO_URL=mongodb://localhost:27017
+ENV TOOL_NODE_FLAGS=--max_old_space_size=4096
+
+WORKDIR /app
+
+# Dipendenze di compilazione per moduli nativi C/C++
+RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN meteor npm install && \
+    mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test && \
+    npm i chromedriver && \
+    npm install && \
+    meteor npm install && \
+    meteor build --server-only --directory --debug /tmp/build-test && \
+    meteor build --server-only --directory /tmp/build-test && \
+    (cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -) && \
+    meteor build --server-only --directory /tmp/build-pr
+
+EXPOSE 27017
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", " ${TEST_ARGS:-}"]

@@ -1,0 +1,24 @@
+# Dockerfile auto-generato per webiny-js (Cluster 1: v6.0.0)
+# Versioni coperte: v6.0.0
+FROM cypress/browsers:node-24.0.0-chrome-latest
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+ENV NODE_OPTIONS=--max_old_space_size=4096
+ENV AWS_REGION=eu-central-1
+
+WORKDIR /app
+
+# Dipendenze di compilazione per moduli nativi C/C++
+RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN yarn install --frozen-lockfile && \
+    yarn build && \
+    yarn build && \
+    yarn build
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml & sleep 5 && (cd /app/cypress-tests && npx cypress run ${TEST_ARGS:-})"]

@@ -1,0 +1,26 @@
+ANALISI MULTI-VERSIONE E CLUSTERING DOCKER: novu
+Versioni analizzate: 3 | Cluster individuati: 1
+===================================================================================================================
+
+Tag        | Data       | Node     | PM   | E2E                | Porta | Build
+-------------------------------------------------------------------------------------------------------------------
+v0.4.0     | 2022-05-24 | 14.18.3  | pnpm | cypress 9.5.2      | 4200  | CI='' pnpm build:api
+v0.4.1     | 2022-05-29 | 14.18.3  | pnpm | cypress 9.5.2      | 4200  | CI='' pnpm build:api
+v0.4.2     | 2022-05-31 | 14.18.3  | pnpm | cypress 9.5.2      | 4200  | CI='' pnpm build:api
+
+===================================================================================================================
+DETTAGLIO CLUSTER (1 Dockerfile per cluster)
+===================================================================================================================
+
+[Cluster 1] Dockerfile.v0.4.0-v0.4.2 (3 versioni)
+  Versioni       : v0.4.0, v0.4.1, v0.4.2
+  Base Image     : cypress/browsers:node-14.0.0-chrome-latest
+  Node.js        : 14.18.3 (fonte: .nvmrc)
+  Package Manager: pnpm (fonte: pnpm-lock.yaml)
+  Framework E2E  : cypress 9.5.2 (dir: apps/web, cfg: apps/web/cypress.json)
+  Dip. native C++: bcrypt
+  CI Workflow    : .github/workflows/reusable-api-e2e.yml
+  Install        : pnpm install --frozen-lockfile && cd apps/web && pnpm install --frozen-lockfile
+  Build          : CI='' pnpm build:api
+  Serve          : - (porta: 4200)
+  Test           : cd apps/api && pnpm test:e2e && pnpm test

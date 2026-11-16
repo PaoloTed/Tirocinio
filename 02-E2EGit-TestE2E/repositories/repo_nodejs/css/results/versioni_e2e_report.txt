@@ -1,0 +1,29 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: master-co/css
+==============================================================================================================
+Tag analizzati (semver): 135 | Range completo: v1.0.0 (2022-03-16) -> v2.1.6 (2026-11-16)
+File di test E2E tracciati: 46 (di cui 6 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+N.Ver  | Tag Inizio           | Tag Fine             | Date                     | File  | Commit
+----------------------------------------------------------------------------------------------------
+10     | v2.0.0               | v2.1.4               | 2026-11-05 -> 2026-11-13 | 46    | 133
+2      | v2.1.5               | v2.1.6               | 2026-11-15 -> 2026-11-16 | 46    | 4
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/preset/e2e/base.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/atomic-order.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/bug-hunt-frame.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/bug-hunt-global-csp.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/bug-hunt-hydration.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/bug-hunt-static-retention.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/class-syntax-lifecycle.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/class-usages.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/complex.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/contents.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/correctness-regressions.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/edge-cases.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/engine-startup.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/execution-state.test.ts
+12     | 0    | v2.0.0 -> v2.1.6                     | 160    | Attivo (mai modificato)   | packages/runtime/e2e/global-manifest.test.ts

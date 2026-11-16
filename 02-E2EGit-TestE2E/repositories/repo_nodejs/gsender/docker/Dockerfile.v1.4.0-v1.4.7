@@ -1,0 +1,22 @@
+# Dockerfile auto-generato per gsender (Cluster 1: v1.4.0 - v1.4.7)
+# Versioni coperte: v1.4.0, v1.4.1, v1.4.2, v1.4.3, v1.4.4, v1.4.5, v1.4.6, v1.4.7
+FROM cypress/browsers:node-[16.0.0-chrome-latest
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+
+WORKDIR /app
+
+# Dipendenze di compilazione per moduli nativi C/C++
+RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm install && \
+    npm run build
+
+EXPOSE 8000
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "npx cypress run ${TEST_ARGS:-}"]

@@ -1,0 +1,27 @@
+# Dockerfile auto-generato per tldraw (Cluster 1: v4.5.0 - v4.5.12)
+# Versioni coperte: v4.5.0, v4.5.1, v4.5.2, v4.5.3, v4.5.4, v4.5.5, v4.5.6, v4.5.7, v4.5.8, v4.5.9, v4.5.10, v4.5.11, v4.5.12
+FROM mcr.microsoft.com/playwright:v1.58.2-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+ENV CI=1
+ENV PRINT_GITHUB_ANNOTATIONS=1
+ENV TLDRAW_ENV=development
+
+WORKDIR /app
+
+# Dipendenze di compilazione per moduli nativi C/C++
+RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*
+
+COPY . .
+
+# Installazione dipendenze, browser e build del progetto
+RUN yarn install --frozen-lockfile && \
+    (cd /app/apps/dotcom/client && yarn install --frozen-lockfile) && \
+    (cd /app/apps/dotcom/client && npx playwright install chromium) && \
+    yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+
+EXPOSE 3000
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "(cd /app/apps/dotcom/client && yarn run e2e ${TEST_ARGS:-})"]

@@ -1,0 +1,37 @@
+ANALISI MULTI-VERSIONE E CLUSTERING DOCKER: tldraw
+Versioni analizzate: 13 | Cluster individuati: 1
+===================================================================================================================
+
+Tag        | Data       | Node     | PM   | E2E                | Porta | Build
+-------------------------------------------------------------------------------------------------------------------
+v4.5.0     | 2026-03-18 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.1     | 2026-03-18 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.2     | 2026-03-18 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.3     | 2026-03-18 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.4     | 2026-03-26 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.5     | 2026-04-01 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.6     | 2026-04-01 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.7     | 2026-04-03 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.8     | 2026-04-07 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.9     | 2026-04-14 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.10    | 2026-04-21 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.11    | 2026-05-01 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+v4.5.12    | 2026-05-13 | 20.0.0   | yarn | playwright 1.58.2  | 3000  | yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+
+===================================================================================================================
+DETTAGLIO CLUSTER (1 Dockerfile per cluster)
+===================================================================================================================
+
+[Cluster 1] Dockerfile.v4.5.0-v4.5.12 (13 versioni)
+  Versioni       : v4.5.0, v4.5.1, v4.5.2, v4.5.3, v4.5.4, v4.5.5, v4.5.6, v4.5.7, v4.5.8, v4.5.9, v4.5.10, v4.5.11, v4.5.12
+  Base Image     : mcr.microsoft.com/playwright:v1.58.2-jammy
+  Node.js        : 20.0.0 (fonte: package.json#engines.node)
+  Package Manager: yarn (fonte: package.json#packageManager)
+  Framework E2E  : playwright 1.58.2 (dir: apps/dotcom/client, cfg: apps/dotcom/client/playwright.config.ts)
+  Dip. native C++: better-sqlite3, sharp, sqlite3
+  CI Workflow    : .github/workflows/playwright-dotcom.yml
+  Env CI         : CI=1, PRINT_GITHUB_ANNOTATIONS=1, TLDRAW_ENV=development
+  Install        : yarn install --frozen-lockfile && cd apps/dotcom/client && yarn install --frozen-lockfile
+  Build          : yarn run -T lazy refresh-assets && yarn run -T lazy run prebuild && yarn run -T lazy run build-i18n && cd apps/dotcom/client && yarn build
+  Serve          : - (porta: 3000)
+  Test           : cd apps/dotcom/client && yarn run e2e
