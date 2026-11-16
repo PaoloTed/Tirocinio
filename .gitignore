@@ -1,10 +1,17 @@
-# Dati e database pesanti
+# Dati, archivi e database pesanti
 *.db
+*.db.gz
+*.zip
 data/*.db
 02-E2EGit-TestE2E/data/*.db
 02-E2EGit-TestE2E/data/clones/
 repositories/**/repo/
 **/repositories/**/repo/
+*_only_app.*
+*.~lock.*
+.DS_Store
+__MACOSX/
+02-E2EGit-TestE2E/data/IST2025_Zenodo/E2E-Miner-IST/clone/
 
 # Python cache e bytecode
 __pycache__/

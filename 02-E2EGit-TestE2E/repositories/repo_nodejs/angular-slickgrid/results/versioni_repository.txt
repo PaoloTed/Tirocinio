@@ -1,4 +1,4 @@
-ELENCO VERSIONI REPOSITORY (Node.js): angular-slickgrid (Totale: 373)
+ELENCO VERSIONI REPOSITORY: angular-slickgrid (Totale: 373)
 ====================================================================================================
 
 Anno     | N. Versioni  | Prima Versione       | Ultima Versione     
