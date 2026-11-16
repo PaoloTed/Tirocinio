@@ -1,6 +1,6 @@
 # Dockerfile auto-generato per gsender (Cluster 2: v1.4.8 - v1.4.12)
 # Versioni coperte: v1.4.8, v1.4.9, v1.4.10, v1.4.11, v1.4.12
-FROM cypress/browsers:node-[20.0.0-chrome-latest
+FROM cypress/browsers:node-20.0.0-chrome-latest
 
 ARG APP_VERSION=v0.0.0
 ENV HUSKY=0
@@ -13,8 +13,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends python3 make g+
 COPY . .
 
 # Installazione dipendenze, browser e build del progetto
-RUN npm install && \
-    npm run build
+RUN npm install -g yarn && yarn global add node-gyp && \
+    yarn install && yarn lint && \
+    yarn install && \
+    yarn run build && \
+    yarn run build-latest && \
+    yarn run build:linux && \
+    yarn run build:macos && \
+    yarn run build:windows
 
 EXPOSE 8000
 

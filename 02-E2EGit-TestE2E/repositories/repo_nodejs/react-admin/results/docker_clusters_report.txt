@@ -4,48 +4,48 @@ Versioni analizzate: 42 | Cluster individuati: 2
 
 Tag        | Data       | Node     | PM   | E2E                | Porta | Build
 -------------------------------------------------------------------------------------------------------------------
-v4.12.0    | 2023-07-03 | 16.x     | yarn | cypress 10.9.0     | 8080  | yarn run build
-v4.12.1    | 2023-07-10 | 16.x     | yarn | cypress 10.9.0     | 8080  | yarn run build
-v4.12.2    | 2023-07-21 | 16.x     | yarn | cypress 10.9.0     | 8080  | yarn run build
-v4.12.3    | 2023-07-28 | 16.x     | yarn | cypress 10.9.0     | 8080  | yarn run build
-v4.12.4    | 2023-08-08 | 16.x     | yarn | cypress 10.9.0     | 8080  | yarn run build
-v4.13.0    | 2023-08-14 | 16.x     | yarn | cypress 10.9.0     | 8080  | yarn run build
-v4.13.1    | 2023-08-21 | 16.x     | yarn | cypress 10.9.0     | 8080  | yarn run build
-v4.13.2    | 2023-08-25 | 16.x     | yarn | cypress 10.9.0     | 8080  | yarn run build
-v4.13.3    | 2023-09-01 | 16.x     | yarn | cypress 10.9.0     | 8080  | yarn run build
-v4.13.4    | 2023-09-08 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.14.0    | 2023-09-08 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.14.1    | 2023-09-15 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.14.2    | 2023-09-22 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.14.3    | 2023-09-22 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.14.4    | 2023-09-29 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.14.5    | 2023-10-06 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.14.6    | 2023-10-12 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.15.0    | 2023-10-12 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.15.1    | 2023-10-20 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.15.2    | 2023-10-27 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.15.3    | 2023-11-03 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.15.4    | 2023-11-10 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.15.5    | 2023-11-17 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.0    | 2023-11-17 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.1    | 2023-11-24 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.2    | 2023-12-04 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.3    | 2023-12-15 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.4    | 2023-12-22 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.5    | 2024-01-05 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.6    | 2024-01-12 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.7    | 2024-01-19 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.8    | 2024-01-26 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.9    | 2024-02-02 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.10   | 2024-02-09 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.11   | 2024-02-16 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.12   | 2024-03-01 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.13   | 2024-03-15 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.14   | 2024-03-29 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.15   | 2024-04-05 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.16   | 2024-04-23 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.17   | 2024-05-02 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
-v4.16.18   | 2024-05-20 | 16.x     | yarn | cypress 10.9.0     | 8080  | make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
+v4.12.0    | 2023-07-03 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && make build-crm
+v4.12.1    | 2023-07-10 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && make build-crm
+v4.12.2    | 2023-07-21 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && make build-crm
+v4.12.3    | 2023-07-28 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && make build-crm
+v4.12.4    | 2023-08-08 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && make build-crm
+v4.13.0    | 2023-08-14 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && make build-crm
+v4.13.1    | 2023-08-21 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && make build-crm
+v4.13.2    | 2023-08-25 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && make build-crm
+v4.13.3    | 2023-09-01 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && make build-crm
+v4.13.4    | 2023-09-08 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.14.0    | 2023-09-08 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.14.1    | 2023-09-15 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.14.2    | 2023-09-22 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.14.3    | 2023-09-22 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.14.4    | 2023-09-29 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.14.5    | 2023-10-06 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.14.6    | 2023-10-12 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.15.0    | 2023-10-12 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.15.1    | 2023-10-20 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.15.2    | 2023-10-27 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.15.3    | 2023-11-03 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.15.4    | 2023-11-10 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.15.5    | 2023-11-17 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.0    | 2023-11-17 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.1    | 2023-11-24 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.2    | 2023-12-04 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.3    | 2023-12-15 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.4    | 2023-12-22 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.5    | 2024-01-05 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.6    | 2024-01-12 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.7    | 2024-01-19 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.8    | 2024-01-26 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.9    | 2024-02-02 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.10   | 2024-02-09 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.11   | 2024-02-16 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.12   | 2024-03-01 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.13   | 2024-03-15 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.14   | 2024-03-29 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.15   | 2024-04-05 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.16   | 2024-04-23 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.17   | 2024-05-02 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
+v4.16.18   | 2024-05-20 | 16       | yarn | cypress 10.9.0     | 8080  | make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
 
 ===================================================================================================================
 DETTAGLIO CLUSTER (1 Dockerfile per cluster)
@@ -54,23 +54,23 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 [Cluster 1] Dockerfile.v4.12.0-v4.13.3 (9 versioni)
   Versioni       : v4.12.0, v4.12.1, v4.12.2, v4.12.3, v4.12.4, v4.13.0, v4.13.1, v4.13.2, v4.13.3
   Base Image     : cypress/browsers:node-16.0.0-chrome-latest
-  Node.js        : 16.x (fonte: .github/workflows/test.yml)
+  Node.js        : 16 (fonte: .github/workflows/test.yml)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : cypress 10.9.0 (dir: cypress, cfg: cypress/cypress.config.js)
-  CI Workflow    : -
+  CI Workflow    : .github/workflows/test.yml
   Install        : yarn install --frozen-lockfile
-  Build          : yarn run build
+  Build          : make build && make build-demo && make build-crm
   Serve          : - (porta: 8080)
   Test           : cd cypress && npx cypress run
 
 [Cluster 2] Dockerfile.v4.13.4-v4.16.18 (33 versioni)
   Versioni       : v4.13.4, v4.14.0, v4.14.1, v4.14.2, v4.14.3, v4.14.4, v4.14.5, v4.14.6, v4.15.0, v4.15.1, v4.15.2, v4.15.3, v4.15.4, v4.15.5, v4.16.0, v4.16.1, v4.16.2, v4.16.3, v4.16.4, v4.16.5, v4.16.6, v4.16.7, v4.16.8, v4.16.9, v4.16.10, v4.16.11, v4.16.12, v4.16.13, v4.16.14, v4.16.15, v4.16.16, v4.16.17, v4.16.18
   Base Image     : cypress/browsers:node-16.0.0-chrome-latest
-  Node.js        : 16.x (fonte: .github/workflows/test.yml)
+  Node.js        : 16 (fonte: .github/workflows/test.yml)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : cypress 10.9.0 (dir: cypress, cfg: cypress/cypress.config.js)
   CI Workflow    : .github/workflows/test.yml
   Install        : yarn install --frozen-lockfile
-  Build          : make build && make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build && make build-crm && unzip -o -u demo-build.zip
+  Build          : make build && make build-demo && zip demo-build.zip -r examples/demo/dist examples/demo/package.json && make build-crm && unzip -o -u demo-build.zip
   Serve          : cd ./examples/demo/dist && python3 -m http.server 4173 (porta: 8080)
   Test           : cd cypress && npx cypress run

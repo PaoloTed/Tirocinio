@@ -20,7 +20,6 @@ RUN meteor npm install && \
     mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test && \
     npm i chromedriver && \
     npm install && \
-    meteor npm install && \
     meteor build --server-only --directory --debug /tmp/build-test && \
     meteor build --server-only --directory /tmp/build-test && \
     (cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd -) && \

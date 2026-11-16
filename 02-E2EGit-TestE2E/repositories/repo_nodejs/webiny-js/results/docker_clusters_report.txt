@@ -4,22 +4,22 @@ Versioni analizzate: 16 | Cluster individuati: 5
 
 Tag        | Data       | Node     | PM   | E2E                | Porta | Build
 -------------------------------------------------------------------------------------------------------------------
-v6.0.0     | 2026-03-11 | 24       | yarn | cypress 15.11.0    | -     | yarn build && yarn build && yarn build
-v6.1.0     | 2026-03-31 | 24       | yarn | cypress 15.13.0    | -     | yarn build && yarn build && yarn build
-v6.2.0     | 2026-04-15 | 24       | yarn | cypress 15.13.1    | -     | yarn build && yarn build && yarn build
-v6.3.0     | 2026-05-05 | 24       | yarn | cypress 15.14.2    | -     | yarn build && yarn build && yarn build
-v6.4.0     | 2026-06-01 | 24       | yarn | cypress 15.15.0    | -     | yarn build && yarn build && yarn build
-v6.4.1     | 2026-06-02 | 24       | yarn | cypress 15.15.0    | -     | yarn build && yarn build && yarn build
-v6.4.2     | 2026-06-09 | 24       | yarn | cypress 15.15.0    | -     | yarn build && yarn build && yarn build
-v6.4.3     | 2026-06-24 | 24       | yarn | cypress 15.15.0    | -     | yarn build && yarn build && yarn build
-v6.4.4     | 2026-07-21 | 24       | yarn | cypress 15.18.1    | -     | yarn build && yarn build && yarn build
-v6.4.5     | 2026-07-22 | 24       | yarn | cypress 15.18.1    | -     | yarn build && yarn build && yarn build
-v6.4.6     | 2026-08-04 | 24       | yarn | cypress 15.18.1    | -     | yarn build && yarn build && yarn build
-v6.4.7     | 2026-08-07 | 24       | yarn | cypress 15.18.1    | -     | yarn build && yarn build && yarn build
-v6.4.8     | 2026-08-11 | 24       | yarn | cypress 15.18.1    | -     | yarn build && yarn build && yarn build
-v6.4.9     | 2026-08-26 | 24       | yarn | cypress 15.18.1    | -     | yarn build && yarn build && yarn build
-v6.4.10    | 2026-09-08 | 24       | yarn | cypress 15.18.1    | -     | yarn build && yarn build && yarn build
-v6.4.11    | 2026-09-11 | 24       | yarn | cypress 15.18.1    | -     | yarn build && yarn build && yarn build
+v6.0.0     | 2026-03-11 | 24       | yarn | cypress 15.11.0    | -     | yarn build
+v6.1.0     | 2026-03-31 | 24       | yarn | cypress 15.13.0    | -     | yarn build
+v6.2.0     | 2026-04-15 | 24       | yarn | cypress 15.13.1    | -     | yarn build
+v6.3.0     | 2026-05-05 | 24       | yarn | cypress 15.14.2    | -     | yarn build
+v6.4.0     | 2026-06-01 | 24       | yarn | cypress 15.15.0    | -     | yarn build
+v6.4.1     | 2026-06-02 | 24       | yarn | cypress 15.15.0    | -     | yarn build
+v6.4.2     | 2026-06-09 | 24       | yarn | cypress 15.15.0    | -     | yarn build
+v6.4.3     | 2026-06-24 | 24       | yarn | cypress 15.15.0    | -     | yarn build
+v6.4.4     | 2026-07-21 | 24       | yarn | cypress 15.18.1    | -     | yarn build
+v6.4.5     | 2026-07-22 | 24       | yarn | cypress 15.18.1    | -     | yarn build
+v6.4.6     | 2026-08-04 | 24       | yarn | cypress 15.18.1    | -     | yarn build
+v6.4.7     | 2026-08-07 | 24       | yarn | cypress 15.18.1    | -     | yarn build
+v6.4.8     | 2026-08-11 | 24       | yarn | cypress 15.18.1    | -     | yarn build
+v6.4.9     | 2026-08-26 | 24       | yarn | cypress 15.18.1    | -     | yarn build
+v6.4.10    | 2026-09-08 | 24       | yarn | cypress 15.18.1    | -     | yarn build
+v6.4.11    | 2026-09-11 | 24       | yarn | cypress 15.18.1    | -     | yarn build
 
 ===================================================================================================================
 DETTAGLIO CLUSTER (1 Dockerfile per cluster)
@@ -35,7 +35,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   CI Workflow    : .github/workflows/pullRequestsCommandE2e.yml
   Env CI         : NODE_OPTIONS=--max_old_space_size=4096, AWS_REGION=eu-central-1
   Install        : yarn install --frozen-lockfile
-  Build          : yarn build && yarn build && yarn build
+  Build          : yarn build
   Serve          : yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml (porta: -)
   Test           : cd cypress-tests && npx cypress run
 
@@ -49,7 +49,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   CI Workflow    : .github/workflows/pullRequestsCommandE2e.yml
   Env CI         : NODE_OPTIONS=--max_old_space_size=4096, AWS_REGION=eu-central-1
   Install        : yarn install --frozen-lockfile
-  Build          : yarn build && yarn build && yarn build
+  Build          : yarn build
   Serve          : yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml (porta: -)
   Test           : cd cypress-tests && npx cypress run
 
@@ -63,7 +63,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   CI Workflow    : .github/workflows/pullRequestsCommandE2e.yml
   Env CI         : NODE_OPTIONS=--max_old_space_size=4096, AWS_REGION=eu-central-1
   Install        : yarn install --frozen-lockfile
-  Build          : yarn build && yarn build && yarn build
+  Build          : yarn build
   Serve          : yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml (porta: -)
   Test           : cd cypress-tests && npx cypress run
 
@@ -77,7 +77,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   CI Workflow    : .github/workflows/pullRequestsCommandE2e.yml
   Env CI         : NODE_OPTIONS=--max_old_space_size=4096, AWS_REGION=eu-central-1
   Install        : yarn install --frozen-lockfile
-  Build          : yarn build && yarn build && yarn build
+  Build          : yarn build
   Serve          : yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml (porta: -)
   Test           : cd cypress-tests && npx cypress run
 
@@ -91,6 +91,6 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   CI Workflow    : .github/workflows/pullRequestsCommandE2e.yml
   Env CI         : NODE_OPTIONS=--max_old_space_size=4096, AWS_REGION=eu-central-1
   Install        : yarn install --frozen-lockfile
-  Build          : yarn build && yarn build && yarn build
+  Build          : yarn build
   Serve          : yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml (porta: -)
   Test           : cd cypress-tests && npx cypress run

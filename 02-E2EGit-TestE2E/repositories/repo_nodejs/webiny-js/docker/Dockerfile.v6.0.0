@@ -16,8 +16,6 @@ COPY . .
 
 # Installazione dipendenze, browser e build del progetto
 RUN yarn install --frozen-lockfile && \
-    yarn build && \
-    yarn build && \
     yarn build
 
 # Avvio server (se previsto) ed esecuzione di tutti i test E2E

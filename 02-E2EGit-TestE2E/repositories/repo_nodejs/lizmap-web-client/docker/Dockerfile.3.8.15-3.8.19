@@ -10,11 +10,11 @@ WORKDIR /app
 COPY . .
 
 # Installazione dipendenze, browser e build del progetto
-RUN npm ci && \
+RUN (cd /app/. && npm ci) && \
     (npx playwright install chromium) && \
     npm run build
 
 EXPOSE 8130
 
 # Avvio server (se previsto) ed esecuzione di tutti i test E2E
-CMD ["bash", "-c", "mkdir -p /tmp/e2e/lwc && mkdir -p /tmp/e2e/docker && docker logs lizmap${{ env.LZMBRANCH }}_test_qgis &> /tmp/e2e/docker/qgis-server.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_php &> /tmp/e2e/docker/php.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_nginx &> /tmp/e2e/docker/nginx.log | true && cp -r ../lizmap/var/log /tmp/e2e/lwc/ & until node -e \"require('http').get('http://localhost:8130', ()=>process.exit(0)).on('error', ()=>process.exit(1))\" 2>/dev/null; do sleep 2; done && npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }} ${TEST_ARGS:-}"]
+CMD ["bash", "-c", "mkdir -p /tmp/e2e/lwc && mkdir -p /tmp/e2e/docker && docker logs lizmap${{ env.LZMBRANCH }}_test_qgis &> /tmp/e2e/docker/qgis-server.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_php &> /tmp/e2e/docker/php.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_nginx &> /tmp/e2e/docker/nginx.log | true && cp -r ../lizmap/var/log /tmp/e2e/lwc/ & until node -e \"require('http').get('http://localhost:8130', ()=>process.exit(0)).on('error', ()=>process.exit(1))\" 2>/dev/null; do sleep 2; done && (cd /app/tests/end2end && npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }} ${TEST_ARGS:-})"]

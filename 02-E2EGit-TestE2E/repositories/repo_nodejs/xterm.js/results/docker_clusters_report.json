@@ -38,12 +38,6 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
         "yarn --frozen-lockfile && yarn install-addons"
       ],
       "build_cmds": [
@@ -92,12 +86,6 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
         "yarn --frozen-lockfile && yarn install-addons"
       ],
       "build_cmds": [
@@ -146,12 +134,6 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
-        "yarn --frozen-lockfile && yarn install-addons",
         "yarn --frozen-lockfile && yarn install-addons"
       ],
       "build_cmds": [
@@ -208,11 +190,6 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci",
-        "npm ci",
-        "npm ci",
-        "npm ci",
-        "npm ci",
         "npm ci"
       ],
       "build_cmds": [
@@ -270,12 +247,6 @@
         "native_deps": [],
         "needs_git_repo": false,
         "install_cmds": [
-          "yarn --frozen-lockfile && yarn install-addons",
-          "yarn --frozen-lockfile && yarn install-addons",
-          "yarn --frozen-lockfile && yarn install-addons",
-          "yarn --frozen-lockfile && yarn install-addons",
-          "yarn --frozen-lockfile && yarn install-addons",
-          "yarn --frozen-lockfile && yarn install-addons",
           "yarn --frozen-lockfile && yarn install-addons"
         ],
         "build_cmds": [
@@ -339,11 +310,6 @@
         "native_deps": [],
         "needs_git_repo": false,
         "install_cmds": [
-          "npm ci",
-          "npm ci",
-          "npm ci",
-          "npm ci",
-          "npm ci",
           "npm ci"
         ],
         "build_cmds": [

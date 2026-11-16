@@ -1,5 +1,5 @@
 ANALISI MULTI-VERSIONE E CLUSTERING DOCKER: umbrel
-Versioni analizzate: 16 | Cluster individuati: 1
+Versioni analizzate: 16 | Cluster individuati: 2
 ===================================================================================================================
 
 Tag        | Data       | Node     | PM   | E2E                | Porta | Build
@@ -25,14 +25,26 @@ v1.0.4     | 2024-03-26 | 18       | npm  | playwright 1.40.1  | 3000  | -
 DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 ===================================================================================================================
 
-[Cluster 1] Dockerfile.v1.0.0-1.5.0 (16 versioni)
-  Versioni       : v1.0.0, v1.0.1, v1.0.2, v1.0.3, v1.0.4, 1.1.0, 1.1.1, 1.1.2, 1.2.0, 1.2.1, 1.2.2, 1.3.0, 1.4.0, 1.4.1, 1.4.2, 1.5.0
+[Cluster 1] Dockerfile.v1.0.0-1.2.2 (11 versioni)
+  Versioni       : v1.0.0, v1.0.1, v1.0.2, v1.0.3, v1.0.4, 1.1.0, 1.1.1, 1.1.2, 1.2.0, 1.2.1, 1.2.2
   Base Image     : mcr.microsoft.com/playwright:v1.40.1-jammy
   Node.js        : 18 (fonte: fallback-anno(2024))
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : playwright 1.40.1 (dir: packages/ui, cfg: packages/ui/playwright.config.ts)
-  CI Workflow    : -
+  CI Workflow    : .github/workflows/ci.yml
   Install        : npm ci && cd packages/ui && npm ci
+  Build          : -
+  Serve          : - (porta: 3000)
+  Test           : cd packages/ui && npx playwright test
+
+[Cluster 2] Dockerfile.1.3.0-1.5.0 (5 versioni)
+  Versioni       : 1.3.0, 1.4.0, 1.4.1, 1.4.2, 1.5.0
+  Base Image     : mcr.microsoft.com/playwright:v1.40.1-jammy
+  Node.js        : 18 (fonte: .github/workflows/ci.yml)
+  Package Manager: npm (fonte: package-lock.json)
+  Framework E2E  : playwright 1.40.1 (dir: packages/ui, cfg: packages/ui/playwright.config.ts)
+  CI Workflow    : .github/workflows/ci.yml
+  Install        : pnpm install
   Build          : -
   Serve          : - (porta: 3000)
   Test           : cd packages/ui && npx playwright test

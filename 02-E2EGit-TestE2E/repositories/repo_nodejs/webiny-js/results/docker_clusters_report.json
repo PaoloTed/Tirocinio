@@ -171,8 +171,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -351,8 +349,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -532,8 +528,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -713,8 +707,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -898,8 +890,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -1083,8 +1073,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -1268,8 +1256,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -1452,8 +1438,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -1636,8 +1620,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -1820,8 +1802,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -2004,8 +1984,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -2188,8 +2166,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -2372,8 +2348,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -2556,8 +2530,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -2740,8 +2712,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -2924,8 +2894,6 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn build",
-        "yarn build",
         "yarn build"
       ],
       "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -3113,8 +3081,6 @@
           "yarn install --frozen-lockfile"
         ],
         "build_cmds": [
-          "yarn build",
-          "yarn build",
           "yarn build"
         ],
         "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -3301,8 +3267,6 @@
           "yarn install --frozen-lockfile"
         ],
         "build_cmds": [
-          "yarn build",
-          "yarn build",
           "yarn build"
         ],
         "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -3489,8 +3453,6 @@
           "yarn install --frozen-lockfile"
         ],
         "build_cmds": [
-          "yarn build",
-          "yarn build",
           "yarn build"
         ],
         "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -3684,8 +3646,6 @@
           "yarn install --frozen-lockfile"
         ],
         "build_cmds": [
-          "yarn build",
-          "yarn build",
           "yarn build"
         ],
         "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",
@@ -3882,8 +3842,6 @@
           "yarn install --frozen-lockfile"
         ],
         "build_cmds": [
-          "yarn build",
-          "yarn build",
           "yarn build"
         ],
         "serve_cmd": "yarn add pm2 verdaccio && npx pm2 start verdaccio -- -c && .verdaccio.yaml",

@@ -100,7 +100,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : playwright 1.56.1 (dir: ., cfg: playwright.config.ts)
   CI Workflow    : .github/workflows/integration-testing.yaml
-  Install        : npm ci && npm ci
+  Install        : npm ci && cd ./build/notify && npm ci
   Build          : npm run build
   Serve          : - (porta: 3000)
   Test           : npx playwright test

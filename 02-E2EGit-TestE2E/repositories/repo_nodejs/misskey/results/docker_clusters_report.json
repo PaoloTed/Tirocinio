@@ -45,7 +45,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -90,7 +90,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -135,7 +135,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -180,7 +180,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -225,7 +225,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -270,7 +270,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -315,7 +315,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -360,7 +360,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -405,7 +405,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -450,7 +450,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -495,7 +495,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -540,7 +540,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -585,7 +585,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -630,7 +630,7 @@
       "serve_cmd": "",
       "serve_port": 61812,
       "test_cmd": "cd packages/frontend && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ok-to-test.yml",
       "ci_env": {},
       "notes": []
     },
@@ -667,11 +667,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -714,11 +712,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -761,11 +757,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -808,11 +802,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -855,11 +847,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -902,11 +892,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -949,11 +937,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -996,11 +982,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1043,11 +1027,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1090,11 +1072,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1137,11 +1117,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1184,11 +1162,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1231,11 +1207,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1278,11 +1252,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1325,11 +1297,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1372,11 +1342,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1419,11 +1387,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1466,11 +1432,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1513,11 +1477,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1560,11 +1522,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1607,11 +1567,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1654,11 +1612,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1701,11 +1657,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1748,11 +1702,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1795,11 +1747,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1842,11 +1792,9 @@
       ],
       "needs_git_repo": false,
       "install_cmds": [
-        "pnpm i --frozen-lockfile",
         "pnpm i --frozen-lockfile"
       ],
       "build_cmds": [
-        "pnpm build",
         "pnpm build"
       ],
       "serve_cmd": "",
@@ -1918,7 +1866,7 @@
         "serve_cmd": "",
         "serve_port": 61812,
         "test_cmd": "cd packages/frontend && npx cypress run",
-        "ci_workflow": "",
+        "ci_workflow": ".github/workflows/ok-to-test.yml",
         "ci_env": {},
         "notes": []
       }
@@ -1964,11 +1912,9 @@
         ],
         "needs_git_repo": false,
         "install_cmds": [
-          "pnpm i --frozen-lockfile",
           "pnpm i --frozen-lockfile"
         ],
         "build_cmds": [
-          "pnpm build",
           "pnpm build"
         ],
         "serve_cmd": "",
@@ -2032,11 +1978,9 @@
         ],
         "needs_git_repo": false,
         "install_cmds": [
-          "pnpm i --frozen-lockfile",
           "pnpm i --frozen-lockfile"
         ],
         "build_cmds": [
-          "pnpm build",
           "pnpm build"
         ],
         "serve_cmd": "",
@@ -2091,11 +2035,9 @@
         ],
         "needs_git_repo": false,
         "install_cmds": [
-          "pnpm i --frozen-lockfile",
           "pnpm i --frozen-lockfile"
         ],
         "build_cmds": [
-          "pnpm build",
           "pnpm build"
         ],
         "serve_cmd": "",
@@ -2146,11 +2088,9 @@
         ],
         "needs_git_repo": false,
         "install_cmds": [
-          "pnpm i --frozen-lockfile",
           "pnpm i --frozen-lockfile"
         ],
         "build_cmds": [
-          "pnpm build",
           "pnpm build"
         ],
         "serve_cmd": "",

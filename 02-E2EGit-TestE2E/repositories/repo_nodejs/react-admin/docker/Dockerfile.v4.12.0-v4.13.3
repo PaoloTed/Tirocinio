@@ -11,7 +11,9 @@ COPY . .
 
 # Installazione dipendenze, browser e build del progetto
 RUN yarn install --frozen-lockfile && \
-    yarn run build
+    make build && \
+    make build-demo && \
+    make build-crm
 
 EXPOSE 8080
 

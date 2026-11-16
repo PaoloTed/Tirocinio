@@ -34,14 +34,14 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci"
+        "cd ./ && npm ci"
       ],
       "build_cmds": [
         "npm run build"
       ],
       "serve_cmd": "mkdir -p /tmp/e2e/lwc && mkdir -p /tmp/e2e/docker && docker logs lizmap${{ env.LZMBRANCH }}_test_qgis &> /tmp/e2e/docker/qgis-server.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_php &> /tmp/e2e/docker/php.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_nginx &> /tmp/e2e/docker/nginx.log | true && cp -r ../lizmap/var/log /tmp/e2e/lwc/",
       "serve_port": 8130,
-      "test_cmd": "npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
+      "test_cmd": "cd tests/end2end && npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
       "ci_workflow": ".github/workflows/e2e_tests.yml",
       "ci_env": {},
       "notes": []
@@ -76,14 +76,14 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci"
+        "cd ./ && npm ci"
       ],
       "build_cmds": [
         "npm run build"
       ],
       "serve_cmd": "mkdir -p /tmp/e2e/lwc && mkdir -p /tmp/e2e/docker && docker logs lizmap${{ env.LZMBRANCH }}_test_qgis &> /tmp/e2e/docker/qgis-server.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_php &> /tmp/e2e/docker/php.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_nginx &> /tmp/e2e/docker/nginx.log | true && cp -r ../lizmap/var/log /tmp/e2e/lwc/",
       "serve_port": 8130,
-      "test_cmd": "npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
+      "test_cmd": "cd tests/end2end && npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
       "ci_workflow": ".github/workflows/e2e_tests.yml",
       "ci_env": {},
       "notes": []
@@ -118,14 +118,14 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci"
+        "cd ./ && npm ci"
       ],
       "build_cmds": [
         "npm run build"
       ],
       "serve_cmd": "mkdir -p /tmp/e2e/lwc && mkdir -p /tmp/e2e/docker && docker logs lizmap${{ env.LZMBRANCH }}_test_qgis &> /tmp/e2e/docker/qgis-server.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_php &> /tmp/e2e/docker/php.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_nginx &> /tmp/e2e/docker/nginx.log | true && cp -r ../lizmap/var/log /tmp/e2e/lwc/",
       "serve_port": 8130,
-      "test_cmd": "npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
+      "test_cmd": "cd tests/end2end && npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
       "ci_workflow": ".github/workflows/e2e_tests.yml",
       "ci_env": {},
       "notes": []
@@ -160,14 +160,14 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci"
+        "cd ./ && npm ci"
       ],
       "build_cmds": [
         "npm run build"
       ],
       "serve_cmd": "mkdir -p /tmp/e2e/lwc && mkdir -p /tmp/e2e/docker && docker logs lizmap${{ env.LZMBRANCH }}_test_qgis &> /tmp/e2e/docker/qgis-server.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_php &> /tmp/e2e/docker/php.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_nginx &> /tmp/e2e/docker/nginx.log | true && cp -r ../lizmap/var/log /tmp/e2e/lwc/",
       "serve_port": 8130,
-      "test_cmd": "npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
+      "test_cmd": "cd tests/end2end && npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
       "ci_workflow": ".github/workflows/e2e_tests.yml",
       "ci_env": {},
       "notes": []
@@ -202,14 +202,14 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci"
+        "cd ./ && npm ci"
       ],
       "build_cmds": [
         "npm run build"
       ],
       "serve_cmd": "mkdir -p /tmp/e2e/lwc && mkdir -p /tmp/e2e/docker && docker logs lizmap${{ env.LZMBRANCH }}_test_qgis &> /tmp/e2e/docker/qgis-server.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_php &> /tmp/e2e/docker/php.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_nginx &> /tmp/e2e/docker/nginx.log | true && cp -r ../lizmap/var/log /tmp/e2e/lwc/",
       "serve_port": 8130,
-      "test_cmd": "npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
+      "test_cmd": "cd tests/end2end && npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
       "ci_workflow": ".github/workflows/e2e_tests.yml",
       "ci_env": {},
       "notes": []
@@ -256,14 +256,14 @@
         "native_deps": [],
         "needs_git_repo": false,
         "install_cmds": [
-          "npm ci"
+          "cd ./ && npm ci"
         ],
         "build_cmds": [
           "npm run build"
         ],
         "serve_cmd": "mkdir -p /tmp/e2e/lwc && mkdir -p /tmp/e2e/docker && docker logs lizmap${{ env.LZMBRANCH }}_test_qgis &> /tmp/e2e/docker/qgis-server.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_php &> /tmp/e2e/docker/php.log | true && docker logs lizmap${{ env.LZMBRANCH }}_test_nginx &> /tmp/e2e/docker/nginx.log | true && cp -r ../lizmap/var/log /tmp/e2e/lwc/",
         "serve_port": 8130,
-        "test_cmd": "npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
+        "test_cmd": "cd tests/end2end && npx playwright test --workers 1 --grep @write ${{ env.PLAYWRIGHT_OPTIONS }}",
         "ci_workflow": ".github/workflows/e2e_tests.yml",
         "ci_env": {},
         "notes": []

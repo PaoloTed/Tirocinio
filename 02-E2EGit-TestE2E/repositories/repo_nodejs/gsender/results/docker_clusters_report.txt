@@ -4,27 +4,27 @@ Versioni analizzate: 21 | Cluster individuati: 3
 
 Tag        | Data       | Node     | PM   | E2E                | Porta | Build
 -------------------------------------------------------------------------------------------------------------------
-v1.4.0     | 2024-01-23 | [16.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.1     | 2024-01-26 | [16.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.2     | 2024-02-16 | [16.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.3     | 2024-02-22 | [16.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.4     | 2024-03-15 | [16.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.5     | 2024-03-28 | [16.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.6     | 2024-04-05 | [16.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.7     | 2024-04-30 | [16.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.8     | 2024-07-11 | [20.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.9     | 2024-08-05 | [20.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.10    | 2024-10-29 | [20.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.11    | 2024-12-16 | [20.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.4.12    | 2025-03-10 | [20.x]   | npm  | cypress 13.4.0     | 8000  | npm run build
-v1.5.0     | 2025-06-18 | [20.x]   | yarn | cypress 13.4.0     | 8000  | yarn run build
-v1.5.1     | 2025-06-27 | [20.x]   | yarn | cypress 13.4.0     | 8000  | yarn run build
-v1.5.2     | 2025-07-14 | [20.x]   | yarn | cypress 13.4.0     | 8000  | yarn run build
-v1.5.3     | 2025-08-05 | [20.x]   | yarn | cypress 13.4.0     | 8000  | yarn run build
-v1.5.4     | 2025-08-27 | [20.x]   | yarn | cypress 13.4.0     | 8000  | yarn run build
-v1.5.5     | 2025-09-24 | [20.x]   | yarn | cypress 13.4.0     | 8000  | yarn run build
-v1.5.6     | 2025-10-20 | [20.x]   | yarn | cypress 13.4.0     | 8000  | yarn run build
-v1.5.7     | 2026-01-09 | [20.x]   | yarn | cypress 13.4.0     | 8000  | yarn run build
+v1.4.0     | 2024-01-23 | 16       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.1     | 2024-01-26 | 16       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.2     | 2024-02-16 | 16       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.3     | 2024-02-22 | 16       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.4     | 2024-03-15 | 16       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.5     | 2024-03-28 | 16       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.6     | 2024-04-05 | 16       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.7     | 2024-04-30 | 16       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.8     | 2024-07-11 | 20       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.9     | 2024-08-05 | 20       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.10    | 2024-10-29 | 20       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.11    | 2024-12-16 | 20       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.4.12    | 2025-03-10 | 20       | npm  | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
+v1.5.0     | 2025-06-18 | 20       | yarn | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows && scripts/build-pi.sh
+v1.5.1     | 2025-06-27 | 20       | yarn | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows && scripts/build-pi.sh
+v1.5.2     | 2025-07-14 | 20       | yarn | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows && scripts/build-pi.sh
+v1.5.3     | 2025-08-05 | 20       | yarn | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows && scripts/build-pi.sh
+v1.5.4     | 2025-08-27 | 20       | yarn | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows && scripts/build-pi.sh
+v1.5.5     | 2025-09-24 | 20       | yarn | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows && scripts/build-pi.sh
+v1.5.6     | 2025-10-20 | 20       | yarn | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows && scripts/build-pi.sh
+v1.5.7     | 2026-01-09 | 20       | yarn | cypress 13.4.0     | 8000  | yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows && scripts/build-pi.sh
 
 ===================================================================================================================
 DETTAGLIO CLUSTER (1 Dockerfile per cluster)
@@ -32,39 +32,39 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
 
 [Cluster 1] Dockerfile.v1.4.0-v1.4.7 (8 versioni)
   Versioni       : v1.4.0, v1.4.1, v1.4.2, v1.4.3, v1.4.4, v1.4.5, v1.4.6, v1.4.7
-  Base Image     : cypress/browsers:node-[16.0.0-chrome-latest
-  Node.js        : [16.x] (fonte: .github/workflows/CI.yml)
+  Base Image     : cypress/browsers:node-16.0.0-chrome-latest
+  Node.js        : 16 (fonte: .github/workflows/CI.yml)
   Package Manager: npm (fonte: default (nessun lockfile root))
   Framework E2E  : cypress 13.4.0 (dir: ., cfg: cypress.config.js)
   Dip. native C++: node-gyp
-  CI Workflow    : -
-  Install        : npm install
-  Build          : npm run build
+  CI Workflow    : .github/workflows/CI.yml
+  Install        : npm install -g yarn && yarn global add node-gyp && yarn install && yarn lint && yarn install
+  Build          : yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
   Serve          : - (porta: 8000)
   Test           : npx cypress run
 
 [Cluster 2] Dockerfile.v1.4.8-v1.4.12 (5 versioni)
   Versioni       : v1.4.8, v1.4.9, v1.4.10, v1.4.11, v1.4.12
-  Base Image     : cypress/browsers:node-[20.0.0-chrome-latest
-  Node.js        : [20.x] (fonte: .github/workflows/CI.yml)
+  Base Image     : cypress/browsers:node-20.0.0-chrome-latest
+  Node.js        : 20 (fonte: .github/workflows/CI.yml)
   Package Manager: npm (fonte: default (nessun lockfile root))
   Framework E2E  : cypress 13.4.0 (dir: ., cfg: cypress.config.js)
   Dip. native C++: node-gyp
-  CI Workflow    : -
-  Install        : npm install
-  Build          : npm run build
+  CI Workflow    : .github/workflows/CI.yml
+  Install        : npm install -g yarn && yarn global add node-gyp && yarn install && yarn lint && yarn install
+  Build          : yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows
   Serve          : - (porta: 8000)
   Test           : npx cypress run
 
 [Cluster 3] Dockerfile.v1.5.0-v1.5.7 (8 versioni)
   Versioni       : v1.5.0, v1.5.1, v1.5.2, v1.5.3, v1.5.4, v1.5.5, v1.5.6, v1.5.7
-  Base Image     : cypress/browsers:node-[20.0.0-chrome-latest
-  Node.js        : [20.x] (fonte: .github/workflows/CI.yml)
+  Base Image     : cypress/browsers:node-20.0.0-chrome-latest
+  Node.js        : 20 (fonte: .github/workflows/CI.yml)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : cypress 13.4.0 (dir: ., cfg: cypress.config.js)
   Dip. native C++: node-gyp
-  CI Workflow    : -
-  Install        : yarn install --frozen-lockfile
-  Build          : yarn run build
+  CI Workflow    : .github/workflows/CI.yml
+  Install        : npm install -g yarn && yarn global add node-gyp && yarn install && yarn lint && yarn install
+  Build          : yarn run build && yarn run build-latest && yarn run build:linux && yarn run build:macos && yarn run build:windows && scripts/build-pi.sh
   Serve          : - (porta: 8000)
   Test           : npx cypress run

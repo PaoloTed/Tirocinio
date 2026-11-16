@@ -12,10 +12,8 @@ COPY . .
 # Installazione dipendenze, browser e build del progetto
 RUN yarn install --frozen-lockfile && \
     make build && \
-    make build && \
     make build-demo && \
     zip demo-build.zip -r examples/demo/dist examples/demo/package.json && \
-    make build && \
     make build-crm && \
     unzip -o -u demo-build.zip
 

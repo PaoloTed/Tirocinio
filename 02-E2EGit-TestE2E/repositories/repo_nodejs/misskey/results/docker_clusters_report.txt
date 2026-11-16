@@ -18,32 +18,32 @@ Tag        | Data       | Node     | PM   | E2E                | Porta | Build
 13.2.1     | 2023-01-24 | 18.12.1  | pnpm | cypress 12.3.0     | 61812 | pnpm run build
 13.2.2     | 2023-01-25 | 18.12.1  | pnpm | cypress 12.3.0     | 61812 | pnpm run build
 13.2.3     | 2023-01-26 | 18.12.1  | pnpm | cypress 12.3.0     | 61812 | pnpm run build
-13.2.4     | 2023-01-27 | 18.13.0  | pnpm | cypress 12.4.0     | 61812 | pnpm build && pnpm build
-13.2.5     | 2023-01-27 | 18.13.0  | pnpm | cypress 12.4.0     | 61812 | pnpm build && pnpm build
-13.2.6     | 2023-02-01 | 18.13.0  | pnpm | cypress 12.4.0     | 61812 | pnpm build && pnpm build
-13.3.0     | 2023-02-03 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.3.1     | 2023-02-04 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.3.2     | 2023-02-04 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.3.3     | 2023-02-04 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.3.4     | 2023-02-04 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.4.0     | 2023-02-05 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.5.0     | 2023-02-08 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.5.1     | 2023-02-08 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.5.2     | 2023-02-08 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.5.3     | 2023-02-09 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.5.4     | 2023-02-09 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.5.5     | 2023-02-09 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.5.6     | 2023-02-10 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.6.0     | 2023-02-11 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.6.1     | 2023-02-12 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build && pnpm build
-13.7.0     | 2023-02-22 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build && pnpm build
-13.7.1     | 2023-02-23 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build && pnpm build
-13.7.2     | 2023-02-23 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build && pnpm build
-13.7.3     | 2023-02-23 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build && pnpm build
-13.7.4     | 2023-02-23 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build && pnpm build
-13.7.5     | 2023-02-24 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build && pnpm build
-13.8.0     | 2023-02-26 | 18.13.0  | pnpm | cypress 12.7.0     | 61812 | pnpm build && pnpm build
-13.8.1     | 2023-02-26 | 18.13.0  | pnpm | cypress 12.7.0     | 61812 | pnpm build && pnpm build
+13.2.4     | 2023-01-27 | 18.13.0  | pnpm | cypress 12.4.0     | 61812 | pnpm build
+13.2.5     | 2023-01-27 | 18.13.0  | pnpm | cypress 12.4.0     | 61812 | pnpm build
+13.2.6     | 2023-02-01 | 18.13.0  | pnpm | cypress 12.4.0     | 61812 | pnpm build
+13.3.0     | 2023-02-03 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.3.1     | 2023-02-04 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.3.2     | 2023-02-04 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.3.3     | 2023-02-04 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.3.4     | 2023-02-04 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.4.0     | 2023-02-05 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.5.0     | 2023-02-08 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.5.1     | 2023-02-08 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.5.2     | 2023-02-08 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.5.3     | 2023-02-09 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.5.4     | 2023-02-09 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.5.5     | 2023-02-09 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.5.6     | 2023-02-10 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.6.0     | 2023-02-11 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.6.1     | 2023-02-12 | 18.13.0  | pnpm | cypress 12.5.1     | 61812 | pnpm build
+13.7.0     | 2023-02-22 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build
+13.7.1     | 2023-02-23 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build
+13.7.2     | 2023-02-23 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build
+13.7.3     | 2023-02-23 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build
+13.7.4     | 2023-02-23 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build
+13.7.5     | 2023-02-24 | 18.13.0  | pnpm | cypress 12.6.0     | 61812 | pnpm build
+13.8.0     | 2023-02-26 | 18.13.0  | pnpm | cypress 12.7.0     | 61812 | pnpm build
+13.8.1     | 2023-02-26 | 18.13.0  | pnpm | cypress 12.7.0     | 61812 | pnpm build
 
 ===================================================================================================================
 DETTAGLIO CLUSTER (1 Dockerfile per cluster)
@@ -56,7 +56,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Package Manager: pnpm (fonte: package.json#packageManager)
   Framework E2E  : cypress 12.3.0 (dir: packages/frontend, cfg: cypress.config.ts)
   Dip. native C++: re2, sharp
-  CI Workflow    : -
+  CI Workflow    : .github/workflows/ok-to-test.yml
   Install        : pnpm install --frozen-lockfile
   Build          : pnpm run build
   Serve          : - (porta: 61812)
@@ -70,8 +70,8 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Framework E2E  : cypress 12.4.0 (dir: packages/frontend, cfg: cypress.config.ts)
   Dip. native C++: re2, sharp
   CI Workflow    : .github/workflows/test.yml
-  Install        : pnpm i --frozen-lockfile && pnpm i --frozen-lockfile
-  Build          : pnpm build && pnpm build
+  Install        : pnpm i --frozen-lockfile
+  Build          : pnpm build
   Serve          : - (porta: 61812)
   Test           : cd packages/frontend && npx cypress run
 
@@ -83,8 +83,8 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Framework E2E  : cypress 12.5.1 (dir: packages/frontend, cfg: cypress.config.ts)
   Dip. native C++: re2, sharp
   CI Workflow    : .github/workflows/test.yml
-  Install        : pnpm i --frozen-lockfile && pnpm i --frozen-lockfile
-  Build          : pnpm build && pnpm build
+  Install        : pnpm i --frozen-lockfile
+  Build          : pnpm build
   Serve          : - (porta: 61812)
   Test           : cd packages/frontend && npx cypress run
 
@@ -96,8 +96,8 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Framework E2E  : cypress 12.6.0 (dir: packages/frontend, cfg: cypress.config.ts)
   Dip. native C++: re2, sharp
   CI Workflow    : .github/workflows/test.yml
-  Install        : pnpm i --frozen-lockfile && pnpm i --frozen-lockfile
-  Build          : pnpm build && pnpm build
+  Install        : pnpm i --frozen-lockfile
+  Build          : pnpm build
   Serve          : - (porta: 61812)
   Test           : cd packages/frontend && npx cypress run
 
@@ -109,7 +109,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Framework E2E  : cypress 12.7.0 (dir: packages/frontend, cfg: cypress.config.ts)
   Dip. native C++: re2, sharp
   CI Workflow    : .github/workflows/test.yml
-  Install        : pnpm i --frozen-lockfile && pnpm i --frozen-lockfile
-  Build          : pnpm build && pnpm build
+  Install        : pnpm i --frozen-lockfile
+  Build          : pnpm build
   Serve          : - (porta: 61812)
   Test           : cd packages/frontend && npx cypress run

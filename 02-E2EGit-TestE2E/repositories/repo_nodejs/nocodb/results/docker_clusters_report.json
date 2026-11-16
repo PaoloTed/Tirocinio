@@ -56,7 +56,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci-cd.yml",
       "ci_env": {},
       "notes": []
     },
@@ -112,7 +112,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci-cd.yml",
       "ci_env": {},
       "notes": []
     },
@@ -168,7 +168,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci-cd.yml",
       "ci_env": {},
       "notes": []
     },
@@ -224,7 +224,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci-cd.yml",
       "ci_env": {},
       "notes": []
     },
@@ -280,7 +280,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci-cd.yml",
       "ci_env": {},
       "notes": []
     },
@@ -336,7 +336,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci-cd.yml",
       "ci_env": {},
       "notes": []
     },
@@ -392,7 +392,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci-cd.yml",
       "ci_env": {},
       "notes": []
     }
@@ -462,7 +462,7 @@
         "serve_cmd": "",
         "serve_port": 3000,
         "test_cmd": "npx cypress run",
-        "ci_workflow": "",
+        "ci_workflow": ".github/workflows/ci-cd.yml",
         "ci_env": {},
         "notes": []
       }

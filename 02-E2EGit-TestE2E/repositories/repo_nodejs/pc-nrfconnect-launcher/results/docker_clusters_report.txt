@@ -38,7 +38,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Node.js        : 18 (fonte: fallback-anno(2023))
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : playwright 1.38.1 (dir: ., cfg: -)
-  CI Workflow    : .github/workflows/zoomin-publish-dev.yml
+  CI Workflow    : -
   Install        : npm ci
   Build          : -
   Serve          : - (porta: -)
@@ -50,7 +50,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Node.js        : 20 (fonte: fallback-anno(2025))
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : playwright 1.38.1 (dir: ., cfg: -)
-  CI Workflow    : .github/workflows/zoomin-publish-dev.yml
+  CI Workflow    : -
   Install        : npm ci
   Build          : -
   Serve          : - (porta: -)

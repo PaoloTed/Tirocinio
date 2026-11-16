@@ -335,15 +335,11 @@
         "yarn install --frozen-lockfile",
         "cd packages/connect-web && yarn install --frozen-lockfile"
       ],
-      "build_cmds": [
-        "tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop",
-        "rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension",
-        "# Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null"
-      ],
+      "build_cmds": [],
       "serve_cmd": "",
       "serve_port": null,
       "test_cmd": "cd packages/connect-web && yarn run test:e2e",
-      "ci_workflow": ".github/workflows/template-suite-run-e2e.yml",
+      "ci_workflow": ".github/workflows/test-suite-native-e2e-android-nightly.yml",
       "ci_env": {},
       "notes": []
     },
@@ -678,15 +674,11 @@
         "yarn install --frozen-lockfile",
         "cd packages/connect-web && yarn install --frozen-lockfile"
       ],
-      "build_cmds": [
-        "tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop",
-        "rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension",
-        "# Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null"
-      ],
+      "build_cmds": [],
       "serve_cmd": "",
       "serve_port": null,
       "test_cmd": "cd packages/connect-web && yarn run test:e2e",
-      "ci_workflow": ".github/workflows/template-suite-run-e2e.yml",
+      "ci_workflow": ".github/workflows/test-suite-native-e2e-android-nightly.yml",
       "ci_env": {},
       "notes": []
     },
@@ -1021,15 +1013,11 @@
         "yarn install --frozen-lockfile",
         "cd packages/connect-web && yarn install --frozen-lockfile"
       ],
-      "build_cmds": [
-        "tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop",
-        "rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension",
-        "# Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null"
-      ],
+      "build_cmds": [],
       "serve_cmd": "",
       "serve_port": null,
       "test_cmd": "cd packages/connect-web && yarn run test:e2e",
-      "ci_workflow": ".github/workflows/template-suite-run-e2e.yml",
+      "ci_workflow": ".github/workflows/test-suite-native-e2e-android-nightly.yml",
       "ci_env": {},
       "notes": []
     },
@@ -1364,15 +1352,11 @@
         "yarn install --frozen-lockfile",
         "cd packages/connect-web && yarn install --frozen-lockfile"
       ],
-      "build_cmds": [
-        "tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop",
-        "rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension",
-        "# Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null"
-      ],
+      "build_cmds": [],
       "serve_cmd": "",
       "serve_port": null,
       "test_cmd": "cd packages/connect-web && yarn run test:e2e",
-      "ci_workflow": ".github/workflows/template-suite-run-e2e.yml",
+      "ci_workflow": ".github/workflows/test-suite-native-e2e-android-nightly.yml",
       "ci_env": {},
       "notes": []
     }
@@ -1718,15 +1702,11 @@
           "yarn install --frozen-lockfile",
           "cd packages/connect-web && yarn install --frozen-lockfile"
         ],
-        "build_cmds": [
-          "tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop",
-          "rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension",
-          "# Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null"
-        ],
+        "build_cmds": [],
         "serve_cmd": "",
         "serve_port": null,
         "test_cmd": "cd packages/connect-web && yarn run test:e2e",
-        "ci_workflow": ".github/workflows/template-suite-run-e2e.yml",
+        "ci_workflow": ".github/workflows/test-suite-native-e2e-android-nightly.yml",
         "ci_env": {},
         "notes": []
       }

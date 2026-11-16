@@ -4,10 +4,10 @@ Versioni analizzate: 4 | Cluster individuati: 1
 
 Tag        | Data       | Node     | PM   | E2E                | Porta | Build
 -------------------------------------------------------------------------------------------------------------------
-v26.7.1    | 2026-07-21 | 24.17.0  | yarn | playwright 1.60.0  | -     | tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop && rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension && # Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null
-v26.7.2    | 2026-07-22 | 24.17.0  | yarn | playwright 1.60.0  | -     | tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop && rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension && # Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null
-v26.7.3    | 2026-07-29 | 24.17.0  | yarn | playwright 1.60.0  | -     | tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop && rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension && # Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null
-v26.7.4    | 2026-08-03 | 24.17.0  | yarn | playwright 1.60.0  | -     | tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop && rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension && # Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null
+v26.7.1    | 2026-07-21 | 24.17.0  | yarn | playwright 1.60.0  | -     | -
+v26.7.2    | 2026-07-22 | 24.17.0  | yarn | playwright 1.60.0  | -     | -
+v26.7.3    | 2026-07-29 | 24.17.0  | yarn | playwright 1.60.0  | -     | -
+v26.7.4    | 2026-08-03 | 24.17.0  | yarn | playwright 1.60.0  | -     | -
 
 ===================================================================================================================
 DETTAGLIO CLUSTER (1 Dockerfile per cluster)
@@ -20,8 +20,8 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Package Manager: yarn (fonte: package.json#packageManager)
   Framework E2E  : playwright 1.60.0 (dir: packages/connect-web, cfg: packages/e2e-utils/src/quarantineBot/seed/playwright.config.ts)
   Dip. native C++: node-gyp, sharp
-  CI Workflow    : .github/workflows/template-suite-run-e2e.yml
+  CI Workflow    : .github/workflows/test-suite-native-e2e-android-nightly.yml
   Install        : yarn install --frozen-lockfile && cd packages/connect-web && yarn install --frozen-lockfile
-  Build          : tar -xzf ${{ github.workspace }}/artifact-download/app-build.tar.gz -C ${{ github.workspace }}/packages/suite-desktop && rm -rf ${{ github.workspace }}/packages/connect-explorer/build-webextension && mv ${{ github.workspace }}/artifact-download ${{ github.workspace }}/packages/connect-explorer/build-webextension && # Playwright runtime may indirectly import the built config, and that would crash if message-system is not built && yarn message-system-sign-config 1>/dev/null
+  Build          : -
   Serve          : - (porta: -)
   Test           : cd packages/connect-web && yarn run test:e2e

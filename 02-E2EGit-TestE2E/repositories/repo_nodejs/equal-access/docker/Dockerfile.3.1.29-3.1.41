@@ -1,4 +1,4 @@
-# Dockerfile auto-generato per equal-access (Cluster 8: 3.1.29 - 3.1.41)
+# Dockerfile auto-generato per equal-access (Cluster 6: 3.1.29 - 3.1.41)
 # Versioni coperte: 3.1.29, 3.1.30, 3.1.31, 3.1.32, 3.1.33, 3.1.34, 3.1.35, 3.1.36, 3.1.37, 3.1.38, 3.1.39, 3.1.40, 3.1.41
 FROM mcr.microsoft.com/playwright:v1.21.1-jammy
 
@@ -10,29 +10,18 @@ WORKDIR /app
 COPY . .
 
 # Installazione dipendenze, browser e build del progetto
-RUN npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
-    npm install && \
+RUN (cd /app/rule-server && npm install) && \
+    (cd /app/accessibility-checker-engine && npm install) && \
+    (cd /app/report-react && npm install) && \
+    (cd /app/accessibility-checker && npm install) && \
+    (cd /app/karma-accessibility-checker && npm install) && \
+    (cd /app/cypress-accessibility-checker && npm install) && \
+    (cd /app/accessibility-checker-extension && npm install) && \
     (cd /app/accessibility-checker && npx playwright install chromium) && \
-    npm run build:all && \
-    npm run build && \
-    npm run build && \
-    npm run build && \
-    npm run build && \
-    npm run build:report && \
-    npm run build && \
-    npm run build
+    (cd /app/rule-server && npm run build) && \
+    (cd /app/accessibility-checker && npm run build) && \
+    (cd /app/karma-accessibility-checker && npm run build) && \
+    (cd /app/cypress-accessibility-checker && npm run build:report)
 
 # Avvio server (se previsto) ed esecuzione di tutti i test E2E
-CMD ["bash", "-c", "node main.js & sleep 5 && (cd /app/accessibility-checker && mocha -R dot test/mocha/**/*.test.js ${TEST_ARGS:-})"]
+CMD ["bash", "-c", "(cd /app/rule-server/dist && node main.js) & sleep 5 && (cd /app/accessibility-checker && npx playwright test test/mocha/aChecker.Playwright/aChecker.Scans/*.mjs ${TEST_ARGS:-})"]

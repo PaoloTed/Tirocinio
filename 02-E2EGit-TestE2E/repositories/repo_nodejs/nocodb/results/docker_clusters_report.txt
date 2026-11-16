@@ -23,7 +23,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : cypress 9.2.0 (dir: ., cfg: scripts/cypress/cypress.json)
   Dip. native C++: sqlite3
-  CI Workflow    : -
+  CI Workflow    : .github/workflows/ci-cd.yml
   Install        : npm ci
   Build          : -
   Serve          : - (porta: 3000)

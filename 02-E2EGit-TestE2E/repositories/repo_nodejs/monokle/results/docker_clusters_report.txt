@@ -50,8 +50,8 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Node.js        : 18.7.0 (fonte: .nvmrc)
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : playwright 1.23.1 (dir: ., cfg: playwright.config.ts)
-  CI Workflow    : -
-  Install        : npm ci
+  CI Workflow    : .github/workflows/monokle-tests.yml
+  Install        : Set-PSDebug -Trace 1 && node --version && npm --version && npm install
   Build          : npm run build
   Serve          : - (porta: -)
   Test           : craco test --watchAll=false
@@ -62,8 +62,8 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Node.js        : 18.13.0 (fonte: .nvmrc)
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : playwright 1.23.1 (dir: ., cfg: playwright.config.ts)
-  CI Workflow    : -
-  Install        : npm ci
+  CI Workflow    : .github/workflows/monokle-tests.yml
+  Install        : Set-PSDebug -Trace 1 && node --version && npm --version && npm install
   Build          : npm run build
   Serve          : - (porta: -)
   Test           : craco test --watchAll=false
@@ -74,8 +74,8 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Node.js        : 18.16.0 (fonte: .nvmrc)
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : playwright 1.23.1 (dir: ., cfg: playwright.config.ts)
-  CI Workflow    : -
-  Install        : npm ci
+  CI Workflow    : .github/workflows/monokle-tests.yml
+  Install        : Set-PSDebug -Trace 1 && node --version && npm --version && npm install
   Build          : npm run build
   Serve          : - (porta: -)
   Test           : craco test --watchAll=false
@@ -86,8 +86,8 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Node.js        : 18.16.0 (fonte: .nvmrc)
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : playwright 1.34.0 (dir: ., cfg: playwright.config.ts)
-  CI Workflow    : -
-  Install        : npm ci
+  CI Workflow    : .github/workflows/monokle-tests.yml
+  Install        : Set-PSDebug -Trace 1 && node --version && npm --version && npm install
   Build          : npm run build
   Serve          : - (porta: -)
   Test           : craco test --watchAll=false
@@ -98,8 +98,8 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Node.js        : 18.17.0 (fonte: .nvmrc)
   Package Manager: npm (fonte: package-lock.json)
   Framework E2E  : playwright 1.34.0 (dir: ., cfg: playwright.config.ts)
-  CI Workflow    : -
-  Install        : npm ci
+  CI Workflow    : .github/workflows/monokle-tests.yml
+  Install        : Set-PSDebug -Trace 1 && node --version && npm --version && npm install
   Build          : npm run build
   Serve          : - (porta: -)
   Test           : craco test --watchAll=false

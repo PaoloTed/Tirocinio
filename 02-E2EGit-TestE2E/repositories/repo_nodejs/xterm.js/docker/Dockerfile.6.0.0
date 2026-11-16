@@ -11,11 +11,6 @@ COPY . .
 
 # Installazione dipendenze, browser e build del progetto
 RUN npm ci && \
-    npm ci && \
-    npm ci && \
-    npm ci && \
-    npm ci && \
-    npm ci && \
     (npx playwright install chromium) && \
     npm run esbuild && \
     npm run esbuild-demo

@@ -7,7 +7,7 @@
     {
       "tag": "v4.12.0",
       "date": "2023-07-03",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -60,19 +60,21 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn run build"
+        "make build",
+        "make build-demo",
+        "make build-crm"
       ],
       "serve_cmd": "",
       "serve_port": 8080,
       "test_cmd": "cd cypress && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/test.yml",
       "ci_env": {},
       "notes": []
     },
     {
       "tag": "v4.12.1",
       "date": "2023-07-10",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -125,19 +127,21 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn run build"
+        "make build",
+        "make build-demo",
+        "make build-crm"
       ],
       "serve_cmd": "",
       "serve_port": 8080,
       "test_cmd": "cd cypress && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/test.yml",
       "ci_env": {},
       "notes": []
     },
     {
       "tag": "v4.12.2",
       "date": "2023-07-21",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -190,19 +194,21 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn run build"
+        "make build",
+        "make build-demo",
+        "make build-crm"
       ],
       "serve_cmd": "",
       "serve_port": 8080,
       "test_cmd": "cd cypress && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/test.yml",
       "ci_env": {},
       "notes": []
     },
     {
       "tag": "v4.12.3",
       "date": "2023-07-28",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -255,19 +261,21 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn run build"
+        "make build",
+        "make build-demo",
+        "make build-crm"
       ],
       "serve_cmd": "",
       "serve_port": 8080,
       "test_cmd": "cd cypress && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/test.yml",
       "ci_env": {},
       "notes": []
     },
     {
       "tag": "v4.12.4",
       "date": "2023-08-08",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -320,19 +328,21 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn run build"
+        "make build",
+        "make build-demo",
+        "make build-crm"
       ],
       "serve_cmd": "",
       "serve_port": 8080,
       "test_cmd": "cd cypress && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/test.yml",
       "ci_env": {},
       "notes": []
     },
     {
       "tag": "v4.13.0",
       "date": "2023-08-14",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -385,19 +395,21 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn run build"
+        "make build",
+        "make build-demo",
+        "make build-crm"
       ],
       "serve_cmd": "",
       "serve_port": 8080,
       "test_cmd": "cd cypress && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/test.yml",
       "ci_env": {},
       "notes": []
     },
     {
       "tag": "v4.13.1",
       "date": "2023-08-21",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -450,19 +462,21 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn run build"
+        "make build",
+        "make build-demo",
+        "make build-crm"
       ],
       "serve_cmd": "",
       "serve_port": 8080,
       "test_cmd": "cd cypress && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/test.yml",
       "ci_env": {},
       "notes": []
     },
     {
       "tag": "v4.13.2",
       "date": "2023-08-25",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -515,19 +529,21 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn run build"
+        "make build",
+        "make build-demo",
+        "make build-crm"
       ],
       "serve_cmd": "",
       "serve_port": 8080,
       "test_cmd": "cd cypress && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/test.yml",
       "ci_env": {},
       "notes": []
     },
     {
       "tag": "v4.13.3",
       "date": "2023-09-01",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -580,19 +596,21 @@
         "yarn install --frozen-lockfile"
       ],
       "build_cmds": [
-        "yarn run build"
+        "make build",
+        "make build-demo",
+        "make build-crm"
       ],
       "serve_cmd": "",
       "serve_port": 8080,
       "test_cmd": "cd cypress && npx cypress run",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/test.yml",
       "ci_env": {},
       "notes": []
     },
     {
       "tag": "v4.13.4",
       "date": "2023-09-08",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -646,10 +664,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -663,7 +679,7 @@
     {
       "tag": "v4.14.0",
       "date": "2023-09-08",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -717,10 +733,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -734,7 +748,7 @@
     {
       "tag": "v4.14.1",
       "date": "2023-09-15",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -788,10 +802,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -805,7 +817,7 @@
     {
       "tag": "v4.14.2",
       "date": "2023-09-22",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -859,10 +871,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -876,7 +886,7 @@
     {
       "tag": "v4.14.3",
       "date": "2023-09-22",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -930,10 +940,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -947,7 +955,7 @@
     {
       "tag": "v4.14.4",
       "date": "2023-09-29",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1001,10 +1009,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1018,7 +1024,7 @@
     {
       "tag": "v4.14.5",
       "date": "2023-10-06",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1072,10 +1078,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1089,7 +1093,7 @@
     {
       "tag": "v4.14.6",
       "date": "2023-10-12",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1143,10 +1147,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1160,7 +1162,7 @@
     {
       "tag": "v4.15.0",
       "date": "2023-10-12",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1215,10 +1217,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1232,7 +1232,7 @@
     {
       "tag": "v4.15.1",
       "date": "2023-10-20",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1287,10 +1287,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1304,7 +1302,7 @@
     {
       "tag": "v4.15.2",
       "date": "2023-10-27",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1359,10 +1357,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1376,7 +1372,7 @@
     {
       "tag": "v4.15.3",
       "date": "2023-11-03",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1431,10 +1427,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1448,7 +1442,7 @@
     {
       "tag": "v4.15.4",
       "date": "2023-11-10",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1503,10 +1497,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1520,7 +1512,7 @@
     {
       "tag": "v4.15.5",
       "date": "2023-11-17",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1575,10 +1567,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1592,7 +1582,7 @@
     {
       "tag": "v4.16.0",
       "date": "2023-11-17",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1647,10 +1637,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1664,7 +1652,7 @@
     {
       "tag": "v4.16.1",
       "date": "2023-11-24",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1719,10 +1707,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1736,7 +1722,7 @@
     {
       "tag": "v4.16.2",
       "date": "2023-12-04",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1791,10 +1777,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1808,7 +1792,7 @@
     {
       "tag": "v4.16.3",
       "date": "2023-12-15",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1863,10 +1847,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1880,7 +1862,7 @@
     {
       "tag": "v4.16.4",
       "date": "2023-12-22",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -1935,10 +1917,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -1952,7 +1932,7 @@
     {
       "tag": "v4.16.5",
       "date": "2024-01-05",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2007,10 +1987,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2024,7 +2002,7 @@
     {
       "tag": "v4.16.6",
       "date": "2024-01-12",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2079,10 +2057,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2096,7 +2072,7 @@
     {
       "tag": "v4.16.7",
       "date": "2024-01-19",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2151,10 +2127,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2168,7 +2142,7 @@
     {
       "tag": "v4.16.8",
       "date": "2024-01-26",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2223,10 +2197,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2240,7 +2212,7 @@
     {
       "tag": "v4.16.9",
       "date": "2024-02-02",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2295,10 +2267,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2312,7 +2282,7 @@
     {
       "tag": "v4.16.10",
       "date": "2024-02-09",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2367,10 +2337,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2384,7 +2352,7 @@
     {
       "tag": "v4.16.11",
       "date": "2024-02-16",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2439,10 +2407,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2456,7 +2422,7 @@
     {
       "tag": "v4.16.12",
       "date": "2024-03-01",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2511,10 +2477,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2528,7 +2492,7 @@
     {
       "tag": "v4.16.13",
       "date": "2024-03-15",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2583,10 +2547,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2600,7 +2562,7 @@
     {
       "tag": "v4.16.14",
       "date": "2024-03-29",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2655,10 +2617,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2672,7 +2632,7 @@
     {
       "tag": "v4.16.15",
       "date": "2024-04-05",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2727,10 +2687,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2744,7 +2702,7 @@
     {
       "tag": "v4.16.16",
       "date": "2024-04-23",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2799,10 +2757,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2816,7 +2772,7 @@
     {
       "tag": "v4.16.17",
       "date": "2024-05-02",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2871,10 +2827,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2888,7 +2842,7 @@
     {
       "tag": "v4.16.18",
       "date": "2024-05-20",
-      "node_version": "16.x",
+      "node_version": "16",
       "node_source": ".github/workflows/test.yml",
       "pkg_manager": "yarn",
       "pkg_manager_source": "package.json#packageManager",
@@ -2943,10 +2897,8 @@
       ],
       "build_cmds": [
         "make build",
-        "make build",
         "make build-demo",
         "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-        "make build",
         "make build-crm",
         "unzip -o -u demo-build.zip"
       ],
@@ -2976,7 +2928,7 @@
       "representative": {
         "tag": "v4.12.0",
         "date": "2023-07-03",
-        "node_version": "16.x",
+        "node_version": "16",
         "node_source": ".github/workflows/test.yml",
         "pkg_manager": "yarn",
         "pkg_manager_source": "package.json#packageManager",
@@ -3029,12 +2981,14 @@
           "yarn install --frozen-lockfile"
         ],
         "build_cmds": [
-          "yarn run build"
+          "make build",
+          "make build-demo",
+          "make build-crm"
         ],
         "serve_cmd": "",
         "serve_port": 8080,
         "test_cmd": "cd cypress && npx cypress run",
-        "ci_workflow": "",
+        "ci_workflow": ".github/workflows/test.yml",
         "ci_env": {},
         "notes": []
       }
@@ -3080,7 +3034,7 @@
       "representative": {
         "tag": "v4.13.4",
         "date": "2023-09-08",
-        "node_version": "16.x",
+        "node_version": "16",
         "node_source": ".github/workflows/test.yml",
         "pkg_manager": "yarn",
         "pkg_manager_source": "package.json#packageManager",
@@ -3134,10 +3088,8 @@
         ],
         "build_cmds": [
           "make build",
-          "make build",
           "make build-demo",
           "zip demo-build.zip -r examples/demo/dist examples/demo/package.json",
-          "make build",
           "make build-crm",
           "unzip -o -u demo-build.zip"
         ],

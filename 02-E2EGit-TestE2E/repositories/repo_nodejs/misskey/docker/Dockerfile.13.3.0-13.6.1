@@ -14,8 +14,6 @@ COPY . .
 
 # Installazione dipendenze, browser e build del progetto
 RUN pnpm i --frozen-lockfile && \
-    pnpm i --frozen-lockfile && \
-    pnpm build && \
     pnpm build
 
 EXPOSE 61812

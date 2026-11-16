@@ -11,12 +11,6 @@ COPY . .
 
 # Installazione dipendenze, browser e build del progetto
 RUN yarn --frozen-lockfile && yarn install-addons && \
-    yarn --frozen-lockfile && yarn install-addons && \
-    yarn --frozen-lockfile && yarn install-addons && \
-    yarn --frozen-lockfile && yarn install-addons && \
-    yarn --frozen-lockfile && yarn install-addons && \
-    yarn --frozen-lockfile && yarn install-addons && \
-    yarn --frozen-lockfile && yarn install-addons && \
     (npx playwright install chromium) && \
     yarn setup && \
     yarn build-demo

@@ -45,7 +45,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -90,7 +90,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -135,7 +135,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -180,7 +180,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -225,7 +225,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -270,7 +270,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -315,7 +315,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -360,7 +360,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -405,7 +405,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -450,7 +450,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -495,7 +495,7 @@
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -534,14 +534,13 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci",
-        "cd packages/ui && npm ci"
+        "pnpm install"
       ],
       "build_cmds": [],
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -580,14 +579,13 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci",
-        "cd packages/ui && npm ci"
+        "pnpm install"
       ],
       "build_cmds": [],
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -626,14 +624,13 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci",
-        "cd packages/ui && npm ci"
+        "pnpm install"
       ],
       "build_cmds": [],
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -672,14 +669,13 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci",
-        "cd packages/ui && npm ci"
+        "pnpm install"
       ],
       "build_cmds": [],
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     },
@@ -718,14 +714,13 @@
       "native_deps": [],
       "needs_git_repo": false,
       "install_cmds": [
-        "npm ci",
-        "cd packages/ui && npm ci"
+        "pnpm install"
       ],
       "build_cmds": [],
       "serve_cmd": "",
       "serve_port": 3000,
       "test_cmd": "cd packages/ui && npx playwright test",
-      "ci_workflow": "",
+      "ci_workflow": ".github/workflows/ci.yml",
       "ci_env": {},
       "notes": []
     }
@@ -733,7 +728,7 @@
   "clusters": [
     {
       "id": 1,
-      "dockerfile": "Dockerfile.v1.0.0-1.5.0",
+      "dockerfile": "Dockerfile.v1.0.0-1.2.2",
       "versions": [
         "v1.0.0",
         "v1.0.1",
@@ -745,12 +740,7 @@
         "1.1.2",
         "1.2.0",
         "1.2.1",
-        "1.2.2",
-        "1.3.0",
-        "1.4.0",
-        "1.4.1",
-        "1.4.2",
-        "1.5.0"
+        "1.2.2"
       ],
       "representative": {
         "tag": "v1.0.0",
@@ -793,7 +783,63 @@
         "serve_cmd": "",
         "serve_port": 3000,
         "test_cmd": "cd packages/ui && npx playwright test",
-        "ci_workflow": "",
+        "ci_workflow": ".github/workflows/ci.yml",
+        "ci_env": {},
+        "notes": []
+      }
+    },
+    {
+      "id": 2,
+      "dockerfile": "Dockerfile.1.3.0-1.5.0",
+      "versions": [
+        "1.3.0",
+        "1.4.0",
+        "1.4.1",
+        "1.4.2",
+        "1.5.0"
+      ],
+      "representative": {
+        "tag": "1.3.0",
+        "date": "2024-11-25",
+        "node_version": "18",
+        "node_source": ".github/workflows/ci.yml",
+        "pkg_manager": "npm",
+        "pkg_manager_source": "package-lock.json",
+        "lockfiles": [
+          "containers/app-auth/yarn.lock",
+          "containers/app-proxy/test/sse-test-server/yarn.lock",
+          "containers/app-proxy/yarn.lock",
+          "package-lock.json",
+          "packages/os/package-lock.json",
+          "packages/ui/pnpm-lock.yaml",
+          "packages/umbreld/package-lock.json"
+        ],
+        "workspaces": [],
+        "package_jsons": [
+          "containers/app-auth/package.json",
+          "containers/app-proxy/package.json",
+          "containers/app-proxy/test/sse-test-server/package.json",
+          "package.json",
+          "packages/os/package.json",
+          "packages/ui/package.json",
+          "packages/umbreld/package.json"
+        ],
+        "e2e_framework": "playwright",
+        "e2e_pkg_name": "@playwright/test",
+        "e2e_version": "1.40.1",
+        "e2e_pkg_dir": "packages/ui",
+        "e2e_config_file": "packages/ui/playwright.config.ts",
+        "existing_docker_base": "node:18.19.1-buster-slim",
+        "native_deps": [],
+        "needs_git_repo": false,
+        "install_cmds": [
+          "pnpm install"
+        ],
+        "build_cmds": [],
+        "serve_cmd": "",
+        "serve_port": 3000,
+        "test_cmd": "cd packages/ui && npx playwright test",
+        "ci_workflow": ".github/workflows/ci.yml",
         "ci_env": {},
         "notes": []
       }

@@ -32,7 +32,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -72,7 +72,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -112,7 +112,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -152,7 +152,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -192,7 +192,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -232,7 +232,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -272,7 +272,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -312,7 +312,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -352,7 +352,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -392,7 +392,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -432,7 +432,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -472,7 +472,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -512,7 +512,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -552,7 +552,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -592,7 +592,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -632,7 +632,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -672,7 +672,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -712,7 +712,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -752,7 +752,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -792,7 +792,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -832,7 +832,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -872,7 +872,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -912,7 +912,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -952,7 +952,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -992,7 +992,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1032,7 +1032,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1072,7 +1072,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1112,7 +1112,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1152,7 +1152,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1192,7 +1192,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1232,7 +1232,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1272,7 +1272,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1312,7 +1312,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1352,7 +1352,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1392,7 +1392,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1432,7 +1432,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1472,7 +1472,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1512,7 +1512,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1552,7 +1552,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1592,7 +1592,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1632,7 +1632,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1672,7 +1672,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1712,7 +1712,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1752,7 +1752,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1792,7 +1792,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1832,7 +1832,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1872,7 +1872,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1912,7 +1912,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1952,7 +1952,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -1992,7 +1992,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2032,7 +2032,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2072,7 +2072,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2112,7 +2112,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2152,7 +2152,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2192,7 +2192,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2232,7 +2232,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2272,7 +2272,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2312,7 +2312,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2352,7 +2352,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2392,7 +2392,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2432,7 +2432,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2472,7 +2472,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2512,7 +2512,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2552,7 +2552,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2592,7 +2592,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2632,7 +2632,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2672,7 +2672,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2712,7 +2712,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2752,7 +2752,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2792,7 +2792,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2832,7 +2832,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2872,7 +2872,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2912,7 +2912,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2952,7 +2952,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -2992,7 +2992,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3032,7 +3032,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3072,7 +3072,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3112,7 +3112,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3152,7 +3152,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3192,7 +3192,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3232,7 +3232,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3272,7 +3272,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3312,7 +3312,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3352,7 +3352,7 @@
       "needs_git_repo": false,
       "install_cmds": [
         "npm ci",
-        "npm ci"
+        "cd ./build/notify && npm ci"
       ],
       "build_cmds": [
         "npm run build"
@@ -3483,7 +3483,7 @@
         "needs_git_repo": false,
         "install_cmds": [
           "npm ci",
-          "npm ci"
+          "cd ./build/notify && npm ci"
         ],
         "build_cmds": [
           "npm run build"

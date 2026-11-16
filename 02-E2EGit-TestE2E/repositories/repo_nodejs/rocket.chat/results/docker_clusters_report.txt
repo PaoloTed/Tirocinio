@@ -91,7 +91,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Dip. native C++: bcrypt, sharp
   CI Workflow    : .github/workflows/build_and_test.yml
   Env CI         : CI=true, MONGO_URL=mongodb://localhost:27017, TOOL_NODE_FLAGS=--max_old_space_size=4096
-  Install        : meteor npm install && mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test && npm i chromedriver && npm install && meteor npm install
+  Install        : meteor npm install && mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test && npm i chromedriver && npm install
   Build          : meteor build --server-only --directory --debug /tmp/build-test && meteor build --server-only --directory /tmp/build-test && cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd - && meteor build --server-only --directory /tmp/build-pr
   Serve          : - (porta: 27017)
   Test           : -
@@ -105,7 +105,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Dip. native C++: bcrypt, sharp
   CI Workflow    : .github/workflows/build_and_test.yml
   Env CI         : CI=true, MONGO_URL=mongodb://localhost:27017, TOOL_NODE_FLAGS=--max_old_space_size=4096
-  Install        : meteor npm install && mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test && npm i chromedriver && npm install && meteor npm install
+  Install        : meteor npm install && mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test && npm i chromedriver && npm install
   Build          : meteor build --server-only --directory --debug /tmp/build-test && meteor build --server-only --directory /tmp/build-test && cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd - && meteor build --server-only --directory /tmp/build-pr
   Serve          : - (porta: 27017)
   Test           : npx cypress run
@@ -119,7 +119,7 @@ DETTAGLIO CLUSTER (1 Dockerfile per cluster)
   Dip. native C++: bcrypt, sharp
   CI Workflow    : .github/workflows/build_and_test.yml
   Env CI         : CI=true, MONGO_URL=mongodb://localhost:27017, TOOL_NODE_FLAGS=--max_old_space_size=4096
-  Install        : meteor npm install && mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test && npm i chromedriver && npm install && meteor npm install
+  Install        : meteor npm install && mkdir /tmp/build/ && cd /tmp/build-test && tar czf /tmp/build/Rocket.Chat.tar.gz bundle && cd /tmp/build-test/bundle/programs/server && npm install && cd /tmp && tar czf Rocket.Chat.test.tar.gz ./build-test && npm i chromedriver && npm install
   Build          : meteor build --server-only --directory --debug /tmp/build-test && meteor build --server-only --directory /tmp/build-test && cd /tmp && tar xzf Rocket.Chat.test.tar.gz && cd - && meteor build --server-only --directory /tmp/build-pr
   Serve          : - (porta: 27017)
   Test           : npx cypress run
