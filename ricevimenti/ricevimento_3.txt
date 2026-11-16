@@ -1,0 +1,13 @@
+Prog1 NUOVO
+pydrillerdataset gitskill 
+realizzazione tool analisi  di repository skill ai 
+vedere andamento del progetto commit, commenti alle commit, errori code smells ecc
+parallelo
+dataset https://2027.msrconf.org/track/msr-2027-mining-challenge
+
+Prog2 CONTINUO DI UNO GIA' AVVIATO
+end to end
+eseguire i test e verificare perche non sono cambiati, se reggono o si sono rotti
+https://ieeexplore.ieee.org/document/11025750
+https://zenodo.org/records/14234731
+https://valeriapontillo.github.io/documents/conference/C4.pdf
