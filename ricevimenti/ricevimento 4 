@@ -1,0 +1,21 @@
+Ricevimento 4 con il professore.
+
+Concentrarsi su nodejs e playwright, fare una analisi dei repository solo su queste tecnologie.
+Andare ad aver un singolo docker file per repository, 
+effort iniziale per far partire la prima versione del docker file.
+Analizzare se le reposiotry contengono gia un docker file o istruzioni per test o altro.
+Far paritre il primo docker file, al commit t0,
+fornisco l'intervallo dei commit da analizzare e  
+copio script di interfaccia che fanno :
+partire il repo;
+riavviare;
+reset a t0;
+checkout commit x;
+eseguire test,
+recuperare i valori.
+
+La procedura dovrebbe essegure unifrome a tutti i repository, 
+report lunghezza delle finestre di commit, analizzare queste finestre quanto sono lunghe,
+vedere se ci sono correlazioni, ad esempio se ci sono correlazioni tra lunghezza della finestra e probabilità di falliemtno di test.
+vedere se le finestre spno troppo lunghe la possibilida idi eseguire una "esecuzione binaria" 
+della finestra di commit, per ridurre il numero di commit da testare.

@@ -1,0 +1,723 @@
+Repository: angular-slickgrid
+Commit analizzati: 2270 (Commit 1 2019-03-19 16:47:49 -> Commit 2270 2024-10-19 19:48:04)
+File di test trovati: 35
+
+Test 1: test/cypress/e2e/example01.cy.ts | creato a Commit 2 (2019-03-19 17:25:51)
+- Rename (da cypress/integration/basic_grid.spec.js) dopo 5 commit (Commit 7) | 2019-03-22 09:40:38
+- Mod 1 dopo 12 commit (Commit 19) in percentuale 88% | 2019-04-05 18:41:39
+- Rename (da cypress/integration/example1.spec.js) dopo 210 commit (Commit 229) | 2019-07-15 14:58:08
+- Mod 2 dopo 19 commit (Commit 248) in percentuale 1% | 2019-07-17 15:18:09
+- Mod 3 dopo 19 commit (Commit 267) in percentuale 8% | 2019-07-31 19:08:21
+- Mod 4 dopo 40 commit (Commit 307) in percentuale 1% | 2019-08-16 17:36:07
+- Mod 5 dopo 187 commit (Commit 494) in percentuale 1% | 2019-11-29 13:23:04
+- Mod 6 dopo 18 commit (Commit 512) in percentuale 2% | 2019-12-16 11:34:27
+- Rename (da test/cypress/integration/example1.spec.js) dopo 46 commit (Commit 558) | 2020-01-14 15:20:22
+- Mod 7 dopo 18 commit (Commit 576) in percentuale 3% | 2020-01-16 20:08:11
+- Mod 8 dopo 1 commit (Commit 577) in percentuale 1% | 2020-01-17 12:34:25
+- Mod 9 dopo 2 commit (Commit 579) in percentuale 19% | 2020-01-17 17:39:26
+- Mod 10 dopo 41 commit (Commit 620) in percentuale 0% | 2020-02-03 13:28:16
+- Mod 11 dopo 34 commit (Commit 654) in percentuale 1% | 2020-03-17 19:20:08
+- Mod 12 dopo 36 commit (Commit 690) in percentuale 56% | 2020-05-19 10:24:04
+- Mod 13 dopo 171 commit (Commit 861) in percentuale 0% | 2020-10-30 10:23:14
+- Mod 14 dopo 196 commit (Commit 1057) in percentuale 1% | 2021-05-18 17:45:03
+- Mod 15 dopo 23 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 16 dopo 165 commit (Commit 1245) in percentuale 17% | 2021-11-12 18:25:11
+- Mod 17 dopo 14 commit (Commit 1259) in percentuale 4% | 2021-11-29 14:08:19
+- Mod 18 dopo 1 commit (Commit 1260) in percentuale 8% | 2021-12-08 18:02:05
+- Mod 19 dopo 8 commit (Commit 1268) in percentuale 0% | 2022-01-04 19:41:32
+- Rename (da test/cypress/integration/example01.spec.js) dopo 66 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 20 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example01.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 21 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 22 dopo 9 commit (Commit 1578) in percentuale 0% | 2023-02-04 14:54:26
+- Mod 23 dopo 262 commit (Commit 1840) in percentuale 1% | 2023-11-01 23:09:57
+- Mod 24 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 25 dopo 209 commit (Commit 2058) in percentuale 4% | 2024-05-01 00:34:12
+- Mod 26 dopo 132 commit (Commit 2190) in percentuale 2% | 2024-08-07 01:35:30
+- Mod 27 dopo 1 commit (Commit 2191) in percentuale 2% | 2024-08-07 01:43:29
+- Nessun'altra modifica per 79 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 2: test/cypress/e2e/home.cy.ts | creato a Commit 2 (2019-03-19 17:25:51)
+- Rename (da cypress/integration/home.spec.js) dopo 227 commit (Commit 229) | 2019-07-15 14:58:08
+- Mod 1 dopo 19 commit (Commit 248) in percentuale 22% | 2019-07-17 15:18:09
+- Mod 2 dopo 59 commit (Commit 307) in percentuale 41% | 2019-08-16 17:36:07
+- Mod 3 dopo 187 commit (Commit 494) in percentuale 14% | 2019-11-29 13:23:04
+- Mod 4 dopo 367 commit (Commit 861) in percentuale 14% | 2020-10-30 10:23:14
+- Rename (da test/cypress/integration/home.spec.js) dopo 473 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 5 dopo 2 commit (Commit 1336) in percentuale 14% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/home.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 6 dopo 2 commit (Commit 1569) in percentuale 16% | 2023-01-27 15:32:51
+- Nessun'altra modifica per 701 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 3: test/cypress/e2e/example06.cy.ts | creato a Commit 7 (2019-03-22 09:40:38)
+- Rename (da cypress/integration/example6.spec.js) dopo 222 commit (Commit 229) | 2019-07-15 14:58:08
+- Mod 1 dopo 19 commit (Commit 248) in percentuale 39% | 2019-07-17 15:18:09
+- Mod 2 dopo 51 commit (Commit 299) in percentuale 50% | 2019-08-14 10:59:22
+- Mod 3 dopo 6 commit (Commit 305) in percentuale 7% | 2019-08-15 20:23:53
+- Mod 4 dopo 2 commit (Commit 307) in percentuale 3% | 2019-08-16 17:36:07
+- Mod 5 dopo 45 commit (Commit 352) in percentuale 9% | 2019-09-24 19:09:00
+- Mod 6 dopo 74 commit (Commit 426) in percentuale 15% | 2019-10-23 19:09:43
+- Mod 7 dopo 37 commit (Commit 463) in percentuale 20% | 2019-11-18 12:39:16
+- Mod 8 dopo 9 commit (Commit 472) in percentuale 10% | 2019-11-20 20:08:24
+- Mod 9 dopo 22 commit (Commit 494) in percentuale 0% | 2019-11-29 13:23:04
+- Mod 10 dopo 18 commit (Commit 512) in percentuale 1% | 2019-12-16 11:34:27
+- Mod 11 dopo 38 commit (Commit 550) in percentuale 7% | 2020-01-13 14:09:23
+- Rename (da test/cypress/integration/example6.spec.js) dopo 8 commit (Commit 558) | 2020-01-14 15:20:22
+- Mod 12 dopo 38 commit (Commit 596) in percentuale 15% | 2020-01-21 19:13:10
+- Mod 13 dopo 10 commit (Commit 606) in percentuale 0% | 2020-01-23 09:52:08
+- Mod 14 dopo 184 commit (Commit 790) in percentuale 7% | 2020-08-04 10:04:36
+- Mod 15 dopo 2 commit (Commit 792) in percentuale 21% | 2020-08-04 14:12:37
+- Mod 16 dopo 206 commit (Commit 998) in percentuale 10% | 2021-03-22 10:05:36
+- Mod 17 dopo 59 commit (Commit 1057) in percentuale 4% | 2021-05-18 17:45:03
+- Mod 18 dopo 19 commit (Commit 1076) in percentuale 4% | 2021-05-21 18:06:04
+- Mod 19 dopo 4 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 20 dopo 165 commit (Commit 1245) in percentuale 14% | 2021-11-12 18:25:11
+- Mod 21 dopo 14 commit (Commit 1259) in percentuale 4% | 2021-11-29 14:08:19
+- Mod 22 dopo 1 commit (Commit 1260) in percentuale 11% | 2021-12-08 18:02:05
+- Mod 23 dopo 18 commit (Commit 1278) in percentuale 3% | 2022-01-18 10:39:51
+- Mod 24 dopo 1 commit (Commit 1279) in percentuale 4% | 2022-01-18 10:50:27
+- Rename (da test/cypress/integration/example06.spec.js) dopo 55 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 25 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example06.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 26 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 27 dopo 2 commit (Commit 1571) in percentuale 9% | 2023-01-27 17:39:42
+- Mod 28 dopo 7 commit (Commit 1578) in percentuale 0% | 2023-02-04 14:54:26
+- Mod 29 dopo 262 commit (Commit 1840) in percentuale 3% | 2023-11-01 23:09:57
+- Mod 30 dopo 1 commit (Commit 1841) in percentuale 14% | 2023-11-02 03:19:10
+- Mod 31 dopo 4 commit (Commit 1845) in percentuale 5% | 2023-11-03 21:00:05
+- Mod 32 dopo 12 commit (Commit 1857) in percentuale 0% | 2023-11-10 19:04:34
+- Mod 33 dopo 198 commit (Commit 2055) in percentuale 1% | 2024-04-24 23:40:59
+- Mod 34 dopo 3 commit (Commit 2058) in percentuale 1% | 2024-05-01 00:34:12
+- Mod 35 dopo 4 commit (Commit 2062) in percentuale 0% | 2024-05-06 21:33:05
+- Mod 36 dopo 60 commit (Commit 2122) in percentuale 3% | 2024-05-29 21:09:48
+- Mod 37 dopo 3 commit (Commit 2125) in percentuale 6% | 2024-05-29 23:57:32
+- Mod 38 dopo 19 commit (Commit 2144) in percentuale 9% | 2024-06-15 12:11:20
+- Mod 39 dopo 15 commit (Commit 2159) in percentuale 5% | 2024-06-28 21:45:06
+- Mod 40 dopo 56 commit (Commit 2215) in percentuale 0% | 2024-08-24 14:05:56
+- Nessun'altra modifica per 55 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 4: test/cypress/e2e/example10.cy.ts | creato a Commit 261 (2019-07-29 13:18:39)
+- Mod 1 dopo 7 commit (Commit 268) in percentuale 59% | 2019-08-01 19:45:11
+- Mod 2 dopo 39 commit (Commit 307) in percentuale 1% | 2019-08-16 17:36:07
+- Mod 3 dopo 187 commit (Commit 494) in percentuale 1% | 2019-11-29 13:23:04
+- Mod 4 dopo 83 commit (Commit 577) in percentuale 4% | 2020-01-17 12:34:25
+- Mod 5 dopo 2 commit (Commit 579) in percentuale 54% | 2020-01-17 17:39:26
+- Mod 6 dopo 4 commit (Commit 583) in percentuale 6% | 2020-01-20 10:20:00
+- Mod 7 dopo 8 commit (Commit 591) in percentuale 7% | 2020-01-21 11:30:48
+- Mod 8 dopo 17 commit (Commit 608) in percentuale 12% | 2020-01-23 17:39:22
+- Mod 9 dopo 4 commit (Commit 612) in percentuale 44% | 2020-01-31 11:31:47
+- Mod 10 dopo 16 commit (Commit 628) in percentuale 24% | 2020-02-05 10:13:33
+- Mod 11 dopo 249 commit (Commit 877) in percentuale 0% | 2020-11-16 12:15:48
+- Mod 12 dopo 72 commit (Commit 949) in percentuale 0% | 2021-01-19 17:42:18
+- Mod 13 dopo 131 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 14 dopo 79 commit (Commit 1159) in percentuale 2% | 2021-06-28 13:43:42
+- Mod 15 dopo 1 commit (Commit 1160) in percentuale 2% | 2021-06-28 19:39:46
+- Mod 16 dopo 54 commit (Commit 1214) in percentuale 1% | 2021-09-28 16:36:23
+- Mod 17 dopo 31 commit (Commit 1245) in percentuale 2% | 2021-11-12 18:25:11
+- Mod 18 dopo 14 commit (Commit 1259) in percentuale 0% | 2021-11-29 14:08:19
+- Mod 19 dopo 1 commit (Commit 1260) in percentuale 2% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example10.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 20 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 21 dopo 161 commit (Commit 1497) in percentuale 0% | 2022-11-16 22:25:47
+- Rename (da test/cypress/e2e/example10.cy.js) dopo 70 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 22 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 23 dopo 9 commit (Commit 1578) in percentuale 14% | 2023-02-04 14:54:26
+- Mod 24 dopo 121 commit (Commit 1699) in percentuale 3% | 2023-06-30 21:03:42
+- Mod 25 dopo 150 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Nessun'altra modifica per 421 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 5: test/cypress/e2e/example05.cy.ts | creato a Commit 267 (2019-07-31 19:08:21)
+- Mod 1 dopo 19 commit (Commit 286) in percentuale 24% | 2019-08-07 20:08:20
+- Mod 2 dopo 1 commit (Commit 287) in percentuale 5% | 2019-08-07 20:17:29
+- Mod 3 dopo 20 commit (Commit 307) in percentuale 1% | 2019-08-16 17:36:07
+- Mod 4 dopo 45 commit (Commit 352) in percentuale 126% | 2019-09-24 19:09:00
+- Mod 5 dopo 74 commit (Commit 426) in percentuale 8% | 2019-10-23 19:09:43
+- Mod 6 dopo 22 commit (Commit 448) in percentuale 28% | 2019-11-07 18:16:52
+- Mod 7 dopo 6 commit (Commit 454) in percentuale 1% | 2019-11-08 09:40:01
+- Mod 8 dopo 9 commit (Commit 463) in percentuale 10% | 2019-11-18 12:39:16
+- Mod 9 dopo 9 commit (Commit 472) in percentuale 7% | 2019-11-20 20:08:24
+- Mod 10 dopo 22 commit (Commit 494) in percentuale 0% | 2019-11-29 13:23:04
+- Mod 11 dopo 18 commit (Commit 512) in percentuale 3% | 2019-12-16 11:34:27
+- Rename (da test/cypress/integration/example5.spec.js) dopo 46 commit (Commit 558) | 2020-01-14 15:20:22
+- Mod 12 dopo 46 commit (Commit 604) in percentuale 11% | 2020-01-22 20:11:57
+- Mod 13 dopo 4 commit (Commit 608) in percentuale 7% | 2020-01-23 17:39:22
+- Mod 14 dopo 131 commit (Commit 739) in percentuale 3% | 2020-06-25 09:41:50
+- Mod 15 dopo 139 commit (Commit 878) in percentuale 1% | 2020-11-16 15:29:52
+- Mod 16 dopo 71 commit (Commit 949) in percentuale 0% | 2021-01-19 17:42:18
+- Mod 17 dopo 131 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 18 dopo 80 commit (Commit 1160) in percentuale 0% | 2021-06-28 19:39:46
+- Mod 19 dopo 45 commit (Commit 1205) in percentuale 31% | 2021-09-07 12:35:04
+- Mod 20 dopo 5 commit (Commit 1210) in percentuale 0% | 2021-09-09 16:31:37
+- Mod 21 dopo 4 commit (Commit 1214) in percentuale 0% | 2021-09-28 16:36:23
+- Mod 22 dopo 31 commit (Commit 1245) in percentuale 3% | 2021-11-12 18:25:11
+- Mod 23 dopo 14 commit (Commit 1259) in percentuale 0% | 2021-11-29 14:08:19
+- Mod 24 dopo 1 commit (Commit 1260) in percentuale 1% | 2021-12-08 18:02:05
+- Mod 25 dopo 4 commit (Commit 1264) in percentuale 0% | 2021-12-10 20:37:33
+- Mod 26 dopo 1 commit (Commit 1265) in percentuale 1% | 2021-12-10 20:44:03
+- Mod 27 dopo 4 commit (Commit 1269) in percentuale 10% | 2022-01-04 20:55:54
+- Mod 28 dopo 8 commit (Commit 1277) in percentuale 3% | 2022-01-18 09:46:12
+- Rename (da test/cypress/integration/example05.spec.js) dopo 57 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 29 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 30 dopo 156 commit (Commit 1492) in percentuale 0% | 2022-11-12 18:47:02
+- Rename (da test/cypress/e2e/example05.cy.js) dopo 75 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 31 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 32 dopo 78 commit (Commit 1647) in percentuale 0% | 2023-05-22 13:16:35
+- Mod 33 dopo 193 commit (Commit 1840) in percentuale 0% | 2023-11-01 23:09:57
+- Mod 34 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 35 dopo 49 commit (Commit 1898) in percentuale 0% | 2023-12-11 20:26:07
+- Mod 36 dopo 225 commit (Commit 2123) in percentuale 2% | 2024-05-29 21:58:47
+- Mod 37 dopo 2 commit (Commit 2125) in percentuale 2% | 2024-05-29 23:57:32
+- Mod 38 dopo 9 commit (Commit 2134) in percentuale 4% | 2024-06-07 23:08:26
+- Mod 39 dopo 17 commit (Commit 2151) in percentuale 0% | 2024-06-17 21:58:26
+- Nessun'altra modifica per 119 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 6: test/cypress/e2e/example09.cy.ts | creato a Commit 267 (2019-07-31 19:08:21)
+- Mod 1 dopo 1 commit (Commit 268) in percentuale 11% | 2019-08-01 19:45:11
+- Mod 2 dopo 2 commit (Commit 270) in percentuale 13% | 2019-08-05 14:47:54
+- Mod 3 dopo 12 commit (Commit 282) in percentuale 1% | 2019-08-06 09:42:55
+- Mod 4 dopo 25 commit (Commit 307) in percentuale 0% | 2019-08-16 17:36:07
+- Mod 5 dopo 20 commit (Commit 327) in percentuale 4% | 2019-08-26 18:45:29
+- Mod 6 dopo 99 commit (Commit 426) in percentuale 1% | 2019-10-23 19:09:43
+- Mod 7 dopo 2 commit (Commit 428) in percentuale 3% | 2019-10-24 14:27:57
+- Mod 8 dopo 66 commit (Commit 494) in percentuale 0% | 2019-11-29 13:23:04
+- Mod 9 dopo 30 commit (Commit 524) in percentuale 35% | 2019-12-18 17:26:32
+- Mod 10 dopo 20 commit (Commit 544) in percentuale 15% | 2020-01-10 11:39:17
+- Rename (da test/cypress/integration/example9.spec.js) dopo 14 commit (Commit 558) | 2020-01-14 15:20:22
+- Mod 11 dopo 22 commit (Commit 580) in percentuale 1% | 2020-01-17 19:22:38
+- Mod 12 dopo 477 commit (Commit 1057) in percentuale 2% | 2021-05-18 17:45:03
+- Mod 13 dopo 23 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 14 dopo 165 commit (Commit 1245) in percentuale 26% | 2021-11-12 18:25:11
+- Mod 15 dopo 14 commit (Commit 1259) in percentuale 6% | 2021-11-29 14:08:19
+- Mod 16 dopo 1 commit (Commit 1260) in percentuale 13% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example09.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 17 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example09.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 18 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 19 dopo 271 commit (Commit 1840) in percentuale 33% | 2023-11-01 23:09:57
+- Mod 20 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Nessun'altra modifica per 421 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 7: test/cypress/e2e/example16.cy.ts | creato a Commit 270 (2019-08-05 14:47:54)
+- Mod 1 dopo 12 commit (Commit 282) in percentuale 2% | 2019-08-06 09:42:55
+- Mod 2 dopo 25 commit (Commit 307) in percentuale 0% | 2019-08-16 17:36:07
+- Mod 3 dopo 187 commit (Commit 494) in percentuale 0% | 2019-11-29 13:23:04
+- Mod 4 dopo 85 commit (Commit 579) in percentuale 21% | 2020-01-17 17:39:26
+- Mod 5 dopo 4 commit (Commit 583) in percentuale 9% | 2020-01-20 10:20:00
+- Mod 6 dopo 29 commit (Commit 612) in percentuale 12% | 2020-01-31 11:31:47
+- Mod 7 dopo 388 commit (Commit 1000) in percentuale 0% | 2021-03-22 21:46:57
+- Mod 8 dopo 1 commit (Commit 1001) in percentuale 4% | 2021-03-23 08:03:33
+- Mod 9 dopo 56 commit (Commit 1057) in percentuale 0% | 2021-05-18 17:45:03
+- Mod 10 dopo 23 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 11 dopo 38 commit (Commit 1118) in percentuale 0% | 2021-05-30 22:48:30
+- Mod 12 dopo 100 commit (Commit 1218) in percentuale 0% | 2021-09-29 10:01:03
+- Mod 13 dopo 27 commit (Commit 1245) in percentuale 5% | 2021-11-12 18:25:11
+- Mod 14 dopo 14 commit (Commit 1259) in percentuale 2% | 2021-11-29 14:08:19
+- Mod 15 dopo 1 commit (Commit 1260) in percentuale 5% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example16.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 16 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 17 dopo 10 commit (Commit 1346) in percentuale 0% | 2022-06-13 17:20:56
+- Mod 18 dopo 78 commit (Commit 1424) in percentuale 2% | 2022-09-17 20:56:28
+- Mod 19 dopo 87 commit (Commit 1511) in percentuale 2% | 2022-11-30 21:33:38
+- Mod 20 dopo 15 commit (Commit 1526) in percentuale 11% | 2022-12-07 21:30:25
+- Rename (da test/cypress/e2e/example16.cy.js) dopo 41 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 21 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 22 dopo 9 commit (Commit 1578) in percentuale 0% | 2023-02-04 14:54:26
+- Mod 23 dopo 14 commit (Commit 1592) in percentuale 2% | 2023-02-23 17:21:02
+- Mod 24 dopo 248 commit (Commit 1840) in percentuale 1% | 2023-11-01 23:09:57
+- Mod 25 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 26 dopo 49 commit (Commit 1898) in percentuale 2% | 2023-12-11 20:26:07
+- Mod 27 dopo 246 commit (Commit 2144) in percentuale 19% | 2024-06-15 12:11:20
+- Mod 28 dopo 45 commit (Commit 2189) in percentuale 0% | 2024-08-07 01:30:03
+- Nessun'altra modifica per 81 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 8: test/cypress/e2e/example25.cy.ts | creato a Commit 307 (2019-08-16 17:36:07)
+- Mod 1 dopo 156 commit (Commit 463) in percentuale 34% | 2019-11-18 12:39:16
+- Mod 2 dopo 7 commit (Commit 470) in percentuale 1% | 2019-11-20 09:51:17
+- Mod 3 dopo 2 commit (Commit 472) in percentuale 16% | 2019-11-20 20:08:24
+- Mod 4 dopo 11 commit (Commit 483) in percentuale 8% | 2019-11-22 19:07:34
+- Mod 5 dopo 292 commit (Commit 775) in percentuale 4% | 2020-07-28 15:54:17
+- Mod 6 dopo 305 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Rename (da test/cypress/integration/example25.spec.js) dopo 254 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 7 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 8 dopo 88 commit (Commit 1424) in percentuale 0% | 2022-09-17 20:56:28
+- Mod 9 dopo 60 commit (Commit 1484) in percentuale 4% | 2022-11-07 22:54:22
+- Mod 10 dopo 6 commit (Commit 1490) in percentuale 17% | 2022-11-11 23:37:52
+- Mod 11 dopo 23 commit (Commit 1513) in percentuale 1% | 2022-11-30 22:22:14
+- Mod 12 dopo 9 commit (Commit 1522) in percentuale 0% | 2022-12-07 14:18:23
+- Mod 13 dopo 19 commit (Commit 1541) in percentuale 0% | 2022-12-12 21:35:40
+- Rename (da test/cypress/e2e/example25.cy.js) dopo 26 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 14 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 15 dopo 133 commit (Commit 1702) in percentuale 1% | 2023-07-04 10:15:02
+- Mod 16 dopo 2 commit (Commit 1704) in percentuale 0% | 2023-07-04 10:30:52
+- Mod 17 dopo 8 commit (Commit 1712) in percentuale 0% | 2023-07-06 23:40:38
+- Mod 18 dopo 137 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 19 dopo 50 commit (Commit 1899) in percentuale 1% | 2023-12-11 23:12:20
+- Mod 20 dopo 2 commit (Commit 1901) in percentuale 1% | 2023-12-12 18:47:20
+- Mod 21 dopo 154 commit (Commit 2055) in percentuale 6% | 2024-04-24 23:40:59
+- Mod 22 dopo 3 commit (Commit 2058) in percentuale 5% | 2024-05-01 00:34:12
+- Mod 23 dopo 4 commit (Commit 2062) in percentuale 9% | 2024-05-06 21:33:05
+- Mod 24 dopo 5 commit (Commit 2067) in percentuale 3% | 2024-05-06 23:14:46
+- Mod 25 dopo 115 commit (Commit 2182) in percentuale 0% | 2024-08-01 23:57:51
+- Nessun'altra modifica per 88 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 9: test/cypress/e2e/example22.cy.ts | creato a Commit 404 (2019-10-17 09:57:25)
+- Mod 1 dopo 35 commit (Commit 439) in percentuale 4% | 2019-11-05 18:49:14
+- Mod 2 dopo 165 commit (Commit 604) in percentuale 9% | 2020-01-22 20:11:57
+- Mod 3 dopo 241 commit (Commit 845) in percentuale 53% | 2020-10-13 09:46:33
+- Mod 4 dopo 145 commit (Commit 990) in percentuale 2% | 2021-03-15 19:54:18
+- Mod 5 dopo 90 commit (Commit 1080) in percentuale 2% | 2021-05-24 19:39:17
+- Mod 6 dopo 103 commit (Commit 1183) in percentuale 10% | 2021-07-16 21:30:22
+- Mod 7 dopo 77 commit (Commit 1260) in percentuale 4% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example22.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 8 dopo 2 commit (Commit 1336) in percentuale 2% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example22.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 9 dopo 2 commit (Commit 1569) in percentuale 2% | 2023-01-27 15:32:51
+- Mod 10 dopo 234 commit (Commit 1803) in percentuale 7% | 2023-09-25 21:33:00
+- Mod 11 dopo 33 commit (Commit 1836) in percentuale 21% | 2023-10-25 11:42:15
+- Mod 12 dopo 13 commit (Commit 1849) in percentuale 1% | 2023-11-10 12:11:03
+- Nessun'altra modifica per 421 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 10: test/cypress/e2e/example04.cy.ts | creato a Commit 463 (2019-11-18 12:39:16)
+- Mod 1 dopo 4 commit (Commit 467) in percentuale 1% | 2019-11-19 18:16:55
+- Mod 2 dopo 5 commit (Commit 472) in percentuale 42% | 2019-11-20 20:08:24
+- Mod 3 dopo 85 commit (Commit 557) in percentuale 7% | 2020-01-14 15:18:17
+- Rename (da test/cypress/integration/example4.spec.js) dopo 1 commit (Commit 558) | 2020-01-14 15:20:22
+- Mod 4 dopo 35 commit (Commit 593) in percentuale 2% | 2020-01-21 15:50:40
+- Mod 5 dopo 397 commit (Commit 990) in percentuale 5% | 2021-03-15 19:54:18
+- Mod 6 dopo 7 commit (Commit 997) in percentuale 11% | 2021-03-21 18:04:21
+- Mod 7 dopo 83 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Rename (da test/cypress/integration/example04.spec.js) dopo 254 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 8 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example04.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 9 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 10 dopo 2 commit (Commit 1571) in percentuale 2% | 2023-01-27 17:39:42
+- Mod 11 dopo 278 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 12 dopo 206 commit (Commit 2055) in percentuale 0% | 2024-04-24 23:40:59
+- Mod 13 dopo 7 commit (Commit 2062) in percentuale 2% | 2024-05-06 21:33:05
+- Mod 14 dopo 5 commit (Commit 2067) in percentuale 0% | 2024-05-06 23:14:46
+- Mod 15 dopo 52 commit (Commit 2119) in percentuale 26% | 2024-05-29 00:25:37
+- Mod 16 dopo 125 commit (Commit 2244) in percentuale 2% | 2024-09-28 23:43:42
+- Mod 17 dopo 8 commit (Commit 2252) in percentuale 2% | 2024-09-30 12:09:35
+- Nessun'altra modifica per 18 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 11: test/cypress/e2e/example12.cy.ts | creato a Commit 494 (2019-11-29 13:23:04)
+- Mod 1 dopo 18 commit (Commit 512) in percentuale 1% | 2019-12-16 11:34:27
+- Mod 2 dopo 45 commit (Commit 557) in percentuale 17% | 2020-01-14 15:18:17
+- Mod 3 dopo 18 commit (Commit 575) in percentuale 2% | 2020-01-16 14:54:28
+- Mod 4 dopo 45 commit (Commit 620) in percentuale 3% | 2020-02-03 13:28:16
+- Mod 5 dopo 11 commit (Commit 631) in percentuale 48% | 2020-02-06 12:12:44
+- Mod 6 dopo 54 commit (Commit 685) in percentuale 2% | 2020-05-12 17:54:58
+- Mod 7 dopo 65 commit (Commit 750) in percentuale 1% | 2020-07-09 09:01:09
+- Mod 8 dopo 138 commit (Commit 888) in percentuale 2% | 2020-11-20 11:51:06
+- Mod 9 dopo 1 commit (Commit 889) in percentuale 8% | 2020-11-20 12:02:24
+- Mod 10 dopo 91 commit (Commit 980) in percentuale 2% | 2021-02-26 21:06:32
+- Mod 11 dopo 53 commit (Commit 1033) in percentuale 20% | 2021-04-26 11:52:46
+- Mod 12 dopo 24 commit (Commit 1057) in percentuale 0% | 2021-05-18 17:45:03
+- Mod 13 dopo 23 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 14 dopo 165 commit (Commit 1245) in percentuale 7% | 2021-11-12 18:25:11
+- Mod 15 dopo 14 commit (Commit 1259) in percentuale 0% | 2021-11-29 14:08:19
+- Mod 16 dopo 1 commit (Commit 1260) in percentuale 2% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example12.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 17 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 18 dopo 154 commit (Commit 1490) in percentuale 3% | 2022-11-11 23:37:52
+- Mod 19 dopo 7 commit (Commit 1497) in percentuale 1% | 2022-11-16 22:25:47
+- Mod 20 dopo 26 commit (Commit 1523) in percentuale 0% | 2022-12-07 14:22:26
+- Rename (da test/cypress/e2e/example12.cy.js) dopo 44 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 21 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 22 dopo 2 commit (Commit 1571) in percentuale 1% | 2023-01-27 17:39:42
+- Mod 23 dopo 128 commit (Commit 1699) in percentuale 2% | 2023-06-30 21:03:42
+- Mod 24 dopo 56 commit (Commit 1755) in percentuale 0% | 2023-08-21 14:27:31
+- Mod 25 dopo 85 commit (Commit 1840) in percentuale 0% | 2023-11-01 23:09:57
+- Mod 26 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 27 dopo 213 commit (Commit 2062) in percentuale 2% | 2024-05-06 21:33:05
+- Nessun'altra modifica per 208 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 12: test/cypress/e2e/example26.cy.ts | creato a Commit 523 (2019-12-18 11:26:50)
+- Mod 1 dopo 1 commit (Commit 524) in percentuale 1% | 2019-12-18 17:26:32
+- Mod 2 dopo 5 commit (Commit 529) in percentuale 1% | 2020-01-06 12:24:56
+- Mod 3 dopo 67 commit (Commit 596) in percentuale 0% | 2020-01-21 19:13:10
+- Mod 4 dopo 484 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 5 dopo 179 commit (Commit 1259) in percentuale 2% | 2021-11-29 14:08:19
+- Mod 6 dopo 1 commit (Commit 1260) in percentuale 18% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example26.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 7 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example26.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 8 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 9 dopo 271 commit (Commit 1840) in percentuale 27% | 2023-11-01 23:09:57
+- Mod 10 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 11 dopo 49 commit (Commit 1898) in percentuale 2% | 2023-12-11 20:26:07
+- Mod 12 dopo 160 commit (Commit 2058) in percentuale 0% | 2024-05-01 00:34:12
+- Nessun'altra modifica per 212 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 13: test/cypress/e2e/example07.cy.ts | creato a Commit 524 (2019-12-18 17:26:32)
+- Rename (da test/cypress/integration/example7.spec.js) dopo 34 commit (Commit 558) | 2020-01-14 15:20:22
+- Mod 1 dopo 303 commit (Commit 861) in percentuale 1% | 2020-10-30 10:23:14
+- Mod 2 dopo 219 commit (Commit 1080) in percentuale 1% | 2021-05-24 19:39:17
+- Mod 3 dopo 165 commit (Commit 1245) in percentuale 125% | 2021-11-12 18:25:11
+- Mod 4 dopo 14 commit (Commit 1259) in percentuale 0% | 2021-11-29 14:08:19
+- Mod 5 dopo 1 commit (Commit 1260) in percentuale 2% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example07.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 6 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example07.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 7 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 8 dopo 271 commit (Commit 1840) in percentuale 0% | 2023-11-01 23:09:57
+- Mod 9 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 10 dopo 209 commit (Commit 2058) in percentuale 4% | 2024-05-01 00:34:12
+- Mod 11 dopo 131 commit (Commit 2189) in percentuale 0% | 2024-08-07 01:30:03
+- Nessun'altra modifica per 81 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 14: test/cypress/e2e/example08.cy.ts | creato a Commit 524 (2019-12-18 17:26:32)
+- Rename (da test/cypress/integration/example8.spec.js) dopo 34 commit (Commit 558) | 2020-01-14 15:20:22
+- Mod 1 dopo 62 commit (Commit 620) in percentuale 1% | 2020-02-03 13:28:16
+- Mod 2 dopo 14 commit (Commit 634) in percentuale 1% | 2020-02-07 11:21:49
+- Mod 3 dopo 227 commit (Commit 861) in percentuale 1% | 2020-10-30 10:23:14
+- Mod 4 dopo 88 commit (Commit 949) in percentuale 1% | 2021-01-19 17:42:18
+- Mod 5 dopo 131 commit (Commit 1080) in percentuale 1% | 2021-05-24 19:39:17
+- Mod 6 dopo 165 commit (Commit 1245) in percentuale 17% | 2021-11-12 18:25:11
+- Mod 7 dopo 15 commit (Commit 1260) in percentuale 11% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example08.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 8 dopo 2 commit (Commit 1336) in percentuale 1% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example08.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 9 dopo 2 commit (Commit 1569) in percentuale 1% | 2023-01-27 15:32:51
+- Mod 10 dopo 271 commit (Commit 1840) in percentuale 30% | 2023-11-01 23:09:57
+- Mod 11 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 12 dopo 209 commit (Commit 2058) in percentuale 1% | 2024-05-01 00:34:12
+- Nessun'altra modifica per 212 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 15: test/cypress/e2e/example02.cy.ts | creato a Commit 557 (2020-01-14 15:18:17)
+- Rename (da test/cypress/integration/example2.spec.js) dopo 1 commit (Commit 558) | 2020-01-14 15:20:22
+- Mod 1 dopo 522 commit (Commit 1080) in percentuale 6% | 2021-05-24 19:39:17
+- Rename (da test/cypress/integration/example02.spec.js) dopo 254 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 2 dopo 2 commit (Commit 1336) in percentuale 6% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example02.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 3 dopo 2 commit (Commit 1569) in percentuale 7% | 2023-01-27 15:32:51
+- Mod 4 dopo 2 commit (Commit 1571) in percentuale 16% | 2023-01-27 17:39:42
+- Mod 5 dopo 278 commit (Commit 1849) in percentuale 8% | 2023-11-10 12:11:03
+- Nessun'altra modifica per 421 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 16: test/cypress/e2e/example21.cy.ts | creato a Commit 580 (2020-01-17 19:22:38)
+- Mod 1 dopo 2 commit (Commit 582) in percentuale 2% | 2020-01-17 19:36:10
+- Mod 2 dopo 371 commit (Commit 953) in percentuale 8% | 2021-01-25 09:07:02
+- Mod 3 dopo 104 commit (Commit 1057) in percentuale 1% | 2021-05-18 17:45:03
+- Mod 4 dopo 23 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 5 dopo 25 commit (Commit 1105) in percentuale 1% | 2021-05-27 09:19:40
+- Mod 6 dopo 140 commit (Commit 1245) in percentuale 4% | 2021-11-12 18:25:11
+- Mod 7 dopo 1 commit (Commit 1246) in percentuale 19% | 2021-11-15 16:47:11
+- Mod 8 dopo 13 commit (Commit 1259) in percentuale 1% | 2021-11-29 14:08:19
+- Mod 9 dopo 1 commit (Commit 1260) in percentuale 3% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example21.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 10 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 11 dopo 28 commit (Commit 1364) in percentuale 3% | 2022-07-05 10:59:39
+- Rename (da test/cypress/e2e/example21.cy.js) dopo 203 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 12 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 13 dopo 20 commit (Commit 1589) in percentuale 9% | 2023-02-16 21:34:55
+- Mod 14 dopo 251 commit (Commit 1840) in percentuale 1% | 2023-11-01 23:09:57
+- Mod 15 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 16 dopo 50 commit (Commit 1899) in percentuale 9% | 2023-12-11 23:12:20
+- Mod 17 dopo 53 commit (Commit 1952) in percentuale 13% | 2023-12-27 01:08:39
+- Nessun'altra modifica per 318 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 17: test/cypress/e2e/example17.cy.ts | creato a Commit 670 (2020-04-07 10:17:56)
+- Mod 1 dopo 157 commit (Commit 827) in percentuale 72% | 2020-09-28 09:11:38
+- Mod 2 dopo 20 commit (Commit 847) in percentuale 29% | 2020-10-13 19:48:10
+- Mod 3 dopo 210 commit (Commit 1057) in percentuale 2% | 2021-05-18 17:45:03
+- Mod 4 dopo 23 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 5 dopo 28 commit (Commit 1108) in percentuale 7% | 2021-05-28 09:31:16
+- Mod 6 dopo 1 commit (Commit 1109) in percentuale 0% | 2021-05-28 10:49:31
+- Mod 7 dopo 2 commit (Commit 1111) in percentuale 1% | 2021-05-28 11:00:24
+- Mod 8 dopo 134 commit (Commit 1245) in percentuale 7% | 2021-11-12 18:25:11
+- Mod 9 dopo 14 commit (Commit 1259) in percentuale 2% | 2021-11-29 14:08:19
+- Mod 10 dopo 1 commit (Commit 1260) in percentuale 8% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example17.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 11 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 12 dopo 10 commit (Commit 1346) in percentuale 2% | 2022-06-13 17:20:56
+- Mod 13 dopo 78 commit (Commit 1424) in percentuale 2% | 2022-09-17 20:56:28
+- Mod 14 dopo 52 commit (Commit 1476) in percentuale 6% | 2022-10-24 20:27:12
+- Rename (da test/cypress/e2e/example17.cy.js) dopo 91 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 15 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 16 dopo 271 commit (Commit 1840) in percentuale 1% | 2023-11-01 23:09:57
+- Mod 17 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 18 dopo 49 commit (Commit 1898) in percentuale 10% | 2023-12-11 20:26:07
+- Mod 19 dopo 135 commit (Commit 2033) in percentuale 5% | 2024-03-23 14:54:27
+- Mod 20 dopo 1 commit (Commit 2034) in percentuale 5% | 2024-03-23 15:33:43
+- Mod 21 dopo 24 commit (Commit 2058) in percentuale 0% | 2024-05-01 00:34:12
+- Mod 22 dopo 131 commit (Commit 2189) in percentuale 0% | 2024-08-07 01:30:03
+- Mod 23 dopo 1 commit (Commit 2190) in percentuale 3% | 2024-08-07 01:35:30
+- Mod 24 dopo 1 commit (Commit 2191) in percentuale 3% | 2024-08-07 01:43:29
+- Nessun'altra modifica per 79 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 18: test/cypress/e2e/example29.cy.ts | creato a Commit 692 (2020-05-19 11:55:11)
+- Mod 1 dopo 361 commit (Commit 1053) in percentuale 27% | 2021-05-12 20:11:02
+- Mod 2 dopo 27 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 3 dopo 67 commit (Commit 1147) in percentuale 25% | 2021-06-12 10:10:07
+- Mod 4 dopo 68 commit (Commit 1215) in percentuale 53% | 2021-09-28 18:23:25
+- Mod 5 dopo 6 commit (Commit 1221) in percentuale 1% | 2021-09-29 15:20:57
+- Mod 6 dopo 24 commit (Commit 1245) in percentuale 2% | 2021-11-12 18:25:11
+- Mod 7 dopo 15 commit (Commit 1260) in percentuale 0% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example29.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 8 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example29.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 9 dopo 2 commit (Commit 1569) in percentuale 1% | 2023-01-27 15:32:51
+- Mod 10 dopo 185 commit (Commit 1754) in percentuale 128% | 2023-08-21 14:09:42
+- Mod 11 dopo 10 commit (Commit 1764) in percentuale 0% | 2023-09-04 13:42:52
+- Mod 12 dopo 85 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 13 dopo 49 commit (Commit 1898) in percentuale 35% | 2023-12-11 20:26:07
+- Nessun'altra modifica per 372 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 19: test/cypress/e2e/example15.cy.ts | creato a Commit 743 (2020-06-29 14:26:16)
+- Mod 1 dopo 257 commit (Commit 1000) in percentuale 4% | 2021-03-22 21:46:57
+- Mod 2 dopo 80 commit (Commit 1080) in percentuale 1% | 2021-05-24 19:39:17
+- Mod 3 dopo 25 commit (Commit 1105) in percentuale 3% | 2021-05-27 09:19:40
+- Mod 4 dopo 140 commit (Commit 1245) in percentuale 1% | 2021-11-12 18:25:11
+- Rename (da test/cypress/integration/example15.spec.js) dopo 89 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 5 dopo 2 commit (Commit 1336) in percentuale 1% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example15.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 6 dopo 2 commit (Commit 1569) in percentuale 1% | 2023-01-27 15:32:51
+- Mod 7 dopo 280 commit (Commit 1849) in percentuale 1% | 2023-11-10 12:11:03
+- Mod 8 dopo 49 commit (Commit 1898) in percentuale 50% | 2023-12-11 20:26:07
+- Nessun'altra modifica per 372 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 20: test/cypress/e2e/example20.cy.ts | creato a Commit 743 (2020-06-29 14:26:16)
+- Mod 1 dopo 153 commit (Commit 896) in percentuale 54% | 2020-12-02 11:47:40
+- Mod 2 dopo 104 commit (Commit 1000) in percentuale 4% | 2021-03-22 21:46:57
+- Mod 3 dopo 57 commit (Commit 1057) in percentuale 0% | 2021-05-18 17:45:03
+- Mod 4 dopo 23 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 5 dopo 25 commit (Commit 1105) in percentuale 1% | 2021-05-27 09:19:40
+- Mod 6 dopo 140 commit (Commit 1245) in percentuale 8% | 2021-11-12 18:25:11
+- Mod 7 dopo 14 commit (Commit 1259) in percentuale 2% | 2021-11-29 14:08:19
+- Mod 8 dopo 1 commit (Commit 1260) in percentuale 6% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example20.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 9 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example20.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 10 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 11 dopo 271 commit (Commit 1840) in percentuale 0% | 2023-11-01 23:09:57
+- Mod 12 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 13 dopo 49 commit (Commit 1898) in percentuale 43% | 2023-12-11 20:26:07
+- Nessun'altra modifica per 372 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 21: test/cypress/e2e/example28.cy.ts | creato a Commit 760 (2020-07-15 12:32:48)
+- Mod 1 dopo 293 commit (Commit 1053) in percentuale 54% | 2021-05-12 20:11:02
+- Mod 2 dopo 27 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 3 dopo 38 commit (Commit 1118) in percentuale 0% | 2021-05-30 22:48:30
+- Mod 4 dopo 29 commit (Commit 1147) in percentuale 45% | 2021-06-12 10:10:07
+- Mod 5 dopo 59 commit (Commit 1206) in percentuale 75% | 2021-09-07 12:53:07
+- Mod 6 dopo 15 commit (Commit 1221) in percentuale 1% | 2021-09-29 15:20:57
+- Mod 7 dopo 24 commit (Commit 1245) in percentuale 6% | 2021-11-12 18:25:11
+- Mod 8 dopo 15 commit (Commit 1260) in percentuale 6% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example28.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 9 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 10 dopo 59 commit (Commit 1395) in percentuale 7% | 2022-08-02 15:26:53
+- Mod 11 dopo 4 commit (Commit 1399) in percentuale 3% | 2022-08-02 23:07:02
+- Mod 12 dopo 1 commit (Commit 1400) in percentuale 0% | 2022-08-02 23:12:00
+- Mod 13 dopo 90 commit (Commit 1490) in percentuale 2% | 2022-11-11 23:37:52
+- Mod 14 dopo 7 commit (Commit 1497) in percentuale 3% | 2022-11-16 22:25:47
+- Rename (da test/cypress/e2e/example28.cy.js) dopo 70 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 15 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 16 dopo 2 commit (Commit 1571) in percentuale 1% | 2023-01-27 17:39:42
+- Mod 17 dopo 278 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 18 dopo 49 commit (Commit 1898) in percentuale 12% | 2023-12-11 20:26:07
+- Nessun'altra modifica per 372 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 22: test/cypress/e2e/example03.cy.ts | creato a Commit 765 (2020-07-18 10:54:30)
+- Mod 1 dopo 196 commit (Commit 961) in percentuale 12% | 2021-02-04 08:16:16
+- Mod 2 dopo 4 commit (Commit 965) in percentuale 10% | 2021-02-12 15:47:40
+- Mod 3 dopo 92 commit (Commit 1057) in percentuale 0% | 2021-05-18 17:45:03
+- Mod 4 dopo 22 commit (Commit 1079) in percentuale 3% | 2021-05-24 19:32:33
+- Mod 5 dopo 1 commit (Commit 1080) in percentuale 0% | 2021-05-24 19:39:17
+- Mod 6 dopo 25 commit (Commit 1105) in percentuale 1% | 2021-05-27 09:19:40
+- Mod 7 dopo 140 commit (Commit 1245) in percentuale 2% | 2021-11-12 18:25:11
+- Mod 8 dopo 14 commit (Commit 1259) in percentuale 0% | 2021-11-29 14:08:19
+- Mod 9 dopo 1 commit (Commit 1260) in percentuale 1% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example03.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 10 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 11 dopo 154 commit (Commit 1490) in percentuale 2% | 2022-11-11 23:37:52
+- Mod 12 dopo 7 commit (Commit 1497) in percentuale 2% | 2022-11-16 22:25:47
+- Rename (da test/cypress/e2e/example03.cy.js) dopo 70 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 13 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 14 dopo 23 commit (Commit 1592) in percentuale 11% | 2023-02-23 17:21:02
+- Mod 15 dopo 5 commit (Commit 1597) in percentuale 0% | 2023-02-23 21:07:20
+- Mod 16 dopo 50 commit (Commit 1647) in percentuale 2% | 2023-05-22 13:16:35
+- Mod 17 dopo 193 commit (Commit 1840) in percentuale 0% | 2023-11-01 23:09:57
+- Mod 18 dopo 9 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 19 dopo 49 commit (Commit 1898) in percentuale 45% | 2023-12-11 20:26:07
+- Mod 20 dopo 157 commit (Commit 2055) in percentuale 7% | 2024-04-24 23:40:59
+- Mod 21 dopo 3 commit (Commit 2058) in percentuale 8% | 2024-05-01 00:34:12
+- Nessun'altra modifica per 212 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 23: test/cypress/e2e/example14.cy.ts | creato a Commit 822 (2020-09-18 13:41:14)
+- Mod 1 dopo 258 commit (Commit 1080) in percentuale 2% | 2021-05-24 19:39:17
+- Rename (da test/cypress/integration/example14.spec.js) dopo 254 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 2 dopo 2 commit (Commit 1336) in percentuale 2% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example14.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 3 dopo 2 commit (Commit 1569) in percentuale 2% | 2023-01-27 15:32:51
+- Mod 4 dopo 280 commit (Commit 1849) in percentuale 2% | 2023-11-10 12:11:03
+- Mod 5 dopo 49 commit (Commit 1898) in percentuale 65% | 2023-12-11 20:26:07
+- Mod 6 dopo 226 commit (Commit 2124) in percentuale 58% | 2024-05-29 22:39:13
+- Mod 7 dopo 53 commit (Commit 2177) in percentuale 17% | 2024-07-20 13:51:03
+- Mod 8 dopo 12 commit (Commit 2189) in percentuale 0% | 2024-08-07 01:30:03
+- Nessun'altra modifica per 81 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 24: test/cypress/e2e/example19.cy.ts | creato a Commit 822 (2020-09-18 13:41:14)
+- Mod 1 dopo 258 commit (Commit 1080) in percentuale 2% | 2021-05-24 19:39:17
+- Mod 2 dopo 165 commit (Commit 1245) in percentuale 57% | 2021-11-12 18:25:11
+- Mod 3 dopo 15 commit (Commit 1260) in percentuale 9% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example19.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 4 dopo 2 commit (Commit 1336) in percentuale 1% | 2022-06-08 15:05:25
+- Mod 5 dopo 10 commit (Commit 1346) in percentuale 1% | 2022-06-13 17:20:56
+- Mod 6 dopo 78 commit (Commit 1424) in percentuale 5% | 2022-09-17 20:56:28
+- Mod 7 dopo 88 commit (Commit 1512) in percentuale 10% | 2022-11-30 22:12:46
+- Rename (da test/cypress/e2e/example19.cy.js) dopo 55 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 8 dopo 2 commit (Commit 1569) in percentuale 1% | 2023-01-27 15:32:51
+- Mod 9 dopo 280 commit (Commit 1849) in percentuale 1% | 2023-11-10 12:11:03
+- Mod 10 dopo 49 commit (Commit 1898) in percentuale 30% | 2023-12-11 20:26:07
+- Mod 11 dopo 230 commit (Commit 2128) in percentuale 13% | 2024-06-04 22:31:12
+- Mod 12 dopo 28 commit (Commit 2156) in percentuale 41% | 2024-06-28 14:52:15
+- Nessun'altra modifica per 114 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 25: test/cypress/e2e/example11.cy.ts | creato a Commit 845 (2020-10-13 09:46:33)
+- Mod 1 dopo 235 commit (Commit 1080) in percentuale 1% | 2021-05-24 19:39:17
+- Rename (da test/cypress/integration/example11.spec.js) dopo 254 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 2 dopo 2 commit (Commit 1336) in percentuale 1% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example11.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 3 dopo 2 commit (Commit 1569) in percentuale 2% | 2023-01-27 15:32:51
+- Mod 4 dopo 280 commit (Commit 1849) in percentuale 2% | 2023-11-10 12:11:03
+- Mod 5 dopo 95 commit (Commit 1944) in percentuale 6% | 2023-12-20 22:14:38
+- Mod 6 dopo 1 commit (Commit 1945) in percentuale 3% | 2023-12-20 22:30:54
+- Nessun'altra modifica per 325 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 26: test/cypress/e2e/example23.cy.ts | creato a Commit 845 (2020-10-13 09:46:33)
+- Mod 1 dopo 126 commit (Commit 971) in percentuale 44% | 2021-02-16 08:30:26
+- Mod 2 dopo 94 commit (Commit 1065) in percentuale 14% | 2021-05-19 17:11:04
+- Mod 3 dopo 15 commit (Commit 1080) in percentuale 2% | 2021-05-24 19:39:17
+- Mod 4 dopo 25 commit (Commit 1105) in percentuale 4% | 2021-05-27 09:19:40
+- Rename (da test/cypress/integration/example23.spec.js) dopo 229 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 5 dopo 2 commit (Commit 1336) in percentuale 2% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example23.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 6 dopo 2 commit (Commit 1569) in percentuale 2% | 2023-01-27 15:32:51
+- Mod 7 dopo 280 commit (Commit 1849) in percentuale 2% | 2023-11-10 12:11:03
+- Mod 8 dopo 49 commit (Commit 1898) in percentuale 15% | 2023-12-11 20:26:07
+- Nessun'altra modifica per 372 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 27: test/cypress/e2e/example27.cy.ts | creato a Commit 968 (2021-02-15 10:35:37)
+- Mod 1 dopo 13 commit (Commit 981) in percentuale 1% | 2021-03-01 09:29:51
+- Mod 2 dopo 8 commit (Commit 989) in percentuale 4% | 2021-03-08 09:06:33
+- Mod 3 dopo 18 commit (Commit 1007) in percentuale 0% | 2021-04-06 11:24:21
+- Mod 4 dopo 52 commit (Commit 1059) in percentuale 1% | 2021-05-19 10:24:57
+- Mod 5 dopo 5 commit (Commit 1064) in percentuale 1% | 2021-05-19 16:13:59
+- Mod 6 dopo 16 commit (Commit 1080) in percentuale 1% | 2021-05-24 19:39:17
+- Mod 7 dopo 24 commit (Commit 1104) in percentuale 1% | 2021-05-27 09:07:01
+- Mod 8 dopo 6 commit (Commit 1110) in percentuale 1% | 2021-05-28 10:49:56
+- Mod 9 dopo 93 commit (Commit 1203) in percentuale 21% | 2021-09-03 13:58:56
+- Mod 10 dopo 8 commit (Commit 1211) in percentuale 0% | 2021-09-09 16:34:58
+- Mod 11 dopo 34 commit (Commit 1245) in percentuale 5% | 2021-11-12 18:25:11
+- Mod 12 dopo 15 commit (Commit 1260) in percentuale 1% | 2021-12-08 18:02:05
+- Mod 13 dopo 19 commit (Commit 1279) in percentuale 0% | 2022-01-18 10:50:27
+- Rename (da test/cypress/integration/example27.spec.js) dopo 55 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 14 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example27.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 15 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 16 dopo 280 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 17 dopo 49 commit (Commit 1898) in percentuale 80% | 2023-12-11 20:26:07
+- Nessun'altra modifica per 372 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 28: test/cypress/e2e/example13.cy.ts | creato a Commit 969 (2021-02-15 11:31:42)
+- Mod 1 dopo 6 commit (Commit 975) in percentuale 5% | 2021-02-16 18:45:54
+- Mod 2 dopo 105 commit (Commit 1080) in percentuale 2% | 2021-05-24 19:39:17
+- Rename (da test/cypress/integration/example13.spec.js) dopo 254 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 3 dopo 2 commit (Commit 1336) in percentuale 2% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example13.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 4 dopo 2 commit (Commit 1569) in percentuale 2% | 2023-01-27 15:32:51
+- Mod 5 dopo 280 commit (Commit 1849) in percentuale 2% | 2023-11-10 12:11:03
+- Mod 6 dopo 209 commit (Commit 2058) in percentuale 15% | 2024-05-01 00:34:12
+- Nessun'altra modifica per 212 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 29: test/cypress/e2e/example24.cy.ts | creato a Commit 969 (2021-02-15 11:31:42)
+- Mod 1 dopo 111 commit (Commit 1080) in percentuale 3% | 2021-05-24 19:39:17
+- Rename (da test/cypress/integration/example24.spec.js) dopo 254 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 2 dopo 2 commit (Commit 1336) in percentuale 3% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example24.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 3 dopo 2 commit (Commit 1569) in percentuale 4% | 2023-01-27 15:32:51
+- Mod 4 dopo 78 commit (Commit 1647) in percentuale 36% | 2023-05-22 13:16:35
+- Mod 5 dopo 202 commit (Commit 1849) in percentuale 4% | 2023-11-10 12:11:03
+- Mod 6 dopo 49 commit (Commit 1898) in percentuale 60% | 2023-12-11 20:26:07
+- Nessun'altra modifica per 372 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 30: test/cypress/e2e/example30.cy.ts | creato a Commit 1021 (2021-04-21 00:12:44)
+- Mod 1 dopo 2 commit (Commit 1023) in percentuale 3% | 2021-04-21 21:51:08
+- Mod 2 dopo 35 commit (Commit 1058) in percentuale 34% | 2021-05-19 10:19:16
+- Mod 3 dopo 22 commit (Commit 1080) in percentuale 2% | 2021-05-24 19:39:17
+- Mod 4 dopo 98 commit (Commit 1178) in percentuale 107% | 2021-07-12 23:13:37
+- Mod 5 dopo 26 commit (Commit 1204) in percentuale 1% | 2021-09-07 12:01:46
+- Rename (da test/cypress/integration/example30.spec.js) dopo 130 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 6 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Mod 7 dopo 88 commit (Commit 1424) in percentuale 2% | 2022-09-17 20:56:28
+- Mod 8 dopo 66 commit (Commit 1490) in percentuale 4% | 2022-11-11 23:37:52
+- Mod 9 dopo 7 commit (Commit 1497) in percentuale 0% | 2022-11-16 22:25:47
+- Rename (da test/cypress/e2e/example30.cy.js) dopo 70 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 10 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 11 dopo 20 commit (Commit 1589) in percentuale 1% | 2023-02-16 21:34:55
+- Mod 12 dopo 58 commit (Commit 1647) in percentuale 0% | 2023-05-22 13:16:35
+- Mod 13 dopo 52 commit (Commit 1699) in percentuale 0% | 2023-06-30 21:03:42
+- Mod 14 dopo 150 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 15 dopo 38 commit (Commit 1887) in percentuale 6% | 2023-12-07 23:27:03
+- Mod 16 dopo 11 commit (Commit 1898) in percentuale 39% | 2023-12-11 20:26:07
+- Mod 17 dopo 144 commit (Commit 2042) in percentuale 3% | 2024-03-31 17:35:34
+- Mod 18 dopo 1 commit (Commit 2043) in percentuale 0% | 2024-03-31 17:46:14
+- Mod 19 dopo 12 commit (Commit 2055) in percentuale 6% | 2024-04-24 23:40:59
+- Mod 20 dopo 3 commit (Commit 2058) in percentuale 11% | 2024-05-01 00:34:12
+- Mod 21 dopo 104 commit (Commit 2162) in percentuale 4% | 2024-07-03 01:10:01
+- Mod 22 dopo 4 commit (Commit 2166) in percentuale 1% | 2024-07-05 20:30:47
+- Nessun'altra modifica per 104 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 31: test/cypress/e2e/example31.cy.ts | creato a Commit 1178 (2021-07-12 23:13:37)
+- Mod 1 dopo 67 commit (Commit 1245) in percentuale 7% | 2021-11-12 18:25:11
+- Mod 2 dopo 14 commit (Commit 1259) in percentuale 2% | 2021-11-29 14:08:19
+- Mod 3 dopo 1 commit (Commit 1260) in percentuale 4% | 2021-12-08 18:02:05
+- Rename (da test/cypress/integration/example31.spec.js) dopo 74 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 4 dopo 2 commit (Commit 1336) in percentuale 2% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example31.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 5 dopo 2 commit (Commit 1569) in percentuale 2% | 2023-01-27 15:32:51
+- Mod 6 dopo 9 commit (Commit 1578) in percentuale 56% | 2023-02-04 14:54:26
+- Mod 7 dopo 262 commit (Commit 1840) in percentuale 1% | 2023-11-01 23:09:57
+- Mod 8 dopo 9 commit (Commit 1849) in percentuale 1% | 2023-11-10 12:11:03
+- Mod 9 dopo 49 commit (Commit 1898) in percentuale 3% | 2023-12-11 20:26:07
+- Mod 10 dopo 223 commit (Commit 2121) in percentuale 126% | 2024-05-29 20:32:31
+- Mod 11 dopo 10 commit (Commit 2131) in percentuale 1% | 2024-06-07 20:41:59
+- Mod 12 dopo 1 commit (Commit 2132) in percentuale 28% | 2024-06-07 21:05:57
+- Nessun'altra modifica per 138 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 32: test/cypress/e2e/example32.cy.ts | creato a Commit 1230 (2021-10-28 12:24:37)
+- Rename (da test/cypress/integration/example32.spec.js) dopo 104 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 1 dopo 2 commit (Commit 1336) in percentuale 0% | 2022-06-08 15:05:25
+- Rename (da test/cypress/e2e/example32.cy.js) dopo 231 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 2 dopo 2 commit (Commit 1569) in percentuale 0% | 2023-01-27 15:32:51
+- Mod 3 dopo 78 commit (Commit 1647) in percentuale 40% | 2023-05-22 13:16:35
+- Mod 4 dopo 202 commit (Commit 1849) in percentuale 0% | 2023-11-10 12:11:03
+- Mod 5 dopo 49 commit (Commit 1898) in percentuale 7% | 2023-12-11 20:26:07
+- Mod 6 dopo 144 commit (Commit 2042) in percentuale 5% | 2024-03-31 17:35:34
+- Mod 7 dopo 13 commit (Commit 2055) in percentuale 1% | 2024-04-24 23:40:59
+- Mod 8 dopo 3 commit (Commit 2058) in percentuale 2% | 2024-05-01 00:34:12
+- Mod 9 dopo 131 commit (Commit 2189) in percentuale 0% | 2024-08-07 01:30:03
+- Nessun'altra modifica per 81 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 33: test/cypress/e2e/example33.cy.ts | creato a Commit 1268 (2022-01-04 19:41:32)
+- Rename (da test/cypress/integration/example33.spec.js) dopo 66 commit (Commit 1334) | 2022-06-08 13:17:04
+- Mod 1 dopo 2 commit (Commit 1336) in percentuale 2% | 2022-06-08 15:05:25
+- Mod 2 dopo 10 commit (Commit 1346) in percentuale 2% | 2022-06-13 17:20:56
+- Mod 3 dopo 1 commit (Commit 1347) in percentuale 2% | 2022-06-13 17:26:54
+- Mod 4 dopo 77 commit (Commit 1424) in percentuale 15% | 2022-09-17 20:56:28
+- Rename (da test/cypress/e2e/example33.cy.js) dopo 143 commit (Commit 1567) | 2023-01-27 13:29:19
+- Mod 5 dopo 2 commit (Commit 1569) in percentuale 3% | 2023-01-27 15:32:51
+- Mod 6 dopo 186 commit (Commit 1755) in percentuale 3% | 2023-08-21 14:27:31
+- Mod 7 dopo 94 commit (Commit 1849) in percentuale 3% | 2023-11-10 12:11:03
+- Mod 8 dopo 49 commit (Commit 1898) in percentuale 38% | 2023-12-11 20:26:07
+- Mod 9 dopo 291 commit (Commit 2189) in percentuale 15% | 2024-08-07 01:30:03
+- Nessun'altra modifica per 81 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 34: test/cypress/e2e/example34.cy.ts | creato a Commit 1941 (2023-12-19 21:01:21)
+- Nessun'altra modifica per 329 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)
+
+Test 35: test/cypress/e2e/example35.cy.ts | creato a Commit 1974 (2024-01-20 18:00:19)
+- Mod 1 dopo 68 commit (Commit 2042) in percentuale 38% | 2024-03-31 17:35:34
+- Mod 2 dopo 95 commit (Commit 2137) in percentuale 1% | 2024-06-08 14:51:50
+- Nessun'altra modifica per 133 commit fino a fine storia (Commit 2270, 2024-10-19 19:48:04)

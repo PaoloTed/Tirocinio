@@ -1,0 +1,115 @@
+Repository: xterm.js
+Commit analizzati: 3332 (Commit 1 2019-07-16 22:05:06 -> Commit 3332 2024-10-05 14:36:22)
+File di test trovati: 5
+
+Test 1: test/playwright/MouseTracking.test.ts | creato a Commit 2 (2019-07-17 18:07:44)
+- Mod 1 dopo 2 commit (Commit 4) in percentuale 0% | 2019-07-17 18:42:04
+- Mod 2 dopo 2 commit (Commit 6) in percentuale 4% | 2019-07-18 00:00:41
+- Mod 3 dopo 7 commit (Commit 13) in percentuale 1% | 2019-07-20 00:45:12
+- Mod 4 dopo 2 commit (Commit 15) in percentuale 44% | 2019-07-22 15:22:14
+- Mod 5 dopo 6 commit (Commit 21) in percentuale 3% | 2019-07-22 20:18:06
+- Mod 6 dopo 1 commit (Commit 22) in percentuale 10% | 2019-07-22 14:08:34
+- Mod 7 dopo 1 commit (Commit 23) in percentuale 1% | 2019-07-23 15:51:57
+- Mod 8 dopo 1 commit (Commit 24) in percentuale 2% | 2019-07-23 16:03:15
+- Mod 9 dopo 1 commit (Commit 25) in percentuale 2% | 2019-07-23 16:08:44
+- Mod 10 dopo 1 commit (Commit 26) in percentuale 1% | 2019-07-23 16:27:15
+- Mod 11 dopo 1 commit (Commit 27) in percentuale 1% | 2019-07-23 16:57:56
+- Mod 12 dopo 3 commit (Commit 30) in percentuale 0% | 2019-07-23 17:15:30
+- Mod 13 dopo 5 commit (Commit 35) in percentuale 0% | 2019-07-24 12:51:24
+- Mod 14 dopo 34 commit (Commit 69) in percentuale 28% | 2019-08-01 01:16:29
+- Mod 15 dopo 1 commit (Commit 70) in percentuale 1% | 2019-08-01 11:50:15
+- Mod 16 dopo 1 commit (Commit 71) in percentuale 0% | 2019-08-01 12:08:07
+- Mod 17 dopo 1 commit (Commit 72) in percentuale 25% | 2019-08-01 16:15:55
+- Mod 18 dopo 1 commit (Commit 73) in percentuale 0% | 2019-08-01 16:52:19
+- Mod 19 dopo 119 commit (Commit 192) in percentuale 0% | 2019-10-16 20:07:56
+- Mod 20 dopo 1 commit (Commit 193) in percentuale 0% | 2019-10-16 20:08:57
+- Mod 21 dopo 36 commit (Commit 229) in percentuale 99% | 2019-10-24 21:57:22
+- Mod 22 dopo 89 commit (Commit 318) in percentuale 0% | 2019-11-09 11:15:15
+- Mod 23 dopo 6 commit (Commit 324) in percentuale 17% | 2019-11-09 14:16:57
+- Mod 24 dopo 1 commit (Commit 325) in percentuale 0% | 2019-11-09 17:29:32
+- Mod 25 dopo 3 commit (Commit 328) in percentuale 1% | 2019-11-09 18:43:25
+- Mod 26 dopo 66 commit (Commit 394) in percentuale 2% | 2019-11-14 00:48:16
+- Mod 27 dopo 188 commit (Commit 582) in percentuale 33% | 2020-02-10 11:18:23
+- Mod 28 dopo 2 commit (Commit 584) in percentuale 33% | 2020-02-10 16:56:37
+- Mod 29 dopo 2 commit (Commit 586) in percentuale 0% | 2020-02-10 18:18:23
+- Mod 30 dopo 2 commit (Commit 588) in percentuale 1% | 2020-02-11 13:13:03
+- Mod 31 dopo 1 commit (Commit 589) in percentuale 29% | 2020-02-11 13:32:55
+- Mod 32 dopo 15 commit (Commit 604) in percentuale 1% | 2020-02-15 05:00:52
+- Mod 33 dopo 5 commit (Commit 609) in percentuale 0% | 2020-02-15 05:18:46
+- Mod 34 dopo 1 commit (Commit 610) in percentuale 0% | 2020-02-15 05:28:21
+- Mod 35 dopo 4 commit (Commit 614) in percentuale 0% | 2020-02-15 05:51:39
+- Mod 36 dopo 26 commit (Commit 640) in percentuale 0% | 2020-02-18 07:39:15
+- Mod 37 dopo 1 commit (Commit 641) in percentuale 0% | 2020-02-18 07:47:01
+- Mod 38 dopo 31 commit (Commit 672) in percentuale 0% | 2020-03-28 06:51:36
+- Mod 39 dopo 290 commit (Commit 962) in percentuale 0% | 2020-09-10 06:31:59
+- Mod 40 dopo 6 commit (Commit 968) in percentuale 0% | 2020-09-10 08:01:31
+- Mod 41 dopo 241 commit (Commit 1209) in percentuale 0% | 2021-04-06 15:48:48
+- Mod 42 dopo 167 commit (Commit 1376) in percentuale 0% | 2021-08-31 12:50:54
+- Mod 43 dopo 258 commit (Commit 1634) in percentuale 0% | 2022-03-02 11:25:20
+- Mod 44 dopo 543 commit (Commit 2177) in percentuale 31% | 2022-09-01 13:31:51
+- Mod 45 dopo 22 commit (Commit 2199) in percentuale 2% | 2022-09-15 17:19:34
+- Mod 46 dopo 140 commit (Commit 2339) in percentuale 0% | 2022-10-15 18:07:05
+- Mod 47 dopo 481 commit (Commit 2820) in percentuale 0% | 2023-08-27 08:08:52
+- Rename (da test/api/MouseTracking.api.ts) dopo 21 commit (Commit 2841) | 2023-09-02 07:10:47
+- Mod 48 dopo 16 commit (Commit 2857) in percentuale 0% | 2023-09-02 09:11:15
+- Mod 49 dopo 135 commit (Commit 2992) in percentuale 0% | 2023-11-01 06:50:08
+- Mod 50 dopo 220 commit (Commit 3212) in percentuale 0% | 2024-07-05 08:55:01
+- Nessun'altra modifica per 120 commit fino a fine storia (Commit 3332, 2024-10-05 14:36:22)
+
+Test 2: test/playwright/Parser.test.ts | creato a Commit 2831 (2023-08-27 09:11:47)
+- Mod 1 dopo 26 commit (Commit 2857) in percentuale 0% | 2023-09-02 09:11:15
+- Mod 2 dopo 135 commit (Commit 2992) in percentuale 0% | 2023-11-01 06:50:08
+- Nessun'altra modifica per 340 commit fino a fine storia (Commit 3332, 2024-10-05 14:36:22)
+
+Test 3: test/playwright/InputHandler.test.ts | creato a Commit 2842 (2023-09-02 07:19:32)
+- Mod 1 dopo 2 commit (Commit 2844) in percentuale 0% | 2023-09-02 08:18:02
+- Mod 2 dopo 13 commit (Commit 2857) in percentuale 0% | 2023-09-02 09:11:15
+- Mod 3 dopo 4 commit (Commit 2861) in percentuale 0% | 2023-09-07 09:49:37
+- Nessun'altra modifica per 471 commit fino a fine storia (Commit 3332, 2024-10-05 14:36:22)
+
+Test 4: test/playwright/Terminal.test.ts | creato a Commit 2844 (2023-09-02 08:18:02)
+- Mod 1 dopo 2 commit (Commit 2846) in percentuale 0% | 2023-09-02 08:22:56
+- Mod 2 dopo 11 commit (Commit 2857) in percentuale 0% | 2023-09-02 09:11:15
+- Mod 3 dopo 100 commit (Commit 2957) in percentuale 4% | 2023-09-21 12:09:30
+- Mod 4 dopo 181 commit (Commit 3138) in percentuale 5% | 2024-04-08 04:40:17
+- Mod 5 dopo 166 commit (Commit 3304) in percentuale 0% | 2024-07-15 09:14:49
+- Mod 6 dopo 22 commit (Commit 3326) in percentuale 0% | 2024-10-04 15:50:36
+- Nessun'altra modifica per 6 commit fino a fine storia (Commit 3332, 2024-10-05 14:36:22)
+
+Test 5: test/playwright/SharedRendererTests.ts | creato a Commit 2877 (2023-09-08 10:22:13)
+- Mod 1 dopo 5 commit (Commit 2882) in percentuale 1% | 2023-09-08 12:16:16
+- Mod 2 dopo 18 commit (Commit 2900) in percentuale 2% | 2023-09-08 20:21:58
+- Mod 3 dopo 1 commit (Commit 2901) in percentuale 0% | 2023-09-09 04:55:56
+- Mod 4 dopo 1 commit (Commit 2902) in percentuale 1% | 2023-09-09 05:59:24
+- Mod 5 dopo 1 commit (Commit 2903) in percentuale 0% | 2023-09-09 06:02:32
+- Mod 6 dopo 1 commit (Commit 2904) in percentuale 0% | 2023-09-09 06:09:07
+- Mod 7 dopo 1 commit (Commit 2905) in percentuale 0% | 2023-09-09 06:28:07
+- Mod 8 dopo 1 commit (Commit 2906) in percentuale 4% | 2023-09-09 06:51:13
+- Mod 9 dopo 2 commit (Commit 2908) in percentuale 6% | 2023-09-09 07:45:31
+- Mod 10 dopo 1 commit (Commit 2909) in percentuale 1% | 2023-09-09 08:37:55
+- Mod 11 dopo 1 commit (Commit 2910) in percentuale 2% | 2023-09-09 08:51:50
+- Mod 12 dopo 2 commit (Commit 2912) in percentuale 0% | 2023-09-09 09:00:57
+- Mod 13 dopo 6 commit (Commit 2918) in percentuale 0% | 2023-09-10 08:30:43
+- Mod 14 dopo 15 commit (Commit 2933) in percentuale 0% | 2023-09-13 17:34:31
+- Mod 15 dopo 3 commit (Commit 2936) in percentuale 1% | 2023-09-13 23:28:37
+- Mod 16 dopo 1 commit (Commit 2937) in percentuale 2% | 2023-09-14 00:47:37
+- Mod 17 dopo 1 commit (Commit 2938) in percentuale 2% | 2023-09-14 09:52:58
+- Mod 18 dopo 4 commit (Commit 2942) in percentuale 0% | 2023-09-14 12:35:12
+- Mod 19 dopo 2 commit (Commit 2944) in percentuale 1% | 2023-09-15 18:57:17
+- Mod 20 dopo 1 commit (Commit 2945) in percentuale 3% | 2023-09-15 04:23:47
+- Mod 21 dopo 3 commit (Commit 2948) in percentuale 2% | 2023-09-19 20:29:28
+- Mod 22 dopo 1 commit (Commit 2949) in percentuale 3% | 2023-09-19 21:58:08
+- Mod 23 dopo 1 commit (Commit 2950) in percentuale 0% | 2023-09-19 22:15:35
+- Mod 24 dopo 1 commit (Commit 2951) in percentuale 0% | 2023-09-19 22:49:53
+- Mod 25 dopo 41 commit (Commit 2992) in percentuale 0% | 2023-11-01 06:50:08
+- Mod 26 dopo 53 commit (Commit 3045) in percentuale 6% | 2023-12-19 08:16:48
+- Mod 27 dopo 1 commit (Commit 3046) in percentuale 0% | 2023-12-19 08:18:44
+- Mod 28 dopo 3 commit (Commit 3049) in percentuale 0% | 2023-12-19 08:34:16
+- Mod 29 dopo 1 commit (Commit 3050) in percentuale 0% | 2023-12-19 08:38:55
+- Mod 30 dopo 2 commit (Commit 3052) in percentuale 0% | 2023-12-19 08:47:54
+- Mod 31 dopo 16 commit (Commit 3068) in percentuale 1% | 2024-01-01 22:25:54
+- Mod 32 dopo 1 commit (Commit 3069) in percentuale 2% | 2024-01-01 22:48:39
+- Mod 33 dopo 22 commit (Commit 3091) in percentuale 1% | 2024-01-30 11:16:19
+- Mod 34 dopo 39 commit (Commit 3130) in percentuale 0% | 2024-03-16 11:07:05
+- Mod 35 dopo 101 commit (Commit 3231) in percentuale 0% | 2024-07-07 09:06:26
+- Nessun'altra modifica per 101 commit fino a fine storia (Commit 3332, 2024-10-05 14:36:22)

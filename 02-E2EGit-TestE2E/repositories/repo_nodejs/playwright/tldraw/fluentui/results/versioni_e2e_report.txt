@@ -1,0 +1,11 @@
+ANALISI VERSIONI (GIT TAG) TEST E2E: microsoft/fluentui
+==============================================================================================================
+Tag analizzati (semver): 130 | Range completo: v0.2.0 (2016-04-06) -> v0.70.0 (2016-11-15)
+File di test E2E tracciati: 0 (di cui 22 presenti in E2EGit_e2e.db)
+
+--- 1. INTERA SUITE E2E FERMA TRA VERSIONI CONSECUTIVE (Top 15) ---
+Nessun intervallo di >= 2 versioni consecutive con suite E2E completamente invariata.
+
+--- 2. SINGOLI FILE DI TEST CON PIÙ VERSIONI CONSECUTIVE INVARIATE (Top 15) ---
+MaxVer | Mod  | Range Tag Invariato                  | Commit | Stato                     | File di Test
+----------------------------------------------------------------------------------------------------------------------------------

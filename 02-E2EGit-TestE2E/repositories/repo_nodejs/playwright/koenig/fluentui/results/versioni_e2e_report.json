@@ -1,0 +1,13 @@
+{
+  "repository": "microsoft/fluentui",
+  "folder": "fluentui",
+  "tag_mode": "semver",
+  "n_tag_analizzati": 130,
+  "primo_tag": "v0.2.0 (2016-04-06)",
+  "ultimo_tag": "v0.70.0 (2016-11-15)",
+  "n_file_e2e_distinti": 0,
+  "n_file_db": 22,
+  "suite_spans_top": [],
+  "per_file_stats_top": [],
+  "per_file_stats_all": []
+}

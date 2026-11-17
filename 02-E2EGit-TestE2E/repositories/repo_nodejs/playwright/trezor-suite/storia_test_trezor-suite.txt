@@ -1,0 +1,74 @@
+Repository: trezor-suite
+Commit analizzati: 5109 (Commit 1 2022-09-16 09:55:32 -> Commit 5109 2024-03-29 15:40:54)
+File di test trovati: 7
+
+Test 1: packages/connect-popup/e2e/playwright.config.ts | primo evento [R(packages/integration-tests/projects/connect-popup/playwright.config.ts)] a Commit 1 (2022-09-16 09:55:32)
+- Mod 1 dopo 1497 commit (Commit 1498) in percentuale 20% | 2023-03-24 17:08:43
+- Mod 2 dopo 171 commit (Commit 1669) in percentuale 13% | 2023-04-13 14:49:19
+- Nessun'altra modifica per 3440 commit fino a fine storia (Commit 5109, 2024-03-29 15:40:54)
+
+Test 2: packages/connect-popup/e2e/tests/popup-close.test.ts | primo evento [R(packages/integration-tests/projects/connect-popup/tests/popup-close.test.js)] a Commit 1 (2022-09-16 09:55:32)
+- Rename (da packages/connect-popup/e2e/tests/popup-close.test.js) dopo 1 commit (Commit 2) | 2022-09-16 09:55:32
+- Mod 1 dopo 2 commit (Commit 4) in percentuale 1% | 2022-09-16 09:55:32
+- Mod 2 dopo 206 commit (Commit 210) in percentuale 24% | 2022-10-10 14:24:45
+- Mod 3 dopo 444 commit (Commit 654) in percentuale 2% | 2022-11-24 08:56:03
+- Mod 4 dopo 287 commit (Commit 941) in percentuale 1% | 2023-01-06 11:51:54
+- Mod 5 dopo 297 commit (Commit 1238) in percentuale 1% | 2023-02-21 20:34:44
+- Mod 6 dopo 1002 commit (Commit 2240) in percentuale 7% | 2023-06-22 08:42:34
+- Mod 7 dopo 75 commit (Commit 2315) in percentuale 20% | 2023-07-04 16:12:34
+- Mod 8 dopo 12 commit (Commit 2327) in percentuale 5% | 2023-07-07 09:43:10
+- Mod 9 dopo 53 commit (Commit 2380) in percentuale 12% | 2023-07-18 10:00:40
+- Mod 10 dopo 3 commit (Commit 2383) in percentuale 16% | 2023-07-18 10:00:40
+- Mod 11 dopo 518 commit (Commit 2901) in percentuale 0% | 2023-09-06 10:14:12
+- Mod 12 dopo 212 commit (Commit 3113) in percentuale 0% | 2023-10-10 09:27:08
+- Mod 13 dopo 294 commit (Commit 3407) in percentuale 4% | 2023-11-02 15:16:42
+- Mod 14 dopo 7 commit (Commit 3414) in percentuale 5% | 2023-11-04 08:26:11
+- Mod 15 dopo 18 commit (Commit 3432) in percentuale 7% | 2023-11-07 15:12:42
+- Mod 16 dopo 7 commit (Commit 3439) in percentuale 0% | 2023-11-08 20:36:44
+- Mod 17 dopo 16 commit (Commit 3455) in percentuale 1% | 2023-11-10 15:41:40
+- Mod 18 dopo 16 commit (Commit 3471) in percentuale 39% | 2023-11-14 11:59:15
+- Mod 19 dopo 1238 commit (Commit 4709) in percentuale 19% | 2024-02-22 11:17:14
+- Mod 20 dopo 212 commit (Commit 4921) in percentuale 1% | 2024-03-13 09:33:24
+- Nessun'altra modifica per 188 commit fino a fine storia (Commit 5109, 2024-03-29 15:40:54)
+
+Test 3: packages/connect-popup/e2e/tests/unchained.test.ts | primo evento [R(packages/integration-tests/projects/connect-popup/tests/unchained.test.js)] a Commit 1 (2022-09-16 09:55:32)
+- Rename (da packages/connect-popup/e2e/tests/unchained.test.js) dopo 1 commit (Commit 2) | 2022-09-16 09:55:32
+- Mod 1 dopo 2 commit (Commit 4) in percentuale 1% | 2022-09-16 09:55:32
+- Mod 2 dopo 206 commit (Commit 210) in percentuale 20% | 2022-10-10 14:24:45
+- Mod 3 dopo 444 commit (Commit 654) in percentuale 9% | 2022-11-24 08:56:03
+- Mod 4 dopo 844 commit (Commit 1498) in percentuale 11% | 2023-03-24 17:08:43
+- Mod 5 dopo 139 commit (Commit 1637) in percentuale 13% | 2023-04-12 09:00:26
+- Mod 6 dopo 120 commit (Commit 1757) in percentuale 1% | 2023-04-21 10:34:31
+- Mod 7 dopo 2928 commit (Commit 4685) in percentuale 0% | 2024-02-20 14:54:29
+- Mod 8 dopo 229 commit (Commit 4914) in percentuale 2% | 2024-03-12 14:06:56
+- Nessun'altra modifica per 195 commit fino a fine storia (Commit 5109, 2024-03-29 15:40:54)
+
+Test 4: packages/connect-popup/e2e/tests/analytics.test.ts | creato a Commit 654 (2022-11-24 08:56:03)
+- Mod 1 dopo 1 commit (Commit 655) in percentuale 100% | 2022-11-24 08:56:03
+- Nessun'altra modifica per 4454 commit fino a fine storia (Commit 5109, 2024-03-29 15:40:54)
+
+Test 5: packages/connect-popup/e2e/tests/browser-support.test.ts | creato a Commit 1437 (2023-03-20 08:12:05)
+- Mod 1 dopo 45 commit (Commit 1482) in percentuale 66% | 2023-03-23 09:03:43
+- Mod 2 dopo 10 commit (Commit 1492) in percentuale 8% | 2023-03-24 12:29:34
+- Mod 3 dopo 6 commit (Commit 1498) in percentuale 4% | 2023-03-24 17:08:43
+- Mod 4 dopo 1615 commit (Commit 3113) in percentuale 9% | 2023-10-10 09:27:08
+- Mod 5 dopo 1481 commit (Commit 4594) in percentuale 2% | 2024-02-12 20:18:19
+- Mod 6 dopo 115 commit (Commit 4709) in percentuale 4% | 2024-02-22 11:17:14
+- Mod 7 dopo 212 commit (Commit 4921) in percentuale 6% | 2024-03-13 09:33:24
+- Nessun'altra modifica per 188 commit fino a fine storia (Commit 5109, 2024-03-29 15:40:54)
+
+Test 6: packages/connect-popup/e2e/tests/passphrase.test.ts | creato a Commit 2305 (2023-07-03 10:52:58)
+- Mod 1 dopo 1 commit (Commit 2306) in percentuale 4% | 2023-07-03 10:52:58
+- Mod 2 dopo 21 commit (Commit 2327) in percentuale 3% | 2023-07-07 09:43:10
+- Mod 3 dopo 3 commit (Commit 2330) in percentuale 81% | 2023-07-07 13:46:05
+- Mod 4 dopo 1 commit (Commit 2331) in percentuale 0% | 2023-07-10 08:36:35
+- Mod 5 dopo 782 commit (Commit 3113) in percentuale 13% | 2023-10-10 09:27:08
+- Mod 6 dopo 149 commit (Commit 3262) in percentuale 0% | 2023-10-25 09:01:12
+- Mod 7 dopo 159 commit (Commit 3421) in percentuale 39% | 2023-11-06 12:40:09
+- Mod 8 dopo 2 commit (Commit 3423) in percentuale 30% | 2023-11-06 12:40:09
+- Mod 9 dopo 32 commit (Commit 3455) in percentuale 0% | 2023-11-10 15:41:40
+- Mod 10 dopo 1254 commit (Commit 4709) in percentuale 24% | 2024-02-22 11:17:14
+- Nessun'altra modifica per 400 commit fino a fine storia (Commit 5109, 2024-03-29 15:40:54)
+
+Test 7: packages/connect-popup/e2e/tests/popup-pages.test.ts | creato a Commit 4721 (2024-02-23 08:50:42)
+- Nessun'altra modifica per 388 commit fino a fine storia (Commit 5109, 2024-03-29 15:40:54)

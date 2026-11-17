@@ -1,0 +1,954 @@
+================================================================================
+ELENCO COMPLETO REPOSITORY WEB E2E (Dataset E2EGit / IST2025)
+================================================================================
+Fonte GUI E2E         : 02-E2EGit-TestE2E/data/E2EGit_e2e.db (tabella gui_testing_repo_details)
+Fonte Performance E2E : 02-E2EGit-TestE2E/data/E2EGit.db (tabella performance_testing_test_details)
+Totale repository GUI E2E         : 472
+Totale repository Performance E2E : 84 (di cui 13 presenti anche in GUI E2E, 71 solo Performance)
+Totale repository Web E2E uniche  : 543
+
+Nota sulla classificazione:
+- 'Tipologia' raggruppa per ecosistema/linguaggio principale del repository:
+  JavaScript + TypeScript sono accorpati in 'Node.js (JavaScript/TypeScript)',
+  in coerenza con gli script del progetto (es. repo_nodejs).
+- 'Framework di test' suddivide ulteriormente per framework E2E rilevato
+  (Playwright, Cypress, Selenium, Puppeteer e combinazioni multi-framework per GUI;
+  JMeter, Locust e combinazioni per Performance).
+- Dentro ogni gruppo le repository sono ordinate per Stelle (decrescente).
+
+--------------------------------------------------------------------------------
+RIEPILOGO QUANTITATIVO — PARTE 1: WEB GUI E2E (472 repository)
+--------------------------------------------------------------------------------
+- Node.js (JavaScript/TypeScript): 282 repository
+    * Playwright: 140
+    * Cypress: 99
+    * Puppeteer: 14
+    * Selenium: 13
+    * Playwright + Cypress: 11
+    * Playwright + Puppeteer: 3
+    * Cypress + Puppeteer: 2
+- Java: 89 repository
+    * Selenium: 65
+    * Cypress: 14
+    * Playwright: 9
+    * Playwright + Selenium: 1
+- PHP: 30 repository
+    * Cypress: 21
+    * Playwright: 9
+- Python: 30 repository
+    * Cypress: 16
+    * Playwright: 9
+    * Selenium: 4
+    * Puppeteer: 1
+- Go: 21 repository
+    * Cypress: 14
+    * Playwright: 4
+    * Selenium: 1
+    * Playwright + Cypress: 2
+- Rust: 5 repository
+    * Playwright: 3
+    * Cypress: 2
+- Jupyter Notebook: 4 repository
+    * Playwright: 2
+    * Cypress: 1
+    * Selenium: 1
+- C++: 3 repository
+    * Cypress: 1
+    * Playwright: 1
+    * Selenium: 1
+- Ruby: 3 repository
+    * Cypress: 2
+    * Playwright: 1
+- C: 2 repository
+    * Cypress: 1
+    * Selenium: 1
+- C#: 2 repository
+    * Playwright: 2
+- Kotlin: 1 repository
+    * Cypress: 1
+
+--------------------------------------------------------------------------------
+RIEPILOGO QUANTITATIVO — PARTE 2: WEB PERFORMANCE E2E (84 repository)
+--------------------------------------------------------------------------------
+- Java: 51 repository
+    * JMeter: 48
+    * Locust: 2
+    * JMeter + Locust: 1
+- Node.js (JavaScript/TypeScript): 11 repository
+    * JMeter: 10
+    * Locust: 1
+- Python: 10 repository
+    * JMeter: 5
+    * Locust: 5
+- Go: 4 repository
+    * JMeter: 3
+    * Locust: 1
+- C++: 2 repository
+    * JMeter: 1
+    * Locust: 1
+- PHP: 2 repository
+    * JMeter: 2
+- C#: 1 repository
+    * JMeter: 1
+- Objective-C: 1 repository
+    * Locust: 1
+- Rust: 1 repository
+    * Locust: 1
+- Shell: 1 repository
+    * JMeter: 1
+
+================================================================================
+PARTE 1: REPOSITORY WEB GUI E2E (472 repository)
+================================================================================
+
+################################################################################
+TIPOLOGIA: Node.js (JavaScript/TypeScript)  (282 repository, 26108 test GUI totali)
+################################################################################
+
+--- Framework: Playwright (140 repository, 1853 file di test, 13952 test) ---
+Pos  Repository                                        Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework        MotoreTest  InRQ3
+---  ------------------------------------------------  ----------  ------  --------  -------  --------  -------  ----------------------------  ----------  -----
+  1  facebook/react                                    JavaScript  220701        99    16561         1        1  Playwright(PW_JS:1)           Jest:1      si   
+  2  microsoft/vscode                                  TypeScript  157401       127   120214         1        4  Playwright(PW_TS:1)           Mocha:1     si   
+  3  mui/material-ui                                   TypeScript   91285       451    24372         6       19  Playwright(PW_TS:6)           Mocha:6     si   
+  4  storybookjs/storybook                             TypeScript   82514      1000    59031        14       53  Playwright(PW_TS:14)          Jest:14     si   
+  5  supabase/supabase                                 TypeScript   64652        11    27560         1        2  Playwright(PW_TS:1)           Jest:1      si   
+  6  microsoft/playwright                              TypeScript   61013       121    12316       100     3352  Playwright(PW_TS:100)         Jest:100    si   
+  7  strapi/strapi                                     TypeScript   59571       337    33781        12       24  Playwright(PW_TS:12)          Jest:12     si   
+  8  tryghost/ghost                                    JavaScript   45483       756    38216        55      179  Playwright(PW_TS:55)          Mocha:55    si   
+  9  laurent22/joplin                                  TypeScript   42487       333    11163         1        6  Playwright(PW_TS:1)           Jest:1      si   
+ 10  nocodb/nocodb                                     TypeScript   41695       133    21836        76      215  Playwright(PW_TS:76)          Jest:76     si   
+ 11  quilljs/quill                                     TypeScript   38714        90     5696         4       23  Playwright(PW_TS:4)           Jest:4      si   
+ 12  rocketchat/rocket.chat                            TypeScript   38611       881    25394        39      303  Playwright(PW_TS:39)          Jest:39     si   
+ 13  kong/insomnia                                     JavaScript   32841       421     4564        12       32  Playwright(PW_TS:12)          Mocha:12    si   
+ 14  novuhq/novu                                       TypeScript   32289        36    16835         4       52  Playwright(PW_TS:4)           Jest:4      si   
+ 15  tldraw/tldraw                                     TypeScript   32012        20     2765        15       65  Playwright(PW_TS:15)          Jest:15     si   
+ 16  ianstormtaylor/slate                              TypeScript   28871       165     4138        22       35  Playwright(PW_TS:22)          Jest:22     si   
+ 17  immich-app/immich                                 TypeScript   28740       174     3788         2        6  Playwright(PW_TS:2)           Jest:2      si   
+ 18  expo/expo                                         TypeScript   28486         0    21307         1        2  Playwright(PW_TS:1)           Jest:1      si   
+ 19  floating-ui/floating-ui                           TypeScript   28315       402     2105        10       65  Playwright(PW_TS:10)          Jest:10     si   
+ 20  mattermost/mattermost                             TypeScript   27869       515    18316         4       11  Playwright(PW_TS:4)           Jest:4      si   
+ 21  fabricjs/fabric.js                                JavaScript   27279       139     4939         8       11  Playwright(PW_TS:8)           Jest:8      si   
+ 22  backstage/backstage                               TypeScript   26049       314    52490         4        5  Playwright(PW_TS:4)           Jest:4      si   
+ 23  react-navigation/react-navigation                 TypeScript   23182      1000     2813         2        5  Playwright(PW_TS:2)           Jest:2      si   
+ 24  eclipse-theia/theia                               TypeScript   18774        74     6891        14       76  Playwright(PW_TS:14)          Mocha:14    si   
+ 25  payloadcms/payload                                TypeScript   18548       296     8615        15      333  Playwright(PW_TS:15)          Jest:15     si   
+ 26  microsoft/fluentui                                TypeScript   17557      1000    17604        22      344  Playwright(PW_TS:22)          Jest:22     si   
+ 27  facebook/lexical                                  TypeScript   17063        39     3581         3        4  Playwright(PW_TS:3)           Jest:3      si   
+ 28  signoz/signoz                                     TypeScript   16694       108     3066         9       25  Playwright(PW_TS:9)           Jest:9      si   
+ 29  xtermjs/xterm.js                                  TypeScript   16506        87     9493         5      177  Playwright(PW_TS:5)           Mocha:5     si   
+ 30  jupyterlab/jupyterlab                             TypeScript   13715       190    25915        16      126  Playwright(PW_TS:16)          Jest:16     si   
+ 31  janhq/jan                                         TypeScript   13151        18     3032         4        4  Playwright(PW_TS:4)           Jest:4      si   
+ 32  vercel/vercel                                     TypeScript   12053      1000     8414         1        1  Playwright(PW_JS:1)           Jest:1      si   
+ 33  nhn/tui.calendar                                  TypeScript   11329        95     3064        19       91  Playwright(PW_TS:19)          Jest:19     si   
+ 34  nasa/openmct                                      JavaScript   11253        63     7968         3       27  Playwright(PW_JS:3)           Jasmine:3   si   
+ 35  reduxjs/redux-toolkit                             TypeScript   10348       107     3417         4        4  Playwright(PW_TS:4)           Jest:4      si   
+ 36  wordpress/gutenberg                               JavaScript    9791       486    30983         4       26  Playwright(PW_TS:4)           Jest:4      si   
+ 37  rolling-scopes/rsschool-app                       TypeScript    9639         0     2596         1        2  Playwright(PW_TS:1)           Jest:1      si   
+ 38  ng-bootstrap/ng-bootstrap                         TypeScript    8132        32     2381         9       31  Playwright(PW_TS:9)           Jasmine:9   si   
+ 39  react-cosmos/react-cosmos                         TypeScript    8073        81     2196         2       20  Playwright(PW_TS:2)           Jest:2      si   
+ 40  getsentry/sentry-javascript                       TypeScript    7593       473     8930        45      124  Playwright(PW_TS:45)          Jest:45     si   
+ 41  nhost/nhost                                       TypeScript    7468       952     5924        20       47  Playwright(PW_JS:1,PW_TS:19)  Jest:20     si   
+ 42  carbon-design-system/carbon                       JavaScript    7433       919    10843        18       71  Playwright(PW_JS:18)          Jest:18     si   
+ 43  microsoft/azuredatastudio                         TypeScript    7419       135    10302         1        5  Playwright(PW_TS:1)           Mocha:1     si   
+ 44  artilleryio/artillery                             JavaScript    7407        85     3340         1        1  Playwright(PW_TS:1)           Mocha:1     si   
+ 45  activepieces/activepieces                         TypeScript    6877        75    11839         2        2  Playwright(PW_TS:2)           Jest:2      si   
+ 46  builderio/builder                                 TypeScript    6572       272     6042        29       87  Playwright(PW_TS:29)          Jest:29     si   
+ 47  elementor/elementor                               JavaScript    6376       872    27152        48      125  Playwright(PW_TS:48)          Jest:48     si   
+ 48  getumbrel/umbrel                                  TypeScript    5822        68     2543         3       27  Playwright(PW_TS:3)           Mocha:3     si   
+ 49  documenso/documenso                               TypeScript    5772        12     2448        19       68  Playwright(PW_TS:19)          Jest:19     si   
+ 50  valor-software/ngx-bootstrap                      TypeScript    5515       131     2574         6       44  Playwright(PW_TS:6)           Jest:6      si   
+ 51  rancher-sandbox/rancher-desktop                   TypeScript    5456        40    10048        12      163  Playwright(PW_TS:12)          Jest:12     si   
+ 52  altair-graphql/altair                             TypeScript    4984       176     5690         2       11  Playwright(PW_TS:2)           Jest:2      si   
+ 53  sanity-io/sanity                                  TypeScript    4868       471    15890        14       26  Playwright(PW_TS:14)          Jest:14     si   
+ 54  baptistearno/typebot.io                           TypeScript    4640        75     2177        50       89  Playwright(PW_TS:50)          Jest:50     si   
+ 55  pinterest/gestalt                                 JavaScript    4204      1000     5025         1        1  Playwright(PW_JS:1)           Jest:1      si   
+ 56  web-infra-dev/modern.js                           TypeScript    4107       142     4570         1        2  Playwright(PW_TS:1)           Jest:1      si   
+ 57  workadventure/workadventure                       TypeScript    3849       149     7820        25       80  Playwright(PW_TS:25)          Jest:25     si   
+ 58  jupyterlite/jupyterlite                           TypeScript    3557        72     2680         7       24  Playwright(PW_TS:7)           Jest:7      si   
+ 59  imolorhe/altair                                   TypeScript    3450       121     4510         2       11  Playwright(PW_TS:2)           Jest:2      si   
+ 60  tagspaces/tagspaces                               TypeScript    3365       202     8193         2       19  Playwright(PW_JS:2)           Jest:2      si   
+ 61  thecodingmachine/workadventure                    TypeScript    3192       117     6539        25       80  Playwright(PW_TS:25)          Jest:25     si   
+ 62  primer/react                                      TypeScript    2909       191     8219        58      652  Playwright(PW_JS:1,PW_TS:57)  Jest:58     si   
+ 63  opensumi/core                                     TypeScript    2700       154    12946        13       53  Playwright(PW_TS:13)          Jest:13     si   
+ 64  quadratichq/quadratic                             TypeScript    2667         5     5055         2        3  Playwright(PW_TS:2)           Jest:2      si   
+ 65  pwa-builder/pwabuilder                            TypeScript    2405         5     5233         3        5  Playwright(PW_TS:3)           Mocha:3     si   
+ 66  codyogden/killedbygoogle                          TypeScript    2317         0     2013         3        8  Playwright(PW_TS:3)           Jest:3      si   
+ 67  modernweb-dev/web                                 TypeScript    2085      1000     2816         1       13  Playwright(PW_JS:1)           Mocha:1     si   
+ 68  oneuptime/oneuptime                               TypeScript    2054       413    27254         9       17  Playwright(PW_TS:9)           Jest:9      si   
+ 69  bigcapitalhq/bigcapital                           TypeScript    2027        50     3001         3       13  Playwright(PW_TS:3)           Jest:3      si   
+ 70  alephdata/aleph                                   JavaScript    1934        27    10875         1        1  Playwright(PW_PY:1)           PyTest:1    si   
+ 71  parabolinc/parabol                                TypeScript    1829       135    14339         3       24  Playwright(PW_TS:3)           Jest:3      si   
+ 72  klembot/twinejs                                   TypeScript    1741        60     2972         1        6  Playwright(PW_TS:1)           Jest:1      si   
+ 73  master-co/css                                     TypeScript    1725       576     3564         6       31  Playwright(PW_TS:6)           Jasmine:6   si   
+ 74  brimdata/zui                                      TypeScript    1720        49     5317        10       18  Playwright(PW_JS:1,PW_TS:9)   Jest:10     si   
+ 75  sourcegraph/cody                                  TypeScript    1631        67     2201         3        6  Playwright(PW_TS:3)           Mocha:3     si   
+ 76  xdan/jodit                                        TypeScript    1559        62     2703        13       21  Playwright(PW_TS:13)          Mocha:13    si   
+ 77  headlamp-k8s/headlamp                             TypeScript    1538        75     3802         5       18  Playwright(PW_TS:5)           Jest:5      si   
+ 78  kubeshop/monokle                                  TypeScript    1475       737     9332         3       16  Playwright(PW_TS:3)           Jest:3      si   
+ 79  brimdata/brim                                     TypeScript    1404        39     4684        10       18  Playwright(PW_JS:1,PW_TS:9)   Jest:10     si   
+ 80  aurelia/aurelia                                   TypeScript    1339        17     9366         8       36  Playwright(PW_TS:8)           Mocha:8     si   
+ 81  primer/components                                 TypeScript    1270       103     6275        58      652  Playwright(PW_JS:1,PW_TS:57)  Jest:58     si   
+ 82  steedos/steedos-platform                          JavaScript    1262       865    18025         5        5  Playwright(PW_JS:3,PW_TS:2)   Jest:5      si   
+ 83  duckduckgo/duckduckgo-privacy-extension           JavaScript    1188       125     5308         2        2  Playwright(PW_JS:2)           Jasmine:2   si   
+ 84  arnog/mathlive                                    TypeScript    1163        45     3551         5       38  Playwright(PW_TS:5)           Jest:5      si   
+ 85  adobe/spectrum-web-components                     TypeScript    1156         0     4233         1        3  Playwright(PW_TS:1)           Mocha:1     si   
+ 86  bemusic/bemuse                                    TypeScript     999        57     3096         5       13  Playwright(PW_TS:5)           Mocha:5     si   
+ 87  brimsec/brim                                      TypeScript     980        32     3482        10       18  Playwright(PW_JS:1,PW_TS:9)   Jest:10     si   
+ 88  staltz/manyverse                                  TypeScript     923        37     2642         7       35  Playwright(PW_TS:7)           Jest:7      si   
+ 89  mkosir/react-parallax-tilt                        TypeScript     901       411     2081         2        7  Playwright(PW_TS:2)           Jest:2      si   
+ 90  clerk/javascript                                  TypeScript     819       992     4939        20      104  Playwright(PW_TS:20)          Jest:20     si   
+ 91  replayio/devtools                                 TypeScript     649         0     6785         1        1  Playwright(PW_TS:1)           Jest:1      si   
+ 92  getstream/stream-chat-react                       TypeScript     638       206     5606         4       11  Playwright(PW_TS:4)           Jest:4      si   
+ 93  xcodebuild/codeterminal                           TypeScript     636         2    95449         1        5  Playwright(PW_TS:1)           Mocha:1     si   
+ 94  sefaria/sefaria-project                           JavaScript     631      1000    25233         5       19  Playwright(PW_TS:5)           Jest:5      si   
+ 95  trezor/trezor-suite                               TypeScript     614        88    15794         7       19  Playwright(PW_TS:7)           Jest:7      si   
+ 96  jupyterlab/lumino                                 TypeScript     570        55     3915         3        3  Playwright(PW_TS:3)           Mocha:3     si   
+ 97  stripe-samples/accept-a-payment                   JavaScript     542         0     3271         2       45  Playwright(PW_TS:2)           Mocha:2     si   
+ 98  audiusproject/audius-protocol                     TypeScript     537       215    11599         9       29  Playwright(PW_TS:9)           Jest:9      si   
+ 99  clerkinc/javascript                               TypeScript     532       248     3836        20      104  Playwright(PW_TS:20)          Jest:20     si   
+100  Oneirocom/Magick                                  TypeScript     529         0     7682         1        1  Playwright(PW_TS:1)           Jest:1      si   
+101  serenity-js/serenity-js                           TypeScript     527       248     6561         2       29  Playwright(PW_TS:2)           Jest:2      si   
+102  Laboratoria/curriculum                            JavaScript     491        50     3266         2       35  Playwright(PW_JS:2)           Mocha:2     si   
+103  relative-ci/bundle-stats                          TypeScript     468       103     4781         1        5  Playwright(PW_JS:1)           Jest:1      si   
+104  exogee-technology/graphweaver                     TypeScript     440         0     3865        14       22  Playwright(PW_TS:14)          Jest:14     si   
+105  optuna/optuna-dashboard                           TypeScript     437        45     2537         4        9  Playwright(PW_PY:4)           PyTest:4    si   
+106  porsche-design-system/porsche-design-system       TypeScript     432         0    31894       102      887  Playwright(PW_TS:102)         Jest:102    si   
+107  epam/ketcher                                      TypeScript     417        33     4626       169     2154  Playwright(PW_TS:169)         Jest:169    si   
+108  cornerstonejs/cornerstone3d                       TypeScript     408      1000     2466         1        1  Playwright(PW_TS:1)           Jasmine:1   si   
+109  woocommerce/woocommerce-blocks                    TypeScript     397       209     6328         1        8  Playwright(PW_TS:1)           Jest:1      si   
+110  patternfly/patternfly-elements                    TypeScript     372       372     3072        31       62  Playwright(PW_TS:31)          Mocha:31    si   
+111  open-source-labs/reactype                         TypeScript     366        31     3845         1        2  Playwright(PW_TS:1)           Jest:1      si   
+112  chia-network/chia-blockchain-gui                  TypeScript     333         0     6683        20       20  Playwright(PW_TS:20)          Jest:20     si   
+113  mui/material-ui-docs                              TypeScript     309         0    24289         6       19  Playwright(PW_TS:6)           Mocha:6     si   
+114  azerothcore/keira3                                TypeScript     298        31     2674         1        2  Playwright(PW_TS:1)           Jasmine:1   si   
+115  ably/ably-js                                      JavaScript     292        83     4629         1        1  Playwright(PW_TS:1)           Mocha:1     si   
+116  cmsgov/design-system                              TypeScript     287       197     2176         3        8  Playwright(PW_TS:3)           Jest:3      si   
+117  island-is/island.is                               TypeScript     275         2    11316        43       95  Playwright(PW_TS:43)          Jest:43     si   
+118  recordreplay/devtools                             JavaScript     272         0     4243         1        1  Playwright(PW_TS:1)           Jest:1      si   
+119  graphcommerce-org/graphcommerce                   TypeScript     264      1000    10966         8       13  Playwright(PW_TS:8)           Jest:8      si   
+120  orbitalapi/orbital                                TypeScript     260         0     4914         1        1  Playwright(PW_TS:1)           Jasmine:1   si   
+121  woocommerce/woocommerce-gutenberg-products-block  JavaScript     252       123     3638         1        8  Playwright(PW_TS:1)           Jest:1      si   
+122  3liz/lizmap-web-client                            JavaScript     243       182     7444        17       49  Playwright(PW_JS:17)          Mocha:17    si   
+123  guardian/dotcom-rendering                         TypeScript     231         0    28957        15       73  Playwright(PW_TS:15)          Jest:15     si   
+124  opengovsg/formsg                                  TypeScript     228       221     5121         1        3  Playwright(PW_TS:1)           Jest:1      si   
+125  netlify/build                                     TypeScript     210      1000     6775         1        3  Playwright(PW_TS:1)           Jest:1      si   
+126  mui-org/material-ui-docs                          JavaScript     197         0    18930         6       19  Playwright(PW_TS:6)           Mocha:6     si   
+127  microsoftgraph/microsoft-graph-explorer-v4        TypeScript     194        68     2165         7       54  Playwright(PW_TS:7)           Jest:7      si   
+128  dxos/dxos                                         TypeScript     189        81     4472        18       61  Playwright(PW_TS:18)          Mocha:18    si   
+129  alfresco/alfresco-content-app                     TypeScript     182        40     3260        54      357  Playwright(PW_TS:54)          Jasmine:54  si   
+130  osrd-project/osrd                                 TypeScript     173        17     5504         7       21  Playwright(PW_TS:7)           Jest:7      si   
+131  nordicsemiconductor/pc-nrfconnect-launcher        TypeScript     163        56     3359         5       38  Playwright(PW_TS:5)           Jest:5      si   
+132  podkrepi-bg/frontend                              TypeScript     161       114     4026         6       26  Playwright(PW_TS:6)           Jest:6      si   
+133  tryghost/koenig                                   JavaScript     154         0     4472        50      589  Playwright(PW_JS:49,PW_TS:1)  Mocha:50    si   
+134  internxt/drive-desktop                            TypeScript     152        60     2322         4       24  Playwright(PW_TS:4)           Jest:4      si   
+135  nasa-gcn/gcn.nasa.gov                             TypeScript     144         0     2713         1        1  Playwright(PW_TS:1)           Jest:1      si   
+136  azure/communication-ui-library                    TypeScript     143        60     3041        46      245  Playwright(PW_TS:46)          Jest:46     si   
+137  shieldbattery/shieldbattery                       TypeScript     135         0     3764         8       17  Playwright(PW_TS:8)           Jest:8      si   
+138  startupjs/startupjs                               JavaScript     104        19     3896         1        3  Playwright(PW_TS:1)           Jest:1      si   
+139  altinn/altinn-studio                              TypeScript     102       226     5746        11       36  Playwright(PW_TS:11)          Jest:11     si   
+140  royal-navy/design-system                          TypeScript     101       283     6346         1       10  Playwright(PW_TS:1)           Jest:1      si   
+
+--- Framework: Cypress (99 repository, 1642 file di test, 7222 test) ---
+Pos  Repository                                    Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework      MotoreTest  InRQ3
+---  --------------------------------------------  ----------  ------  --------  -------  --------  -------  --------------------------  ----------  -----
+  1  vercel/next.js                                JavaScript  119583      1000    20269         2        2  Cypress(CY_TS:2)            -           si   
+  2  gatsbyjs/gatsby                               JavaScript   54964       134    21649        12       40  Cypress(CY_TS:12)           -           si   
+  3  n8n-io/n8n                                    TypeScript   39898       147    10462        49      384  Cypress(CY_TS:49)           -           si   
+  4  dcloudio/uni-app                              JavaScript   39261         0     5581         1        2  Cypress(CY_JS:1)            -           si   
+  5  react-hook-form/react-hook-form               TypeScript   39234       546     3606        37       89  Cypress(CY_TS:37)           -           si   
+  6  hasura/graphql-engine                         TypeScript   30755       251     8082         1        1  Cypress(CY_TS:1)            -           si   
+  7  pmndrs/react-spring                           TypeScript   27295        48     3501         1        4  Cypress(CY_TS:1)            -           si   
+  8  tooljet/tooljet                               JavaScript   26304       176     5968        59      210  Cypress(CY_JS:59)           -           si   
+  9  swagger-api/swagger-ui                        JavaScript   25418       324     6345        85      306  Cypress(CY_JS:85)           -           si   
+ 10  marmelab/react-admin                          TypeScript   23846       336    18735        11       96  Cypress(CY_JS:11)           -           si   
+ 11  FlowiseAI/Flowise                             TypeScript   22749        31     2284         2       10  Cypress(CY_JS:2)            -           si   
+ 12  badges/shields                                JavaScript   22292         0     7194         1        4  Cypress(CY_JS:1)            -           si   
+ 13  umami-software/umami                          TypeScript   19250        81     3741         2        4  Cypress(CY_TS:2)            -           si   
+ 14  HumanSignal/label-studio                      JavaScript   16147        69     3243        19      193  Cypress(CY_TS:19)           -           si   
+ 15  verdaccio/verdaccio                           TypeScript   15786       350     5499         3       18  Cypress(CY_TS:3)            -           si   
+ 16  graphql/graphiql                              TypeScript   15616       835     3843        11       54  Cypress(CY_TS:11)           -           si   
+ 17  compiler-explorer/compiler-explorer           TypeScript   14986         0     9154         1        4  Cypress(CY_TS:1)            -           si   
+ 18  umijs/umi                                     TypeScript   14841       486     7379        20       60  Cypress(CY_TS:20)           -           si   
+ 19  shepherd-pro/shepherd                         JavaScript   11809       137     2650         5       33  Cypress(CY_JS:5)            -           si   
+ 20  highcharts/highcharts                         TypeScript   11779         0    35333        45      149  Cypress(CY_JS:45)           -           si   
+ 21  Infisical/infisical                           TypeScript   11640       122     5596         3       10  Cypress(CY_JS:3)            -           si   
+ 22  faker-js/faker                                TypeScript   11584        37     3392         2        5  Cypress(CY_TS:2)            -           si   
+ 23  shipshapecode/shepherd                        JavaScript   11452       129     2499         5       33  Cypress(CY_JS:5)            -           si   
+ 24  tinacms/tinacms                               TypeScript   10985       109    11419         1       10  Cypress(CY_TS:1)            -           si   
+ 25  dotansimha/graphql-code-generator             TypeScript   10596      1000     8196        12       12  Cypress(CY_TS:12)           -           si   
+ 26  misskey-dev/misskey                           TypeScript    9391       975    25430         3       17  Cypress(CY_TS:3)            -           si   
+ 27  owncast/owncast                               TypeScript    8829        16     8324        14       58  Cypress(CY_JS:14)           -           si   
+ 28  openreplay/openreplay                         TypeScript    8724        25     7425         1        2  Cypress(CY_TS:1)            -           si   
+ 29  milkdown/milkdown                             TypeScript    8243      1000     2524        12       89  Cypress(CY_TS:12)           -           si   
+ 30  webiny/webiny-js                              TypeScript    7074       141    15836        38       63  Cypress(CY_JS:19,CY_TS:19)  -           si   
+ 31  highlight/highlight                           TypeScript    6723        35     6083         3        3  Cypress(CY_JS:3)            -           si   
+ 32  svg-edit/svgedit                              JavaScript    6101        24     4011        35      237  Cypress(CY_JS:35)           -           si   
+ 33  module-federation/module-federation-examples  JavaScript    5191         0     2551        97      457  Cypress(CY_TS:97)           -           si   
+ 34  advplyr/audiobookshelf                        JavaScript    5034        99     3458         4       42  Cypress(CY_JS:4)            -           si   
+ 35  meshery/meshery                               JavaScript    4831       432    29528         2        4  Cypress(CY_JS:2)            -           si   
+ 36  plasmicapp/plasmic                            TypeScript    3927         0     4449        11       24  Cypress(CY_TS:11)           -           si   
+ 37  erxes/erxes                                   TypeScript    3399       139    22953         5        7  Cypress(CY_JS:5)            -           si   
+ 38  lightdash/lightdash                           TypeScript    3341      1000     6655        31      267  Cypress(CY_TS:31)           -           si   
+ 39  hug-sun/element3                              JavaScript    3273        29     6130         1        6  Cypress(CY_TS:1)            -           si   
+ 40  common-voice/common-voice                     TypeScript    3231       145    30069         8       29  Cypress(CY_TS:8)            -           si   
+ 41  bcakmakoglu/vue-flow                          TypeScript    2727       276     3483        37      108  Cypress(CY_TS:37)           -           si   
+ 42  fallenbagel/jellyseerr                        TypeScript    2686        13     2251        10       28  Cypress(CY_TS:10)           -           si   
+ 43  mozilla/common-voice                          TypeScript    2635       151    15114         8       29  Cypress(CY_TS:8)            -           si   
+ 44  padloc/padloc                                 JavaScript    2517        52     3417         4       11  Cypress(CY_TS:4)            -           si   
+ 45  gladysassistant/gladys                        JavaScript    2481       128     2474        25      110  Cypress(CY_JS:25)           -           si   
+ 46  vue-styleguidist/vue-styleguidist             TypeScript    2429       426     3761         6       20  Cypress(CY_TS:6)            -           si   
+ 47  vuestorefront/storefront-ui                   TypeScript    2283        41     6981         2        2  Cypress(CY_TS:2)            -           si   
+ 48  webpack/webpack.js.org                        JavaScript    2142         5     6497         8       15  Cypress(CY_JS:8)            -           si   
+ 49  freecodecamp/chapter                          TypeScript    1909         0     2895        20       93  Cypress(CY_TS:20)           -           si   
+ 50  rx-angular/rx-angular                         TypeScript    1832        33     2530         5       68  Cypress(CY_TS:5)            -           si   
+ 51  syuilo/misskey                                TypeScript    1677       681    18308         3       17  Cypress(CY_TS:3)            -           si   
+ 52  bpatrik/pigallery2                            TypeScript    1613        17     2240         5       17  Cypress(CY_TS:5)            -           si   
+ 53  pluralsh/plural                               TypeScript    1284       213     3107         1        1  Cypress(CY_TS:1)            -           si   
+ 54  bbc/simorgh                                   JavaScript    1232      1000    53956         1        4  Cypress(CY_JS:1)            -           si   
+ 55  otterscan/otterscan                           TypeScript    1153        32     2236         8       16  Cypress(CY_TS:8)            -           si   
+ 56  sheinsight/shineout                           TypeScript     903        72     3693        44       58  Cypress(CY_TS:44)           -           si   
+ 57  tektoncd/dashboard                            JavaScript     841        79     2309        11       19  Cypress(CY_JS:11)           -           si   
+ 58  owasp/threat-dragon                           JavaScript     788        21     2837        15       76  Cypress(CY_JS:15)           -           si   
+ 59  sap/spartacus                                 TypeScript     714      1000     9343       169      872  Cypress(CY_TS:169)          -           si   
+ 60  fastmail/overture                             JavaScript     706         0     2136         1        1  Cypress(CY_JS:1)            -           si   
+ 61  allegro/turnilo                               TypeScript     694       141     2088        16      185  Cypress(CY_TS:16)           -           si   
+ 62  compdemocracy/polis                           JavaScript     673         0     7876        14       74  Cypress(CY_JS:14)           -           si   
+ 63  streetmix/streetmix                           JavaScript     649         2     8110         1        2  Cypress(CY_JS:1)            -           si   
+ 64  artsy/force                                   TypeScript     570         0    36877        43       78  Cypress(CY_JS:9,CY_TS:34)   -           si   
+ 65  adaptlearning/adapt_framework                 JavaScript     561       251     2833         3        4  Cypress(CY_JS:3)            -           si   
+ 66  laststance/react-typescript-todomvc-2022      TypeScript     525         3     3266         9       16  Cypress(CY_JS:9)            -           si   
+ 67  nextcloud/text                                JavaScript     496         0     6890         2        3  Cypress(CY_JS:2)            -           si   
+ 68  nextcloud/photos                              JavaScript     484         0     2859         4       38  Cypress(CY_JS:3,CY_TS:1)    -           si   
+ 69  wandb/weave                                   TypeScript     443         0     2362        31       31  Cypress(CY_TS:31)           -           si   
+ 70  plone/volto                                   JavaScript     427       761     6216         2        4  Cypress(CY_JS:2)            -           si   
+ 71  sap/ui5-webcomponents-react                   TypeScript     414       257     4519         2        6  Cypress(CY_TS:2)            -           si   
+ 72  ghiscoding/angular-slickgrid                  TypeScript     383       133     3854        35      658  Cypress(CY_TS:35)           -           si   
+ 73  openshift/console                             TypeScript     378         0    27339        64      162  Cypress(CY_TS:64)           -           si   
+ 74  kamilkisiela/graphql-hive                     TypeScript     376        80     3487         1       10  Cypress(CY_TS:1)            -           si   
+ 75  aave/interface                                TypeScript     369      1000     4904        13       58  Cypress(CY_TS:13)           -           si   
+ 76  dyc3/opentogethertube                         TypeScript     366        14     3256         9       48  Cypress(CY_TS:9)            -           si   
+ 77  moralisweb3/moralis-js-sdk                    TypeScript     360      1000     2787         2        5  Cypress(CY_TS:2)            -           si   
+ 78  galoymoney/galoy                              TypeScript     344      1000     8213        10       15  Cypress(CY_TS:10)           -           si   
+ 79  argos-ci/argos                                TypeScript     323         0     2254         1        2  Cypress(CY_JS:1)            -           si   
+ 80  pol-is/polis                                  JavaScript     243         0     7343        14       74  Cypress(CY_JS:14)           -           si   
+ 81  tolgee/tolgee-js                              TypeScript     210       249     2378         8       20  Cypress(CY_TS:8)            -           si   
+ 82  huridocs/uwazi                                TypeScript     206       555    17865        23      288  Cypress(CY_TS:23)           -           si   
+ 83  build-canaries/nevergreen                     TypeScript     204        22     2461         3        9  Cypress(CY_TS:3)            -           si   
+ 84  citizenlabdotco/citizenlab                    TypeScript     203         0    98948       129      413  Cypress(CY_TS:129)          -           si   
+ 85  hongbo-miao/hongbomiao.com                    TypeScript     196       451    18665         1        2  Cypress(CY_TS:1)            -           si   
+ 86  mitre/heimdall2                               TypeScript     191       101     8611         6       24  Cypress(CY_TS:6)            -           si   
+ 87  audiusproject/audius-client                   TypeScript     186       134     4164        15       16  Cypress(CY_TS:15)           -           si   
+ 88  gmod/jbrowse-components                       TypeScript     180        88     9173         3        3  Cypress(CY_TS:3)            -           si   
+ 89  ambiretech/wallet                             JavaScript     167         0     7111         2        2  Cypress(CY_TS:2)            -           si   
+ 90  coronasafe/care_fe                            TypeScript     157       131     5817        31      126  Cypress(CY_TS:31)           -           si   
+ 91  responsible-ai-collaborative/aiid             JavaScript     150         0     3772        31       58  Cypress(CY_JS:31)           -           si   
+ 92  neondatabase/website                          JavaScript     149         0    10741         4       12  Cypress(CY_JS:4)            -           si   
+ 93  sienci-labs/gsender                           JavaScript     148        66     9279        11       11  Cypress(CY_JS:11)           -           si   
+ 94  newscorp-ghfb/newskit                         TypeScript     125        36     2019        24       56  Cypress(CY_JS:23,CY_TS:1)   -           si   
+ 95  commudle/commudle-ng                          TypeScript     124         0     5500         1        1  Cypress(CY_TS:1)            -           si   
+ 96  dspace/dspace-angular                         TypeScript     117        14    10956        29       80  Cypress(CY_TS:29)           -           si   
+ 97  beanstalkfarms/beanstalk                      TypeScript     111         2     3691         1        1  Cypress(CY_TS:1)            -           si   
+ 98  nextcloud/activity                            JavaScript     108         0     4288         2       10  Cypress(CY_TS:2)            -           si   
+ 99  dbt-labs/docs.getdbt.com                      JavaScript     102         0    23584         4       14  Cypress(CY_JS:4)            -           si   
+
+--- Framework: Puppeteer (14 repository, 73 file di test, 274 test) ---
+Pos  Repository                               Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework        MotoreTest  InRQ3
+---  ---------------------------------------  ----------  ------  --------  -------  --------  -------  ----------------------------  ----------  -----
+  1  facebook/create-react-app                JavaScript  101749        83     2802         2        5  Puppeteer(PU_JS:2)            Jest:2      si   
+  2  handsontable/handsontable                JavaScript   18924       205     8184        22       26  Puppeteer(PU_JS:22)           Jest:22     si   
+  3  loopbackio/loopback-next                 TypeScript    4835         0     7837         1        1  Puppeteer(PU_TS:1)            Mocha:1     si   
+  4  codeceptjs/codeceptjs                    JavaScript    4037        10     2846         1       99  Puppeteer(PU_JS:1)            Mocha:1     si   
+  5  strongloop/loopback-next                 TypeScript    3724         0     5539         1        1  Puppeteer(PU_TS:1)            Mocha:1     si   
+  6  googlecloudplatform/nodejs-docs-samples  JavaScript    2746         0     6020         2        3  Puppeteer(PU_JS:2)            Mocha:2     si   
+  7  open-wc/open-wc                          JavaScript    2193       196     2550         2        5  Puppeteer(PU_JS:2)            Mocha:2     si   
+  8  fusionjs/fusionjs                        TypeScript    1506       127     5352        32       72  Puppeteer(PU_JS:22,PU_TS:10)  Jest:32     si   
+  9  contentful/contentful.js                 TypeScript    1140       319     2374         1        2  Puppeteer(PU_JS:1)            Jest:1      si   
+ 10  jsreport/jsreport                        JavaScript    1126       105     2055         2       19  Puppeteer(PU_JS:2)            Mocha:2     si   
+ 11  alphagov/govuk-frontend                  JavaScript    1082        71     9422         2       31  Puppeteer(PU_JS:2)            Jest:2      si   
+ 12  metatron-app/metatron-discovery          TypeScript     421        39     2360         2        2  Puppeteer(PU_JS:2)            Jasmine:2   si   
+ 13  microsoft/dlworkspace                    JavaScript     195         6     3311         1        3  Puppeteer(PU_JS:1)            Mocha:1     si   
+ 14  frontarm/create-universal-react-app      JavaScript     126         0     2403         2        5  Puppeteer(PU_JS:2)            Jest:2      si   
+
+--- Framework: Selenium (13 repository, 149 file di test, 1118 test) ---
+Pos  Repository                     Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework      MotoreTest  InRQ3
+---  -----------------------------  ----------  ------  --------  -------  --------  -------  --------------------------  ----------  -----
+  1  amark/gun                      JavaScript   17699        17     2496         2        2  Selenium(SE_JS:2)           Mocha:2     si   
+  2  video-dev/hls.js               TypeScript   14075       252    10136         1        8  Selenium(SE_JS:1)           Mocha:1     si   
+  3  nightwatchjs/nightwatch        JavaScript   11703       241     2789        62      267  Selenium(SE_JS:61,SE_TS:1)  Mocha:62    si   
+  4  ajayyy/sponsorblock            TypeScript    8584       254     3571         1        1  Selenium(SE_TS:1)           Jest:1      si   
+  5  tridactyl/tridactyl            TypeScript    4871         0     7001         1       13  Selenium(SE_TS:1)           Jest:1      si   
+  6  scratchfoundation/scratch-www  JavaScript    1550         1    12842         8       33  Selenium(SE_JS:8)           Jest:8      si   
+  7  llk/scratch-www                JavaScript    1373         1    10516         8       33  Selenium(SE_JS:8)           Jest:8      si   
+  8  googledatalab/datalab          TypeScript     978        19     2055         2        9  Selenium(SE_JS:2)           Jasmine:2   si   
+  9  forcedotcom/aura               JavaScript     677         0    28924        48      372  Selenium(SE_JA:48)          JUnit:48    si   
+ 10  microsoft/botbuilder-js        TypeScript     648        35     3723         1        1  Selenium(SE_JS:1)           Mocha:1     si   
+ 11  rdkmaster/jigsaw               TypeScript     440        56     3887         4        9  Selenium(SE_TS:4)           Jasmine:4   si   
+ 12  geoadmin/mf-geoadmin3          JavaScript     227       213     7216         1      148  Selenium(SE_JS:1)           Mocha:1     si   
+ 13  metamask/metamask-snaps-beta   JavaScript     135         4     9560        10      222  Selenium(SE_JS:10)          Mocha:10    si   
+
+--- Framework: Playwright + Cypress (11 repository, 643 file di test, 3086 test) ---
+Pos  Repository                      Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework                            MotoreTest  InRQ3
+---  ------------------------------  ----------  ------  --------  -------  --------  -------  ------------------------------------------------  ----------  -----
+  1  ionic-team/ionic-framework      TypeScript   50313       858    13577       399     1627  Playwright(PW_TS:356) Cypress(CY_JS:25,CY_TS:18)  Jest:356    si   
+  2  spacedriveapp/spacedrive        TypeScript   28563        15     2682         3        4  Playwright(PW_TS:1) Cypress(CY_TS:2)              -           si   
+  3  nrwl/nx                         TypeScript   21720       682    11940        11       69  Playwright(PW_TS:5) Cypress(CY_TS:6)              Jest:5      si   
+  4  xyflow/xyflow                   TypeScript   20615       232     4326        15      124  Playwright(PW_TS:5) Cypress(CY_TS:10)             -           si   
+  5  wbkd/react-flow                 TypeScript   17183       222     3597        15      124  Playwright(PW_TS:5) Cypress(CY_TS:10)             -           si   
+  6  redwoodjs/redwood               TypeScript   16697       271    10615        17       53  Playwright(PW_TS:16) Cypress(CY_JS:1)             Jest:16     si   
+  7  taiga-family/taiga-ui           TypeScript    3000       161     5307        61      330  Playwright(PW_TS:52) Cypress(CY_TS:9)             Jest:52     si   
+  8  tinkoff/taiga-ui                TypeScript    2708       123     3759        61      330  Playwright(PW_TS:52) Cypress(CY_TS:9)             Jest:52     si   
+  9  module-federation/universe      TypeScript     842        16     2323         6       36  Playwright(PW_TS:1) Cypress(CY_TS:5)              Jest:1      si   
+ 10  sap/luigi                       JavaScript     792       112     2052        31      307  Playwright(PW_TS:1) Cypress(CY_JS:30)             Jest:1      si   
+ 11  oasisprotocol/oasis-wallet-web  TypeScript     106        22     3341        24       82  Playwright(PW_TS:17) Cypress(CY_TS:7)             Jest:17     si   
+
+--- Framework: Playwright + Puppeteer (3 repository, 84 file di test, 409 test) ---
+Pos  Repository                 Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework                          MotoreTest  InRQ3
+---  -------------------------  ----------  ------  --------  -------  --------  -------  ----------------------------------------------  ----------  -----
+  1  freecodecamp/freecodecamp  TypeScript  385467         0    35149        78      295  Playwright(PW_TS:77) Puppeteer(PU_JS:1)         Jest:78     si   
+  2  mui/mui-x                  TypeScript    3660       194     6537         3       57  Playwright(PW_JS:1,PW_TS:2) Puppeteer(PU_JS:1)  Mocha:3     si   
+  3  mui-org/material-ui-x      TypeScript     978        49     2280         3       57  Playwright(PW_JS:1,PW_TS:2) Puppeteer(PU_JS:1)  Mocha:3     si   
+
+--- Framework: Cypress + Puppeteer (2 repository, 13 file di test, 47 test) ---
+Pos  Repository         Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework               MotoreTest  InRQ3
+---  -----------------  ----------  ------  --------  -------  --------  -------  -----------------------------------  ----------  -----
+  1  kubeflow/kubeflow  TypeScript   13576        89     2540         9       34  Cypress(CY_TS:8) Puppeteer(PU_TS:1)  Jasmine:1   si   
+  2  ibma/equal-access  JavaScript     604        88     4923         4       13  Cypress(CY_JS:2) Puppeteer(PU_JS:2)  Jest:2      si   
+
+################################################################################
+TIPOLOGIA: Java  (89 repository, 10434 test GUI totali)
+################################################################################
+
+--- Framework: Selenium (65 repository, 2110 file di test, 9257 test) ---
+Pos  Repository                             Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest            InRQ3
+---  -------------------------------------  ----------  ------  --------  -------  --------  -------  ----------------------  --------------------  -----
+  1  eugenp/tutorials                       Java         35830         0    15392        20       51  Selenium(SE_JA:20)      JUnit:18, TestNG:2    no   
+  2  keycloak/keycloak                      Java         19484        54    24499        70     1038  Selenium(SE_JA:70)      JUnit:70              si   
+  3  thingsboard/thingsboard                Java         15432        59    17752         9       50  Selenium(SE_JA:9)       JUnit:1, TestNG:8     si   
+  4  apache/dolphinscheduler                Java         11884        51     8267        18       59  Selenium(SE_JA:18)      JUnit:18              si   
+  5  apache/incubator-dolphinscheduler      Java          5269        15     4753        18       59  Selenium(SE_JA:18)      JUnit:18              no   
+  6  apache/nifi                            Java          4328         0     9547         8        8  Selenium(SE_JA:8)       JUnit:8               si   
+  7  ant-media/ant-media-server             Java          4072        52     7425         1        4  Selenium(SE_JA:1)       JUnit:1               si   
+  8  camunda/camunda-bpm-platform           Java          3930         0    19302         2        8  Selenium(SE_JA:2)       JUnit:2               si   
+  9  jenkinsci/blueocean-plugin             Java          2874        54     4504        14       30  Selenium(SE_JA:14)      JUnit:14              si   
+ 10  apache/netbeans                        Java          2531        43     9859         2        2  Selenium(SE_JS:2)       Mocha:2               si   
+ 11  openvidu/openvidu                      Java          1774        43     4152         1        9  Selenium(SE_JA:1)       JUnit:1               si   
+ 12  vaadin/framework                       Java          1765       190    19182       709     1904  Selenium(SE_JA:709)     JUnit:706             si   
+ 13  primefaces/primefaces                  Java          1724        46    15199       222      729  Selenium(SE_JA:222)     JUnit:222             si   
+ 14  googlecloudplatform/java-docs-samples  Java          1705         1    10019         3       15  Selenium(SE_JA:3)       JUnit:3               si   
+ 15  metasfresh/metasfresh                  Java          1614       130    63262         2        2  Selenium(SE_JA:2)       JUnit:2               si   
+ 16  hawtio/hawtio                          Java          1393        73     9549         2       15  Selenium(SE_JA:2)       JUnit:2               si   
+ 17  alfio-event/alf.io                     Java          1290        94     3765         1        1  Selenium(SE_JA:1)       JUnit:1               si   
+ 18  glowroot/glowroot                      Java          1176        75     4315         7       41  Selenium(SE_JA:7)       JUnit:7               si   
+ 19  openliberty/open-liberty               Java          1011        52    30915        10       76  Selenium(SE_JA:10)      JUnit:10              no   
+ 20  apache/activemq-artemis                Java           912         0    10481         4       20  Selenium(SE_JA:4)       JUnit:4               si   
+ 21  wildfly/quickstart                     Java           898        10     3034         1        3  Selenium(SE_JA:1)       JUnit:1               si   
+ 22  opennms/opennms                        Java           895       115    59577        46      187  Selenium(SE_JA:46)      JUnit:46              si   
+ 23  fluentlenium/fluentlenium              Java           862        51     3244       163     1353  Selenium(SE_JA:163)     JUnit:145, TestNG:18  si   
+ 24  apache/hop                             Java           840        11     6747         1        1  Selenium(SE_JA:1)       JUnit:1               si   
+ 25  plan-player-analytics/plan             Java           795       168     6366         8       16  Selenium(SE_JA:8)       JUnit:8               si   
+ 26  javaee/glassfish                       Java           716        35    35617        33      114  Selenium(SE_JA:33)      JUnit:30, TestNG:3    no   
+ 27  wso2/product-is                        Java           706       298    12891         8       21  Selenium(SE_JA:8)       TestNG:8              si   
+ 28  qaprosoft/carina                       Java           570        56     6633         8       81  Selenium(SE_JA:8)       TestNG:8              si   
+ 29  citrusframework/citrus                 Java           442        20     4769        28       95  Selenium(SE_JA:28)      TestNG:28             si   
+ 30  zkoss/zk                               Java           425         1    28386       272      327  Selenium(SE_JA:272)     JUnit:272             si   
+ 31  gluufederation/oxauth                  Java           406        21     5690         4       16  Selenium(SE_JA:4)       TestNG:4              si   
+ 32  appfuse/appfuse                        Java           403        35     4147         2        2  Selenium(SE_JA:2)       JUnit:2               si   
+ 33  janssenproject/jans                    Java           381       599    33804         5       17  Selenium(SE_JA:5)       TestNG:5              si   
+ 34  eclipse-ee4j/glassfish                 Java           364        41     4703        33      114  Selenium(SE_JA:33)      JUnit:30, TestNG:3    si   
+ 35  wso2/product-ei                        Java           358        79     3392        12       12  Selenium(SE_JA:12)      TestNG:12             si   
+ 36  apache/archiva                         Java           319         5     8785         6       11  Selenium(SE_JA:6)       JUnit:6               si   
+ 37  zanata/zanata-platform                 Java           294        29    19064         1        5  Selenium(SE_JA:1)       JUnit:1               si   
+ 38  openolat/openolat                      Java           285         0    23192        14      216  Selenium(SE_JA:14)      JUnit:14              si   
+ 39  dhis2/dhis2-core                       Java           281         1    11980         1        1  Selenium(SE_JA:1)       JUnit:1               si   
+ 40  omnifaces/omnifaces                    Java           280         0     3589        30      143  Selenium(SE_JA:30)      JUnit:30              si   
+ 41  codenvy/codenvy                        Java           272       236    11031         4        6  Selenium(SE_JA:4)       TestNG:4              si   
+ 42  thucydides-webtests/thucydides         Java           266       138     2142       134     1215  Selenium(SE_JA:134)     JUnit:134             si   
+ 43  cantaloupe-project/cantaloupe          Java           262        56     4579         1        7  Selenium(SE_JA:1)       JUnit:1               si   
+ 44  apache/camel-quarkus                   Java           238        38     5547         1        1  Selenium(SE_JA:1)       JUnit:1               si   
+ 45  eclipse/vorto                          Java           224         1     3031         3       19  Selenium(SE_JA:3)       JUnit:3               si   
+ 46  miso-lims/miso-lims                    Java           221       204     4866         1        4  Selenium(SE_JA:1)       JUnit:1               si   
+ 47  windup/windup                          Java           200        69     3373         1        2  Selenium(SE_JA:1)       JUnit:1               si   
+ 48  vivo-project/vivo                      Java           196        14     5282        20       55  Selenium(SE_JA:20)      JUnit:20              si   
+ 49  walmartlabs/concord                    Java           194        66     4745         3        5  Selenium(SE_JA:3)       JUnit:3               si   
+ 50  enmasseproject/enmasse                 Java           189       149     7568         2        8  Selenium(SE_JA:2)       JUnit:2               si   
+ 51  kurento/kurento-java                   Java           188         0     2899         2        2  Selenium(SE_JA:2)       JUnit:2               si   
+ 52  apache/incubator-hop                   Java           178         4     3314         1        1  Selenium(SE_JA:1)       JUnit:1               si   
+ 53  atlasmap/atlasmap                      Java           168        91     4288         2        2  Selenium(SE_JA:2)       JUnit:2               si   
+ 54  apache/deltaspike                      Java           147         0     2650        23       39  Selenium(SE_JA:23)      JUnit:23              si   
+ 55  wttech/aet                             Java           138        26     2556        10       48  Selenium(SE_JA:10)      JUnit:10              no   
+ 56  finos/datahelix                        Java           137       131     6196         1        2  Selenium(SE_JA:1)       JUnit:1               si   
+ 57  hack23/cia                             Java           131        93    14625         2      200  Selenium(SE_JA:2)       JUnit:2               si   
+ 58  wso2/product-iots                      Java           124        55     2451        14       43  Selenium(SE_JA:14)      TestNG:14             si   
+ 59  apache/roller                          Java           121         1     4755         1        1  Selenium(SE_JA:1)       JUnit:1               si   
+ 60  xwiki-attic/xwiki-enterprise           Java           120       322     4316        26      305  Selenium(SE_JA:26)      JUnit:26              si   
+ 61  jakartaee/platform-tck                 Java           117         4     2208         1        4  Selenium(SE_JA:1)       TestNG:1              si   
+ 62  apache/tapestry-5                      Java           116         0     5768         5      187  Selenium(SE_JA:5)       TestNG:5              si   
+ 63  apache/myfaces                         Java           115         0     6210         8       25  Selenium(SE_JA:8)       JUnit:8               si   
+ 64  eclipse-ee4j/jakartaee-tck             Java           107         3     2179         1        4  Selenium(SE_JA:1)       TestNG:1              si   
+ 65  zkoss/zkspreadsheet                    Java           101         3     4001        44      216  Selenium(SE_JA:44)      JUnit:43              si   
+
+--- Framework: Cypress (14 repository, 203 file di test, 762 test) ---
+Pos  Repository                    Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ----------------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  netflix/conductor             Java         12984       319     3317         2       12  Cypress(CY_JS:2)        -           si   
+  2  openrefine/openrefine         Java         10408        54     8033        83      261  Cypress(CY_JS:83)       -           si   
+  3  conductor-oss/conductor       Java          6401         3     3444         2       12  Cypress(CY_JS:2)        -           si   
+  4  geogebra/geogebra             Java          1454         0    65229        18       32  Cypress(CY_JS:18)       -           si   
+  5  owasp/wrongsecrets            Java          1073        76     4298        12       30  Cypress(CY_JS:12)       -           si   
+  6  apache/jena                   Java          1046         0    11295         3       13  Cypress(CY_JS:3)        -           si   
+  7  ongres/stackgres              Java           799         0     7151        23      104  Cypress(CY_JS:23)       -           si   
+  8  apache/streampipes            Java           534        16    10775         2        6  Cypress(CY_TS:2)        -           si   
+  9  apache/helix                  Java           443         8     4623         1        2  Cypress(CY_TS:1)        -           si   
+ 10  apache/incubator-streampipes  Java           351        12     9264         2        6  Cypress(CY_TS:2)        -           si   
+ 11  apache/incubator-kie-tools    Java           224        74    21090        18       70  Cypress(CY_TS:18)       -           si   
+ 12  dromara/northstar             Java           194         0     2987         5       38  Cypress(CY_JS:5)        -           si   
+ 13  kiegroup/kie-tools            Java           175        73    20967        18       70  Cypress(CY_TS:18)       -           si   
+ 14  airbytehq/airbyte-platform    Java           143        85    13505        14      106  Cypress(CY_TS:14)       -           si   
+
+--- Framework: Playwright (9 repository, 97 file di test, 409 test) ---
+Pos  Repository                           Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  -----------------------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  camunda/zeebe                        Java          2996       258    32614        35      146  Playwright(PW_TS:35)    Jest:35     si   
+  2  athou/commafeed                      Java          2451        32     3319         2        5  Playwright(PW_JA:2)     JUnit:2     si   
+  3  jplag/jplag                          Java           924        10     3642         4        4  Playwright(PW_TS:4)     Jest:4      si   
+  4  ls1intum/artemis                     Java           417       311     8113        32      150  Playwright(PW_TS:32)    Jest:32     si   
+  5  opencast/opencast                    Java           367       128    19859         2        7  Playwright(PW_JS:2)     Jest:2      si   
+  6  urlaubsverwaltung/urlaubsverwaltung  Java           244       268    12801         4       14  Playwright(PW_JA:4)     JUnit:4     si   
+  7  synyx/urlaubsverwaltung              Java           202       209     9919         4       14  Playwright(PW_JA:4)     JUnit:4     si   
+  8  star-whale/starwhale                 Java           180        48     2307         6       59  Playwright(PW_TS:6)     Jest:6      si   
+  9  finos/waltz                          Java           163       153    11567         8       10  Playwright(PW_JA:8)     JUnit:8     si   
+
+--- Framework: Playwright + Selenium (1 repository, 3 file di test, 6 test) ---
+Pos  Repository     Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework                 MotoreTest         InRQ3
+---  -------------  ----------  ------  --------  -------  --------  -------  -------------------------------------  -----------------  -----
+  1  payara/payara  Java           865        76    20402         3        6  Playwright(PW_JA:2) Selenium(SE_JA:1)  JUnit:2, TestNG:1  si   
+
+################################################################################
+TIPOLOGIA: PHP  (30 repository, 3436 test GUI totali)
+################################################################################
+
+--- Framework: Cypress (21 repository, 842 file di test, 2443 test) ---
+Pos  Repository                     Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  -----------------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  nextcloud/server               PHP          25342       210    73677        30      193  Cypress(CY_TS:30)       -           si   
+  2  invoiceninja/invoiceninja      PHP           7671       808    19969         2        3  Cypress(CY_JS:2)        -           si   
+  3  joomla/joomla-cms              PHP           4634       366    49860       111      407  Cypress(CY_JS:111)      -           si   
+  4  openmediavault/openmediavault  PHP           4532         0     7057         2        3  Cypress(CY_TS:2)        -           si   
+  5  shopware/shopware              PHP           2564       117    33384       228      481  Cypress(CY_JS:228)      -           si   
+  6  shopware/platform              PHP           2364        95    30545       228      481  Cypress(CY_JS:228)      -           si   
+  7  10up/elasticpress              PHP           1224        81     8556        18      116  Cypress(CY_JS:18)       -           si   
+  8  enalean/tuleap                 PHP            948         0    84356        57      194  Cypress(CY_TS:57)       -           si   
+  9  pkp/ojs                        PHP            778         0    21220        36       86  Cypress(CY_JS:36)       -           si   
+ 10  orangehrm/orangehrm            PHP            713        32     7854        10       47  Cypress(CY_JS:10)       -           si   
+ 11  fossbilling/fossbilling        PHP            674        44     4582         7       15  Cypress(CY_JS:7)        -           si   
+ 12  coopcycle/coopcycle-web        PHP            560        76    11019         4        5  Cypress(CY_JS:4)        -           si   
+ 13  nextcloud/social               PHP            486        19     3357         2       10  Cypress(CY_TS:2)        -           si   
+ 14  shopsys/shopsys                PHP            320        50    14144        14       74  Cypress(CY_TS:14)       -           si   
+ 15  nextcloud/groupfolders         PHP            261       111     2791         7       15  Cypress(CY_TS:7)        -           si   
+ 16  omegaup/omegaup                PHP            219         0     7239         6       48  Cypress(CY_TS:6)        -           si   
+ 17  natlibfi/skosmos               PHP            209        43     4286        14      101  Cypress(CY_JS:14)       -           si   
+ 18  marius-wieschollek/passwords   PHP            199        12     3917         1       21  Cypress(CY_JS:1)        -           si   
+ 19  irontec/ivozprovider           PHP            185        66     8464        31       89  Cypress(CY_JS:31)       -           si   
+ 20  pkp/omp                        PHP            121         0    11724        30       46  Cypress(CY_JS:30)       -           si   
+ 21  ecamp/ecamp3                   PHP            105         5    10664         4        8  Cypress(CY_JS:4)        -           si   
+
+--- Framework: Playwright (9 repository, 144 file di test, 993 test) ---
+Pos  Repository                              Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework       MotoreTest  InRQ3
+---  --------------------------------------  ----------  ------  --------  -------  --------  -------  ---------------------------  ----------  -----
+  1  woocommerce/woocommerce                 PHP           9028       466    63250         2       41  Playwright(PW_TS:2)          Jest:2      si   
+  2  wp-graphql/wp-graphql                   PHP           3592       200     5801         1        6  Playwright(PW_JS:1)          Jest:1      si   
+  3  pulsejet/memories                       PHP           1999       192     4013         2        5  Playwright(PW_TS:2)          Jest:2      si   
+  4  automattic/jetpack                      PHP           1545       344    37249        11       11  Playwright(PW_JS:5,PW_TS:6)  Jest:11     si   
+  5  automattic/sensei                       PHP            504       213    19811         5       13  Playwright(PW_TS:5)          Jest:5      si   
+  6  getdokan/dokan                          PHP            242       140     2861       100      888  Playwright(PW_TS:100)        Jest:100    si   
+  7  woocommerce/woocommerce-gateway-stripe  PHP            226       151     2571        10       10  Playwright(PW_JS:10)         Jest:10     si   
+  8  automattic/vip-go-mu-plugins            PHP            166       389    11830         8        8  Playwright(PW_TS:8)          Jest:8      si   
+  9  automattic/woocommerce-payments         PHP            158       473     4327         5       11  Playwright(PW_TS:5)          Jest:5      si   
+
+################################################################################
+TIPOLOGIA: Python  (30 repository, 2214 test GUI totali)
+################################################################################
+
+--- Framework: Cypress (16 repository, 345 file di test, 2120 test) ---
+Pos  Repository                          Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework     MotoreTest  InRQ3
+---  ----------------------------------  ----------  ------  --------  -------  --------  -------  -------------------------  ----------  -----
+  1  LAION-AI/Open-Assistant             Python       36508       127     3477         7       13  Cypress(CY_TS:7)           -           si   
+  2  posthog/posthog                     Python       16502         0    15724        41      163  Cypress(CY_TS:41)          -           si   
+  3  guardicore/monkey                   Python        6457        19    19294         1        3  Cypress(CY_TS:1)           -           si   
+  4  ckan/ckan                           Python        4234         5    25642        23      255  Cypress(CY_JS:23)          -           si   
+  5  quay/quay                           Python        2365        48    12034        28      231  Cypress(CY_TS:28)          -           si   
+  6  diffgram/diffgram                   Python        1779       314     5761        30      142  Cypress(CY_JS:30)          -           no   
+  7  Agenta-AI/agenta                    Python         777        69     6448        10       37  Cypress(CY_TS:10)          -           si   
+  8  infuseai/piperider                  Python         468       154     3220         4        8  Cypress(CY_TS:4)           -           si   
+  9  opentrons/opentrons                 Python         378       136    12378        17       41  Cypress(CY_JS:17)          -           si   
+ 10  ethyca/fides                        Python         326       111     2095        42      594  Cypress(CY_TS:42)          -           si   
+ 11  facebookresearch/mephisto           Python         292        21     2531         5       22  Cypress(CY_JS:5)           -           si   
+ 12  cfpb/consumerfinance.gov            Python         245      1000    24391        33      216  Cypress(CY_JS:33)          -           si   
+ 13  taigaio/taiga                       Python         234         0     2124        23      136  Cypress(CY_TS:23)          -           si   
+ 14  posthog/posthog-foss                Python         195         0    15725        41      163  Cypress(CY_TS:41)          -           si   
+ 15  insightsoftwareconsortium/itk-wasm  Python         174       190     3489        37       92  Cypress(CY_JS:3,CY_TS:34)  -           si   
+ 16  sio2project/oioioi                  Python         158         1     2487         3        4  Cypress(CY_TS:3)           -           si   
+
+--- Framework: Playwright (9 repository, 24 file di test, 83 test) ---
+Pos  Repository                       Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  -------------------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  paperless-ngx/paperless-ngx      Python       16259        72     9038         5       29  Playwright(PW_TS:5)     Jest:5      si   
+  2  h2oai/wave                       Python        3833        60     2240         4       12  Playwright(PW_PY:4)     PyTest:4    si   
+  3  grafana/oncall                   Python        3201       259     3921         1        1  Playwright(PW_TS:1)     Jest:1      si   
+  4  bram2w/baserow                   Python        2009         0     3650         3        3  Playwright(PW_TS:3)     Jest:3      si   
+  5  TobikoData/sqlmesh               Python        1193       188     2168         1        1  Playwright(PW_TS:1)     Jest:1      si   
+  6  googlechrome/chromium-dashboard  Python         620         0     3309         6       15  Playwright(PW_JS:6)     Jest:6      si   
+  7  okfde/froide                     Python         340         0     6782         1        7  Playwright(PW_PY:1)     PyTest:1    si   
+  8  harvard-lil/capstone             Python         128         0     5291         2        9  Playwright(PW_PY:2)     PyTest:2    si   
+  9  okfde/fragdenstaat_de            Python         119         0     3199         1        6  Playwright(PW_PY:1)     PyTest:1    si   
+
+--- Framework: Selenium (4 repository, 5 file di test, 8 test) ---
+Pos  Repository                               Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ---------------------------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  googlecloudplatform/python-docs-samples  Python        5795         0     5643         1        2  Selenium(SE_PY:1)       PyTest:1    si   
+  2  seleniumbase/seleniumbase                Python        4088       916     8523         1        1  Selenium(SE_PY:1)       PyTest:1    si   
+  3  blazemeter/taurus                        Python        1945        12     4987         2        3  Selenium(SE_JS:2)       Mocha:2     si   
+  4  dallinger/dallinger                      Python         116        69     8701         1        2  Selenium(SE_PY:1)       PyTest:1    si   
+
+--- Framework: Puppeteer (1 repository, 2 file di test, 3 test) ---
+Pos  Repository       Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ---------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  quantumlib/cirq  Python        4106        25     3756         2        3  Puppeteer(PU_TS:2)      Mocha:2     si   
+
+################################################################################
+TIPOLOGIA: Go  (21 repository, 662 test GUI totali)
+################################################################################
+
+--- Framework: Cypress (14 repository, 112 file di test, 409 test) ---
+Pos  Repository               Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  -----------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  cockroachdb/cockroach    Go           28897         0    92514         2        2  Cypress(CY_TS:2)        -           si   
+  2  goharbor/harbor          Go           22030       282    12022         1        1  Cypress(CY_TS:1)        -           si   
+  3  kubernetes/dashboard     Go           13745        78     5113         2       30  Cypress(CY_TS:2)        -           si   
+  4  casbin/casdoor           Go            8010       830     2248        19       22  Cypress(CY_JS:19)       -           si   
+  5  pyroscope-io/pyroscope   Go            6998        92     2172         1        5  Cypress(CY_TS:1)        -           si   
+  6  zitadel/zitadel          Go            6618      1000     2950        14       97  Cypress(CY_TS:14)       -           si   
+  7  pachyderm/pachyderm      Go            6065       543    22386         4       13  Cypress(CY_TS:4)        -           si   
+  8  kubeshop/testkube        Go            1163      1000     3133         9       15  Cypress(CY_JS:9)        -           si   
+  9  apache/trafficcontrol    Go             990        23    12816        35       56  Cypress(CY_TS:35)       -           si   
+ 10  redhat-developer/odo     Go             761        91     3663         2       38  Cypress(CY_TS:2)        -           si   
+ 11  layer5io/meshery         Go             732       108     7282         2        4  Cypress(CY_JS:2)        -           si   
+ 12  shortlink-org/shortlink  Go             660        29    34231         2        2  Cypress(CY_TS:2)        -           si   
+ 13  arvados/arvados          Go             359         0    30956        17      122  Cypress(CY_JS:17)       -           si   
+ 14  viamrobotics/rdk         Go             118        89     4777         2        2  Cypress(CY_TS:2)        -           si   
+
+--- Framework: Playwright (4 repository, 15 file di test, 56 test) ---
+Pos  Repository              Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ----------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  gravitational/teleport  Go           16079       610    17400         1        1  Playwright(PW_TS:1)     Jest:1      si   
+  2  umputun/remark42        Go            4634        21     3225         1        1  Playwright(PW_TS:1)     Jest:1      si   
+  3  flipt-io/flipt          Go            3256       130     3289         9       50  Playwright(PW_TS:9)     Jest:9      si   
+  4  replicatedhq/kots       Go             874       619     8985         4        4  Playwright(PW_TS:4)     Jest:4      si   
+
+--- Framework: Selenium (1 repository, 1 file di test, 1 test) ---
+Pos  Repository                Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ------------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  determined-ai/determined  Go            2789       107     7479         1        1  Selenium(SE_PY:1)       PyTest:1    si   
+
+--- Framework: Playwright + Cypress (2 repository, 36 file di test, 196 test) ---
+Pos  Repository          Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework                  MotoreTest  InRQ3
+---  ------------------  ----------  ------  --------  -------  --------  -------  --------------------------------------  ----------  -----
+  1  target/goalert      Go            2049        14    12562        33      189  Playwright(PW_TS:11) Cypress(CY_TS:22)  Jest:11     si   
+  2  kubeshop/tracetest  Go             860       206     2563         3        7  Playwright(PW_TS:2) Cypress(CY_JS:1)    Jest:2      si   
+
+################################################################################
+TIPOLOGIA: Rust  (5 repository, 72 test GUI totali)
+################################################################################
+
+--- Framework: Playwright (3 repository, 16 file di test, 60 test) ---
+Pos  Repository              Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ----------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  vercel/turbo            Rust         24674       325     6423         2        2  Playwright(PW_TS:2)     Jest:2      si   
+  2  mystenlabs/sui          Rust          5624       126    12387         1        8  Playwright(PW_TS:1)     Mocha:1     si   
+  3  mullvad/mullvadvpn-app  Rust          4333       137    20228        13       50  Playwright(PW_TS:13)    Mocha:13    si   
+
+--- Framework: Cypress (2 repository, 10 file di test, 12 test) ---
+Pos  Repository             Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ---------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  quickwit-oss/quickwit  Rust          5786        21     2761         1        3  Cypress(CY_JS:1)        -           si   
+  2  systeminit/si          Rust           809       115     6984         9        9  Cypress(CY_TS:9)        -           si   
+
+################################################################################
+TIPOLOGIA: Jupyter Notebook  (4 repository, 116 test GUI totali)
+################################################################################
+
+--- Framework: Playwright (2 repository, 10 file di test, 20 test) ---
+Pos  Repository                  Linguaggio        Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  --------------------------  ----------------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  jupyter-widgets/ipywidgets  Jupyter Notebook    3032        15     7825         1        1  Playwright(PW_TS:1)     Mocha:1     si   
+  2  jupyter/nbdime              Jupyter Notebook    2588         8     2132         9       19  Playwright(PW_TS:9)     Jest:9      si   
+
+--- Framework: Cypress (1 repository, 19 file di test, 56 test) ---
+Pos  Repository             Linguaggio        Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ---------------------  ----------------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  complat/chemotion_eln  Jupyter Notebook     116        48     5630        19       56  Cypress(CY_JS:19)       -           si   
+
+--- Framework: Selenium (1 repository, 7 file di test, 40 test) ---
+Pos  Repository       Linguaggio        Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ---------------  ----------------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  apache/zeppelin  Jupyter Notebook    6253         0     5342         7       40  Selenium(SE_JA:7)       JUnit:7     si   
+
+################################################################################
+TIPOLOGIA: C++  (3 repository, 30 test GUI totali)
+################################################################################
+
+--- Framework: Cypress (1 repository, 1 file di test, 5 test) ---
+Pos  Repository         Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  -----------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  brndnmtthws/conky  C++           6816        39     4281         1        5  Cypress(CY_JS:1)        -           si   
+
+--- Framework: Playwright (1 repository, 2 file di test, 2 test) ---
+Pos  Repository                    Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ----------------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  AztecProtocol/aztec-packages  C++            126       326     5225         2        2  Playwright(PW_TS:2)     Mocha:2     si   
+
+--- Framework: Selenium (1 repository, 1 file di test, 23 test) ---
+Pos  Repository       Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ---------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  gerbera/gerbera  C++           1127        28     5421         1       23  Selenium(SE_JS:1)       Mocha:1     si   
+
+################################################################################
+TIPOLOGIA: Ruby  (3 repository, 148 test GUI totali)
+################################################################################
+
+--- Framework: Cypress (2 repository, 25 file di test, 147 test) ---
+Pos  Repository         Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  -----------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  chatwoot/chatwoot  Ruby         18322       101     3987         2        2  Cypress(CY_JS:2)        -           si   
+  2  zammad/zammad      Ruby          4028         0    14881        23      145  Cypress(CY_TS:23)       -           si   
+
+--- Framework: Playwright (1 repository, 1 file di test, 1 test) ---
+Pos  Repository              Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ----------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  primer/view_components  Ruby           421       159     4806         1        1  Playwright(PW_TS:1)     Mocha:1     si   
+
+################################################################################
+TIPOLOGIA: C  (2 repository, 16 test GUI totali)
+################################################################################
+
+--- Framework: Cypress (1 repository, 1 file di test, 5 test) ---
+Pos  Repository         Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  -----------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  grafana/pyroscope  C             9307       102     4334         1        5  Cypress(CY_TS:1)        -           si   
+
+--- Framework: Selenium (1 repository, 11 file di test, 11 test) ---
+Pos  Repository       Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ---------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  kurento/kurento  C              195         0    17395        11       11  Selenium(SE_JA:11)      JUnit:11    si   
+
+################################################################################
+TIPOLOGIA: C#  (2 repository, 31 test GUI totali)
+################################################################################
+
+--- Framework: Playwright (2 repository, 8 file di test, 31 test) ---
+Pos  Repository             Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ---------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  squidex/squidex        C#            2152       108     5845         6       29  Playwright(PW_TS:6)     Jest:6      si   
+  2  azure/azure-sdk-tools  C#             105      1000     3718         2        2  Playwright(PW_TS:2)     Jest:2      si   
+
+################################################################################
+TIPOLOGIA: Kotlin  (1 repository, 403 test GUI totali)
+################################################################################
+
+--- Framework: Cypress (1 repository, 93 file di test, 403 test) ---
+Pos  Repository              Linguaggio  Stelle  Versioni  Commits  FileTest  TotTest  DettaglioFileFramework  MotoreTest  InRQ3
+---  ----------------------  ----------  ------  --------  -------  --------  -------  ----------------------  ----------  -----
+  1  tolgee/tolgee-platform  Kotlin        1164       527     2129        93      403  Cypress(CY_TS:93)       -           si   
+
+================================================================================
+PARTE 2: REPOSITORY WEB PERFORMANCE E2E (84 repository)
+================================================================================
+
+################################################################################
+TIPOLOGIA: Java  (51 repository)
+################################################################################
+
+--- Framework: JMeter (48 repository) ---
+Pos  Repository                                  Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  ------------------------------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  eugenp/tutorials                            Java         35830         0    15392        12            12      12       0  si      
+  2  openapitools/openapi-generator              Java         19554        62    19865         4            21      21       0  no      
+  3  karatelabs/karate                           Java          7789        51     4397         2             2       2       0  no      
+  4  pentaho/pentaho-kettle                      Java          7309         1    23496         1             1       1       0  no      
+  5  intuit/karate                               Java          5232        43     3414         2             2       2       0  no      
+  6  ant-media/ant-media-server                  Java          4072        52     7425         2             2       2       0  si      
+  7  jetty/jetty.project                         Java          3735        88    29571         2             2       2       0  no      
+  8  eclipse/jetty.project                       Java          3640        72    25070         2             2       2       0  no      
+  9  spring-projects-experimental/spring-native  Java          2774        33     3235         1             1       1       0  no      
+ 10  spring-attic/spring-native                  Java          2773        33     3237         1             1       1       0  no      
+ 11  azure/azure-sdk-for-java                    Java          2154      1000    29231         1             1       1       0  no      
+ 12  spring-cloud/spring-cloud-sleuth            Java          1739         5     3472         3             3       3       0  no      
+ 13  apache/eventmesh                            Java          1532        12     4618         1             1       1       0  no      
+ 14  apache/incubator-eventmesh                  Java          1101         8     2391         1             1       1       0  no      
+ 15  openremote/openremote                       Java          1057         0     4245         3             3       3       0  no      
+ 16  sakaiproject/sakai                          Java          1018         0    52822         3             3       3       0  no      
+ 17  wso2/product-apim                           Java           803       165    10582        13            30      30       0  no      
+ 18  wso2/product-is                             Java           706       298    12891         2             2       2       0  si      
+ 19  scada-lts/scada-lts                         Java           632        70     4981         7             7       7       0  no      
+ 20  undera/jmeter-plugins                       Java           544         4     3458        29            36      36       0  no      
+ 21  pentaho/pentaho-platform                    Java           466         0     9250         4             5       5       0  no      
+ 22  nysenate/openlegislation                    Java           434         1     5077         1             5       5       0  no      
+ 23  gluufederation/oxauth                       Java           406        21     5690         9            21      21       0  si      
+ 24  geonetwork/core-geonetwork                  Java           392        52    17469         1             4       4       0  no      
+ 25  knowagelabs/knowage-server                  Java           390        16    23681         4             9       9       0  no      
+ 26  janssenproject/jans                         Java           381       599    33804         7            15      15       0  si      
+ 27  ripe-ncc/whois                              Java           377        72     4910         4             4       4       0  no      
+ 28  caelum/vraptor4                             Java           347        19     3761         1             2       2       0  no      
+ 29  ippontech/tatami                            Java           325        22     3942         2             2       2       0  no      
+ 30  linuxforhealth/fhir                         Java           297        44     8641         1             1       1       0  no      
+ 31  vmware/admiral                              Java           249        23     3425         5            11      11       0  no      
+ 32  cloudfoundry/credhub                        Java           227         0     3102         1             2       2       0  no      
+ 33  eclipse/vorto                               Java           224         1     3031         1             2       2       0  si      
+ 34  ibm/fhir                                    Java           208        39     8068         1             1       1       0  no      
+ 35  cloudfoundry-incubator/credhub              Java           195         0     2378         1             2       2       0  no      
+ 36  mapfish/mapfish-print                       Java           184        39     4550         1             5       5       0  no      
+ 37  splicemachine/spliceengine                  Java           163         0    13246         2             4       4       0  no      
+ 38  consensys/tessera                           Java           162        43     7342         6             7       7       0  no      
+ 39  wso2/apk                                    Java           143        21     4140         1             1       1       0  no      
+ 40  apache/incubator-brooklyn                   Java           140         6    13002         1             1       1       0  no      
+ 41  adorsys/xs2a                                Java           129       176     7808         3             3       3       0  no      
+ 42  codice/ddf                                  Java           129       101    11094         3             9       9       0  no      
+ 43  wso2/product-iots                           Java           124        55     2451         8            15      15       0  si      
+ 44  apache/roller                               Java           121         1     4755         1             1       1       0  si      
+ 45  apache/tapestry-5                           Java           116         0     5768         1             1       1       0  si      
+ 46  tanaguru/tanaguru                           Java           116        23     6910         1             1       1       0  no      
+ 47  52north/sos                                 Java           105        89     6848         1             7       7       0  no      
+ 48  zkoss/zkspreadsheet                         Java           101         3     4001         1             1       1       0  si      
+
+--- Framework: Locust (2 repository) ---
+Pos  Repository                          Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  ----------------------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  googlecloudplatform/bank-of-anthos  Java           911        23     2025         1             2       0       2  no      
+  2  iqss/dataverse                      Java           842        66    28698         1             1       0       1  no      
+
+--- Framework: JMeter + Locust (1 repository) ---
+Pos  Repository  Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  ----------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  apereo/cas  Java         10598       262    24993         7             8       4       4  no      
+
+################################################################################
+TIPOLOGIA: Node.js (JavaScript/TypeScript)  (11 repository)
+################################################################################
+
+--- Framework: JMeter (10 repository) ---
+Pos  Repository                           Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  -----------------------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  quadratichq/quadratic                TypeScript    2667         5     5055         1             1       1       0  si      
+  2  azure/azure-sdk-for-js               TypeScript    1918      1000    15799         2             2       2       0  no      
+  3  airsonic-advanced/airsonic-advanced  JavaScript     976       382     3154         1             1       1       0  no      
+  4  magda-io/magda                       JavaScript     486       169    12459         1             1       1       0  no      
+  5  medic/cht-core                       JavaScript     428       116    11702         3             3       3       0  no      
+  6  spagobilabs/spagobi                  JavaScript     172         2    10844         4             9       9       0  no      
+  7  frg-fossee/esim-cloud                JavaScript     140         5     2977         2             5       5       0  no      
+  8  marklogic/marklogic-data-hub         TypeScript     129        85     9331         6             6       6       0  no      
+  9  topcoder-platform/community-app      JavaScript     124       453     9189         1             1       1       0  no      
+ 10  voluntarily/vly2                     JavaScript     103         6     6072         6             6       6       0  no      
+
+--- Framework: Locust (1 repository) ---
+Pos  Repository                Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  ------------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  HumanSignal/label-studio  JavaScript   16147        69     3243         4             5       0       5  si      
+
+################################################################################
+TIPOLOGIA: Python  (10 repository)
+################################################################################
+
+--- Framework: JMeter (5 repository) ---
+Pos  Repository                                 Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  -----------------------------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  azure/azure-sdk-for-python                 Python        4232      1000    16962         3             3       3       0  no      
+  2  flagsmith/flagsmith                        Python        4178       276     3867         1             1       1       0  no      
+  3  googlecloudplatform/professional-services  Python        2705         0     2015         1             1       1       0  no      
+  4  azure/azure-cli-extensions                 Python         355         0     5147         1             1       1       0  no      
+  5  beer-garden/beer-garden                    Python         247        56     4386         1             1       1       0  no      
+
+--- Framework: Locust (5 repository) ---
+Pos  Repository            Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  --------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  hpcaitech/colossalai  Python       37537        36     3047         2             2       0       2  no      
+  2  ray-project/ray       Python       30612        80    21144         2             2       0       2  no      
+  3  mindsdb/mindsdb       Python       20672       218    17628         2             2       0       2  no      
+  4  fecgov/openfec        Python         460         0     8226         1             1       0       1  no      
+  5  deeppavlov/dream      Python         160        72     3842         4             4       0       4  no      
+
+################################################################################
+TIPOLOGIA: Go  (4 repository)
+################################################################################
+
+--- Framework: JMeter (3 repository) ---
+Pos  Repository         Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  -----------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  keptn/keptn        Go            1810        60     8448         2             2       2       0  no      
+  2  kubeshop/testkube  Go            1163      1000     3133        12            12      12       0  si      
+  3  chef/automate      Go             216         0     5447         1             3       3       0  no      
+
+--- Framework: Locust (1 repository) ---
+Pos  Repository                              Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  --------------------------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  googlecloudplatform/microservices-demo  Go           15578        25     2025         1             1       0       1  no      
+
+################################################################################
+TIPOLOGIA: C++  (2 repository)
+################################################################################
+
+--- Framework: JMeter (1 repository) ---
+Pos  Repository                 Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  -------------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  telefonicaid/fiware-orion  C++            204        75    13524        10            25      25       0  no      
+
+--- Framework: Locust (1 repository) ---
+Pos  Repository     Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  -------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  microsoft/ccf  C++            749       182     3880         1             1       0       1  no      
+
+################################################################################
+TIPOLOGIA: PHP  (2 repository)
+################################################################################
+
+--- Framework: JMeter (2 repository) ---
+Pos  Repository                               Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  ---------------------------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  wikimedia/mediawiki-extensions-wikibase  PHP            124         0    40110         1             1       1       0  no      
+  2  wikimedia/wikibase                       PHP            122         0    37139         1             1       1       0  no      
+
+################################################################################
+TIPOLOGIA: C#  (1 repository)
+################################################################################
+
+--- Framework: JMeter (1 repository) ---
+Pos  Repository        Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  ----------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  abpframework/abp  C#           12151       196    34626         2             2       2       0  no      
+
+################################################################################
+TIPOLOGIA: Objective-C  (1 repository)
+################################################################################
+
+--- Framework: Locust (1 repository) ---
+Pos  Repository           Linguaggio   Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  -------------------  -----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  samuelclay/newsblur  Objective-C    6690         0    17108         1             1       0       1  no      
+
+################################################################################
+TIPOLOGIA: Rust  (1 repository)
+################################################################################
+
+--- Framework: Locust (1 repository) ---
+Pos  Repository     Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  -------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  near/nearcore  Rust          2223       166     6825         4             5       0       5  no      
+
+################################################################################
+TIPOLOGIA: Shell  (1 repository)
+################################################################################
+
+--- Framework: JMeter (1 repository) ---
+Pos  Repository                                      Linguaggio  Stelle  Versioni  Commits  FilePerf  GruppiCarico  JMeter  Locust  AncheGUI
+---  ----------------------------------------------  ----------  ------  --------  -------  --------  ------------  ------  ------  --------
+  1  ballerina-platform/ballerina-performance-cloud  Shell          114         0    17848        12            12      12       0  no      

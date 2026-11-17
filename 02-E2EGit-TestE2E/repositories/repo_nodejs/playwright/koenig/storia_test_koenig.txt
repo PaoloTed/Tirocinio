@@ -1,0 +1,874 @@
+Repository: koenig
+Commit analizzati: 2988 (Commit 1 2022-09-20 14:42:06 -> Commit 2988 2024-10-16 09:55:04)
+File di test trovati: 50
+
+Test 1: packages/koenig-lexical/test/e2e/text-transforms/headings.test.js | creato a Commit 2 (2022-09-20 17:33:37)
+- Mod 1 dopo 85 commit (Commit 87) in percentuale 1% | 2022-09-29 20:53:13
+- Mod 2 dopo 671 commit (Commit 758) in percentuale 0% | 2023-03-10 13:24:01
+- Mod 3 dopo 495 commit (Commit 1253) in percentuale 29% | 2023-05-04 13:59:45
+- Mod 4 dopo 301 commit (Commit 1554) in percentuale 14% | 2023-05-31 12:37:52
+- Mod 5 dopo 2 commit (Commit 1556) in percentuale 2% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 2: packages/koenig-lexical/test/e2e/floating-toolbar.test.js | creato a Commit 14 (2022-09-21 11:26:35)
+- Mod 1 dopo 73 commit (Commit 87) in percentuale 2% | 2022-09-29 20:53:13
+- Mod 2 dopo 671 commit (Commit 758) in percentuale 1% | 2023-03-10 13:24:01
+- Mod 3 dopo 316 commit (Commit 1074) in percentuale 17% | 2023-04-18 18:14:09
+- Mod 4 dopo 140 commit (Commit 1214) in percentuale 2% | 2023-04-26 16:49:02
+- Mod 5 dopo 10 commit (Commit 1224) in percentuale 3% | 2023-04-27 16:52:46
+- Mod 6 dopo 29 commit (Commit 1253) in percentuale 18% | 2023-05-04 13:59:45
+- Mod 7 dopo 18 commit (Commit 1271) in percentuale 10% | 2023-05-08 11:10:51
+- Mod 8 dopo 283 commit (Commit 1554) in percentuale 11% | 2023-05-31 12:37:52
+- Mod 9 dopo 2 commit (Commit 1556) in percentuale 1% | 2023-05-31 17:10:28
+- Mod 10 dopo 344 commit (Commit 1900) in percentuale 0% | 2023-07-13 10:16:21
+- Mod 11 dopo 80 commit (Commit 1980) in percentuale 26% | 2023-08-07 17:28:19
+- Mod 12 dopo 949 commit (Commit 2929) in percentuale 12% | 2024-08-12 10:04:37
+- Nessun'altra modifica per 59 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 3: packages/koenig-lexical/test/e2e/text-transforms/horizontal-line-rule.test.js | creato a Commit 32 (2022-09-26 10:24:41)
+- Mod 1 dopo 31 commit (Commit 63) in percentuale 28% | 2022-09-27 17:33:13
+- Mod 2 dopo 16 commit (Commit 79) in percentuale 17% | 2022-09-29 16:00:05
+- Mod 3 dopo 6 commit (Commit 85) in percentuale 5% | 2022-09-29 20:42:30
+- Mod 4 dopo 2 commit (Commit 87) in percentuale 11% | 2022-09-29 20:53:13
+- Mod 5 dopo 48 commit (Commit 135) in percentuale 6% | 2022-10-13 12:44:28
+- Mod 6 dopo 43 commit (Commit 178) in percentuale 6% | 2022-10-17 16:57:37
+- Mod 7 dopo 293 commit (Commit 471) in percentuale 18% | 2023-01-17 16:17:01
+- Mod 8 dopo 287 commit (Commit 758) in percentuale 6% | 2023-03-10 13:24:01
+- Mod 9 dopo 2 commit (Commit 760) in percentuale 6% | 2023-03-10 14:20:25
+- Mod 10 dopo 493 commit (Commit 1253) in percentuale 100% | 2023-05-04 13:59:45
+- Mod 11 dopo 301 commit (Commit 1554) in percentuale 53% | 2023-05-31 12:37:52
+- Mod 12 dopo 2 commit (Commit 1556) in percentuale 16% | 2023-05-31 17:10:28
+- Mod 13 dopo 53 commit (Commit 1609) in percentuale 6% | 2023-06-05 12:37:59
+- Nessun'altra modifica per 1379 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 4: packages/koenig-lexical/test/e2e/text-transforms/code-block.test.js | creato a Commit 35 (2022-09-26 12:57:47)
+- Mod 1 dopo 2 commit (Commit 37) in percentuale 7% | 2022-09-26 14:56:25
+- Mod 2 dopo 20 commit (Commit 57) in percentuale 7% | 2022-09-27 13:11:13
+- Mod 3 dopo 4 commit (Commit 61) in percentuale 33% | 2022-09-27 17:18:52
+- Mod 4 dopo 2 commit (Commit 63) in percentuale 15% | 2022-09-27 17:33:13
+- Mod 5 dopo 22 commit (Commit 85) in percentuale 6% | 2022-09-29 20:42:30
+- Mod 6 dopo 2 commit (Commit 87) in percentuale 12% | 2022-09-29 20:53:13
+- Mod 7 dopo 91 commit (Commit 178) in percentuale 6% | 2022-10-17 16:57:37
+- Mod 8 dopo 272 commit (Commit 450) in percentuale 2% | 2023-01-05 17:00:56
+- Mod 9 dopo 18 commit (Commit 468) in percentuale 64% | 2023-01-17 09:09:51
+- Mod 10 dopo 3 commit (Commit 471) in percentuale 5% | 2023-01-17 16:17:01
+- Mod 11 dopo 3 commit (Commit 474) in percentuale 65% | 2023-01-17 20:41:02
+- Mod 12 dopo 4 commit (Commit 478) in percentuale 11% | 2023-01-18 12:45:33
+- Mod 13 dopo 33 commit (Commit 511) in percentuale 25% | 2023-01-20 00:01:44
+- Mod 14 dopo 3 commit (Commit 514) in percentuale 10% | 2023-01-20 12:44:48
+- Mod 15 dopo 244 commit (Commit 758) in percentuale 6% | 2023-03-10 13:24:01
+- Mod 16 dopo 2 commit (Commit 760) in percentuale 6% | 2023-03-10 14:20:25
+- Mod 17 dopo 493 commit (Commit 1253) in percentuale 110% | 2023-05-04 13:59:45
+- Mod 18 dopo 301 commit (Commit 1554) in percentuale 56% | 2023-05-31 12:37:52
+- Mod 19 dopo 2 commit (Commit 1556) in percentuale 17% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 5: packages/koenig-lexical/test/e2e/card-behaviour.test.js | creato a Commit 85 (2022-09-29 20:42:30)
+- Mod 1 dopo 2 commit (Commit 87) in percentuale 1% | 2022-09-29 20:53:13
+- Mod 2 dopo 1 commit (Commit 88) in percentuale 9% | 2022-09-29 21:01:24
+- Mod 3 dopo 1 commit (Commit 89) in percentuale 47% | 2022-09-30 11:43:41
+- Mod 4 dopo 1 commit (Commit 90) in percentuale 30% | 2022-09-30 14:31:03
+- Mod 5 dopo 1 commit (Commit 91) in percentuale 13% | 2022-09-30 17:00:13
+- Mod 6 dopo 44 commit (Commit 135) in percentuale 10% | 2022-10-13 12:44:28
+- Mod 7 dopo 43 commit (Commit 178) in percentuale 10% | 2022-10-17 16:57:37
+- Mod 8 dopo 5 commit (Commit 183) in percentuale 27% | 2022-10-17 17:50:39
+- Mod 9 dopo 83 commit (Commit 266) in percentuale 41% | 2022-10-27 13:33:13
+- Mod 10 dopo 3 commit (Commit 269) in percentuale 8% | 2022-10-27 17:26:34
+- Mod 11 dopo 1 commit (Commit 270) in percentuale 0% | 2022-10-27 17:59:49
+- Mod 12 dopo 79 commit (Commit 349) in percentuale 10% | 2022-11-22 11:09:36
+- Mod 13 dopo 1 commit (Commit 350) in percentuale 10% | 2022-11-22 15:59:21
+- Mod 14 dopo 1 commit (Commit 351) in percentuale 10% | 2022-11-22 16:45:17
+- Mod 15 dopo 54 commit (Commit 405) in percentuale 1% | 2022-12-02 09:50:30
+- Mod 16 dopo 66 commit (Commit 471) in percentuale 10% | 2023-01-17 16:17:01
+- Mod 17 dopo 1 commit (Commit 472) in percentuale 3% | 2023-01-17 16:44:29
+- Mod 18 dopo 37 commit (Commit 509) in percentuale 9% | 2023-01-19 18:02:05
+- Mod 19 dopo 2 commit (Commit 511) in percentuale 1% | 2023-01-20 00:01:44
+- Mod 20 dopo 3 commit (Commit 514) in percentuale 1% | 2023-01-20 12:44:48
+- Mod 21 dopo 16 commit (Commit 530) in percentuale 1% | 2023-01-23 16:33:25
+- Mod 22 dopo 18 commit (Commit 548) in percentuale 4% | 2023-01-25 16:28:31
+- Mod 23 dopo 1 commit (Commit 549) in percentuale 0% | 2023-01-25 16:44:48
+- Mod 24 dopo 11 commit (Commit 560) in percentuale 0% | 2023-01-26 17:20:03
+- Mod 25 dopo 1 commit (Commit 561) in percentuale 3% | 2023-01-26 18:37:55
+- Mod 26 dopo 8 commit (Commit 569) in percentuale 0% | 2023-01-30 11:21:30
+- Mod 27 dopo 2 commit (Commit 571) in percentuale 0% | 2023-01-30 11:52:14
+- Mod 28 dopo 123 commit (Commit 694) in percentuale 7% | 2023-02-20 10:14:34
+- Mod 29 dopo 1 commit (Commit 695) in percentuale 4% | 2023-02-20 10:53:32
+- Mod 30 dopo 1 commit (Commit 696) in percentuale 2% | 2023-02-20 12:23:35
+- Mod 31 dopo 1 commit (Commit 697) in percentuale 1% | 2023-02-20 15:54:15
+- Mod 32 dopo 1 commit (Commit 698) in percentuale 1% | 2023-02-20 16:20:20
+- Mod 33 dopo 3 commit (Commit 701) in percentuale 10% | 2023-02-20 17:57:40
+- Mod 34 dopo 57 commit (Commit 758) in percentuale 0% | 2023-03-10 13:24:01
+- Mod 35 dopo 2 commit (Commit 760) in percentuale 7% | 2023-03-10 14:20:25
+- Mod 36 dopo 62 commit (Commit 822) in percentuale 1% | 2023-03-21 15:40:43
+- Mod 37 dopo 8 commit (Commit 830) in percentuale 0% | 2023-03-22 18:17:14
+- Mod 38 dopo 27 commit (Commit 857) in percentuale 0% | 2023-03-27 17:20:07
+- Mod 39 dopo 278 commit (Commit 1135) in percentuale 0% | 2023-04-20 10:30:17
+- Mod 40 dopo 10 commit (Commit 1145) in percentuale 0% | 2023-04-20 13:45:31
+- Mod 41 dopo 44 commit (Commit 1189) in percentuale 0% | 2023-04-24 10:31:55
+- Mod 42 dopo 64 commit (Commit 1253) in percentuale 14% | 2023-05-04 13:59:45
+- Mod 43 dopo 133 commit (Commit 1386) in percentuale 0% | 2023-05-17 15:33:46
+- Mod 44 dopo 6 commit (Commit 1392) in percentuale 0% | 2023-05-17 11:08:02
+- Mod 45 dopo 91 commit (Commit 1483) in percentuale 0% | 2023-05-23 10:17:27
+- Mod 46 dopo 71 commit (Commit 1554) in percentuale 7% | 2023-05-31 12:37:52
+- Mod 47 dopo 2 commit (Commit 1556) in percentuale 0% | 2023-05-31 17:10:28
+- Mod 48 dopo 53 commit (Commit 1609) in percentuale 6% | 2023-06-05 12:37:59
+- Mod 49 dopo 369 commit (Commit 1978) in percentuale 3% | 2023-08-07 15:30:55
+- Mod 50 dopo 27 commit (Commit 2005) in percentuale 1% | 2023-08-09 16:45:37
+- Mod 51 dopo 29 commit (Commit 2034) in percentuale 0% | 2023-08-14 12:53:25
+- Mod 52 dopo 35 commit (Commit 2069) in percentuale 2% | 2023-08-22 15:08:35
+- Mod 53 dopo 80 commit (Commit 2149) in percentuale 1% | 2023-09-11 12:54:18
+- Mod 54 dopo 92 commit (Commit 2241) in percentuale 2% | 2023-10-02 19:18:44
+- Mod 55 dopo 6 commit (Commit 2247) in percentuale 0% | 2023-10-03 15:15:08
+- Mod 56 dopo 67 commit (Commit 2314) in percentuale 2% | 2023-10-16 11:08:57
+- Mod 57 dopo 102 commit (Commit 2416) in percentuale 0% | 2023-11-06 17:21:27
+- Mod 58 dopo 8 commit (Commit 2424) in percentuale 4% | 2023-11-07 17:16:18
+- Mod 59 dopo 449 commit (Commit 2873) in percentuale 0% | 2024-07-04 11:06:35
+- Mod 60 dopo 2 commit (Commit 2875) in percentuale 0% | 2024-07-04 17:22:36
+- Mod 61 dopo 3 commit (Commit 2878) in percentuale 0% | 2024-07-08 14:14:51
+- Mod 62 dopo 1 commit (Commit 2879) in percentuale 0% | 2024-07-08 14:14:51
+- Nessun'altra modifica per 109 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 6: packages/koenig-lexical/test/e2e/plus-button.test.js | creato a Commit 115 (2022-10-10 18:26:43)
+- Mod 1 dopo 1 commit (Commit 116) in percentuale 4% | 2022-10-10 18:59:56
+- Mod 2 dopo 5 commit (Commit 121) in percentuale 5% | 2022-10-11 09:49:47
+- Mod 3 dopo 2 commit (Commit 123) in percentuale 3% | 2022-10-11 10:40:06
+- Mod 4 dopo 5 commit (Commit 128) in percentuale 105% | 2022-10-12 11:39:54
+- Mod 5 dopo 3 commit (Commit 131) in percentuale 37% | 2022-10-12 23:50:53
+- Mod 6 dopo 47 commit (Commit 178) in percentuale 7% | 2022-10-17 16:57:37
+- Mod 7 dopo 2 commit (Commit 180) in percentuale 7% | 2022-10-17 17:14:26
+- Mod 8 dopo 1 commit (Commit 181) in percentuale 7% | 2022-10-17 17:28:04
+- Mod 9 dopo 35 commit (Commit 216) in percentuale 0% | 2022-10-20 20:01:43
+- Mod 10 dopo 132 commit (Commit 348) in percentuale 1% | 2022-11-22 10:41:54
+- Mod 11 dopo 123 commit (Commit 471) in percentuale 0% | 2023-01-17 16:17:01
+- Mod 12 dopo 152 commit (Commit 623) in percentuale 12% | 2023-02-07 16:47:38
+- Mod 13 dopo 135 commit (Commit 758) in percentuale 0% | 2023-03-10 13:24:01
+- Mod 14 dopo 2 commit (Commit 760) in percentuale 2% | 2023-03-10 14:20:25
+- Mod 15 dopo 261 commit (Commit 1021) in percentuale 4% | 2023-04-13 17:25:43
+- Mod 16 dopo 232 commit (Commit 1253) in percentuale 43% | 2023-05-04 13:59:45
+- Mod 17 dopo 301 commit (Commit 1554) in percentuale 15% | 2023-05-31 12:37:52
+- Mod 18 dopo 2 commit (Commit 1556) in percentuale 1% | 2023-05-31 17:10:28
+- Mod 19 dopo 53 commit (Commit 1609) in percentuale 0% | 2023-06-05 12:37:59
+- Mod 20 dopo 57 commit (Commit 1666) in percentuale 0% | 2023-06-09 09:01:19
+- Mod 21 dopo 676 commit (Commit 2342) in percentuale 0% | 2023-10-19 18:48:02
+- Mod 22 dopo 5 commit (Commit 2347) in percentuale 0% | 2023-10-20 13:06:02
+- Mod 23 dopo 3 commit (Commit 2350) in percentuale 3% | 2023-10-20 17:52:11
+- Nessun'altra modifica per 638 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 7: packages/koenig-lexical/test/e2e/cards/image-card.test.js | creato a Commit 126 (2022-10-11 15:23:13)
+- Mod 1 dopo 3 commit (Commit 129) in percentuale 45% | 2022-10-12 17:16:42
+- Mod 2 dopo 15 commit (Commit 144) in percentuale 35% | 2022-10-13 17:21:38
+- Mod 3 dopo 5 commit (Commit 149) in percentuale 2% | 2022-10-14 12:14:31
+- Mod 4 dopo 1 commit (Commit 150) in percentuale 2% | 2022-10-14 12:20:49
+- Mod 5 dopo 1 commit (Commit 151) in percentuale 3% | 2022-10-14 12:35:49
+- Mod 6 dopo 2 commit (Commit 153) in percentuale 25% | 2022-10-14 12:32:22
+- Mod 7 dopo 24 commit (Commit 177) in percentuale 92% | 2022-10-17 16:57:37
+- Mod 8 dopo 1 commit (Commit 178) in percentuale 5% | 2022-10-17 16:57:37
+- Mod 9 dopo 19 commit (Commit 197) in percentuale 42% | 2022-10-18 18:52:56
+- Mod 10 dopo 13 commit (Commit 210) in percentuale 32% | 2022-10-20 16:31:36
+- Mod 11 dopo 12 commit (Commit 222) in percentuale 9% | 2022-10-21 17:03:10
+- Mod 12 dopo 2 commit (Commit 224) in percentuale 31% | 2022-10-21 17:26:09
+- Mod 13 dopo 27 commit (Commit 251) in percentuale 4% | 2022-10-25 17:39:11
+- Mod 14 dopo 8 commit (Commit 259) in percentuale 3% | 2022-10-26 11:17:18
+- Mod 15 dopo 8 commit (Commit 267) in percentuale 4% | 2022-10-27 19:44:41
+- Mod 16 dopo 40 commit (Commit 307) in percentuale 7% | 2022-11-08 21:40:40
+- Mod 17 dopo 12 commit (Commit 319) in percentuale 0% | 2022-11-14 09:58:33
+- Mod 18 dopo 16 commit (Commit 335) in percentuale 2% | 2022-11-21 10:51:53
+- Mod 19 dopo 13 commit (Commit 348) in percentuale 39% | 2022-11-22 10:41:54
+- Mod 20 dopo 8 commit (Commit 356) in percentuale 1% | 2022-11-23 09:56:12
+- Mod 21 dopo 27 commit (Commit 383) in percentuale 5% | 2022-11-30 14:36:41
+- Mod 22 dopo 4 commit (Commit 387) in percentuale 10% | 2022-11-30 14:08:27
+- Mod 23 dopo 22 commit (Commit 409) in percentuale 0% | 2022-12-06 11:10:42
+- Mod 24 dopo 1 commit (Commit 410) in percentuale 0% | 2022-12-06 11:34:21
+- Mod 25 dopo 1 commit (Commit 411) in percentuale 0% | 2022-12-06 12:16:37
+- Mod 26 dopo 39 commit (Commit 450) in percentuale 0% | 2023-01-05 17:00:56
+- Mod 27 dopo 21 commit (Commit 471) in percentuale 3% | 2023-01-17 16:17:01
+- Mod 28 dopo 43 commit (Commit 514) in percentuale 5% | 2023-01-20 12:44:48
+- Mod 29 dopo 143 commit (Commit 657) in percentuale 13% | 2023-02-10 19:57:12
+- Mod 30 dopo 12 commit (Commit 669) in percentuale 4% | 2023-02-13 13:45:38
+- Mod 31 dopo 3 commit (Commit 672) in percentuale 4% | 2023-02-14 14:37:15
+- Mod 32 dopo 3 commit (Commit 675) in percentuale 6% | 2023-02-15 11:58:52
+- Mod 33 dopo 16 commit (Commit 691) in percentuale 6% | 2023-02-17 18:52:32
+- Mod 34 dopo 29 commit (Commit 720) in percentuale 15% | 2023-02-22 18:51:57
+- Mod 35 dopo 22 commit (Commit 742) in percentuale 0% | 2023-02-28 14:15:16
+- Mod 36 dopo 1 commit (Commit 743) in percentuale 14% | 2023-02-28 15:13:47
+- Mod 37 dopo 2 commit (Commit 745) in percentuale 14% | 2023-03-01 10:55:31
+- Mod 38 dopo 13 commit (Commit 758) in percentuale 0% | 2023-03-10 13:24:01
+- Mod 39 dopo 2 commit (Commit 760) in percentuale 4% | 2023-03-10 14:20:25
+- Mod 40 dopo 1 commit (Commit 761) in percentuale 1% | 2023-03-10 14:39:17
+- Mod 41 dopo 18 commit (Commit 779) in percentuale 0% | 2023-03-13 18:02:11
+- Mod 42 dopo 96 commit (Commit 875) in percentuale 34% | 2023-03-30 13:31:42
+- Mod 43 dopo 166 commit (Commit 1041) in percentuale 0% | 2023-04-17 12:23:40
+- Mod 44 dopo 3 commit (Commit 1044) in percentuale 3% | 2023-04-17 18:54:24
+- Mod 45 dopo 134 commit (Commit 1178) in percentuale 8% | 2023-04-21 14:18:37
+- Mod 46 dopo 1 commit (Commit 1179) in percentuale 0% | 2023-04-21 15:05:46
+- Mod 47 dopo 3 commit (Commit 1182) in percentuale 5% | 2023-04-21 16:17:31
+- Mod 48 dopo 71 commit (Commit 1253) in percentuale 10% | 2023-05-04 13:59:45
+- Mod 49 dopo 69 commit (Commit 1322) in percentuale 2% | 2023-05-12 13:54:17
+- Mod 50 dopo 199 commit (Commit 1521) in percentuale 2% | 2023-05-29 12:45:51
+- Mod 51 dopo 33 commit (Commit 1554) in percentuale 0% | 2023-05-31 12:37:52
+- Mod 52 dopo 2 commit (Commit 1556) in percentuale 6% | 2023-05-31 17:10:28
+- Mod 53 dopo 24 commit (Commit 1580) in percentuale 8% | 2023-06-01 15:51:35
+- Mod 54 dopo 243 commit (Commit 1823) in percentuale 1% | 2023-06-26 16:02:39
+- Mod 55 dopo 3 commit (Commit 1826) in percentuale 0% | 2023-06-27 11:08:48
+- Mod 56 dopo 74 commit (Commit 1900) in percentuale 1% | 2023-07-13 10:16:21
+- Mod 57 dopo 29 commit (Commit 1929) in percentuale 0% | 2023-07-20 16:05:43
+- Mod 58 dopo 211 commit (Commit 2140) in percentuale 3% | 2023-09-08 17:36:26
+- Mod 59 dopo 111 commit (Commit 2251) in percentuale 0% | 2023-10-04 11:06:53
+- Mod 60 dopo 15 commit (Commit 2266) in percentuale 2% | 2023-10-06 14:37:04
+- Mod 61 dopo 402 commit (Commit 2668) in percentuale 2% | 2024-01-18 09:01:06
+- Mod 62 dopo 180 commit (Commit 2848) in percentuale 5% | 2024-06-25 11:40:49
+- Mod 63 dopo 134 commit (Commit 2982) in percentuale 5% | 2024-09-05 15:24:36
+- Nessun'altra modifica per 6 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 8: packages/koenig-lexical/test/e2e/slash-menu.test.js | creato a Commit 204 (2022-10-19 17:32:02)
+- Mod 1 dopo 12 commit (Commit 216) in percentuale 1% | 2022-10-20 20:01:43
+- Mod 2 dopo 9 commit (Commit 225) in percentuale 11% | 2022-10-21 11:51:27
+- Mod 3 dopo 12 commit (Commit 237) in percentuale 46% | 2022-10-24 18:16:22
+- Mod 4 dopo 2 commit (Commit 239) in percentuale 15% | 2022-10-24 19:17:31
+- Mod 5 dopo 12 commit (Commit 251) in percentuale 2% | 2022-10-25 17:39:11
+- Mod 6 dopo 1 commit (Commit 252) in percentuale 5% | 2022-10-25 18:50:38
+- Mod 7 dopo 96 commit (Commit 348) in percentuale 2% | 2022-11-22 10:41:54
+- Mod 8 dopo 123 commit (Commit 471) in percentuale 3% | 2023-01-17 16:17:01
+- Mod 9 dopo 43 commit (Commit 514) in percentuale 1% | 2023-01-20 12:44:48
+- Mod 10 dopo 48 commit (Commit 562) in percentuale 7% | 2023-01-26 21:41:20
+- Mod 11 dopo 196 commit (Commit 758) in percentuale 0% | 2023-03-10 13:24:01
+- Mod 12 dopo 2 commit (Commit 760) in percentuale 3% | 2023-03-10 14:20:25
+- Mod 13 dopo 10 commit (Commit 770) in percentuale 17% | 2023-03-13 12:45:50
+- Mod 14 dopo 1 commit (Commit 771) in percentuale 2% | 2023-03-13 12:48:25
+- Mod 15 dopo 85 commit (Commit 856) in percentuale 11% | 2023-03-27 17:06:35
+- Mod 16 dopo 1 commit (Commit 857) in percentuale 0% | 2023-03-27 17:20:07
+- Mod 17 dopo 18 commit (Commit 875) in percentuale 1% | 2023-03-30 13:31:42
+- Mod 18 dopo 38 commit (Commit 913) in percentuale 3% | 2023-04-04 16:52:21
+- Mod 19 dopo 47 commit (Commit 960) in percentuale 0% | 2023-04-07 16:58:58
+- Mod 20 dopo 26 commit (Commit 986) in percentuale 11% | 2023-04-11 12:14:53
+- Mod 21 dopo 144 commit (Commit 1130) in percentuale 1% | 2023-04-20 09:18:08
+- Mod 22 dopo 123 commit (Commit 1253) in percentuale 22% | 2023-05-04 13:59:45
+- Mod 23 dopo 99 commit (Commit 1352) in percentuale 1% | 2023-05-15 14:03:01
+- Mod 24 dopo 40 commit (Commit 1392) in percentuale 1% | 2023-05-17 11:08:02
+- Mod 25 dopo 162 commit (Commit 1554) in percentuale 17% | 2023-05-31 12:37:52
+- Mod 26 dopo 2 commit (Commit 1556) in percentuale 1% | 2023-05-31 17:10:28
+- Mod 27 dopo 53 commit (Commit 1609) in percentuale 0% | 2023-06-05 12:37:59
+- Nessun'altra modifica per 1379 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 9: packages/koenig-lexical/test/e2e/plugins/DragDropPastePlugin.test.js | creato a Commit 327 (2022-11-16 13:18:51)
+- Mod 1 dopo 21 commit (Commit 348) in percentuale 5% | 2022-11-22 10:41:54
+- Mod 2 dopo 7 commit (Commit 355) in percentuale 129% | 2022-11-23 07:08:58
+- Mod 3 dopo 116 commit (Commit 471) in percentuale 3% | 2023-01-17 16:17:01
+- Mod 4 dopo 134 commit (Commit 605) in percentuale 34% | 2023-02-03 16:50:20
+- Mod 5 dopo 52 commit (Commit 657) in percentuale 14% | 2023-02-10 19:57:12
+- Mod 6 dopo 12 commit (Commit 669) in percentuale 75% | 2023-02-13 13:45:38
+- Mod 7 dopo 6 commit (Commit 675) in percentuale 157% | 2023-02-15 11:58:52
+- Mod 8 dopo 16 commit (Commit 691) in percentuale 2% | 2023-02-17 18:52:32
+- Mod 9 dopo 49 commit (Commit 740) in percentuale 5% | 2023-02-28 13:30:23
+- Mod 10 dopo 18 commit (Commit 758) in percentuale 4% | 2023-03-10 13:24:01
+- Mod 11 dopo 2 commit (Commit 760) in percentuale 9% | 2023-03-10 14:20:25
+- Mod 12 dopo 1 commit (Commit 761) in percentuale 2% | 2023-03-10 14:39:17
+- Mod 13 dopo 69 commit (Commit 830) in percentuale 13% | 2023-03-22 18:17:14
+- Mod 14 dopo 423 commit (Commit 1253) in percentuale 28% | 2023-05-04 13:59:45
+- Mod 15 dopo 301 commit (Commit 1554) in percentuale 17% | 2023-05-31 12:37:52
+- Mod 16 dopo 2 commit (Commit 1556) in percentuale 3% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 10: packages/koenig-lexical/test/e2e/text-transforms/links.test.js | creato a Commit 328 (2022-11-17 14:15:36)
+- Mod 1 dopo 430 commit (Commit 758) in percentuale 3% | 2023-03-10 13:24:01
+- Mod 2 dopo 495 commit (Commit 1253) in percentuale 52% | 2023-05-04 13:59:45
+- Mod 3 dopo 301 commit (Commit 1554) in percentuale 34% | 2023-05-31 12:37:52
+- Mod 4 dopo 2 commit (Commit 1556) in percentuale 9% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 11: packages/koenig-lexical/test/e2e/list-behaviour.test.js | creato a Commit 352 (2022-11-22 18:55:00)
+- Mod 1 dopo 119 commit (Commit 471) in percentuale 1% | 2023-01-17 16:17:01
+- Mod 2 dopo 287 commit (Commit 758) in percentuale 1% | 2023-03-10 13:24:01
+- Mod 3 dopo 2 commit (Commit 760) in percentuale 1% | 2023-03-10 14:20:25
+- Mod 4 dopo 3 commit (Commit 763) in percentuale 15% | 2023-03-10 17:30:24
+- Mod 5 dopo 490 commit (Commit 1253) in percentuale 14% | 2023-05-04 13:59:45
+- Mod 6 dopo 301 commit (Commit 1554) in percentuale 11% | 2023-05-31 12:37:52
+- Mod 7 dopo 2 commit (Commit 1556) in percentuale 1% | 2023-05-31 17:10:28
+- Mod 8 dopo 53 commit (Commit 1609) in percentuale 0% | 2023-06-05 12:37:59
+- Mod 9 dopo 746 commit (Commit 2355) in percentuale 18% | 2023-10-22 16:43:40
+- Nessun'altra modifica per 633 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 12: packages/koenig-lexical/test/e2e/utils/getImageDimensions.test.js | creato a Commit 356 (2022-11-23 09:56:12)
+- Mod 1 dopo 402 commit (Commit 758) in percentuale 12% | 2023-03-10 13:24:01
+- Mod 2 dopo 495 commit (Commit 1253) in percentuale 80% | 2023-05-04 13:59:45
+- Mod 3 dopo 301 commit (Commit 1554) in percentuale 33% | 2023-05-31 12:37:52
+- Mod 4 dopo 2 commit (Commit 1556) in percentuale 10% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 13: packages/koenig-lexical/test/e2e/modals/UnsplashSelector.test.js | creato a Commit 383 (2022-11-30 14:36:41)
+- Mod 1 dopo 26 commit (Commit 409) in percentuale 53% | 2022-12-06 11:10:42
+- Mod 2 dopo 1 commit (Commit 410) in percentuale 109% | 2022-12-06 11:34:21
+- Mod 3 dopo 1 commit (Commit 411) in percentuale 53% | 2022-12-06 12:16:37
+- Mod 4 dopo 1 commit (Commit 412) in percentuale 139% | 2022-12-06 15:59:39
+- Mod 5 dopo 6 commit (Commit 418) in percentuale 153% | 2022-12-08 12:17:42
+- Mod 6 dopo 340 commit (Commit 758) in percentuale 2% | 2023-03-10 13:24:01
+- Mod 7 dopo 20 commit (Commit 778) in percentuale 45% | 2023-03-13 16:30:17
+- Mod 8 dopo 286 commit (Commit 1064) in percentuale 13% | 2023-04-18 14:10:47
+- Mod 9 dopo 189 commit (Commit 1253) in percentuale 29% | 2023-05-04 13:59:45
+- Mod 10 dopo 301 commit (Commit 1554) in percentuale 22% | 2023-05-31 12:37:52
+- Mod 11 dopo 2 commit (Commit 1556) in percentuale 3% | 2023-05-31 17:10:28
+- Mod 12 dopo 533 commit (Commit 2089) in percentuale 5% | 2023-08-24 13:06:32
+- Nessun'altra modifica per 899 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 14: packages/koenig-lexical/test/e2e/title-behaviour.test.js | creato a Commit 389 (2022-11-30 20:40:35)
+- Mod 1 dopo 5 commit (Commit 394) in percentuale 113% | 2022-12-01 15:28:17
+- Mod 2 dopo 1 commit (Commit 395) in percentuale 9% | 2022-12-01 15:54:24
+- Mod 3 dopo 1 commit (Commit 396) in percentuale 8% | 2022-12-01 16:23:34
+- Mod 4 dopo 3 commit (Commit 399) in percentuale 6% | 2022-12-01 17:26:38
+- Mod 5 dopo 72 commit (Commit 471) in percentuale 1% | 2023-01-17 16:17:01
+- Mod 6 dopo 287 commit (Commit 758) in percentuale 0% | 2023-03-10 13:24:01
+- Mod 7 dopo 2 commit (Commit 760) in percentuale 1% | 2023-03-10 14:20:25
+- Mod 8 dopo 493 commit (Commit 1253) in percentuale 19% | 2023-05-04 13:59:45
+- Mod 9 dopo 298 commit (Commit 1551) in percentuale 3% | 2023-05-30 18:49:19
+- Mod 10 dopo 3 commit (Commit 1554) in percentuale 0% | 2023-05-31 12:37:52
+- Mod 11 dopo 2 commit (Commit 1556) in percentuale 14% | 2023-05-31 17:10:28
+- Mod 12 dopo 53 commit (Commit 1609) in percentuale 2% | 2023-06-05 12:37:59
+- Mod 13 dopo 746 commit (Commit 2355) in percentuale 4% | 2023-10-22 16:43:40
+- Nessun'altra modifica per 633 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 15: packages/koenig-lexical/test/e2e/cards/code-block-card.test.js | creato a Commit 509 (2023-01-19 18:02:05)
+- Mod 1 dopo 2 commit (Commit 511) in percentuale 30% | 2023-01-20 00:01:44
+- Mod 2 dopo 3 commit (Commit 514) in percentuale 4% | 2023-01-20 12:44:48
+- Mod 3 dopo 17 commit (Commit 531) in percentuale 23% | 2023-01-23 18:13:06
+- Mod 4 dopo 19 commit (Commit 550) in percentuale 14% | 2023-01-25 17:53:28
+- Mod 5 dopo 23 commit (Commit 573) in percentuale 1% | 2023-01-30 12:31:33
+- Mod 6 dopo 185 commit (Commit 758) in percentuale 2% | 2023-03-10 13:24:01
+- Mod 7 dopo 2 commit (Commit 760) in percentuale 4% | 2023-03-10 14:20:25
+- Mod 8 dopo 423 commit (Commit 1183) in percentuale 15% | 2023-04-21 16:27:19
+- Mod 9 dopo 5 commit (Commit 1188) in percentuale 5% | 2023-04-21 16:58:00
+- Mod 10 dopo 65 commit (Commit 1253) in percentuale 32% | 2023-05-04 13:59:45
+- Mod 11 dopo 301 commit (Commit 1554) in percentuale 23% | 2023-05-31 12:37:52
+- Mod 12 dopo 2 commit (Commit 1556) in percentuale 5% | 2023-05-31 17:10:28
+- Mod 13 dopo 15 commit (Commit 1571) in percentuale 67% | 2023-06-01 15:51:35
+- Mod 14 dopo 145 commit (Commit 1716) in percentuale 33% | 2023-06-13 10:48:41
+- Mod 15 dopo 70 commit (Commit 1786) in percentuale 21% | 2023-06-22 09:19:13
+- Mod 16 dopo 55 commit (Commit 1841) in percentuale 10% | 2023-06-28 07:37:05
+- Mod 17 dopo 59 commit (Commit 1900) in percentuale 4% | 2023-07-13 10:16:21
+- Mod 18 dopo 140 commit (Commit 2040) in percentuale 7% | 2023-08-15 09:44:46
+- Mod 19 dopo 48 commit (Commit 2088) in percentuale 1% | 2023-08-24 12:53:26
+- Mod 20 dopo 17 commit (Commit 2105) in percentuale 17% | 2023-08-29 12:34:05
+- Mod 21 dopo 146 commit (Commit 2251) in percentuale 1% | 2023-10-04 11:06:53
+- Nessun'altra modifica per 737 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 16: packages/koenig-lexical/test/e2e/cards/markdown-card.test.js | creato a Commit 537 (2023-01-24 16:28:04)
+- Mod 1 dopo 7 commit (Commit 544) in percentuale 36% | 2023-01-25 18:39:44
+- Mod 2 dopo 10 commit (Commit 554) in percentuale 2% | 2023-01-26 15:58:08
+- Mod 3 dopo 22 commit (Commit 576) in percentuale 3% | 2023-01-30 14:38:54
+- Mod 4 dopo 115 commit (Commit 691) in percentuale 27% | 2023-02-17 18:52:32
+- Mod 5 dopo 9 commit (Commit 700) in percentuale 3% | 2023-02-20 20:51:25
+- Mod 6 dopo 27 commit (Commit 727) in percentuale 77% | 2023-02-22 17:44:36
+- Mod 7 dopo 31 commit (Commit 758) in percentuale 0% | 2023-03-10 13:24:01
+- Mod 8 dopo 2 commit (Commit 760) in percentuale 1% | 2023-03-10 14:20:25
+- Mod 9 dopo 17 commit (Commit 777) in percentuale 1% | 2023-03-13 16:16:18
+- Mod 10 dopo 267 commit (Commit 1044) in percentuale 5% | 2023-04-17 18:54:24
+- Mod 11 dopo 175 commit (Commit 1219) in percentuale 9% | 2023-04-26 18:26:53
+- Mod 12 dopo 34 commit (Commit 1253) in percentuale 13% | 2023-05-04 13:59:45
+- Mod 13 dopo 301 commit (Commit 1554) in percentuale 10% | 2023-05-31 12:37:52
+- Mod 14 dopo 2 commit (Commit 1556) in percentuale 0% | 2023-05-31 17:10:28
+- Mod 15 dopo 100 commit (Commit 1656) in percentuale 0% | 2023-06-08 14:43:56
+- Mod 16 dopo 47 commit (Commit 1703) in percentuale 1% | 2023-06-13 12:47:03
+- Mod 17 dopo 83 commit (Commit 1786) in percentuale 2% | 2023-06-22 09:19:13
+- Nessun'altra modifica per 1202 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 17: packages/koenig-lexical/test/e2e/cards/audio-card.test.js | creato a Commit 591 (2023-01-31 17:25:00)
+- Mod 1 dopo 2 commit (Commit 593) in percentuale 1% | 2023-02-01 15:58:03
+- Mod 2 dopo 6 commit (Commit 599) in percentuale 25% | 2023-02-02 18:56:36
+- Mod 3 dopo 1 commit (Commit 600) in percentuale 19% | 2023-02-02 21:10:54
+- Mod 4 dopo 6 commit (Commit 606) in percentuale 8% | 2023-02-03 17:31:03
+- Mod 5 dopo 8 commit (Commit 614) in percentuale 11% | 2023-02-07 09:55:31
+- Mod 6 dopo 40 commit (Commit 654) in percentuale 27% | 2023-02-10 15:03:00
+- Mod 7 dopo 17 commit (Commit 671) in percentuale 33% | 2023-02-14 13:16:00
+- Mod 8 dopo 4 commit (Commit 675) in percentuale 2% | 2023-02-15 11:58:52
+- Mod 9 dopo 16 commit (Commit 691) in percentuale 10% | 2023-02-17 18:52:32
+- Mod 10 dopo 20 commit (Commit 711) in percentuale 0% | 2023-02-21 13:45:25
+- Mod 11 dopo 32 commit (Commit 743) in percentuale 3% | 2023-02-28 15:13:47
+- Mod 12 dopo 15 commit (Commit 758) in percentuale 1% | 2023-03-10 13:24:01
+- Mod 13 dopo 2 commit (Commit 760) in percentuale 3% | 2023-03-10 14:20:25
+- Mod 14 dopo 284 commit (Commit 1044) in percentuale 5% | 2023-04-17 18:54:24
+- Mod 15 dopo 209 commit (Commit 1253) in percentuale 17% | 2023-05-04 13:59:45
+- Mod 16 dopo 139 commit (Commit 1392) in percentuale 6% | 2023-05-17 11:08:02
+- Mod 17 dopo 162 commit (Commit 1554) in percentuale 14% | 2023-05-31 12:37:52
+- Mod 18 dopo 2 commit (Commit 1556) in percentuale 1% | 2023-05-31 17:10:28
+- Mod 19 dopo 97 commit (Commit 1653) in percentuale 5% | 2023-06-08 14:27:10
+- Nessun'altra modifica per 1335 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 18: packages/koenig-lexical/test/e2e/cards/video-card.firefox.test.js | creato a Commit 603 (2023-02-03 16:04:16)
+- Mod 1 dopo 13 commit (Commit 616) in percentuale 1% | 2023-02-07 10:35:00
+- Mod 2 dopo 1 commit (Commit 617) in percentuale 7% | 2023-02-07 15:09:08
+- Mod 3 dopo 8 commit (Commit 625) in percentuale 30% | 2023-02-08 17:05:25
+- Mod 4 dopo 1 commit (Commit 626) in percentuale 15% | 2023-02-08 18:15:05
+- Mod 5 dopo 7 commit (Commit 633) in percentuale 0% | 2023-02-09 11:39:15
+- Mod 6 dopo 3 commit (Commit 636) in percentuale 22% | 2023-02-09 16:33:35
+- Mod 7 dopo 5 commit (Commit 641) in percentuale 21% | 2023-02-09 16:47:38
+- Mod 8 dopo 1 commit (Commit 642) in percentuale 0% | 2023-02-09 16:54:13
+- Mod 9 dopo 12 commit (Commit 654) in percentuale 2% | 2023-02-10 15:03:00
+- Mod 10 dopo 17 commit (Commit 671) in percentuale 5% | 2023-02-14 13:16:00
+- Mod 11 dopo 1 commit (Commit 672) in percentuale 0% | 2023-02-14 14:37:15
+- Mod 12 dopo 3 commit (Commit 675) in percentuale 2% | 2023-02-15 11:58:52
+- Mod 13 dopo 4 commit (Commit 679) in percentuale 0% | 2023-02-15 17:41:50
+- Mod 14 dopo 4 commit (Commit 683) in percentuale 1% | 2023-02-16 14:07:00
+- Mod 15 dopo 8 commit (Commit 691) in percentuale 9% | 2023-02-17 18:52:32
+- Mod 16 dopo 20 commit (Commit 711) in percentuale 0% | 2023-02-21 13:45:25
+- Mod 17 dopo 9 commit (Commit 720) in percentuale 7% | 2023-02-22 18:51:57
+- Mod 18 dopo 20 commit (Commit 740) in percentuale 2% | 2023-02-28 13:30:23
+- Mod 19 dopo 3 commit (Commit 743) in percentuale 1% | 2023-02-28 15:13:47
+- Mod 20 dopo 15 commit (Commit 758) in percentuale 1% | 2023-03-10 13:24:01
+- Mod 21 dopo 2 commit (Commit 760) in percentuale 2% | 2023-03-10 14:20:25
+- Mod 22 dopo 85 commit (Commit 845) in percentuale 1% | 2023-03-24 12:37:02
+- Mod 23 dopo 17 commit (Commit 862) in percentuale 4% | 2023-03-28 18:37:13
+- Mod 24 dopo 182 commit (Commit 1044) in percentuale 5% | 2023-04-17 18:54:24
+- Rename (da packages/koenig-lexical/test/e2e/cards/video-card.test.js) dopo 209 commit (Commit 1253) | 2023-05-04 13:59:45
+- Mod 25 dopo 2 commit (Commit 1255) in percentuale 0% | 2023-05-04 14:13:11
+- Mod 26 dopo 66 commit (Commit 1321) in percentuale 8% | 2023-05-12 18:31:06
+- Mod 27 dopo 8 commit (Commit 1329) in percentuale 0% | 2023-05-12 12:41:07
+- Mod 28 dopo 63 commit (Commit 1392) in percentuale 6% | 2023-05-17 11:08:02
+- Mod 29 dopo 30 commit (Commit 1422) in percentuale 1% | 2023-05-19 10:51:09
+- Mod 30 dopo 132 commit (Commit 1554) in percentuale 13% | 2023-05-31 12:37:52
+- Mod 31 dopo 2 commit (Commit 1556) in percentuale 1% | 2023-05-31 17:10:28
+- Mod 32 dopo 21 commit (Commit 1577) in percentuale 34% | 2023-06-01 15:51:35
+- Mod 33 dopo 323 commit (Commit 1900) in percentuale 0% | 2023-07-13 10:16:21
+- Mod 34 dopo 162 commit (Commit 2062) in percentuale 0% | 2023-08-21 16:44:33
+- Mod 35 dopo 97 commit (Commit 2159) in percentuale 1% | 2023-09-14 11:12:30
+- Mod 36 dopo 92 commit (Commit 2251) in percentuale 0% | 2023-10-04 11:06:53
+- Nessun'altra modifica per 737 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 19: packages/koenig-lexical/test/e2e/selection.test.js | creato a Commit 622 (2023-02-07 16:03:41)
+- Mod 1 dopo 8 commit (Commit 630) in percentuale 36% | 2023-02-09 10:55:40
+- Mod 2 dopo 128 commit (Commit 758) in percentuale 5% | 2023-03-10 13:24:01
+- Mod 3 dopo 2 commit (Commit 760) in percentuale 2% | 2023-03-10 14:20:25
+- Mod 4 dopo 493 commit (Commit 1253) in percentuale 40% | 2023-05-04 13:59:45
+- Mod 5 dopo 301 commit (Commit 1554) in percentuale 27% | 2023-05-31 12:37:52
+- Mod 6 dopo 2 commit (Commit 1556) in percentuale 7% | 2023-05-31 17:10:28
+- Mod 7 dopo 53 commit (Commit 1609) in percentuale 8% | 2023-06-05 12:37:59
+- Mod 8 dopo 137 commit (Commit 1746) in percentuale 51% | 2023-06-15 10:04:02
+- Mod 9 dopo 1 commit (Commit 1747) in percentuale 1% | 2023-06-15 10:09:09
+- Mod 10 dopo 277 commit (Commit 2024) in percentuale 18% | 2023-08-10 15:46:58
+- Nessun'altra modifica per 964 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 20: packages/koenig-lexical/test/e2e/plugins/DragDropPastePlugin.firefox.test.js | creato a Commit 675 (2023-02-15 11:58:52)
+- Mod 1 dopo 4 commit (Commit 679) in percentuale 0% | 2023-02-15 17:41:50
+- Mod 2 dopo 12 commit (Commit 691) in percentuale 2% | 2023-02-17 18:52:32
+- Mod 3 dopo 29 commit (Commit 720) in percentuale 12% | 2023-02-22 18:51:57
+- Mod 4 dopo 20 commit (Commit 740) in percentuale 9% | 2023-02-28 13:30:23
+- Mod 5 dopo 2 commit (Commit 742) in percentuale 19% | 2023-02-28 14:15:16
+- Mod 6 dopo 16 commit (Commit 758) in percentuale 5% | 2023-03-10 13:24:01
+- Mod 7 dopo 2 commit (Commit 760) in percentuale 9% | 2023-03-10 14:20:25
+- Rename (da packages/koenig-lexical/test/e2e/plugins/DragDropPastePluginFirefox.test.js) dopo 493 commit (Commit 1253) | 2023-05-04 13:59:45
+- Mod 8 dopo 301 commit (Commit 1554) in percentuale 20% | 2023-05-31 12:37:52
+- Mod 9 dopo 2 commit (Commit 1556) in percentuale 4% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 21: packages/koenig-lexical/test/e2e/plugins/RestrictContentPlugin.test.js | creato a Commit 686 (2023-02-16 18:18:36)
+- Mod 1 dopo 27 commit (Commit 713) in percentuale 81% | 2023-02-21 17:41:20
+- Mod 2 dopo 37 commit (Commit 750) in percentuale 13% | 2023-03-07 17:22:00
+- Mod 3 dopo 8 commit (Commit 758) in percentuale 1% | 2023-03-10 13:24:01
+- Mod 4 dopo 495 commit (Commit 1253) in percentuale 26% | 2023-05-04 13:59:45
+- Mod 5 dopo 54 commit (Commit 1307) in percentuale 1% | 2023-05-10 17:42:06
+- Mod 6 dopo 249 commit (Commit 1556) in percentuale 33% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 22: packages/koenig-lexical/test/e2e/plugins/HtmlOutputPlugin.test.js | creato a Commit 700 (2023-02-20 20:51:25)
+- Mod 1 dopo 50 commit (Commit 750) in percentuale 3% | 2023-03-07 17:22:00
+- Mod 2 dopo 8 commit (Commit 758) in percentuale 3% | 2023-03-10 13:24:01
+- Mod 3 dopo 495 commit (Commit 1253) in percentuale 44% | 2023-05-04 13:59:45
+- Mod 4 dopo 303 commit (Commit 1556) in percentuale 25% | 2023-05-31 17:10:28
+- Mod 5 dopo 591 commit (Commit 2147) in percentuale 12% | 2023-09-11 12:34:17
+- Nessun'altra modifica per 841 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 23: packages/koenig-lexical/test/e2e/editors/basic-editor.test.js | creato a Commit 717 (2023-02-22 16:58:57)
+- Mod 1 dopo 33 commit (Commit 750) in percentuale 1% | 2023-03-07 17:22:00
+- Mod 2 dopo 8 commit (Commit 758) in percentuale 1% | 2023-03-10 13:24:01
+- Mod 3 dopo 495 commit (Commit 1253) in percentuale 51% | 2023-05-04 13:59:45
+- Mod 4 dopo 301 commit (Commit 1554) in percentuale 26% | 2023-05-31 12:37:52
+- Mod 5 dopo 2 commit (Commit 1556) in percentuale 4% | 2023-05-31 17:10:28
+- Mod 6 dopo 53 commit (Commit 1609) in percentuale 1% | 2023-06-05 12:37:59
+- Nessun'altra modifica per 1379 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 24: packages/koenig-lexical/test/e2e/editors/minimal-editor.test.js | creato a Commit 717 (2023-02-22 16:58:57)
+- Mod 1 dopo 33 commit (Commit 750) in percentuale 1% | 2023-03-07 17:22:00
+- Mod 2 dopo 8 commit (Commit 758) in percentuale 1% | 2023-03-10 13:24:01
+- Mod 3 dopo 495 commit (Commit 1253) in percentuale 50% | 2023-05-04 13:59:45
+- Mod 4 dopo 301 commit (Commit 1554) in percentuale 26% | 2023-05-31 12:37:52
+- Mod 5 dopo 2 commit (Commit 1556) in percentuale 4% | 2023-05-31 17:10:28
+- Mod 6 dopo 53 commit (Commit 1609) in percentuale 1% | 2023-06-05 12:37:59
+- Nessun'altra modifica per 1379 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 25: packages/koenig-lexical/test/e2e/plugins/DragDropReorderPlugin.test.js | creato a Commit 756 (2023-03-09 18:27:21)
+- Mod 1 dopo 2 commit (Commit 758) in percentuale 1% | 2023-03-10 13:24:01
+- Mod 2 dopo 2 commit (Commit 760) in percentuale 24% | 2023-03-10 14:20:25
+- Mod 3 dopo 17 commit (Commit 777) in percentuale 9% | 2023-03-13 16:16:18
+- Mod 4 dopo 264 commit (Commit 1041) in percentuale 4% | 2023-04-17 12:23:40
+- Mod 5 dopo 90 commit (Commit 1131) in percentuale 1% | 2023-04-20 09:30:20
+- Mod 6 dopo 122 commit (Commit 1253) in percentuale 14% | 2023-05-04 13:59:45
+- Mod 7 dopo 3 commit (Commit 1256) in percentuale 0% | 2023-05-04 14:32:48
+- Mod 8 dopo 130 commit (Commit 1386) in percentuale 1% | 2023-05-17 15:33:46
+- Mod 9 dopo 3 commit (Commit 1389) in percentuale 10% | 2023-05-17 16:21:30
+- Mod 10 dopo 165 commit (Commit 1554) in percentuale 9% | 2023-05-31 12:37:52
+- Mod 11 dopo 2 commit (Commit 1556) in percentuale 2% | 2023-05-31 17:10:28
+- Mod 12 dopo 584 commit (Commit 2140) in percentuale 2% | 2023-09-08 17:36:26
+- Mod 13 dopo 111 commit (Commit 2251) in percentuale 2% | 2023-10-04 11:06:53
+- Nessun'altra modifica per 737 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 26: packages/koenig-lexical/test/e2e/cards/html-card.test.js | creato a Commit 791 (2023-03-16 08:24:52)
+- Mod 1 dopo 29 commit (Commit 820) in percentuale 58% | 2023-03-21 08:44:19
+- Mod 2 dopo 1 commit (Commit 821) in percentuale 7% | 2023-03-21 08:51:28
+- Mod 3 dopo 223 commit (Commit 1044) in percentuale 29% | 2023-04-17 18:54:24
+- Mod 4 dopo 86 commit (Commit 1130) in percentuale 7% | 2023-04-20 09:18:08
+- Mod 5 dopo 123 commit (Commit 1253) in percentuale 33% | 2023-05-04 13:59:45
+- Mod 6 dopo 301 commit (Commit 1554) in percentuale 23% | 2023-05-31 12:37:52
+- Mod 7 dopo 2 commit (Commit 1556) in percentuale 5% | 2023-05-31 17:10:28
+- Mod 8 dopo 100 commit (Commit 1656) in percentuale 7% | 2023-06-08 14:43:56
+- Mod 9 dopo 130 commit (Commit 1786) in percentuale 20% | 2023-06-22 09:19:13
+- Mod 10 dopo 254 commit (Commit 2040) in percentuale 21% | 2023-08-15 09:44:46
+- Mod 11 dopo 48 commit (Commit 2088) in percentuale 2% | 2023-08-24 12:53:26
+- Mod 12 dopo 232 commit (Commit 2320) in percentuale 19% | 2023-10-16 14:14:58
+- Mod 13 dopo 9 commit (Commit 2329) in percentuale 1% | 2023-10-18 13:46:09
+- Mod 14 dopo 289 commit (Commit 2618) in percentuale 8% | 2024-01-02 14:49:25
+- Mod 15 dopo 310 commit (Commit 2928) in percentuale 1% | 2024-08-08 12:22:15
+- Mod 16 dopo 20 commit (Commit 2948) in percentuale 3% | 2024-08-13 18:16:31
+- Mod 17 dopo 9 commit (Commit 2957) in percentuale 1% | 2024-08-14 20:23:19
+- Nessun'altra modifica per 31 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 27: packages/koenig-lexical/test/e2e/cards/callout-card.test.js | creato a Commit 808 (2023-03-20 10:26:41)
+- Mod 1 dopo 27 commit (Commit 835) in percentuale 1% | 2023-03-23 13:44:01
+- Mod 2 dopo 13 commit (Commit 848) in percentuale 29% | 2023-03-27 08:45:31
+- Mod 3 dopo 3 commit (Commit 851) in percentuale 42% | 2023-03-27 11:00:18
+- Mod 4 dopo 22 commit (Commit 873) in percentuale 3% | 2023-03-30 11:39:40
+- Mod 5 dopo 25 commit (Commit 898) in percentuale 36% | 2023-04-03 12:42:46
+- Mod 6 dopo 2 commit (Commit 900) in percentuale 11% | 2023-04-03 18:46:03
+- Mod 7 dopo 2 commit (Commit 902) in percentuale 5% | 2023-04-03 16:26:56
+- Mod 8 dopo 1 commit (Commit 903) in percentuale 0% | 2023-04-03 16:36:24
+- Mod 9 dopo 141 commit (Commit 1044) in percentuale 6% | 2023-04-17 18:54:24
+- Mod 10 dopo 209 commit (Commit 1253) in percentuale 20% | 2023-05-04 13:59:45
+- Mod 11 dopo 76 commit (Commit 1329) in percentuale 1% | 2023-05-12 12:41:07
+- Mod 12 dopo 80 commit (Commit 1409) in percentuale 31% | 2023-05-18 15:14:18
+- Mod 13 dopo 145 commit (Commit 1554) in percentuale 14% | 2023-05-31 12:37:52
+- Mod 14 dopo 2 commit (Commit 1556) in percentuale 1% | 2023-05-31 17:10:28
+- Mod 15 dopo 11 commit (Commit 1567) in percentuale 20% | 2023-06-01 15:51:35
+- Mod 16 dopo 100 commit (Commit 1667) in percentuale 0% | 2023-06-09 09:07:40
+- Mod 17 dopo 233 commit (Commit 1900) in percentuale 3% | 2023-07-13 10:16:21
+- Mod 18 dopo 998 commit (Commit 2898) in percentuale 0% | 2024-07-18 11:43:09
+- Nessun'altra modifica per 90 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 28: packages/koenig-lexical/test/e2e/cards/toggle-card.test.js | creato a Commit 841 (2023-03-24 10:28:28)
+- Mod 1 dopo 21 commit (Commit 862) in percentuale 77% | 2023-03-28 18:37:13
+- Mod 2 dopo 52 commit (Commit 914) in percentuale 38% | 2023-04-04 14:06:13
+- Mod 3 dopo 130 commit (Commit 1044) in percentuale 7% | 2023-04-17 18:54:24
+- Mod 4 dopo 107 commit (Commit 1151) in percentuale 8% | 2023-04-20 12:12:13
+- Mod 5 dopo 4 commit (Commit 1155) in percentuale 3% | 2023-04-20 16:07:47
+- Mod 6 dopo 50 commit (Commit 1205) in percentuale 6% | 2023-04-25 17:32:07
+- Mod 7 dopo 48 commit (Commit 1253) in percentuale 16% | 2023-05-04 13:59:45
+- Mod 8 dopo 76 commit (Commit 1329) in percentuale 15% | 2023-05-12 12:41:07
+- Mod 9 dopo 225 commit (Commit 1554) in percentuale 14% | 2023-05-31 12:37:52
+- Mod 10 dopo 2 commit (Commit 1556) in percentuale 1% | 2023-05-31 17:10:28
+- Mod 11 dopo 20 commit (Commit 1576) in percentuale 29% | 2023-06-01 15:51:35
+- Mod 12 dopo 197 commit (Commit 1773) in percentuale 1% | 2023-06-19 16:49:50
+- Mod 13 dopo 127 commit (Commit 1900) in percentuale 3% | 2023-07-13 10:16:21
+- Mod 14 dopo 38 commit (Commit 1938) in percentuale 7% | 2023-07-24 17:37:54
+- Mod 15 dopo 932 commit (Commit 2870) in percentuale 0% | 2024-07-02 12:23:57
+- Mod 16 dopo 11 commit (Commit 2881) in percentuale 0% | 2024-07-08 14:14:51
+- Nessun'altra modifica per 107 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 29: packages/koenig-lexical/test/e2e/cards/button-card.test.js | creato a Commit 845 (2023-03-24 12:37:02)
+- Mod 1 dopo 46 commit (Commit 891) in percentuale 1% | 2023-04-03 10:36:13
+- Mod 2 dopo 9 commit (Commit 900) in percentuale 22% | 2023-04-03 18:46:03
+- Mod 3 dopo 110 commit (Commit 1010) in percentuale 14% | 2023-04-12 08:51:20
+- Mod 4 dopo 1 commit (Commit 1011) in percentuale 1% | 2023-04-12 09:00:47
+- Mod 5 dopo 33 commit (Commit 1044) in percentuale 11% | 2023-04-17 18:54:24
+- Mod 6 dopo 209 commit (Commit 1253) in percentuale 24% | 2023-05-04 13:59:45
+- Mod 7 dopo 301 commit (Commit 1554) in percentuale 19% | 2023-05-31 12:37:52
+- Mod 8 dopo 2 commit (Commit 1556) in percentuale 2% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 30: packages/koenig-lexical/test/e2e/cards/file-card.test.js | creato a Commit 859 (2023-03-28 13:20:07)
+- Mod 1 dopo 394 commit (Commit 1253) in percentuale 28% | 2023-05-04 13:59:45
+- Mod 2 dopo 76 commit (Commit 1329) in percentuale 2% | 2023-05-12 12:41:07
+- Mod 3 dopo 63 commit (Commit 1392) in percentuale 12% | 2023-05-17 11:08:02
+- Mod 4 dopo 162 commit (Commit 1554) in percentuale 19% | 2023-05-31 12:37:52
+- Mod 5 dopo 2 commit (Commit 1556) in percentuale 3% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 31: packages/koenig-lexical/test/e2e/cards/paywall-card.test.js | creato a Commit 864 (2023-03-29 14:33:56)
+- Mod 1 dopo 389 commit (Commit 1253) in percentuale 37% | 2023-05-04 13:59:45
+- Mod 2 dopo 301 commit (Commit 1554) in percentuale 25% | 2023-05-31 12:37:52
+- Mod 3 dopo 2 commit (Commit 1556) in percentuale 6% | 2023-05-31 17:10:28
+- Nessun'altra modifica per 1432 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 32: packages/koenig-lexical/test/e2e/cards/product-card.test.js | creato a Commit 945 (2023-04-06 14:47:53)
+- Mod 1 dopo 17 commit (Commit 962) in percentuale 5% | 2023-04-07 17:14:58
+- Mod 2 dopo 39 commit (Commit 1001) in percentuale 15% | 2023-04-12 09:28:28
+- Mod 3 dopo 43 commit (Commit 1044) in percentuale 6% | 2023-04-17 18:54:24
+- Mod 4 dopo 209 commit (Commit 1253) in percentuale 12% | 2023-05-04 13:59:45
+- Mod 5 dopo 76 commit (Commit 1329) in percentuale 3% | 2023-05-12 12:41:07
+- Mod 6 dopo 227 commit (Commit 1556) in percentuale 8% | 2023-05-31 17:10:28
+- Mod 7 dopo 8 commit (Commit 1564) in percentuale 27% | 2023-06-01 15:51:35
+- Mod 8 dopo 11 commit (Commit 1575) in percentuale 0% | 2023-06-01 15:51:35
+- Mod 9 dopo 138 commit (Commit 1713) in percentuale 0% | 2023-06-13 16:16:06
+- Mod 10 dopo 187 commit (Commit 1900) in percentuale 4% | 2023-07-13 10:16:21
+- Mod 11 dopo 828 commit (Commit 2728) in percentuale 1% | 2024-05-06 12:42:02
+- Mod 12 dopo 142 commit (Commit 2870) in percentuale 1% | 2024-07-02 12:23:57
+- Mod 13 dopo 11 commit (Commit 2881) in percentuale 1% | 2024-07-08 14:14:51
+- Mod 14 dopo 78 commit (Commit 2959) in percentuale 2% | 2024-08-15 11:43:51
+- Nessun'altra modifica per 29 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 33: packages/koenig-lexical/test/e2e/cards/email-card.test.js | creato a Commit 957 (2023-04-07 12:01:38)
+- Mod 1 dopo 27 commit (Commit 984) in percentuale 0% | 2023-04-11 12:31:20
+- Mod 2 dopo 7 commit (Commit 991) in percentuale 4% | 2023-04-11 19:43:35
+- Mod 3 dopo 53 commit (Commit 1044) in percentuale 9% | 2023-04-17 18:54:24
+- Mod 4 dopo 107 commit (Commit 1151) in percentuale 5% | 2023-04-20 12:12:13
+- Mod 5 dopo 4 commit (Commit 1155) in percentuale 3% | 2023-04-20 16:07:47
+- Mod 6 dopo 98 commit (Commit 1253) in percentuale 21% | 2023-05-04 13:59:45
+- Mod 7 dopo 301 commit (Commit 1554) in percentuale 17% | 2023-05-31 12:37:52
+- Mod 8 dopo 2 commit (Commit 1556) in percentuale 2% | 2023-05-31 17:10:28
+- Mod 9 dopo 17 commit (Commit 1573) in percentuale 26% | 2023-06-01 15:51:35
+- Mod 10 dopo 327 commit (Commit 1900) in percentuale 2% | 2023-07-13 10:16:21
+- Mod 11 dopo 224 commit (Commit 2124) in percentuale 2% | 2023-08-30 19:51:54
+- Mod 12 dopo 23 commit (Commit 2147) in percentuale 1% | 2023-09-11 12:34:17
+- Mod 13 dopo 156 commit (Commit 2303) in percentuale 30% | 2023-10-11 09:54:55
+- Mod 14 dopo 36 commit (Commit 2339) in percentuale 2% | 2023-10-19 12:26:30
+- Mod 15 dopo 531 commit (Commit 2870) in percentuale 0% | 2024-07-02 12:23:57
+- Mod 16 dopo 11 commit (Commit 2881) in percentuale 0% | 2024-07-08 14:14:51
+- Nessun'altra modifica per 107 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 34: packages/koenig-lexical/test/e2e/cards/email-cta-card.test.js | creato a Commit 1070 (2023-04-18 12:26:31)
+- Mod 1 dopo 10 commit (Commit 1080) in percentuale 16% | 2023-04-18 16:26:44
+- Mod 2 dopo 84 commit (Commit 1164) in percentuale 0% | 2023-04-20 17:55:19
+- Mod 3 dopo 74 commit (Commit 1238) in percentuale 0% | 2023-05-02 12:14:58
+- Mod 4 dopo 15 commit (Commit 1253) in percentuale 12% | 2023-05-04 13:59:45
+- Mod 5 dopo 156 commit (Commit 1409) in percentuale 4% | 2023-05-18 15:14:18
+- Mod 6 dopo 145 commit (Commit 1554) in percentuale 0% | 2023-05-31 12:37:52
+- Mod 7 dopo 2 commit (Commit 1556) in percentuale 10% | 2023-05-31 17:10:28
+- Mod 8 dopo 16 commit (Commit 1572) in percentuale 15% | 2023-06-01 15:51:35
+- Mod 9 dopo 201 commit (Commit 1773) in percentuale 0% | 2023-06-19 16:49:50
+- Mod 10 dopo 127 commit (Commit 1900) in percentuale 2% | 2023-07-13 10:16:21
+- Mod 11 dopo 122 commit (Commit 2022) in percentuale 0% | 2023-08-10 17:00:46
+- Mod 12 dopo 65 commit (Commit 2087) in percentuale 0% | 2023-08-24 12:32:57
+- Mod 13 dopo 157 commit (Commit 2244) in percentuale 0% | 2023-10-03 12:10:48
+- Mod 14 dopo 59 commit (Commit 2303) in percentuale 12% | 2023-10-11 09:54:55
+- Mod 15 dopo 143 commit (Commit 2446) in percentuale 0% | 2023-11-14 09:24:10
+- Mod 16 dopo 206 commit (Commit 2652) in percentuale 0% | 2024-01-16 11:58:43
+- Mod 17 dopo 65 commit (Commit 2717) in percentuale 0% | 2024-04-23 11:25:18
+- Mod 18 dopo 131 commit (Commit 2848) in percentuale 2% | 2024-06-25 11:40:49
+- Mod 19 dopo 22 commit (Commit 2870) in percentuale 0% | 2024-07-02 12:23:57
+- Mod 20 dopo 11 commit (Commit 2881) in percentuale 0% | 2024-07-08 14:14:51
+- Mod 21 dopo 44 commit (Commit 2925) in percentuale 0% | 2024-08-07 16:37:27
+- Mod 22 dopo 34 commit (Commit 2959) in percentuale 5% | 2024-08-15 11:43:51
+- Nessun'altra modifica per 29 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 35: packages/koenig-lexical/test/e2e/cards/embed-card.test.js | creato a Commit 1096 (2023-04-19 11:07:39)
+- Mod 1 dopo 1 commit (Commit 1097) in percentuale 0% | 2023-04-19 11:21:31
+- Mod 2 dopo 6 commit (Commit 1103) in percentuale 3% | 2023-04-19 12:26:09
+- Mod 3 dopo 5 commit (Commit 1108) in percentuale 0% | 2023-04-19 13:57:16
+- Mod 4 dopo 53 commit (Commit 1161) in percentuale 10% | 2023-04-20 17:37:48
+- Mod 5 dopo 29 commit (Commit 1190) in percentuale 18% | 2023-04-24 10:49:15
+- Mod 6 dopo 1 commit (Commit 1191) in percentuale 19% | 2023-04-24 11:08:31
+- Mod 7 dopo 62 commit (Commit 1253) in percentuale 21% | 2023-05-04 13:59:45
+- Mod 8 dopo 37 commit (Commit 1290) in percentuale 4% | 2023-05-09 14:07:28
+- Mod 9 dopo 264 commit (Commit 1554) in percentuale 16% | 2023-05-31 12:37:52
+- Mod 10 dopo 2 commit (Commit 1556) in percentuale 2% | 2023-05-31 17:10:28
+- Mod 11 dopo 18 commit (Commit 1574) in percentuale 52% | 2023-06-01 15:51:35
+- Mod 12 dopo 9 commit (Commit 1583) in percentuale 0% | 2023-06-01 15:51:35
+- Mod 13 dopo 1 commit (Commit 1584) in percentuale 0% | 2023-06-01 15:51:35
+- Mod 14 dopo 42 commit (Commit 1626) in percentuale 2% | 2023-06-07 12:23:33
+- Mod 15 dopo 274 commit (Commit 1900) in percentuale 1% | 2023-07-13 10:16:21
+- Mod 16 dopo 5 commit (Commit 1905) in percentuale 0% | 2023-07-14 09:14:35
+- Mod 17 dopo 82 commit (Commit 1987) in percentuale 4% | 2023-08-08 10:25:23
+- Mod 18 dopo 129 commit (Commit 2116) in percentuale 7% | 2023-08-29 18:28:02
+- Mod 19 dopo 135 commit (Commit 2251) in percentuale 1% | 2023-10-04 11:06:53
+- Mod 20 dopo 425 commit (Commit 2676) in percentuale 5% | 2024-01-31 17:37:08
+- Mod 21 dopo 175 commit (Commit 2851) in percentuale 1% | 2024-06-26 11:51:25
+- Nessun'altra modifica per 137 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 36: packages/koenig-lexical/test/e2e/cards/header-card.test.js | creato a Commit 1097 (2023-04-19 11:21:31)
+- Mod 1 dopo 3 commit (Commit 1100) in percentuale 2% | 2023-04-19 11:57:32
+- Mod 2 dopo 18 commit (Commit 1118) in percentuale 54% | 2023-04-19 16:08:06
+- Mod 3 dopo 1 commit (Commit 1119) in percentuale 29% | 2023-04-19 16:19:56
+- Mod 4 dopo 3 commit (Commit 1122) in percentuale 0% | 2023-04-19 17:06:05
+- Mod 5 dopo 2 commit (Commit 1124) in percentuale 92% | 2023-04-19 17:13:09
+- Mod 6 dopo 1 commit (Commit 1125) in percentuale 0% | 2023-04-19 17:14:38
+- Mod 7 dopo 1 commit (Commit 1126) in percentuale 0% | 2023-04-19 17:15:25
+- Mod 8 dopo 2 commit (Commit 1128) in percentuale 2% | 2023-04-19 17:30:20
+- Mod 9 dopo 2 commit (Commit 1130) in percentuale 0% | 2023-04-20 09:18:08
+- Mod 10 dopo 8 commit (Commit 1138) in percentuale 68% | 2023-04-20 09:39:15
+- Mod 11 dopo 2 commit (Commit 1140) in percentuale 35% | 2023-04-20 10:27:09
+- Mod 12 dopo 2 commit (Commit 1142) in percentuale 0% | 2023-04-20 10:34:07
+- Mod 13 dopo 5 commit (Commit 1147) in percentuale 119% | 2023-04-20 10:48:40
+- Mod 14 dopo 1 commit (Commit 1148) in percentuale 14% | 2023-04-20 10:59:09
+- Mod 15 dopo 1 commit (Commit 1149) in percentuale 11% | 2023-04-20 11:04:47
+- Mod 16 dopo 3 commit (Commit 1152) in percentuale 18% | 2023-04-20 12:14:49
+- Mod 17 dopo 11 commit (Commit 1163) in percentuale 0% | 2023-04-20 17:50:33
+- Mod 18 dopo 90 commit (Commit 1253) in percentuale 14% | 2023-05-04 13:59:45
+- Mod 19 dopo 156 commit (Commit 1409) in percentuale 5% | 2023-05-18 15:14:18
+- Mod 20 dopo 147 commit (Commit 1556) in percentuale 10% | 2023-05-31 17:10:28
+- Mod 21 dopo 19 commit (Commit 1575) in percentuale 25% | 2023-06-01 15:51:35
+- Mod 22 dopo 315 commit (Commit 1890) in percentuale 48% | 2023-07-12 15:39:25
+- Mod 23 dopo 10 commit (Commit 1900) in percentuale 2% | 2023-07-13 10:16:21
+- Mod 24 dopo 29 commit (Commit 1929) in percentuale 1% | 2023-07-20 16:05:43
+- Mod 25 dopo 84 commit (Commit 2013) in percentuale 1% | 2023-08-10 10:29:51
+- Mod 26 dopo 116 commit (Commit 2129) in percentuale 0% | 2023-09-04 14:59:27
+- Mod 27 dopo 82 commit (Commit 2211) in percentuale 0% | 2023-09-22 15:49:22
+- Mod 28 dopo 9 commit (Commit 2220) in percentuale 0% | 2023-09-25 09:17:25
+- Mod 29 dopo 650 commit (Commit 2870) in percentuale 1% | 2024-07-02 12:23:57
+- Mod 30 dopo 11 commit (Commit 2881) in percentuale 1% | 2024-07-08 14:14:51
+- Nessun'altra modifica per 107 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 37: packages/koenig-lexical/test/e2e/cards/gallery-card.test.js | creato a Commit 1098 (2023-04-19 11:23:54)
+- Mod 1 dopo 11 commit (Commit 1109) in percentuale 53% | 2023-04-19 14:01:17
+- Mod 2 dopo 2 commit (Commit 1111) in percentuale 0% | 2023-04-19 14:43:13
+- Mod 3 dopo 9 commit (Commit 1120) in percentuale 65% | 2023-04-19 16:44:13
+- Mod 4 dopo 1 commit (Commit 1121) in percentuale 0% | 2023-04-19 16:59:32
+- Mod 5 dopo 8 commit (Commit 1129) in percentuale 6% | 2023-04-19 17:52:16
+- Mod 6 dopo 12 commit (Commit 1141) in percentuale 8% | 2023-04-20 10:29:29
+- Mod 7 dopo 21 commit (Commit 1162) in percentuale 1% | 2023-04-20 17:41:35
+- Mod 8 dopo 91 commit (Commit 1253) in percentuale 13% | 2023-05-04 13:59:45
+- Mod 9 dopo 301 commit (Commit 1554) in percentuale 9% | 2023-05-31 12:37:52
+- Mod 10 dopo 2 commit (Commit 1556) in percentuale 1% | 2023-05-31 17:10:28
+- Mod 11 dopo 22 commit (Commit 1578) in percentuale 39% | 2023-06-01 15:51:35
+- Mod 12 dopo 322 commit (Commit 1900) in percentuale 1% | 2023-07-13 10:16:21
+- Mod 13 dopo 29 commit (Commit 1929) in percentuale 2% | 2023-07-20 16:05:43
+- Mod 14 dopo 211 commit (Commit 2140) in percentuale 6% | 2023-09-08 17:36:26
+- Mod 15 dopo 10 commit (Commit 2150) in percentuale 5% | 2023-09-12 12:03:32
+- Mod 16 dopo 93 commit (Commit 2243) in percentuale 9% | 2023-10-03 10:47:41
+- Mod 17 dopo 8 commit (Commit 2251) in percentuale 1% | 2023-10-04 11:06:53
+- Mod 18 dopo 597 commit (Commit 2848) in percentuale 5% | 2024-06-25 11:40:49
+- Nessun'altra modifica per 140 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 38: packages/koenig-lexical/test/e2e/cards/signup-card.test.js | creato a Commit 1293 (2023-05-09 16:33:04)
+- Mod 1 dopo 11 commit (Commit 1304) in percentuale 118% | 2023-05-10 12:24:26
+- Mod 2 dopo 4 commit (Commit 1308) in percentuale 145% | 2023-05-10 17:27:51
+- Mod 3 dopo 5 commit (Commit 1313) in percentuale 18% | 2023-05-11 11:51:28
+- Mod 4 dopo 8 commit (Commit 1321) in percentuale 30% | 2023-05-12 18:31:06
+- Mod 5 dopo 3 commit (Commit 1324) in percentuale 4% | 2023-05-12 14:02:27
+- Mod 6 dopo 16 commit (Commit 1340) in percentuale 3% | 2023-05-15 11:10:51
+- Mod 7 dopo 19 commit (Commit 1359) in percentuale 1% | 2023-05-16 12:38:37
+- Mod 8 dopo 14 commit (Commit 1373) in percentuale 3% | 2023-05-17 09:58:35
+- Mod 9 dopo 3 commit (Commit 1376) in percentuale 2% | 2023-05-17 10:29:08
+- Mod 10 dopo 7 commit (Commit 1383) in percentuale 0% | 2023-05-17 12:06:33
+- Mod 11 dopo 13 commit (Commit 1396) in percentuale 1% | 2023-05-18 10:28:22
+- Mod 12 dopo 9 commit (Commit 1405) in percentuale 15% | 2023-05-18 13:47:53
+- Mod 13 dopo 4 commit (Commit 1409) in percentuale 13% | 2023-05-18 15:14:18
+- Mod 14 dopo 13 commit (Commit 1422) in percentuale 6% | 2023-05-19 10:51:09
+- Mod 15 dopo 7 commit (Commit 1429) in percentuale 35% | 2023-05-19 13:43:27
+- Mod 16 dopo 27 commit (Commit 1456) in percentuale 0% | 2023-05-22 17:39:40
+- Mod 17 dopo 3 commit (Commit 1459) in percentuale 6% | 2023-05-22 20:18:00
+- Mod 18 dopo 2 commit (Commit 1461) in percentuale 2% | 2023-05-23 10:42:07
+- Mod 19 dopo 35 commit (Commit 1496) in percentuale 11% | 2023-05-24 11:33:33
+- Mod 20 dopo 2 commit (Commit 1498) in percentuale 7% | 2023-05-24 13:51:14
+- Mod 21 dopo 6 commit (Commit 1504) in percentuale 3% | 2023-05-25 10:10:11
+- Mod 22 dopo 2 commit (Commit 1506) in percentuale 15% | 2023-05-25 11:54:46
+- Mod 23 dopo 1 commit (Commit 1507) in percentuale 8% | 2023-05-25 11:56:06
+- Mod 24 dopo 30 commit (Commit 1537) in percentuale 0% | 2023-05-29 17:36:25
+- Mod 25 dopo 17 commit (Commit 1554) in percentuale 0% | 2023-05-31 12:37:52
+- Mod 26 dopo 2 commit (Commit 1556) in percentuale 10% | 2023-05-31 17:10:28
+- Mod 27 dopo 23 commit (Commit 1579) in percentuale 22% | 2023-06-01 15:51:35
+- Mod 28 dopo 2 commit (Commit 1581) in percentuale 1% | 2023-06-01 15:51:35
+- Mod 29 dopo 1 commit (Commit 1582) in percentuale 2% | 2023-06-01 15:51:35
+- Mod 30 dopo 47 commit (Commit 1629) in percentuale 0% | 2023-06-07 12:58:51
+- Mod 31 dopo 80 commit (Commit 1709) in percentuale 0% | 2023-06-13 14:30:10
+- Mod 32 dopo 26 commit (Commit 1735) in percentuale 2% | 2023-06-15 11:30:07
+- Mod 33 dopo 4 commit (Commit 1739) in percentuale 0% | 2023-06-15 13:55:19
+- Mod 34 dopo 2 commit (Commit 1741) in percentuale 10% | 2023-06-15 14:51:01
+- Mod 35 dopo 1 commit (Commit 1742) in percentuale 1% | 2023-06-15 14:55:31
+- Mod 36 dopo 1 commit (Commit 1743) in percentuale 0% | 2023-06-15 14:58:23
+- Mod 37 dopo 8 commit (Commit 1751) in percentuale 0% | 2023-06-16 14:21:36
+- Mod 38 dopo 34 commit (Commit 1785) in percentuale 1% | 2023-06-21 15:59:08
+- Mod 39 dopo 6 commit (Commit 1791) in percentuale 0% | 2023-06-22 16:19:39
+- Mod 40 dopo 109 commit (Commit 1900) in percentuale 2% | 2023-07-13 10:16:21
+- Mod 41 dopo 29 commit (Commit 1929) in percentuale 0% | 2023-07-20 16:05:43
+- Mod 42 dopo 919 commit (Commit 2848) in percentuale 1% | 2024-06-25 11:40:49
+- Nessun'altra modifica per 140 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 39: packages/koenig-lexical/test/e2e/text-transforms/markdown.test.js | creato a Commit 1307 (2023-05-10 17:42:06)
+- Mod 1 dopo 93 commit (Commit 1400) in percentuale 5% | 2023-05-18 12:45:03
+- Mod 2 dopo 154 commit (Commit 1554) in percentuale 2% | 2023-05-31 12:37:52
+- Mod 3 dopo 2 commit (Commit 1556) in percentuale 22% | 2023-05-31 17:10:28
+- Mod 4 dopo 118 commit (Commit 1674) in percentuale 9% | 2023-06-09 09:56:20
+- Mod 5 dopo 17 commit (Commit 1691) in percentuale 10% | 2023-06-12 15:18:31
+- Mod 6 dopo 433 commit (Commit 2124) in percentuale 15% | 2023-08-30 19:51:54
+- Mod 7 dopo 23 commit (Commit 2147) in percentuale 1% | 2023-09-11 12:34:17
+- Nessun'altra modifica per 841 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 40: packages/koenig-lexical/test/e2e/text-transforms/emdash-endash.test.js | creato a Commit 1691 (2023-06-12 15:18:31)
+- Nessun'altra modifica per 1297 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 41: packages/koenig-lexical/test/e2e/format-shortcuts.test.js | creato a Commit 1717 (2023-06-13 12:16:01)
+- Mod 1 dopo 183 commit (Commit 1900) in percentuale 1% | 2023-07-13 10:16:21
+- Mod 2 dopo 80 commit (Commit 1980) in percentuale 7% | 2023-08-07 17:28:19
+- Mod 3 dopo 8 commit (Commit 1988) in percentuale 34% | 2023-08-08 13:04:01
+- Mod 4 dopo 1 commit (Commit 1989) in percentuale 27% | 2023-08-08 13:04:01
+- Mod 5 dopo 1 commit (Commit 1990) in percentuale 21% | 2023-08-08 13:04:01
+- Mod 6 dopo 1 commit (Commit 1991) in percentuale 7% | 2023-08-08 13:04:01
+- Mod 7 dopo 156 commit (Commit 2147) in percentuale 0% | 2023-09-11 12:34:17
+- Mod 8 dopo 144 commit (Commit 2291) in percentuale 6% | 2023-10-10 14:10:46
+- Mod 9 dopo 1 commit (Commit 2292) in percentuale 0% | 2023-10-10 14:27:27
+- Mod 10 dopo 1 commit (Commit 2293) in percentuale 7% | 2023-10-10 16:13:19
+- Mod 11 dopo 154 commit (Commit 2447) in percentuale 16% | 2023-11-14 14:06:17
+- Mod 12 dopo 13 commit (Commit 2460) in percentuale 0% | 2023-11-16 10:53:16
+- Nessun'altra modifica per 528 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 42: packages/koenig-lexical/test/e2e/plugins/WordCountPlugin.test.js | creato a Commit 1731 (2023-06-14 17:03:24)
+- Nessun'altra modifica per 1257 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 43: packages/koenig-lexical/test/e2e/paste-behaviour.test.js | creato a Commit 1986 (2023-08-08 10:09:36)
+- Mod 1 dopo 1 commit (Commit 1987) in percentuale 14% | 2023-08-08 10:25:23
+- Mod 2 dopo 234 commit (Commit 2221) in percentuale 11% | 2023-09-26 13:45:46
+- Mod 3 dopo 44 commit (Commit 2265) in percentuale 14% | 2023-10-06 14:09:28
+- Mod 4 dopo 8 commit (Commit 2273) in percentuale 7% | 2023-10-09 10:54:35
+- Mod 5 dopo 3 commit (Commit 2276) in percentuale 21% | 2023-10-09 16:24:53
+- Mod 6 dopo 2 commit (Commit 2278) in percentuale 6% | 2023-10-09 17:55:46
+- Mod 7 dopo 2 commit (Commit 2280) in percentuale 6% | 2023-10-09 18:24:22
+- Mod 8 dopo 1 commit (Commit 2281) in percentuale 26% | 2023-10-09 18:24:32
+- Mod 9 dopo 4 commit (Commit 2285) in percentuale 21% | 2023-10-09 18:27:37
+- Mod 10 dopo 1 commit (Commit 2286) in percentuale 6% | 2023-10-09 18:27:48
+- Mod 11 dopo 29 commit (Commit 2315) in percentuale 16% | 2023-10-16 11:10:06
+- Mod 12 dopo 3 commit (Commit 2318) in percentuale 22% | 2023-10-16 13:57:19
+- Mod 13 dopo 105 commit (Commit 2423) in percentuale 17% | 2023-11-07 16:23:57
+- Mod 14 dopo 258 commit (Commit 2681) in percentuale 8% | 2024-02-07 13:27:44
+- Mod 15 dopo 11 commit (Commit 2692) in percentuale 11% | 2024-02-27 12:02:33
+- Mod 16 dopo 156 commit (Commit 2848) in percentuale 1% | 2024-06-25 11:40:49
+- Mod 17 dopo 20 commit (Commit 2868) in percentuale 3% | 2024-07-01 18:32:09
+- Mod 18 dopo 3 commit (Commit 2871) in percentuale 28% | 2024-07-03 18:12:11
+- Mod 19 dopo 9 commit (Commit 2880) in percentuale 40% | 2024-07-08 14:14:51
+- Mod 20 dopo 21 commit (Commit 2901) in percentuale 12% | 2024-07-23 17:36:26
+- Mod 21 dopo 45 commit (Commit 2946) in percentuale 6% | 2024-08-13 11:18:46
+- Mod 22 dopo 29 commit (Commit 2975) in percentuale 2% | 2024-08-28 12:27:30
+- Nessun'altra modifica per 13 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 44: packages/koenig-lexical/test/e2e/cards/collection-card.test.js | creato a Commit 2176 (2023-09-18 14:54:31)
+- Mod 1 dopo 11 commit (Commit 2187) in percentuale 0% | 2023-09-20 11:42:28
+- Mod 2 dopo 12 commit (Commit 2199) in percentuale 2% | 2023-09-21 11:58:58
+- Mod 3 dopo 28 commit (Commit 2227) in percentuale 4% | 2023-09-27 09:59:27
+- Nessun'altra modifica per 761 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 45: packages/koenig-lexical/test/e2e/node-transforms.test.js | creato a Commit 2289 (2023-10-10 13:38:41)
+- Nessun'altra modifica per 699 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 46: packages/koenig-lexical/test/e2e/plugins/EmojiPickerPlugin.test.js | creato a Commit 2369 (2023-10-25 21:32:48)
+- Mod 1 dopo 5 commit (Commit 2374) in percentuale 55% | 2023-10-26 19:28:16
+- Mod 2 dopo 12 commit (Commit 2386) in percentuale 5% | 2023-10-31 13:11:22
+- Mod 3 dopo 8 commit (Commit 2394) in percentuale 7% | 2023-11-01 17:39:22
+- Mod 4 dopo 4 commit (Commit 2398) in percentuale 3% | 2023-11-01 12:56:50
+- Mod 5 dopo 1 commit (Commit 2399) in percentuale 1% | 2023-11-01 18:29:55
+- Mod 6 dopo 187 commit (Commit 2586) in percentuale 4% | 2023-12-14 10:52:35
+- Mod 7 dopo 93 commit (Commit 2679) in percentuale 1% | 2024-02-06 15:28:33
+- Mod 8 dopo 169 commit (Commit 2848) in percentuale 4% | 2024-06-25 11:40:49
+- Nessun'altra modifica per 140 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 47: packages/koenig-lexical/test/e2e/plugins/TKPlugin.test.js | creato a Commit 2509 (2023-11-27 15:58:40)
+- Mod 1 dopo 4 commit (Commit 2513) in percentuale 18% | 2023-11-28 14:00:23
+- Mod 2 dopo 6 commit (Commit 2519) in percentuale 12% | 2023-11-29 11:42:48
+- Mod 3 dopo 13 commit (Commit 2532) in percentuale 9% | 2023-11-30 13:06:26
+- Mod 4 dopo 1 commit (Commit 2533) in percentuale 17% | 2023-11-30 14:13:22
+- Mod 5 dopo 33 commit (Commit 2566) in percentuale 11% | 2023-12-11 10:43:33
+- Mod 6 dopo 140 commit (Commit 2706) in percentuale 15% | 2024-04-16 11:24:11
+- Nessun'altra modifica per 282 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 48: packages/koenig-lexical/test/e2e/text-transforms/paywall.test.js | creato a Commit 2558 (2023-12-06 16:34:14)
+- Nessun'altra modifica per 430 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 49: packages/kg-unsplash-selector/test/acceptance/modal.test.ts | creato a Commit 2695 (2024-03-12 07:57:47)
+- Nessun'altra modifica per 293 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)
+
+Test 50: packages/koenig-lexical/test/e2e/plugins/KoenigSnippetPlugin.test.js | creato a Commit 2787 (2024-05-16 17:14:31)
+- Mod 1 dopo 7 commit (Commit 2794) in percentuale 2% | 2024-05-22 15:00:43
+- Nessun'altra modifica per 194 commit fino a fine storia (Commit 2988, 2024-10-16 09:55:04)

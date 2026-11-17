@@ -1,0 +1,156 @@
+Repository: fluentui
+Commit analizzati: 9675 (Commit 1 2020-07-30 07:51:18 -> Commit 9675 2024-10-17 12:34:53)
+File di test trovati: 23
+
+Test 1: packages/web-components/src/badge/badge.spec.ts | creato a Commit 2 (2020-07-30 10:26:45)
+- Mod 1 dopo 46 commit (Commit 48) in percentuale 150% | 2020-08-05 16:41:56
+- Eliminato dopo 2302 commit (Commit 2350) | 2021-07-02 15:26:43
+- Mod 2 dopo 7061 commit (Commit 9411) in percentuale 1% | 2024-08-07 15:30:46
+- Mod 3 dopo 29 commit (Commit 9440) in percentuale 57% | 2024-08-13 18:56:33
+- Mod 4 dopo 22 commit (Commit 9462) in percentuale 1% | 2024-08-15 12:48:27
+
+Test 2: packages/web-components/src/accordion-item/accordion-item.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 346 commit (Commit 9227) in percentuale 6% | 2024-07-03 16:06:05
+- Mod 2 dopo 184 commit (Commit 9411) in percentuale 0% | 2024-08-07 15:30:46
+- Mod 3 dopo 29 commit (Commit 9440) in percentuale 101% | 2024-08-13 18:56:33
+- Mod 4 dopo 22 commit (Commit 9462) in percentuale 1% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 3: packages/web-components/src/accordion/accordion.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 346 commit (Commit 9227) in percentuale 13% | 2024-07-03 16:06:05
+- Mod 2 dopo 184 commit (Commit 9411) in percentuale 0% | 2024-08-07 15:30:46
+- Mod 3 dopo 29 commit (Commit 9440) in percentuale 114% | 2024-08-13 18:56:33
+- Mod 4 dopo 22 commit (Commit 9462) in percentuale 0% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 4: packages/web-components/src/anchor-button/anchor-button.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 26 commit (Commit 8907) in percentuale 14% | 2024-05-16 22:54:52
+- Mod 2 dopo 175 commit (Commit 9082) in percentuale 150% | 2024-06-11 16:10:53
+- Mod 3 dopo 32 commit (Commit 9114) in percentuale 44% | 2024-06-17 11:47:37
+- Mod 4 dopo 348 commit (Commit 9462) in percentuale 2% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 5: packages/web-components/src/avatar/avatar.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 219 commit (Commit 9100) in percentuale 17% | 2024-06-13 15:58:56
+- Mod 2 dopo 311 commit (Commit 9411) in percentuale 1% | 2024-08-07 15:30:46
+- Mod 3 dopo 29 commit (Commit 9440) in percentuale 85% | 2024-08-13 18:56:33
+- Mod 4 dopo 22 commit (Commit 9462) in percentuale 4% | 2024-08-15 12:48:27
+- Mod 5 dopo 108 commit (Commit 9570) in percentuale 0% | 2024-09-16 14:43:22
+- Nessun'altra modifica per 105 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 6: packages/web-components/src/badge/badge.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Nessun'altra modifica per 794 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 7: packages/web-components/src/button/button.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 26 commit (Commit 8907) in percentuale 3% | 2024-05-16 22:54:52
+- Mod 2 dopo 121 commit (Commit 9028) in percentuale 9% | 2024-06-05 14:20:04
+- Mod 3 dopo 245 commit (Commit 9273) in percentuale 2% | 2024-07-15 12:28:50
+- Mod 4 dopo 189 commit (Commit 9462) in percentuale 0% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 8: packages/web-components/src/checkbox/checkbox.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 161 commit (Commit 9042) in percentuale 116% | 2024-06-06 18:03:35
+- Mod 2 dopo 92 commit (Commit 9134) in percentuale 13% | 2024-06-18 16:54:15
+- Mod 3 dopo 90 commit (Commit 9224) in percentuale 15% | 2024-07-03 13:29:18
+- Mod 4 dopo 238 commit (Commit 9462) in percentuale 4% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 9: packages/web-components/src/counter-badge/counter-badge.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 530 commit (Commit 9411) in percentuale 0% | 2024-08-07 15:30:46
+- Mod 2 dopo 29 commit (Commit 9440) in percentuale 127% | 2024-08-13 18:56:33
+- Mod 3 dopo 22 commit (Commit 9462) in percentuale 5% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 10: packages/web-components/src/divider/divider.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 178 commit (Commit 9059) in percentuale 11% | 2024-06-10 17:42:22
+- Mod 2 dopo 62 commit (Commit 9121) in percentuale 34% | 2024-06-18 16:17:08
+- Mod 3 dopo 290 commit (Commit 9411) in percentuale 0% | 2024-08-07 15:30:46
+- Mod 4 dopo 29 commit (Commit 9440) in percentuale 46% | 2024-08-13 18:56:33
+- Mod 5 dopo 22 commit (Commit 9462) in percentuale 15% | 2024-08-15 12:48:27
+- Mod 6 dopo 52 commit (Commit 9514) in percentuale 1% | 2024-08-28 14:57:37
+- Nessun'altra modifica per 161 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 11: packages/web-components/src/image/image.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 244 commit (Commit 9125) in percentuale 43% | 2024-06-18 17:27:48
+- Mod 2 dopo 286 commit (Commit 9411) in percentuale 0% | 2024-08-07 15:30:46
+- Mod 3 dopo 29 commit (Commit 9440) in percentuale 54% | 2024-08-13 18:56:33
+- Mod 4 dopo 22 commit (Commit 9462) in percentuale 17% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 12: packages/web-components/src/label/label.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 243 commit (Commit 9124) in percentuale 51% | 2024-06-18 17:15:10
+- Mod 2 dopo 287 commit (Commit 9411) in percentuale 1% | 2024-08-07 15:30:46
+- Mod 3 dopo 29 commit (Commit 9440) in percentuale 68% | 2024-08-13 18:56:33
+- Mod 4 dopo 22 commit (Commit 9462) in percentuale 18% | 2024-08-15 12:48:27
+- Mod 5 dopo 123 commit (Commit 9585) in percentuale 1% | 2024-09-24 15:25:35
+- Nessun'altra modifica per 90 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 13: packages/web-components/src/menu-list/menu-list.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 272 commit (Commit 9153) in percentuale 0% | 2024-06-21 16:49:54
+- Mod 2 dopo 94 commit (Commit 9247) in percentuale 11% | 2024-07-08 14:06:09
+- Mod 3 dopo 164 commit (Commit 9411) in percentuale 0% | 2024-08-07 15:30:46
+- Mod 4 dopo 29 commit (Commit 9440) in percentuale 118% | 2024-08-13 18:56:33
+- Mod 5 dopo 22 commit (Commit 9462) in percentuale 0% | 2024-08-15 12:48:27
+- Mod 6 dopo 193 commit (Commit 9655) in percentuale 11% | 2024-10-14 19:33:54
+- Nessun'altra modifica per 20 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 14: packages/web-components/src/progress-bar/progress-bar.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 198 commit (Commit 9079) in percentuale 82% | 2024-06-11 12:07:20
+- Mod 2 dopo 44 commit (Commit 9123) in percentuale 11% | 2024-06-18 17:04:40
+- Mod 3 dopo 339 commit (Commit 9462) in percentuale 19% | 2024-08-15 12:48:27
+- Mod 4 dopo 127 commit (Commit 9589) in percentuale 1% | 2024-09-25 14:04:16
+- Nessun'altra modifica per 86 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 15: packages/web-components/src/radio-group/radio-group.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 343 commit (Commit 9224) in percentuale 125% | 2024-07-03 13:29:18
+- Mod 2 dopo 187 commit (Commit 9411) in percentuale 0% | 2024-08-07 15:30:46
+- Mod 3 dopo 51 commit (Commit 9462) in percentuale 0% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 16: packages/web-components/src/radio/radio.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 343 commit (Commit 9224) in percentuale 105% | 2024-07-03 13:29:18
+- Mod 2 dopo 238 commit (Commit 9462) in percentuale 1% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 17: packages/web-components/src/slider/slider.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 378 commit (Commit 9259) in percentuale 61% | 2024-07-10 12:01:29
+- Mod 2 dopo 152 commit (Commit 9411) in percentuale 0% | 2024-08-07 15:30:46
+- Mod 3 dopo 29 commit (Commit 9440) in percentuale 75% | 2024-08-13 18:56:33
+- Mod 4 dopo 22 commit (Commit 9462) in percentuale 0% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 18: packages/web-components/src/switch/switch.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 170 commit (Commit 9051) in percentuale 181% | 2024-06-07 19:21:54
+- Mod 2 dopo 173 commit (Commit 9224) in percentuale 2% | 2024-07-03 13:29:18
+- Mod 3 dopo 238 commit (Commit 9462) in percentuale 1% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 19: packages/web-components/src/tab-panel/tab-panel.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 530 commit (Commit 9411) in percentuale 4% | 2024-08-07 15:30:46
+- Mod 2 dopo 29 commit (Commit 9440) in percentuale 136% | 2024-08-13 18:56:33
+- Mod 3 dopo 22 commit (Commit 9462) in percentuale 13% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 20: packages/web-components/src/tab/tab.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 559 commit (Commit 9440) in percentuale 126% | 2024-08-13 18:56:33
+- Mod 2 dopo 22 commit (Commit 9462) in percentuale 9% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 21: packages/web-components/src/tabs/tabs.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 530 commit (Commit 9411) in percentuale 0% | 2024-08-07 15:30:46
+- Mod 2 dopo 29 commit (Commit 9440) in percentuale 97% | 2024-08-13 18:56:33
+- Mod 3 dopo 22 commit (Commit 9462) in percentuale 0% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 22: packages/web-components/src/text-input/text-input.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 85 commit (Commit 8966) in percentuale 131% | 2024-05-23 22:16:10
+- Mod 2 dopo 164 commit (Commit 9130) in percentuale 9% | 2024-06-18 12:37:51
+- Mod 3 dopo 88 commit (Commit 9218) in percentuale 4% | 2024-07-02 11:40:02
+- Mod 4 dopo 244 commit (Commit 9462) in percentuale 4% | 2024-08-15 12:48:27
+- Mod 5 dopo 141 commit (Commit 9603) in percentuale 0% | 2024-09-28 00:32:30
+- Nessun'altra modifica per 72 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)
+
+Test 23: packages/web-components/src/toggle-button/toggle-button.spec.ts | creato a Commit 8881 (2024-05-13 21:37:55)
+- Mod 1 dopo 233 commit (Commit 9114) in percentuale 55% | 2024-06-17 11:47:37
+- Mod 2 dopo 348 commit (Commit 9462) in percentuale 17% | 2024-08-15 12:48:27
+- Nessun'altra modifica per 213 commit fino a fine storia (Commit 9675, 2024-10-17 12:34:53)

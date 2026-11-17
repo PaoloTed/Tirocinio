@@ -1,5 +1,0 @@
-versione,dockerfile,esito,build_rc,test_rc,durata_sec,log_file
-3.1.7,Dockerfile.3.1.7-3.1.10,BUILD_FAIL,1,-,1.7,/home/paolo/Scrivania/Universita/Tirocinio/02-E2EGit-TestE2E/repositories/repo_nodejs/equal-access/results/logs/test_3.1.7.txt
-3.1.8,Dockerfile.3.1.7-3.1.10,BUILD_FAIL,1,-,1.7,/home/paolo/Scrivania/Universita/Tirocinio/02-E2EGit-TestE2E/repositories/repo_nodejs/equal-access/results/logs/test_3.1.8.txt
-3.1.9,Dockerfile.3.1.7-3.1.10,BUILD_FAIL,1,-,0.8,/home/paolo/Scrivania/Universita/Tirocinio/02-E2EGit-TestE2E/repositories/repo_nodejs/equal-access/results/logs/test_3.1.9.txt
-3.1.10,Dockerfile.3.1.7-3.1.10,BUILD_FAIL,1,-,0.9,/home/paolo/Scrivania/Universita/Tirocinio/02-E2EGit-TestE2E/repositories/repo_nodejs/equal-access/results/logs/test_3.1.10.txt

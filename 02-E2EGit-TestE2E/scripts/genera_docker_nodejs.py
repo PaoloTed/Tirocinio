@@ -98,29 +98,23 @@ class VersionAnalysis:
     serve_port: int | None = None
     test_cmd: str = ""
     ci_workflow: str = ""
+    ci_node_versions: list[str] = field(default_factory=list)
     ci_env: dict[str, str] = field(default_factory=dict)
+    ci_commands: list[str] = field(default_factory=list)
     notes: list[str] = field(default_factory=list)
 
     def cluster_signature(self) -> tuple[Any, ...]:
         """Firma canonica usata per raggruppare versioni nello stesso cluster Dockerfile."""
-        e2e_ver_key = self.e2e_version
-        if self.e2e_framework == "cypress" and e2e_ver_key:
-            parts = e2e_ver_key.split(".")
-            e2e_ver_key = ".".join(parts[:2])
+        base_image, _ = select_base_image(self)
         return (
-            self.node_version,
+            base_image,
             self.pkg_manager,
-            self.e2e_framework,
-            e2e_ver_key,
             self.e2e_pkg_dir,
             tuple(self.install_cmds),
             tuple(self.build_cmds),
             self.serve_cmd,
             self.serve_port,
             self.test_cmd,
-            tuple(sorted(self.ci_env.items())),
-            bool(self.native_deps),
-            self.needs_git_repo,
         )
 
 
@@ -492,27 +486,35 @@ def extract_port_from_text(text: str) -> int | None:
     return None
 
 
-def is_background_serve_cmd(step_name: str, cmd: str) -> bool:
-    """Riconosce avvio di un server in background evitando falsi positivi su `&&`."""
-    low = cmd.lower()
-    sname = step_name.lower()
-    if "nohup" in low or "serve" in sname or "serve:" in low:
-        return True
-    # Ampersand singolo di background (&), non && né >&
-    if re.search(r"(?<![&>])&(?!&)", cmd):
-        return True
-    return False
+def build_install_command(pkg_manager: str, subdir: str, files: set[str]) -> str:
+    """Costruisce il comando di installazione standard da package manager e lockfile."""
+    prefix = "" if subdir == "." else f"cd {subdir} && "
+    has_file = lambda fname: (fname in files) if subdir == "." else (f"{subdir}/{fname}" in files)
+
+    if pkg_manager == "npm":
+        has_lock = has_file("package-lock.json") or has_file("npm-shrinkwrap.json")
+        cmd = "npm ci" if has_lock else "npm install"
+    elif pkg_manager == "yarn":
+        cmd = "yarn install --frozen-lockfile" if has_file("yarn.lock") else "yarn install"
+    elif pkg_manager == "pnpm":
+        cmd = "pnpm install --frozen-lockfile" if has_file("pnpm-lock.yaml") else "pnpm install"
+    else:
+        cmd = f"{pkg_manager} install"
+    return f"{prefix}{cmd}"
 
 
-def normalize_ci_env_for_single_container(raw_env: dict[str, str]) -> dict[str, str]:
-    """Adatta le variabili CI per esecuzione in un singolo container (localhost invece di host.docker.internal)."""
-    out: dict[str, str] = {}
-    for k, v in raw_env.items():
-        if "host.docker.internal" in v:
-            out[k] = v.replace("host.docker.internal", "localhost")
-        else:
-            out[k] = v
-    return out
+def extract_ci_summary(ci_wf: dict[str, Any] | None) -> tuple[list[str], dict[str, str], list[str]]:
+    """Estrae node-version, env e comandi dai workflow CI solo a scopo informativo nel report."""
+    if not ci_wf:
+        return [], {}, []
+    node_vers = list(dict.fromkeys(ci_wf.get("node_versions") or []))
+    env_vars = dict(ci_wf.get("env") or {})
+    cmds: list[str] = []
+    for _, raw_cmd in ci_wf.get("runs") or []:
+        one_line = " && ".join(line.strip() for line in raw_cmd.splitlines() if line.strip())
+        if one_line:
+            cmds.append(one_line)
+    return node_vers, env_vars, cmds
 
 
 def analyze_version(repo_dir: Path, tag_info: TagInfo) -> VersionAnalysis:
@@ -540,6 +542,7 @@ def analyze_version(repo_dir: Path, tag_info: TagInfo) -> VersionAnalysis:
         repo_dir, tag, pkg_contents, files
     )
 
+    # Workflow CI letti esclusivamente come informazione per il report (mai iniettati nel Dockerfile)
     wf_paths = sorted(
         f for f in files
         if f.startswith(".github/workflows/") and f.endswith((".yml", ".yaml"))
@@ -549,10 +552,10 @@ def analyze_version(repo_dir: Path, tag_info: TagInfo) -> VersionAnalysis:
         raw = git_show(repo_dir, tag, wp)
         if raw:
             workflows[wp] = parse_workflow_yaml_light(raw)
-
     ci_wf_path, ci_wf = pick_e2e_workflow(workflows)
+    ci_node_versions, ci_env, ci_commands = extract_ci_summary(ci_wf)
 
-    # Versione Node.js
+    # Versione Node.js ricavata solo da .nvmrc, .node-version, package.json#engines.node o anno del tag
     node_ver = ""
     node_src = ""
     for dotfile in (".nvmrc", ".node-version"):
@@ -561,15 +564,6 @@ def analyze_version(repo_dir: Path, tag_info: TagInfo) -> VersionAnalysis:
             cleaned = clean_version_spec(raw)
             if cleaned:
                 node_ver, node_src = cleaned, dotfile
-                break
-    if not node_ver and ci_wf and ci_wf["node_versions"]:
-        node_ver = ci_wf["node_versions"][0]
-        node_src = ci_wf_path
-    if not node_ver:
-        for wp, parsed in workflows.items():
-            if parsed["node_versions"]:
-                node_ver = parsed["node_versions"][0]
-                node_src = wp
                 break
     if not node_ver:
         eng_node = (root_pkg.get("engines") or {}).get("node", "")
@@ -591,7 +585,7 @@ def analyze_version(repo_dir: Path, tag_info: TagInfo) -> VersionAnalysis:
             if from_lines:
                 existing_docker_base = from_lines[-1]
 
-    # Dipendenze native C/C++ e dipendenze che richiedono metadati .git
+    # Dipendenze native C/C++ e dipendenze che richiedono metadati .git (solo note informative)
     native_found: set[str] = set()
     needs_git = False
     for pdata in pkg_contents.values():
@@ -603,101 +597,46 @@ def analyze_version(repo_dir: Path, tag_info: TagInfo) -> VersionAnalysis:
                 if dep in GIT_BUILD_DEPS:
                     needs_git = True
 
-    install_cmds: list[str] = []
-    build_cmds: list[str] = []
-    serve_cmd = ""
-    serve_port: int | None = None
-    test_cmd = ""
-    ci_env: dict[str, str] = {}
-    notes: list[str] = []
-
-    if ci_wf:
-        ci_env = normalize_ci_env_for_single_container(ci_wf["env"])
-        for val in ci_env.values():
-            p = extract_port_from_text(val)
-            if p:
-                serve_port = p
-
-        for step_name, raw_cmd in ci_wf["runs"]:
-            cmd_one_line = " && ".join(
-                line.strip() for line in raw_cmd.splitlines() if line.strip()
-            )
-            low = cmd_one_line.lower()
-            sname = step_name.lower()
-
-            if "docker build" in low or "docker system prune" in low or "echo \"" in low:
-                continue
-
-            if any(k in low for k in ("npm ci", "npm i", "npm install", "yarn install", "pnpm install")):
-                if "docker" not in low:
-                    install_cmds.append(cmd_one_line)
-            elif "docker:test" in low:
-                e2e_pkg = pkg_contents.get(f"{e2e_dir}/package.json", root_pkg)
-                e2e_scripts = e2e_pkg.get("scripts") or {}
-                prefix = f"cd {e2e_dir} && " if e2e_dir != "." else ""
-                if "test" in e2e_scripts:
-                    test_cmd = f"{prefix}{e2e_scripts['test']}"
-            elif "playwright test" in low or "cypress run" in low or "test:e2e" in low:
-                test_cmd = cmd_one_line
-            elif is_background_serve_cmd(step_name, cmd_one_line):
-                cleaned_serve = re.sub(r"\bnohup\s+", "", cmd_one_line)
-                cleaned_serve = re.sub(r"\s*&\s*$", "", cleaned_serve).strip()
-                serve_cmd = cleaned_serve
-            elif "build" in sname or any(
-                b in low for b in ("npm run build", "yarn build", "pnpm build")
-            ):
-                if "docker" not in low:
-                    build_cmds.append(cmd_one_line)
-
-    # Fallback se mancano step dal workflow CI
-    if not install_cmds:
-        if pkg_manager == "npm":
-            install_cmds.append("npm ci" if "package-lock.json" in files else "npm install")
-        elif pkg_manager == "yarn":
-            install_cmds.append("yarn install --frozen-lockfile")
-        elif pkg_manager == "pnpm":
-            install_cmds.append("pnpm install --frozen-lockfile")
-
-        if e2e_dir != "." and f"{e2e_dir}/package.json" in pkg_contents:
-            in_workspaces = any(
-                e2e_dir == w.rstrip("/*") for w in workspaces if isinstance(w, str)
-            )
-            if not in_workspaces:
-                install_cmds.append(f"cd {e2e_dir} && {install_cmds[0]}")
-
+    install_cmds: list[str] = [build_install_command(pkg_manager, ".", files)]
+    if e2e_dir != "." and f"{e2e_dir}/package.json" in pkg_contents:
+        in_workspaces = any(
+            isinstance(w, str) and (e2e_dir == w.rstrip("/*") or e2e_dir.startswith(w.rstrip("/*") + "/"))
+            for w in workspaces
+        )
+        if not in_workspaces:
+            install_cmds.append(build_install_command(pkg_manager, e2e_dir, files))
     install_cmds = list(dict.fromkeys(install_cmds))
-    build_cmds = list(dict.fromkeys(build_cmds))
 
     root_scripts = root_pkg.get("scripts") or {}
-    if not build_cmds and "build" in root_scripts:
-        build_cmds.append(f"{pkg_manager} run build" if pkg_manager != "npm" else "npm run build")
+    build_cmds: list[str] = []
+    if "build" in root_scripts:
+        build_cmds.append(f"{pkg_manager} run build")
 
-    if not test_cmd:
-        e2e_pkg = pkg_contents.get(
-            f"{e2e_dir}/package.json" if e2e_dir != "." else "package.json",
-            root_pkg,
-        )
-        e2e_scripts = e2e_pkg.get("scripts") or {}
-        prefix = f"cd {e2e_dir} && " if e2e_dir != "." else ""
-        if "test:e2e" in e2e_scripts:
-            test_cmd = f"{prefix}{pkg_manager} run test:e2e"
-        elif "e2e" in e2e_scripts:
-            test_cmd = f"{prefix}{pkg_manager} run e2e"
-        elif e2e_fw == "playwright":
-            test_cmd = f"{prefix}{e2e_scripts.get('test', 'npx playwright test')}"
-        elif e2e_fw == "cypress":
-            test_cmd = f"{prefix}npx cypress run"
+    e2e_pkg = pkg_contents.get(
+        f"{e2e_dir}/package.json" if e2e_dir != "." else "package.json",
+        root_pkg,
+    )
+    e2e_scripts = e2e_pkg.get("scripts") or {}
+    prefix = f"cd {e2e_dir} && " if e2e_dir != "." else ""
 
-    # Rileva porta server
-    if serve_port is None and serve_cmd:
-        m_cd = re.search(r"cd\s+([^\s/&;]+)", serve_cmd)
-        if m_cd:
-            sub = m_cd.group(1).rstrip("/")
-            sub_pkg_raw = git_show(repo_dir, tag, f"{sub}/package.json") or ""
-            serve_port = extract_port_from_text(sub_pkg_raw)
-    if serve_port is None and e2e_cfg:
-        cfg_raw = git_show(repo_dir, tag, e2e_cfg) or ""
-        serve_port = extract_port_from_text(cfg_raw)
+    test_cmd = ""
+    if "test:e2e" in e2e_scripts:
+        test_cmd = f"{prefix}{pkg_manager} run test:e2e"
+    elif "e2e" in e2e_scripts:
+        test_cmd = f"{prefix}{pkg_manager} run e2e"
+    elif e2e_fw == "playwright":
+        test_script = str(e2e_scripts.get("test", ""))
+        if e2e_dir != "." and test_script:
+            test_cmd = f"{prefix}{pkg_manager} test"
+        elif "playwright" in test_script.lower():
+            test_cmd = f"{pkg_manager} test"
+        else:
+            test_cmd = f"{prefix}npx playwright test"
+    elif e2e_fw == "cypress":
+        test_cmd = f"{prefix}npx cypress run"
+
+    cfg_raw = git_show(repo_dir, tag, e2e_cfg) or "" if e2e_cfg else ""
+    serve_port = extract_port_from_text(cfg_raw) if cfg_raw else None
     if serve_port is None and e2e_dir != ".":
         for candidate in sorted(files):
             if candidate.startswith(e2e_dir + "/") and (
@@ -709,6 +648,19 @@ def analyze_version(repo_dir: Path, tag_info: TagInfo) -> VersionAnalysis:
                     serve_port = p
                     break
 
+    # Server in background solo se presente `serve` (o `start` con porta nota) e non già gestito dal runner
+    serve_cmd = ""
+    test_handles_server = (
+        "start-server-and-test" in json.dumps(e2e_scripts)
+        or "webServer" in cfg_raw
+    )
+    if not test_handles_server:
+        if "serve" in root_scripts:
+            serve_cmd = f"{pkg_manager} run serve"
+        elif "start" in root_scripts and serve_port is not None:
+            serve_cmd = f"{pkg_manager} start"
+
+    notes: list[str] = []
     if e2e_fw == "playwright" and existing_docker_base:
         m_img = re.search(r"playwright:v(\d+\.\d+\.\d+)", existing_docker_base)
         if m_img and e2e_ver and m_img.group(1) != e2e_ver:
@@ -740,7 +692,9 @@ def analyze_version(repo_dir: Path, tag_info: TagInfo) -> VersionAnalysis:
         serve_port=serve_port,
         test_cmd=test_cmd,
         ci_workflow=ci_wf_path,
+        ci_node_versions=ci_node_versions,
         ci_env=ci_env,
+        ci_commands=ci_commands,
         notes=notes,
     )
 
@@ -817,61 +771,34 @@ def generate_dockerfile(
     rep: VersionAnalysis,
 ) -> str:
     tag_range = versions[0].tag if len(versions) == 1 else f"{versions[0].tag} - {versions[-1].tag}"
-    base_image, check_pw_browser = select_base_image(rep)
+    base_image, _ = select_base_image(rep)
 
     lines: list[str] = [
         f"# Dockerfile auto-generato per {repo_name} (Cluster {cl_idx}: {tag_range})",
         f"# Versioni coperte: {', '.join(v.tag for v in versions)}",
         f"FROM {base_image}",
         "",
-        "ARG APP_VERSION=v0.0.0",
         "ENV HUSKY=0",
+        "WORKDIR /app",
+        "",
+        "COPY . .",
     ]
-    for k, v in rep.ci_env.items():
-        lines.append(f"ENV {k}={v}")
 
-    lines.extend(["", "WORKDIR /app"])
-
-    if rep.native_deps:
-        lines.extend([
-            "",
-            "# Dipendenze di compilazione per moduli nativi C/C++",
-            "RUN apt-get update && apt-get install -y --no-install-recommends python3 make g++ && rm -rf /var/lib/apt/lists/*",
-        ])
-
-    lines.extend(["", "COPY . ."])
-
-    if rep.needs_git_repo:
-        lines.extend([
-            "",
-            "# Inizializza metadati git minimali per plugin di build (es. git-revision-webpack-plugin)",
-            "RUN rm -rf .git && git init -q && git config user.email 'docker@local' && git config user.name 'docker' && \\",
-            "    git commit --allow-empty -q -m 'docker build' && git tag -f \"$APP_VERSION\"",
-        ])
-
-    # Installazione + build
+    # Installazione + eventuale build dal package.json
     run_steps: list[str] = []
     for cmd in rep.install_cmds:
         run_steps.append(rewrite_subshell_cd(cmd) if cmd.startswith("cd ") else cmd)
-
-    if check_pw_browser:
-        pw_prefix = f"cd /app/{rep.e2e_pkg_dir} && " if rep.e2e_pkg_dir != "." else ""
-        run_steps.append(f"({pw_prefix}npx playwright install chromium)")
-
     for cmd in rep.build_cmds:
         run_steps.append(rewrite_subshell_cd(cmd) if cmd.startswith("cd ") else cmd)
 
-    lines.extend(["", "# Installazione dipendenze, browser e build del progetto"])
+    lines.extend(["", "# Installazione dipendenze ed eventuale build"])
     if len(run_steps) == 1:
         lines.append(f"RUN {run_steps[0]}")
     else:
         joined = " && \\\n    ".join(run_steps)
         lines.append(f"RUN {joined}")
 
-    if rep.serve_port:
-        lines.extend(["", f"EXPOSE {rep.serve_port}"])
-
-    # Comando di avvio server + attesa porta + esecuzione completa dei test
+    # Comando di avvio server (se previsto) + esecuzione test E2E
     cmd_parts: list[str] = []
     if rep.serve_cmd:
         serve_exec = rewrite_subshell_cd(rep.serve_cmd)
@@ -887,12 +814,13 @@ def generate_dockerfile(
         else:
             cmd_parts.append("sleep 5")
 
-    test_exec = rewrite_subshell_cd(rep.test_cmd)
+    test_exec = rewrite_subshell_cd(rep.test_cmd) if rep.test_cmd else "echo 'Nessun comando E2E rilevato'"
     # Consente di passare opzionalmente TEST_ARGS a runtime, ma di default esegue tutti i test
-    if test_exec.endswith(")"):
-        test_exec = test_exec[:-1] + " ${TEST_ARGS:-})"
-    else:
-        test_exec = f"{test_exec} ${{TEST_ARGS:-}}"
+    if rep.test_cmd:
+        if test_exec.endswith(")"):
+            test_exec = test_exec[:-1] + " ${TEST_ARGS:-})"
+        else:
+            test_exec = f"{test_exec} ${{TEST_ARGS:-}}"
     cmd_parts.append(test_exec)
 
     full_cmd = " && ".join(cmd_parts).replace(" & && ", " & ")
@@ -1007,9 +935,13 @@ def format_report(
             lines.append(f"  Dip. native C++: {', '.join(rep.native_deps)}")
         if rep.needs_git_repo:
             lines.append("  Git build hook : sì (richiede metadati git per build)")
-        lines.append(f"  CI Workflow    : {rep.ci_workflow or '-'}")
+        lines.append(f"  CI Workflow    : {rep.ci_workflow or '-'} (solo info, non iniettato nel Dockerfile)")
+        if rep.ci_node_versions:
+            lines.append(f"  CI Node (info) : {', '.join(rep.ci_node_versions)}")
         if rep.ci_env:
-            lines.append(f"  Env CI         : {', '.join(f'{k}={v}' for k, v in rep.ci_env.items())}")
+            lines.append(f"  CI Env (info)  : {', '.join(f'{k}={v}' for k, v in rep.ci_env.items())}")
+        if rep.ci_commands:
+            lines.append(f"  CI Comandi(info): {' | '.join(rep.ci_commands[:5])}")
         lines.append(f"  Install        : {' && '.join(rep.install_cmds)}")
         lines.append(f"  Build          : {' && '.join(rep.build_cmds) if rep.build_cmds else '-'}")
         lines.append(f"  Serve          : {rep.serve_cmd or '-'} (porta: {rep.serve_port or '-'})")

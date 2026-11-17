@@ -1,6 +1,6 @@
 # Appunti Ricevimenti — Tirocinio
 
-Raccolta ordinata delle indicazioni ricevute dal professore durante i vari ricevimenti (accorpata da `ricevimento_1.txt`, `ricevimento_2.txt` e `ricevimento_3.txt`).
+Raccolta ordinata delle indicazioni ricevute dal professore durante i vari ricevimenti (accorpata da `ricevimento_1.txt`, `ricevimento_2.txt`, `ricevimento_3.txt` e `ricevimento 4 `).
 
 ---
 
@@ -57,3 +57,34 @@ Il professore ha presentato due possibili tracce di progetto:
 > Il file `ricevimento_3.txt` contiene attualmente una copia identica di `ricevimento_1.txt` (probabilmente copiata per errore). Se hai altri appunti per il terzo ricevimento, puoi aggiungerli qui sotto.
 
 - *(Da completare con le note effettive del terzo ricevimento)*
+
+---
+
+## Ricevimento 4 — Focus Node.js/Playwright, Dockerfile unico e strategia di test
+
+> Fonte: [ricevimento 4 ](./ricevimento%204%20)
+
+### 1. Selezione tecnologica
+- **Stack:** Concentrarsi esclusivamente su **Node.js** e **Playwright**.
+- Eseguire l'analisi dei repository filtrando solo queste tecnologie.
+
+### 2. Strategia Docker e automazione dei test
+- **Un singolo Dockerfile per repository:**
+  - Investire l'effort iniziale per far partire e configurare la prima versione del Dockerfile (al commit $t_0$).
+  - Analizzare preliminarmente se i repository contengono già un Dockerfile o istruzioni per i test / setup.
+- **Workflow standardizzato con script di interfaccia:**
+  - Fornire l'intervallo dei commit da analizzare.
+  - Utilizzare script di interfaccia uniformi per tutti i repository con compiti definiti:
+    1. Far partire l'applicazione/repository
+    2. Riavviare
+    3. Eseguire il reset al commit base ($t_0$)
+    4. Checkout al commit $x$
+    5. Eseguire i test
+    6. Recuperare i valori e i risultati delle esecuzioni
+
+### 3. Analisi delle finestre di commit e ottimizzazioni
+- **Lunghezza delle finestre di commit:**
+  - Generare un report per analizzare la lunghezza delle finestre di commit.
+  - Verificare eventuali correlazioni (es. correlazione tra lunghezza della finestra e probabilità di fallimento dei test).
+- **Esecuzione binaria (bisezione):**
+  - Se le finestre di commit risultano troppo lunghe, valutare la possibilità di implementare un'esecuzione/ricerca binaria nella finestra per ridurre il numero totale di commit da testare.

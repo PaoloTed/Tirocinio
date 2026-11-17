@@ -1,0 +1,29 @@
+# Dockerfile auto-generato per ketcher (Cluster 2: v2.13.0)
+# Versioni coperte: v2.13.0
+FROM mcr.microsoft.com/playwright:v1.36.1-jammy
+
+ARG APP_VERSION=v0.0.0
+ENV HUSKY=0
+ENV CI=false
+ENV MODE=standalone
+ENV KETCHER_URL=http://localhost:4002
+ENV DOCKER=true
+ENV IGNORE_UNSTABLE_TESTS=true
+
+WORKDIR /app
+
+COPY . .
+
+# Inizializza metadati git minimali per plugin di build (es. git-revision-webpack-plugin)
+RUN rm -rf .git && git init -q && git config user.email 'docker@local' && git config user.name 'docker' && \
+    git commit --allow-empty -q -m 'docker build' && git tag -f "$APP_VERSION"
+
+# Installazione dipendenze, browser e build del progetto
+RUN npm ci && \
+    (cd /app/ketcher-autotests && npx playwright install chromium) && \
+    npm run build
+
+EXPOSE 4002
+
+# Avvio server (se previsto) ed esecuzione di tutti i test E2E
+CMD ["bash", "-c", "(cd /app/example && npm run serve:standalone) & until node -e \"require('http').get('http://localhost:4002', ()=>process.exit(0)).on('error', ()=>process.exit(1))\" 2>/dev/null; do sleep 2; done && (cd /app/ketcher-autotests && npx playwright test ${TEST_ARGS:-})"]

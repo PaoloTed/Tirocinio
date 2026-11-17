@@ -1,0 +1,35 @@
+Repository: sefaria-project
+Commit analizzati: 1130 (Commit 1 2023-06-27 15:17:35 -> Commit 1130 2024-03-28 11:55:18)
+File di test trovati: 5
+
+Test 1: e2e-tests/fixtures.ts | creato a Commit 2 (2023-06-27 15:20:11)
+- Nessun'altra modifica per 1128 commit fino a fine storia (Commit 1130, 2024-03-28 11:55:18)
+
+Test 2: e2e-tests/tests/reader.spec.ts | creato a Commit 2 (2023-06-27 15:20:11)
+- Mod 1 dopo 54 commit (Commit 56) in percentuale 46% | 2023-07-04 12:58:28
+- Mod 2 dopo 17 commit (Commit 73) in percentuale 98% | 2023-07-09 23:08:16
+- Mod 3 dopo 2 commit (Commit 75) in percentuale 4% | 2023-07-10 10:48:57
+- Mod 4 dopo 400 commit (Commit 475) in percentuale 2% | 2023-09-11 11:32:30
+- Mod 5 dopo 1 commit (Commit 476) in percentuale 55% | 2023-09-11 13:27:54
+- Mod 6 dopo 606 commit (Commit 1082) in percentuale 8% | 2024-03-05 15:18:03
+- Nessun'altra modifica per 48 commit fino a fine storia (Commit 1130, 2024-03-28 11:55:18)
+
+Test 3: e2e-tests/tests/search.spec.ts | creato a Commit 2 (2023-06-27 15:20:11)
+- Mod 1 dopo 71 commit (Commit 73) in percentuale 182% | 2023-07-09 23:08:16
+- Mod 2 dopo 2 commit (Commit 75) in percentuale 12% | 2023-07-10 10:48:57
+- Mod 3 dopo 401 commit (Commit 476) in percentuale 62% | 2023-09-11 13:27:54
+- Nessun'altra modifica per 654 commit fino a fine storia (Commit 1130, 2024-03-28 11:55:18)
+
+Test 4: e2e-tests/tests/sheets.spec.ts | creato a Commit 2 (2023-06-27 15:20:11)
+- Mod 1 dopo 71 commit (Commit 73) in percentuale 143% | 2023-07-09 23:08:16
+- Mod 2 dopo 2 commit (Commit 75) in percentuale 12% | 2023-07-10 10:48:57
+- Mod 3 dopo 108 commit (Commit 183) in percentuale 83% | 2023-07-31 14:48:51
+- Mod 4 dopo 293 commit (Commit 476) in percentuale 12% | 2023-09-11 13:27:54
+- Nessun'altra modifica per 654 commit fino a fine storia (Commit 1130, 2024-03-28 11:55:18)
+
+Test 5: e2e-tests/tests/topics.spec.ts | creato a Commit 2 (2023-06-27 15:20:11)
+- Mod 1 dopo 54 commit (Commit 56) in percentuale 72% | 2023-07-04 12:58:28
+- Mod 2 dopo 19 commit (Commit 75) in percentuale 32% | 2023-07-10 10:48:57
+- Mod 3 dopo 400 commit (Commit 475) in percentuale 14% | 2023-09-11 11:32:30
+- Mod 4 dopo 607 commit (Commit 1082) in percentuale 14% | 2024-03-05 15:18:03
+- Nessun'altra modifica per 48 commit fino a fine storia (Commit 1130, 2024-03-28 11:55:18)
