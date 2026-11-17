@@ -1,0 +1,1074 @@
+==============================================================================================================
+INTERVALLI CON >= 70% DEI TEST PLAYWRIGHT NON MODIFICATI (Dataset E2EGit / RQ3 IST2025)
+==============================================================================================================
+Fonte elenco           : repositories/repo_nodejs/playwright/repository_nodejs_playwright.txt
+Fonte storia commit    : data/IST2025_Zenodo/RQ3/commit-analysis/*_only_gui.{xlsx,csv}
+Repository totali      : 154 (valide con >=1 intervallo: 151, senza dati validi: 3)
+Intervalli individuati : 539 (massimo 5 intervalli disgiunti per repo; soglia secondari >= 15 commit)
+Durata intervallo #1   : mediana = 466 commit | media = 897.4 commit | min = 6 | max = 20806
+
+Metodologia e pulizia applicata:
+- Per ogni intervallo [Ca, Cb], all'inizio Ca devono essere attivi almeno 50% del picco di file Playwright della repo.
+- Da Ca+1 a Cb almeno il 70% di quei file attivi non subisce alcuna modifica/rename/cancellazione.
+- Pulizia automatica RQ3: rimossa la riga spuria `df.iloc[0:1]` di commitAnalyzer.py se non e' un test reale;
+  nelle 14 repo multi-framework sono mantenuti solo i file Playwright censiti in E2EGit_e2e.db;
+  i file cancellati e ricreati con lo stesso path (es. `badge.spec.ts` in `fluentui`) sono fusi cronologicamente.
+- Nota: gli indici `C<n>` sono gli indici di commit non-merge nell'archivio RQ3 (colonne `Commit <n>` in `*_only_gui`), non gli SHA Git.
+
+--- TOP 30 REPOSITORY PER LUNGHEZZA DELL'INTERVALLO #1 (>= 70% STABILI) ---
+Pos  Framework             Repository                                   TotC   DurataC  Giorni  Intervallo #1   Date                    TestStabili     NIv
+---  --------------------  -------------------------------------------  -----  -------  ------  --------------  ----------------------  --------------  ---
+1    Playwright            microsoft/vscode                             40047  20806    669     C15571->C36377  2022-01-15..2023-11-15  1/1 (100.0%)    5  
+2    Playwright            xcodebuild/codeterminal                      19041  11397    290     C4164->C15561   2021-03-30..2022-01-14  1/1 (100.0%)    5  
+3    Playwright            wordpress/gutenberg                          7715   5886     410     C1829->C7715    2023-02-12..2024-03-28  2/2 (100.0%)    2  
+4    Playwright            backstage/backstage                          5338   5336     184     C2->C5338       2023-09-25..2024-03-28  2/2 (100.0%)    1  
+5    Playwright            nocodb/nocodb                                13183  3897     168     C7715->C11612   2023-11-10..2024-04-26  51/72 (70.8%)   5  
+6    Playwright            quadratichq/quadratic                        3786   3663     561     C123->C3786     2022-09-14..2024-03-28  2/2 (100.0%)    2  
+7    Playwright            graphcommerce-org/graphcommerce              6157   3081     504     C1984->C5065    2022-04-04..2023-08-22  7/8 (87.5%)     5  
+8    Playwright            kubeshop/monokle                             4516   2613     518     C1903->C4516    2022-09-28..2024-02-28  3/3 (100.0%)    5  
+9    Playwright            microsoft/azuredatastudio                    4569   2526     489     C211->C2737     2021-06-17..2022-10-19  1/1 (100.0%)    4  
+10   Playwright            altair-graphql/altair                        4772   2387     612     C444->C2831     2018-05-11..2020-01-13  1/1 (100.0%)    5  
+11   Playwright            imolorhe/altair                              3653   2387     612     C444->C2831     2018-05-11..2020-01-13  1/1 (100.0%)    5  
+12   Playwright            Oneirocom/Magick                             2377   2375     119     C2->C2377       2023-11-29..2024-03-27  1/1 (100.0%)    1  
+13   Playwright            pinterest/gestalt                            2294   2292     674     C2->C2294       2022-05-23..2024-03-27  1/1 (100.0%)    1  
+14   Playwright            mui/material-ui                              5691   2268     278     C3423->C5691    2023-06-25..2024-03-29  5/6 (83.3%)     5  
+15   Playwright            mui/material-ui-docs                         5608   2185     274     C3423->C5608    2023-06-25..2024-03-26  5/6 (83.3%)     5  
+16   Playwright            oneuptime/oneuptime                          3608   1957     210     C550->C2507     2023-05-16..2023-12-12  3/4 (75.0%)     4  
+17   Playwright            signoz/signoz                                1622   1446     617     C176->C1622     2022-07-21..2024-03-29  6/6 (100.0%)    1  
+18   Playwright            nhost/nhost                                  1676   1437     530     C212->C1649     2023-03-22..2024-09-02  10/13 (76.9%)   2  
+19   Playwright            storybookjs/storybook                        14077  1394     91      C11793->C13187  2024-04-25..2024-07-25  10/13 (76.9%)   5  
+20   Playwright + Cypress  redwoodjs/redwood                            9314   1379     202     C7579->C8958    2024-01-26..2024-08-16  7/8 (87.5%)     5  
+21   Playwright            trezor/trezor-suite                          5109   1355     171     C1757->C3112    2023-04-21..2023-10-10  3/4 (75.0%)     5  
+22   Playwright            dxos/dxos                                    3425   1305     232     C1987->C3292    2024-02-05..2024-09-24  8/11 (72.7%)    3  
+23   Playwright            island-is/island.is                          5694   1291     156     C2706->C3997    2023-10-16..2024-03-20  24/33 (72.7%)   5  
+24   Playwright            expo/expo                                    4900   1253     104     C3647->C4900    2025-03-03..2025-06-16  1/1 (100.0%)    5  
+25   Playwright + Cypress  spacedriveapp/spacedrive                     1252   1250     396     C2->C1252       2023-02-27..2024-03-29  1/1 (100.0%)    1  
+26   Playwright + Cypress  nrwl/nx                                      11361  1233     151     C9930->C11163   2024-04-25..2024-09-23  4/5 (80.0%)     5  
+27   Playwright            porsche-design-system/porsche-design-system  26859  1158     123     C24511->C25669  2024-03-21..2024-07-23  70/100 (70.0%)  5  
+28   Playwright            tryghost/ghost                               4876   1034     171     C2695->C3729    2023-11-23..2024-05-13  35/50 (70.0%)   5  
+29   Playwright            azerothcore/keira3                           2662   1010     782     C1550->C2560    2021-12-25..2024-02-15  1/1 (100.0%)    3  
+30   Playwright            cornerstonejs/cornerstone3d                  1096   839      329     C8->C847        2024-05-21..2025-04-16  1/1 (100.0%)    2  
+
+==============================================================================================================
+RIEPILOGO 154 REPOSITORY (stesso ordine di repository_nodejs_playwright.txt)
+==============================================================================================================
+
+--- Framework: Playwright (140 repository) ---
+Pos  Repository                                        Stelle  FilePW   TotC   NIv  Intervallo Principale (#1)                                         Note                                        
+---  ------------------------------------------------  ------  -------  -----  ---  -----------------------------------------------------------------  --------------------------------------------
+1    facebook/react                                    220701  1/1      156    1    C2->C156 (2024-02-21..2024-03-28, 154c/35g, 1/1=100.0%)            -                                           
+2    microsoft/vscode                                  157401  1/1      40047  5    C15571->C36377 (2022-01-15..2023-11-15, 20806c/669g, 1/1=100.0%)   -                                           
+3    mui/material-ui                                   91285   6/6      5691   5    C3423->C5691 (2023-06-25..2024-03-29, 2268c/278g, 5/6=83.3%)       -                                           
+4    storybookjs/storybook                             82514   14/14    14077  5    C11793->C13187 (2024-04-25..2024-07-25, 1394c/91g, 10/13=76.9%)    -                                           
+5    supabase/supabase                                 64652   1/1      387    1    C2->C387 (2024-02-19..2024-03-29, 385c/39g, 1/1=100.0%)            -                                           
+6    microsoft/playwright                              61013   100/100  9518   5    C3668->C4126 (2022-04-26..2022-06-22, 458c/56g, 48/68=70.6%)       -                                           
+7    strapi/strapi                                     59571   11/12    3057   5    C2204->C2530 (2024-08-05..2024-10-25, 326c/80g, 8/11=72.7%)        tracciati 11/12 file Playwright in RQ3      
+8    tryghost/ghost                                    45483   55/55    4876   5    C2695->C3729 (2023-11-23..2024-05-13, 1034c/171g, 35/50=70.0%)     -                                           
+9    laurent22/joplin                                  42487   1/1      1071   5    C798->C1071 (2024-02-08..2024-03-29, 273c/49g, 1/1=100.0%)         -                                           
+10   nocodb/nocodb                                     41695   76/76    13183  5    C7715->C11612 (2023-11-10..2024-04-26, 3897c/168g, 51/72=70.8%)    -                                           
+11   quilljs/quill                                     38714   4/4      301    3    C113->C279 (2023-11-26..2024-03-06, 166c/100g, 3/4=75.0%)          -                                           
+12   rocketchat/rocket.chat                            38611   39/39    4620   5    C1240->C1943 (2023-02-24..2023-05-26, 703c/91g, 14/20=70.0%)       -                                           
+13   kong/insomnia                                     32841   12/12    1774   5    C1411->C1578 (2024-06-05..2024-07-26, 167c/50g, 10/12=83.3%)       -                                           
+14   novuhq/novu                                       32289   4/4      1468   5    C564->C1055 (2024-06-13..2024-08-02, 491c/49g, 3/4=75.0%)          -                                           
+15   tldraw/tldraw                                     32012   15/15    1661   5    C976->C1490 (2024-04-14..2024-09-09, 514c/147g, 11/15=73.3%)       -                                           
+16   ianstormtaylor/slate                              28871   22/22    246    2    C2->C152 (2023-01-13..2023-10-20, 150c/279g, 17/21=81.0%)          -                                           
+17   immich-app/immich                                 28740   2/2      528    5    C260->C528 (2024-03-07..2024-03-27, 268c/20g, 2/2=100.0%)          -                                           
+18   expo/expo                                         28486   1/1      4900   5    C3647->C4900 (2025-03-03..2025-06-16, 1253c/104g, 1/1=100.0%)      -                                           
+19   floating-ui/floating-ui                           28315   10/10    1174   5    C183->C510 (2022-04-22..2022-12-31, 327c/253g, 5/7=71.4%)          -                                           
+20   mattermost/mattermost                             27869   4/4      628    1    C431->C628 (2024-02-12..2024-03-28, 197c/45g, 4/4=100.0%)          -                                           
+21   fabricjs/fabric.js                                27279   8/8      178    1    C37->C178 (2023-09-10..2024-03-28, 141c/200g, 4/5=80.0%)           -                                           
+22   backstage/backstage                               26049   4/4      5338   1    C2->C5338 (2023-09-25..2024-03-28, 5336c/184g, 2/2=100.0%)         -                                           
+23   react-navigation/react-navigation                 23182   2/2      1059   5    C145->C529 (2022-11-27..2022-11-27, 384c/0g, 1/1=100.0%)           -                                           
+24   eclipse-theia/theia                               18774   14/14    1513   5    C203->C765 (2022-05-10..2023-04-10, 562c/334g, 7/10=70.0%)         -                                           
+25   payloadcms/payload                                18548   15/15    4417   5    C2515->C2981 (2023-09-29..2023-10-11, 466c/11g, 8/11=72.7%)        -                                           
+26   microsoft/fluentui                                17557   22/22    9675   5    C9462->C9675 (2024-08-15..2024-10-17, 213c/62g, 16/22=72.7%)       -                                           
+27   facebook/lexical                                  17063   3/3      726    3    C241->C726 (2024-08-06..2025-06-09, 485c/307g, 3/3=100.0%)         -                                           
+28   signoz/signoz                                     16694   9/9      1622   1    C176->C1622 (2022-07-21..2024-03-29, 1446c/617g, 6/6=100.0%)       -                                           
+29   xtermjs/xterm.js                                  16506   5/5      3332   4    C2992->C3137 (2023-11-01..2024-04-08, 145c/158g, 4/5=80.0%)        -                                           
+30   jupyterlab/jupyterlab                             13715   16/16    2389   5    C726->C1052 (2022-05-17..2022-10-26, 326c/161g, 7/10=70.0%)        -                                           
+31   janhq/jan                                         13151   0/4      537    0    -                                                                  0 righe in *_only_gui RQ3                   
+32   vercel/vercel                                     12053   1/1      1167   2    C541->C1167 (2023-05-31..2024-03-28, 626c/302g, 1/1=100.0%)        -                                           
+33   nhn/tui.calendar                                  11329   19/19    941    5    C575->C735 (2022-06-10..2022-06-30, 160c/20g, 12/17=70.6%)         -                                           
+34   nasa/openmct                                      11253   3/3      777    5    C172->C308 (2022-11-07..2023-03-02, 136c/114g, 2/2=100.0%)         -                                           
+35   reduxjs/redux-toolkit                             10348   4/4      1035   2    C352->C1035 (2023-09-30..2024-03-21, 683c/172g, 4/4=100.0%)        -                                           
+36   wordpress/gutenberg                               9791    4/4      7715   2    C1829->C7715 (2023-02-12..2024-03-28, 5886c/410g, 2/2=100.0%)      -                                           
+37   rolling-scopes/rsschool-app                       9639    1/1      761    3    C2->C701 (2022-02-20..2023-11-14, 699c/632g, 1/1=100.0%)           -                                           
+38   ng-bootstrap/ng-bootstrap                         8132    1/9      1168   5    C55->C561 (2019-01-21..2021-02-19, 506c/759g, 1/1=100.0%)          tracciati 1/9 file Playwright in RQ3        
+39   react-cosmos/react-cosmos                         8073    2/2      12     1    C3->C9 (2024-02-28..2024-03-11, 6c/11g, 2/2=100.0%)                -                                           
+40   getsentry/sentry-javascript                       7593    45/45    4438   5    C3758->C4438 (2024-06-13..2024-10-18, 680c/127g, 32/45=71.1%)      -                                           
+41   nhost/nhost                                       7468    20/20    1676   2    C212->C1649 (2023-03-22..2024-09-02, 1437c/530g, 10/13=76.9%)      -                                           
+42   carbon-design-system/carbon                       7433    18/18    3222   4    C2506->C3222 (2024-03-21..2024-10-21, 716c/214g, 14/18=77.8%)      -                                           
+43   microsoft/azuredatastudio                         7419    1/1      4569   4    C211->C2737 (2021-06-17..2022-10-19, 2526c/489g, 1/1=100.0%)       -                                           
+44   artilleryio/artillery                             7407    1/1      51     1    C2->C38 (2024-02-27..2024-03-18, 36c/20g, 1/1=100.0%)              -                                           
+45   activepieces/activepieces                         6877    2/2      170    1    C2->C170 (2024-03-18..2024-03-29, 168c/11g, 2/2=100.0%)            -                                           
+46   builderio/builder                                 6572    29/29    1370   5    C897->C1019 (2024-03-22..2024-04-04, 122c/13g, 23/23=100.0%)       -                                           
+47   elementor/elementor                               6376    50/48    3304   5    C1904->C2401 (2023-08-23..2024-02-20, 497c/180g, 28/40=70.0%)      -                                           
+48   getumbrel/umbrel                                  5822    3/3      1004   5    C249->C765 (2024-02-08..2024-03-13, 516c/34g, 3/3=100.0%)          -                                           
+49   documenso/documenso                               5772    19/19    1171   5    C829->C1037 (2024-04-19..2024-07-18, 208c/89g, 12/16=75.0%)        -                                           
+50   valor-software/ngx-bootstrap                      5515    6/6      37     1    C3->C37 (2023-07-08..2024-10-17, 34c/466g, 6/6=100.0%)             -                                           
+51   rancher-sandbox/rancher-desktop                   5456    12/12    7644   5    C7252->C7644 (2024-07-23..2024-10-22, 392c/90g, 9/12=75.0%)        -                                           
+52   altair-graphql/altair                             4984    2/2      4772   5    C444->C2831 (2018-05-11..2020-01-13, 2387c/612g, 1/1=100.0%)       -                                           
+53   sanity-io/sanity                                  4868    12/14    2113   2    C1745->C2113 (2024-02-12..2024-03-29, 368c/46g, 7/7=100.0%)        tracciati 12/14 file Playwright in RQ3      
+54   baptistearno/typebot.io                           4640    48/50    2498   5    C1741->C2066 (2023-11-23..2024-03-15, 325c/113g, 41/47=87.2%)      tracciati 48/50 file Playwright in RQ3      
+55   pinterest/gestalt                                 4204    1/1      2294   1    C2->C2294 (2022-05-23..2024-03-27, 2292c/674g, 1/1=100.0%)         -                                           
+56   web-infra-dev/modern.js                           4107    1/1      356    1    C2->C356 (2023-11-28..2024-03-28, 354c/121g, 1/1=100.0%)           -                                           
+57   workadventure/workadventure                       3849    25/25    3869   5    C1960->C2585 (2023-03-14..2023-08-11, 625c/149g, 12/16=75.0%)      -                                           
+58   jupyterlite/jupyterlite                           3557    7/7      1193   5    C678->C925 (2022-06-29..2022-12-14, 247c/167g, 3/4=75.0%)          -                                           
+59   imolorhe/altair                                   3450    1/2      3653   5    C444->C2831 (2018-05-11..2020-01-13, 2387c/612g, 1/1=100.0%)       tracciati 1/2 file Playwright in RQ3        
+60   tagspaces/tagspaces                               3365    0/2      2671   0    -                                                                  nessun file di test valido in *_only_gui RQ3
+61   thecodingmachine/workadventure                    3192    25/25    3869   5    C1960->C2585 (2023-03-14..2023-08-11, 625c/149g, 12/16=75.0%)      -                                           
+62   primer/react                                      2909    58/58    1755   4    C925->C1500 (2023-10-30..2024-08-11, 575c/286g, 38/53=71.7%)       -                                           
+63   opensumi/core                                     2700    13/13    1476   4    C900->C1476 (2024-01-12..2024-10-18, 576c/280g, 10/13=76.9%)       -                                           
+64   quadratichq/quadratic                             2667    2/2      3786   2    C123->C3786 (2022-09-14..2024-03-28, 3663c/561g, 2/2=100.0%)       -                                           
+65   pwa-builder/pwabuilder                            2405    3/3      269    4    C3->C134 (2023-04-05..2023-08-24, 131c/140g, 3/3=100.0%)           -                                           
+66   codyogden/killedbygoogle                          2317    3/3      986    3    C819->C986 (2022-02-11..2024-03-23, 167c/771g, 3/3=100.0%)         -                                           
+67   modernweb-dev/web                                 2085    1/1      16     1    C2->C13 (2024-03-18..2024-03-19, 11c/1g, 1/1=100.0%)               -                                           
+68   oneuptime/oneuptime                               2054    4/9      3608   4    C550->C2507 (2023-05-16..2023-12-12, 1957c/210g, 3/4=75.0%)        tracciati 4/9 file Playwright in RQ3        
+69   bigcapitalhq/bigcapital                           2027    3/3      428    1    C98->C428 (2023-06-27..2024-03-28, 330c/275g, 2/2=100.0%)          -                                           
+70   alephdata/aleph                                   1934    1/1      421    1    C2->C421 (2023-04-21..2024-02-28, 419c/313g, 1/1=100.0%)           -                                           
+71   parabolinc/parabol                                1829    3/3      1637   4    C81->C916 (2022-06-24..2023-06-08, 835c/348g, 3/3=100.0%)          -                                           
+72   klembot/twinejs                                   1741    1/1      118    3    C66->C118 (2023-10-12..2024-02-29, 52c/139g, 1/1=100.0%)           -                                           
+73   master-co/css                                     1725    0/6      744    0    -                                                                  nessun file di test valido in *_only_gui RQ3
+74   brimdata/zui                                      1720    10/10    678    3    C576->C674 (2024-01-09..2024-03-28, 98c/78g, 5/7=71.4%)            -                                           
+75   sourcegraph/cody                                  1631    3/3      409    5    C223->C377 (2024-02-25..2024-03-26, 154c/30g, 2/2=100.0%)          -                                           
+76   xdan/jodit                                        1559    13/13    802    2    C565->C716 (2024-04-21..2025-01-19, 151c/272g, 11/13=84.6%)        -                                           
+77   headlamp-k8s/headlamp                             1538    4/5      1222   3    C1090->C1162 (2024-01-23..2024-03-02, 72c/39g, 2/2=100.0%)         tracciati 4/5 file Playwright in RQ3        
+78   kubeshop/monokle                                  1475    3/3      4516   5    C1903->C4516 (2022-09-28..2024-02-28, 2613c/518g, 3/3=100.0%)      -                                           
+79   brimdata/brim                                     1404    10/10    757    4    C576->C674 (2024-01-09..2024-03-28, 98c/78g, 5/7=71.4%)            -                                           
+80   aurelia/aurelia                                   1339    8/8      751    3    C289->C635 (2023-02-04..2024-02-29, 346c/389g, 3/4=75.0%)          -                                           
+81   primer/components                                 1270    58/58    1750   4    C925->C1500 (2023-10-30..2024-08-11, 575c/286g, 38/53=71.7%)       -                                           
+82   steedos/steedos-platform                          1262    5/5      768    1    C6->C768 (2024-03-28..2025-06-10, 762c/438g, 3/3=100.0%)           -                                           
+83   duckduckgo/duckduckgo-privacy-extension           1188    2/2      435    3    C67->C328 (2023-03-30..2023-09-19, 261c/172g, 2/2=100.0%)          -                                           
+84   arnog/mathlive                                    1163    5/5      704    5    C257->C404 (2023-07-04..2023-11-19, 147c/138g, 3/4=75.0%)          -                                           
+85   adobe/spectrum-web-components                     1156    1/1      1183   4    C126->C684 (2023-02-17..2023-08-18, 558c/182g, 1/1=100.0%)         -                                           
+86   bemusic/bemuse                                    999     5/5      354    2    C263->C325 (2022-12-31..2023-01-05, 62c/5g, 3/3=100.0%)            -                                           
+87   brimsec/brim                                      980     1/10     757    5    C202->C433 (2023-01-26..2023-07-28, 231c/183g, 1/1=100.0%)         tracciati 1/10 file Playwright in RQ3       
+88   staltz/manyverse                                  923     7/7      120    1    C32->C120 (2023-01-20..2024-08-13, 88c/570g, 4/4=100.0%)           -                                           
+89   mkosir/react-parallax-tilt                        901     2/2      174    2    C135->C174 (2024-02-12..2024-03-29, 39c/45g, 2/2=100.0%)           -                                           
+90   clerk/javascript                                  819     20/20    2328   5    C724->C1254 (2023-12-13..2024-03-13, 530c/90g, 7/10=70.0%)         -                                           
+91   replayio/devtools                                 649     1/1      558    2    C2->C539 (2023-09-14..2024-03-15, 537c/183g, 1/1=100.0%)           -                                           
+92   getstream/stream-chat-react                       638     4/4      533    4    C307->C533 (2023-01-04..2024-02-23, 226c/415g, 4/4=100.0%)         -                                           
+93   xcodebuild/codeterminal                           636     1/1      19041  5    C4164->C15561 (2021-03-30..2022-01-14, 11397c/290g, 1/1=100.0%)    -                                           
+94   sefaria/sefaria-project                           631     4/5      1130   5    C476->C1081 (2023-09-11..2024-03-05, 605c/176g, 4/4=100.0%)        tracciati 4/5 file Playwright in RQ3        
+95   trezor/trezor-suite                               614     6/7      5109   5    C1757->C3112 (2023-04-21..2023-10-10, 1355c/171g, 3/4=75.0%)       tracciati 6/7 file Playwright in RQ3        
+96   jupyterlab/lumino                                 570     3/3      144    1    C2->C144 (2023-01-04..2024-03-25, 142c/445g, 3/3=100.0%)           -                                           
+97   stripe-samples/accept-a-payment                   542     2/2      655    1    C2->C655 (2022-10-27..2024-09-30, 653c/703g, 2/2=100.0%)           -                                           
+98   audiusproject/audius-protocol                     537     6/9      10     1    C2->C10 (2024-03-25..2024-03-25, 8c/0g, 4/5=80.0%)                 tracciati 6/9 file Playwright in RQ3        
+99   clerkinc/javascript                               532     20/20    2333   5    C724->C1254 (2023-12-13..2024-03-13, 530c/90g, 7/10=70.0%)         -                                           
+100  Oneirocom/Magick                                  529     1/1      2377   1    C2->C2377 (2023-11-29..2024-03-27, 2375c/119g, 1/1=100.0%)         -                                           
+101  serenity-js/serenity-js                           527     2/2      733    3    C197->C693 (2023-09-14..2024-03-02, 496c/169g, 1/1=100.0%)         -                                           
+102  Laboratoria/curriculum                            491     2/2      205    2    C21->C205 (2023-07-11..2024-09-27, 184c/443g, 1/1=100.0%)          -                                           
+103  relative-ci/bundle-stats                          468     1/1      1098   3    C369->C969 (2023-08-11..2024-02-12, 600c/185g, 1/1=100.0%)         -                                           
+104  exogee-technology/graphweaver                     440     7/14     1222   1    C713->C1222 (2024-01-19..2024-03-28, 509c/68g, 3/4=75.0%)          tracciati 7/14 file Playwright in RQ3       
+105  optuna/optuna-dashboard                           437     4/4      945    5    C736->C945 (2024-01-08..2024-03-29, 209c/81g, 3/4=75.0%)           -                                           
+106  porsche-design-system/porsche-design-system       432     102/102  26859  5    C24511->C25669 (2024-03-21..2024-07-23, 1158c/123g, 70/100=70.0%)  -                                           
+107  epam/ketcher                                      417     168/169  904    5    C463->C757 (2024-02-09..2024-07-29, 294c/171g, 107/151=70.9%)      tracciati 168/169 file Playwright in RQ3    
+108  cornerstonejs/cornerstone3d                       408     1/1      1096   2    C8->C847 (2024-05-21..2025-04-16, 839c/329g, 1/1=100.0%)           -                                           
+109  woocommerce/woocommerce-blocks                    397     1/1      512    5    C31->C176 (2023-09-15..2023-10-19, 145c/34g, 1/1=100.0%)           -                                           
+110  patternfly/patternfly-elements                    372     31/31    1173   2    C675->C1121 (2023-01-31..2024-08-16, 446c/562g, 20/20=100.0%)      -                                           
+111  open-source-labs/reactype                         366     1/1      630    2    C246->C630 (2023-10-26..2024-03-06, 384c/131g, 1/1=100.0%)         -                                           
+112  chia-network/chia-blockchain-gui                  333     20/20    1215   5    C163->C808 (2022-11-15..2023-05-16, 645c/181g, 12/12=100.0%)       -                                           
+113  mui/material-ui-docs                              309     6/6      5608   5    C3423->C5608 (2023-06-25..2024-03-26, 2185c/274g, 5/6=83.3%)       -                                           
+114  azerothcore/keira3                                298     1/1      2662   3    C1550->C2560 (2021-12-25..2024-02-15, 1010c/782g, 1/1=100.0%)      -                                           
+115  ably/ably-js                                      292     1/1      317    3    C12->C172 (2023-11-14..2024-02-21, 160c/98g, 1/1=100.0%)           -                                           
+116  cmsgov/design-system                              287     3/3      310    2    C196->C270 (2023-11-17..2024-02-12, 74c/86g, 2/2=100.0%)           -                                           
+117  island-is/island.is                               275     43/43    5694   5    C2706->C3997 (2023-10-16..2024-03-20, 1291c/156g, 24/33=72.7%)     -                                           
+118  recordreplay/devtools                             272     1/1      690    2    C2->C539 (2023-09-14..2024-03-15, 537c/183g, 1/1=100.0%)           -                                           
+119  graphcommerce-org/graphcommerce                   264     8/8      6157   5    C1984->C5065 (2022-04-04..2023-08-22, 3081c/504g, 7/8=87.5%)       -                                           
+120  orbitalapi/orbital                                260     1/1      1008   3    C264->C1008 (2023-01-26..2024-05-15, 744c/475g, 1/1=100.0%)        -                                           
+121  woocommerce/woocommerce-gutenberg-products-block  252     1/1      512    5    C31->C176 (2023-09-15..2023-10-19, 145c/34g, 1/1=100.0%)           -                                           
+122  3liz/lizmap-web-client                            243     17/17    2060   5    C1349->C1576 (2024-02-02..2024-04-22, 227c/79g, 7/9=77.8%)         -                                           
+123  guardian/dotcom-rendering                         231     15/15    2512   5    C1355->C1955 (2024-04-17..2024-07-26, 600c/100g, 11/15=73.3%)      -                                           
+124  opengovsg/formsg                                  228     1/1      1124   4    C436->C889 (2023-03-16..2023-10-17, 453c/214g, 1/1=100.0%)         -                                           
+125  netlify/build                                     210     1/1      594    3    C103->C594 (2023-05-04..2024-03-28, 491c/328g, 1/1=100.0%)         -                                           
+126  mui-org/material-ui-docs                          197     3/6      132    3    C75->C132 (2022-01-21..2022-02-02, 57c/11g, 3/3=100.0%)            tracciati 3/6 file Playwright in RQ3        
+127  microsoftgraph/microsoft-graph-explorer-v4        194     7/7      635    2    C530->C592 (2023-06-07..2024-02-08, 62c/245g, 5/7=71.4%)           -                                           
+128  dxos/dxos                                         189     18/18    3425   3    C1987->C3292 (2024-02-05..2024-09-24, 1305c/232g, 8/11=72.7%)      -                                           
+129  alfresco/alfresco-content-app                     182     54/54    557    5    C329->C461 (2024-04-02..2024-08-07, 132c/127g, 33/46=71.7%)        -                                           
+130  osrd-project/osrd                                 173     7/7      2567   5    C1806->C2329 (2023-11-09..2024-02-09, 523c/91g, 5/6=83.3%)         -                                           
+131  nordicsemiconductor/pc-nrfconnect-launcher        163     5/5      2138   4    C1598->C2138 (2022-11-23..2024-10-21, 540c/698g, 4/5=80.0%)        -                                           
+132  podkrepi-bg/frontend                              161     6/6      311    2    C6->C210 (2023-02-06..2023-10-22, 204c/258g, 4/5=80.0%)            -                                           
+133  tryghost/koenig                                   154     50/50    2988   5    C2251->C2847 (2023-10-04..2024-06-24, 596c/264g, 32/44=72.7%)      -                                           
+134  internxt/drive-desktop                            152     4/4      822    5    C318->C539 (2023-05-30..2023-09-14, 221c/107g, 3/4=75.0%)          -                                           
+135  nasa-gcn/gcn.nasa.gov                             144     1/1      561    1    C2->C561 (2024-04-11..2025-06-12, 559c/427g, 1/1=100.0%)           -                                           
+136  azure/communication-ui-library                    143     46/46    3287   5    C2678->C3174 (2024-04-18..2024-09-13, 496c/147g, 33/46=71.7%)      -                                           
+137  shieldbattery/shieldbattery                       135     8/8      987    5    C519->C821 (2023-06-28..2023-09-27, 302c/90g, 5/5=100.0%)          -                                           
+138  startupjs/startupjs                               104     1/1      234    2    C38->C234 (2023-12-21..2024-03-27, 196c/97g, 1/1=100.0%)           -                                           
+139  altinn/altinn-studio                              102     11/11    891    5    C625->C891 (2024-07-29..2024-10-18, 266c/81g, 8/11=72.7%)          -                                           
+140  royal-navy/design-system                          101     1/1      218    2    C4->C154 (2022-10-05..2023-04-10, 150c/187g, 1/1=100.0%)           -                                           
+
+--- Framework: Playwright + Cypress (11 repository) ---
+Pos  Repository                      Stelle  FilePW   TotC   NIv  Intervallo Principale (#1)                                       Note                                    
+---  ------------------------------  ------  -------  -----  ---  ---------------------------------------------------------------  ----------------------------------------
+1    ionic-team/ionic-framework      50313   356/356  4581   3    C3958->C4536 (2023-10-10..2024-08-05, 578c/300g, 215/307=70.0%)  filtrati soli 356/356 file Playwright DB
+2    spacedriveapp/spacedrive        28563   1/1      1252   1    C2->C1252 (2023-02-27..2024-03-29, 1250c/396g, 1/1=100.0%)       filtrati soli 1/1 file Playwright DB    
+3    nrwl/nx                         21720   5/5      11361  5    C9930->C11163 (2024-04-25..2024-09-23, 1233c/151g, 4/5=80.0%)    filtrati soli 5/5 file Playwright DB    
+4    xyflow/xyflow                   20615   5/5      3509   4    C2798->C3077 (2023-11-23..2024-03-05, 279c/103g, 5/5=100.0%)     filtrati soli 5/5 file Playwright DB    
+5    wbkd/react-flow                 17183   5/5      3509   4    C2798->C3077 (2023-11-23..2024-03-05, 279c/103g, 5/5=100.0%)     filtrati soli 5/5 file Playwright DB    
+6    redwoodjs/redwood               16697   16/16    9314   5    C7579->C8958 (2024-01-26..2024-08-16, 1379c/202g, 7/8=87.5%)     filtrati soli 16/16 file Playwright DB  
+7    taiga-family/taiga-ui           3000    34/52    6699   5    C5931->C6699 (2024-08-12..2024-10-19, 768c/67g, 27/34=79.4%)     filtrati soli 34/52 file Playwright DB  
+8    tinkoff/taiga-ui                2708    34/52    6699   5    C5931->C6699 (2024-08-12..2024-10-19, 768c/67g, 27/34=79.4%)     filtrati soli 34/52 file Playwright DB  
+9    module-federation/universe      842     1/1      629    4    C288->C466 (2024-04-26..2024-07-07, 178c/72g, 1/1=100.0%)        filtrati soli 1/1 file Playwright DB    
+10   sap/luigi                       792     1/1      2140   1    C1766->C2140 (2023-06-23..2024-10-22, 374c/486g, 1/1=100.0%)     filtrati soli 1/1 file Playwright DB    
+11   oasisprotocol/oasis-wallet-web  106     17/17    2466   5    C1745->C1973 (2023-08-25..2023-11-17, 228c/83g, 9/11=81.8%)      filtrati soli 17/17 file Playwright DB  
+
+--- Framework: Playwright + Puppeteer (3 repository) ---
+Pos  Repository                 Stelle  FilePW  TotC   NIv  Intervallo Principale (#1)                                      Note                                  
+---  -------------------------  ------  ------  -----  ---  --------------------------------------------------------------  --------------------------------------
+1    freecodecamp/freecodecamp  385467  77/77   19529  5    C17523->C18168 (2023-12-28..2024-03-20, 645c/82g, 44/62=71.0%)  filtrati soli 77/77 file Playwright DB
+2    mui/mui-x                  3660    3/3     6851   5    C2962->C3621 (2022-11-07..2023-03-03, 659c/116g, 3/3=100.0%)    filtrati soli 3/3 file Playwright DB  
+3    mui-org/material-ui-x      978     3/3     6825   5    C2962->C3621 (2022-11-07..2023-03-03, 659c/116g, 3/3=100.0%)    filtrati soli 3/3 file Playwright DB  
+
+==============================================================================================================
+DETTAGLIO COMPLETO INTERVALLI DISGIUNTI PER SINGOLA REPOSITORY
+==============================================================================================================
+
+[Playwright #1] facebook/react | Stelle: 220701 | Commit RQ3: 156 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2024-02-21) -> Commit 156 (2024-03-28) | durata: 154 commit (35 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #2] microsoft/vscode | Stelle: 157401 | Commit RQ3: 40047 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 15571 (2022-01-15) -> Commit 36377 (2023-11-15) | durata: 20806 commit (669 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C36378
+  - Intervallo #2: Commit 4164 (2021-03-30) -> Commit 15570 (2022-01-14) | durata: 11406 commit (290 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C15571
+  - Intervallo #3: Commit 36378 (2023-11-15) -> Commit 40047 (2024-03-28) | durata: 3669 commit (133 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 1184 (2021-01-28) -> Commit 4095 (2021-03-29) | durata: 2911 commit (59 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C4096
+  - Intervallo #5: Commit 35 (2020-12-30) -> Commit 1183 (2021-01-28) | durata: 1148 commit (29 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C1184
+
+[Playwright #3] mui/material-ui | Stelle: 91285 | Commit RQ3: 5691 | File PW tracciati: 6 (DB: 6, picco attivo: 6)
+  - Intervallo #1: Commit 3423 (2023-06-25) -> Commit 5691 (2024-03-29) | durata: 2268 commit (278 giorni) | stabili: 5/6 (83.3%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 1514 (2022-08-09) -> Commit 3323 (2023-06-12) | durata: 1809 commit (307 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C3324
+  - Intervallo #3: Commit 696 (2022-04-08) -> Commit 1305 (2022-07-10) | durata: 609 commit (93 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C1306
+  - Intervallo #4: Commit 442 (2022-03-01) -> Commit 695 (2022-04-08) | durata: 253 commit (38 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C696
+  - Intervallo #5: Commit 198 (2022-01-24) -> Commit 434 (2022-02-28) | durata: 236 commit (34 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C435
+
+[Playwright #4] storybookjs/storybook | Stelle: 82514 | Commit RQ3: 14077 | File PW tracciati: 14 (DB: 14, picco attivo: 14)
+  - Intervallo #1: Commit 11793 (2024-04-25) -> Commit 13187 (2024-07-25) | durata: 1394 commit (91 giorni) | stabili: 10/13 (76.9%) | fine: rottura_soglia@C13188
+  - Intervallo #2: Commit 10014 (2024-01-17) -> Commit 11390 (2024-04-08) | durata: 1376 commit (81 giorni) | stabili: 9/12 (75.0%) | fine: rottura_soglia@C11391
+  - Intervallo #3: Commit 4146 (2023-02-06) -> Commit 5483 (2023-04-17) | durata: 1337 commit (70 giorni) | stabili: 6/8 (75.0%) | fine: rottura_soglia@C5484
+  - Intervallo #4: Commit 2304 (2022-11-21) -> Commit 3552 (2023-01-14) | durata: 1248 commit (53 giorni) | stabili: 6/8 (75.0%) | fine: rottura_soglia@C3553
+  - Intervallo #5: Commit 7521 (2023-08-01) -> Commit 8746 (2023-10-31) | durata: 1225 commit (90 giorni) | stabili: 7/9 (77.8%) | fine: rottura_soglia@C8747
+
+[Playwright #5] supabase/supabase | Stelle: 64652 | Commit RQ3: 387 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2024-02-19) -> Commit 387 (2024-03-29) | durata: 385 commit (39 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #6] microsoft/playwright | Stelle: 61013 | Commit RQ3: 9518 | File PW tracciati: 100 (DB: 100, picco attivo: 100)
+  - Intervallo #1: Commit 3668 (2022-04-26) -> Commit 4126 (2022-06-22) | durata: 458 commit (56 giorni) | stabili: 48/68 (70.6%) | fine: rottura_soglia@C4127
+  - Intervallo #2: Commit 4710 (2022-08-18) -> Commit 5150 (2022-10-18) | durata: 440 commit (60 giorni) | stabili: 49/70 (70.0%) | fine: rottura_soglia@C5151
+  - Intervallo #3: Commit 9015 (2024-08-05) -> Commit 9447 (2024-10-07) | durata: 432 commit (63 giorni) | stabili: 70/100 (70.0%) | fine: rottura_soglia@C9448
+  - Intervallo #4: Commit 8528 (2024-05-01) -> Commit 8896 (2024-07-16) | durata: 368 commit (76 giorni) | stabili: 70/100 (70.0%) | fine: rottura_soglia@C8897
+  - Intervallo #5: Commit 7622 (2023-10-26) -> Commit 7975 (2024-01-18) | durata: 353 commit (84 giorni) | stabili: 68/96 (70.8%) | fine: rottura_soglia@C7976
+
+[Playwright #7] strapi/strapi | Stelle: 59571 | Commit RQ3: 3057 | File PW tracciati: 11 (DB: 12, picco attivo: 11) | Nota: tracciati 11/12 file Playwright in RQ3
+  - Intervallo #1: Commit 2204 (2024-08-05) -> Commit 2530 (2024-10-25) | durata: 326 commit (80 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C2531
+  - Intervallo #2: Commit 1978 (2024-05-20) -> Commit 2203 (2024-08-02) | durata: 225 commit (74 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C2204
+  - Intervallo #3: Commit 2535 (2024-10-28) -> Commit 2755 (2025-01-24) | durata: 220 commit (87 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C2756
+  - Intervallo #4: Commit 2762 (2025-01-27) -> Commit 2971 (2025-04-18) | durata: 209 commit (80 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C2972
+  - Intervallo #5: Commit 1802 (2024-04-04) -> Commit 1958 (2024-05-07) | durata: 156 commit (32 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C1959
+
+[Playwright #8] tryghost/ghost | Stelle: 45483 | Commit RQ3: 4876 | File PW tracciati: 55 (DB: 55, picco attivo: 55)
+  - Intervallo #1: Commit 2695 (2023-11-23) -> Commit 3729 (2024-05-13) | durata: 1034 commit (171 giorni) | stabili: 35/50 (70.0%) | fine: rottura_soglia@C3730
+  - Intervallo #2: Commit 4020 (2024-07-01) -> Commit 4876 (2024-10-21) | durata: 856 commit (111 giorni) | stabili: 39/55 (70.9%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 2141 (2023-10-06) -> Commit 2672 (2023-11-22) | durata: 531 commit (47 giorni) | stabili: 38/46 (82.6%) | fine: rottura_soglia@C2673
+  - Intervallo #4: Commit 1416 (2023-08-18) -> Commit 1717 (2023-09-12) | durata: 301 commit (25 giorni) | stabili: 27/38 (71.1%) | fine: rottura_soglia@C1718
+  - Intervallo #5: Commit 1829 (2023-09-18) -> Commit 2061 (2023-10-02) | durata: 232 commit (13 giorni) | stabili: 29/41 (70.7%) | fine: rottura_soglia@C2062
+
+[Playwright #9] laurent22/joplin | Stelle: 42487 | Commit RQ3: 1071 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 798 (2024-02-08) -> Commit 1071 (2024-03-29) | durata: 273 commit (49 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 550 (2023-12-29) -> Commit 740 (2024-02-02) | durata: 190 commit (34 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C741
+  - Intervallo #3: Commit 227 (2023-11-12) -> Commit 413 (2023-12-06) | durata: 186 commit (24 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C414
+  - Intervallo #4: Commit 121 (2023-10-31) -> Commit 226 (2023-11-12) | durata: 105 commit (12 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C227
+  - Intervallo #5: Commit 431 (2023-12-11) -> Commit 524 (2023-12-24) | durata: 93 commit (12 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C525
+
+[Playwright #10] nocodb/nocodb | Stelle: 41695 | Commit RQ3: 13183 | File PW tracciati: 76 (DB: 76, picco attivo: 76)
+  - Intervallo #1: Commit 7715 (2023-11-10) -> Commit 11612 (2024-04-26) | durata: 3897 commit (168 giorni) | stabili: 51/72 (70.8%) | fine: rottura_soglia@C11613
+  - Intervallo #2: Commit 2225 (2023-02-08) -> Commit 3837 (2023-03-26) | durata: 1612 commit (45 giorni) | stabili: 29/41 (70.7%) | fine: rottura_soglia@C3838
+  - Intervallo #3: Commit 11927 (2024-05-31) -> Commit 13179 (2024-10-19) | durata: 1252 commit (140 giorni) | stabili: 54/76 (71.1%) | fine: rottura_soglia@C13180
+  - Intervallo #4: Commit 6010 (2023-09-01) -> Commit 6895 (2023-10-02) | durata: 885 commit (31 giorni) | stabili: 51/72 (70.8%) | fine: rottura_soglia@C6896
+  - Intervallo #5: Commit 4493 (2023-04-26) -> Commit 5282 (2023-06-11) | durata: 789 commit (45 giorni) | stabili: 33/47 (70.2%) | fine: rottura_soglia@C5283
+
+[Playwright #11] quilljs/quill | Stelle: 38714 | Commit RQ3: 301 | File PW tracciati: 4 (DB: 4, picco attivo: 4)
+  - Intervallo #1: Commit 113 (2023-11-26) -> Commit 279 (2024-03-06) | durata: 166 commit (100 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C280
+  - Intervallo #2: Commit 31 (2023-06-22) -> Commit 106 (2023-11-03) | durata: 75 commit (134 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C107
+  - Intervallo #3: Commit 280 (2024-03-12) -> Commit 301 (2024-03-26) | durata: 21 commit (13 giorni) | stabili: 4/4 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #12] rocketchat/rocket.chat | Stelle: 38611 | Commit RQ3: 4620 | File PW tracciati: 39 (DB: 39, picco attivo: 39)
+  - Intervallo #1: Commit 1240 (2023-02-24) -> Commit 1943 (2023-05-26) | durata: 703 commit (91 giorni) | stabili: 14/20 (70.0%) | fine: rottura_soglia@C1944
+  - Intervallo #2: Commit 3192 (2023-12-14) -> Commit 3891 (2024-06-06) | durata: 699 commit (175 giorni) | stabili: 23/30 (76.7%) | fine: rottura_soglia@C3892
+  - Intervallo #3: Commit 2499 (2023-08-24) -> Commit 3191 (2023-12-14) | durata: 692 commit (112 giorni) | stabili: 17/22 (77.3%) | fine: rottura_soglia@C3192
+  - Intervallo #4: Commit 4065 (2024-07-19) -> Commit 4620 (2024-10-21) | durata: 555 commit (94 giorni) | stabili: 31/39 (79.5%) | fine: fine_storia_rq3
+  - Intervallo #5: Commit 2139 (2023-06-27) -> Commit 2418 (2023-08-09) | durata: 279 commit (43 giorni) | stabili: 17/21 (81.0%) | fine: rottura_soglia@C2419
+
+[Playwright #13] kong/insomnia | Stelle: 32841 | Commit RQ3: 1774 | File PW tracciati: 12 (DB: 12, picco attivo: 12)
+  - Intervallo #1: Commit 1411 (2024-06-05) -> Commit 1578 (2024-07-26) | durata: 167 commit (50 giorni) | stabili: 10/12 (83.3%) | fine: rottura_soglia@C1579
+  - Intervallo #2: Commit 1221 (2024-03-01) -> Commit 1354 (2024-05-13) | durata: 133 commit (72 giorni) | stabili: 9/12 (75.0%) | fine: rottura_soglia@C1355
+  - Intervallo #3: Commit 1634 (2024-08-28) -> Commit 1747 (2024-10-12) | durata: 113 commit (44 giorni) | stabili: 9/12 (75.0%) | fine: rottura_soglia@C1748
+  - Intervallo #4: Commit 838 (2023-07-19) -> Commit 922 (2023-08-15) | durata: 84 commit (27 giorni) | stabili: 6/8 (75.0%) | fine: rottura_soglia@C923
+  - Intervallo #5: Commit 1079 (2023-11-09) -> Commit 1160 (2024-01-22) | durata: 81 commit (74 giorni) | stabili: 7/10 (70.0%) | fine: rottura_soglia@C1161
+
+[Playwright #14] novuhq/novu | Stelle: 32289 | Commit RQ3: 1468 | File PW tracciati: 4 (DB: 4, picco attivo: 4)
+  - Intervallo #1: Commit 564 (2024-06-13) -> Commit 1055 (2024-08-02) | durata: 491 commit (49 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C1056
+  - Intervallo #2: Commit 155 (2024-04-15) -> Commit 436 (2024-05-16) | durata: 281 commit (30 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C437
+  - Intervallo #3: Commit 1204 (2024-09-02) -> Commit 1381 (2024-10-07) | durata: 177 commit (34 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C1382
+  - Intervallo #4: Commit 437 (2024-05-16) -> Commit 503 (2024-05-28) | durata: 66 commit (12 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C504
+  - Intervallo #5: Commit 1403 (2024-10-11) -> Commit 1468 (2024-10-23) | durata: 65 commit (12 giorni) | stabili: 3/4 (75.0%) | fine: fine_storia_rq3
+
+[Playwright #15] tldraw/tldraw | Stelle: 32012 | Commit RQ3: 1661 | File PW tracciati: 15 (DB: 15, picco attivo: 15)
+  - Intervallo #1: Commit 976 (2024-04-14) -> Commit 1490 (2024-09-09) | durata: 514 commit (147 giorni) | stabili: 11/15 (73.3%) | fine: rottura_soglia@C1491
+  - Intervallo #2: Commit 437 (2023-11-14) -> Commit 640 (2024-02-01) | durata: 203 commit (79 giorni) | stabili: 6/8 (75.0%) | fine: rottura_soglia@C641
+  - Intervallo #3: Commit 797 (2024-02-29) -> Commit 975 (2024-04-14) | durata: 178 commit (44 giorni) | stabili: 11/15 (73.3%) | fine: rottura_soglia@C976
+  - Intervallo #4: Commit 1491 (2024-09-09) -> Commit 1661 (2024-10-19) | durata: 170 commit (40 giorni) | stabili: 13/15 (86.7%) | fine: fine_storia_rq3
+  - Intervallo #5: Commit 193 (2023-07-19) -> Commit 284 (2023-09-19) | durata: 91 commit (62 giorni) | stabili: 6/8 (75.0%) | fine: rottura_soglia@C285
+
+[Playwright #16] ianstormtaylor/slate | Stelle: 28871 | Commit RQ3: 246 | File PW tracciati: 22 (DB: 22, picco attivo: 22)
+  - Intervallo #1: Commit 2 (2023-01-13) -> Commit 152 (2023-10-20) | durata: 150 commit (279 giorni) | stabili: 17/21 (81.0%) | fine: rottura_soglia@C153
+  - Intervallo #2: Commit 153 (2023-10-20) -> Commit 246 (2024-10-16) | durata: 93 commit (362 giorni) | stabili: 21/22 (95.5%) | fine: fine_storia_rq3
+
+[Playwright #17] immich-app/immich | Stelle: 28740 | Commit RQ3: 528 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 260 (2024-03-07) -> Commit 528 (2024-03-27) | durata: 268 commit (20 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 185 (2024-02-29) -> Commit 259 (2024-03-07) | durata: 74 commit (6 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C260
+  - Intervallo #3: Commit 68 (2024-02-19) -> Commit 142 (2024-02-27) | durata: 74 commit (7 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C143
+  - Intervallo #4: Commit 143 (2024-02-27) -> Commit 183 (2024-02-29) | durata: 40 commit (1 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C184
+  - Intervallo #5: Commit 2 (2024-02-13) -> Commit 29 (2024-02-16) | durata: 27 commit (3 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C30
+
+[Playwright #18] expo/expo | Stelle: 28486 | Commit RQ3: 4900 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 3647 (2025-03-03) -> Commit 4900 (2025-06-16) | durata: 1253 commit (104 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 1874 (2024-10-21) -> Commit 2825 (2024-12-10) | durata: 951 commit (49 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C2826
+  - Intervallo #3: Commit 1068 (2024-08-06) -> Commit 1873 (2024-10-22) | durata: 805 commit (76 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C1874
+  - Intervallo #4: Commit 2826 (2024-12-10) -> Commit 3319 (2025-02-04) | durata: 493 commit (55 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C3320
+  - Intervallo #5: Commit 261 (2024-05-31) -> Commit 750 (2024-07-10) | durata: 489 commit (40 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C751
+
+[Playwright #19] floating-ui/floating-ui | Stelle: 28315 | Commit RQ3: 1174 | File PW tracciati: 10 (DB: 10, picco attivo: 10)
+  - Intervallo #1: Commit 183 (2022-04-22) -> Commit 510 (2022-12-31) | durata: 327 commit (253 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C511
+  - Intervallo #2: Commit 604 (2023-02-05) -> Commit 926 (2023-11-25) | durata: 322 commit (292 giorni) | stabili: 7/9 (77.8%) | fine: rottura_soglia@C927
+  - Intervallo #3: Commit 927 (2023-11-25) -> Commit 1174 (2024-10-16) | durata: 247 commit (326 giorni) | stabili: 7/9 (77.8%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 35 (2021-12-31) -> Commit 182 (2022-04-22) | durata: 147 commit (111 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C183
+  - Intervallo #5: Commit 511 (2022-12-31) -> Commit 564 (2023-01-15) | durata: 53 commit (14 giorni) | stabili: 9/9 (100.0%) | fine: rottura_soglia@C565
+
+[Playwright #20] mattermost/mattermost | Stelle: 27869 | Commit RQ3: 628 | File PW tracciati: 4 (DB: 4, picco attivo: 4)
+  - Intervallo #1: Commit 431 (2024-02-12) -> Commit 628 (2024-03-28) | durata: 197 commit (45 giorni) | stabili: 4/4 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #21] fabricjs/fabric.js | Stelle: 27279 | Commit RQ3: 178 | File PW tracciati: 8 (DB: 8, picco attivo: 8)
+  - Intervallo #1: Commit 37 (2023-09-10) -> Commit 178 (2024-03-28) | durata: 141 commit (200 giorni) | stabili: 4/5 (80.0%) | fine: fine_storia_rq3
+
+[Playwright #22] backstage/backstage | Stelle: 26049 | Commit RQ3: 5338 | File PW tracciati: 4 (DB: 4, picco attivo: 4)
+  - Intervallo #1: Commit 2 (2023-09-25) -> Commit 5338 (2024-03-28) | durata: 5336 commit (184 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #23] react-navigation/react-navigation | Stelle: 23182 | Commit RQ3: 1059 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 145 (2022-11-27) -> Commit 529 (2022-11-27) | durata: 384 commit (0 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C530
+  - Intervallo #2: Commit 530 (2022-11-27) -> Commit 787 (2022-11-27) | durata: 257 commit (0 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C788
+  - Intervallo #3: Commit 2 (2022-11-27) -> Commit 144 (2022-11-27) | durata: 142 commit (0 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C145
+  - Intervallo #4: Commit 834 (2023-02-17) -> Commit 924 (2023-10-28) | durata: 90 commit (253 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C925
+  - Intervallo #5: Commit 964 (2024-01-10) -> Commit 1014 (2024-03-08) | durata: 50 commit (57 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C1015
+
+[Playwright #24] eclipse-theia/theia | Stelle: 18774 | Commit RQ3: 1513 | File PW tracciati: 14 (DB: 14, picco attivo: 14)
+  - Intervallo #1: Commit 203 (2022-05-10) -> Commit 765 (2023-04-10) | durata: 562 commit (334 giorni) | stabili: 7/10 (70.0%) | fine: rottura_soglia@C766
+  - Intervallo #2: Commit 1068 (2023-11-30) -> Commit 1513 (2024-10-18) | durata: 445 commit (322 giorni) | stabili: 10/13 (76.9%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 860 (2023-06-13) -> Commit 1067 (2023-11-30) | durata: 207 commit (170 giorni) | stabili: 10/13 (76.9%) | fine: rottura_soglia@C1068
+  - Intervallo #4: Commit 47 (2022-02-22) -> Commit 156 (2022-04-15) | durata: 109 commit (52 giorni) | stabili: 7/9 (77.8%) | fine: rottura_soglia@C157
+  - Intervallo #5: Commit 766 (2023-04-11) -> Commit 859 (2023-06-13) | durata: 93 commit (62 giorni) | stabili: 10/12 (83.3%) | fine: rottura_soglia@C860
+
+[Playwright #25] payloadcms/payload | Stelle: 18548 | Commit RQ3: 4417 | File PW tracciati: 15 (DB: 15, picco attivo: 15)
+  - Intervallo #1: Commit 2515 (2023-09-29) -> Commit 2981 (2023-10-11) | durata: 466 commit (11 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C2982
+  - Intervallo #2: Commit 1628 (2023-04-24) -> Commit 1959 (2023-06-23) | durata: 331 commit (60 giorni) | stabili: 7/10 (70.0%) | fine: rottura_soglia@C1960
+  - Intervallo #3: Commit 2982 (2023-10-11) -> Commit 3262 (2023-10-23) | durata: 280 commit (12 giorni) | stabili: 9/12 (75.0%) | fine: rottura_soglia@C3263
+  - Intervallo #4: Commit 3971 (2024-03-25) -> Commit 4213 (2024-06-06) | durata: 242 commit (73 giorni) | stabili: 11/15 (73.3%) | fine: rottura_soglia@C4214
+  - Intervallo #5: Commit 4230 (2024-06-13) -> Commit 4417 (2024-10-18) | durata: 187 commit (127 giorni) | stabili: 11/15 (73.3%) | fine: fine_storia_rq3
+
+[Playwright #26] microsoft/fluentui | Stelle: 17557 | Commit RQ3: 9675 | File PW tracciati: 22 (DB: 22, picco attivo: 22)
+  - Intervallo #1: Commit 9462 (2024-08-15) -> Commit 9675 (2024-10-17) | durata: 213 commit (62 giorni) | stabili: 16/22 (72.7%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 8881 (2024-05-13) -> Commit 9078 (2024-06-11) | durata: 197 commit (28 giorni) | stabili: 16/22 (72.7%) | fine: rottura_soglia@C9079
+  - Intervallo #3: Commit 9224 (2024-07-03) -> Commit 9410 (2024-08-07) | durata: 186 commit (34 giorni) | stabili: 17/22 (77.3%) | fine: rottura_soglia@C9411
+  - Intervallo #4: Commit 9121 (2024-06-18) -> Commit 9223 (2024-07-03) | durata: 102 commit (14 giorni) | stabili: 16/22 (72.7%) | fine: rottura_soglia@C9224
+  - Intervallo #5: Commit 9411 (2024-08-07) -> Commit 9439 (2024-08-13) | durata: 28 commit (6 giorni) | stabili: 22/22 (100.0%) | fine: rottura_soglia@C9440
+
+[Playwright #27] facebook/lexical | Stelle: 17063 | Commit RQ3: 726 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 241 (2024-08-06) -> Commit 726 (2025-06-09) | durata: 485 commit (307 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 2 (2024-04-25) -> Commit 138 (2024-06-05) | durata: 136 commit (40 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C139
+  - Intervallo #3: Commit 139 (2024-06-06) -> Commit 240 (2024-08-05) | durata: 101 commit (60 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C241
+
+[Playwright #28] signoz/signoz | Stelle: 16694 | Commit RQ3: 1622 | File PW tracciati: 9 (DB: 9, picco attivo: 9)
+  - Intervallo #1: Commit 176 (2022-07-21) -> Commit 1622 (2024-03-29) | durata: 1446 commit (617 giorni) | stabili: 6/6 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #29] xtermjs/xterm.js | Stelle: 16506 | Commit RQ3: 3332 | File PW tracciati: 5 (DB: 5, picco attivo: 5)
+  - Intervallo #1: Commit 2992 (2023-11-01) -> Commit 3137 (2024-04-08) | durata: 145 commit (158 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C3138
+  - Intervallo #2: Commit 2861 (2023-09-07) -> Commit 2991 (2023-11-01) | durata: 130 commit (54 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C2992
+  - Intervallo #3: Commit 3231 (2024-07-07) -> Commit 3332 (2024-10-05) | durata: 101 commit (90 giorni) | stabili: 4/5 (80.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 3138 (2024-04-08) -> Commit 3230 (2024-07-07) | durata: 92 commit (90 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C3231
+
+[Playwright #30] jupyterlab/jupyterlab | Stelle: 13715 | Commit RQ3: 2389 | File PW tracciati: 16 (DB: 16, picco attivo: 16)
+  - Intervallo #1: Commit 726 (2022-05-17) -> Commit 1052 (2022-10-26) | durata: 326 commit (161 giorni) | stabili: 7/10 (70.0%) | fine: rottura_soglia@C1053
+  - Intervallo #2: Commit 1441 (2023-03-11) -> Commit 1700 (2023-07-12) | durata: 259 commit (123 giorni) | stabili: 10/13 (76.9%) | fine: rottura_soglia@C1701
+  - Intervallo #3: Commit 2167 (2024-04-18) -> Commit 2364 (2024-10-02) | durata: 197 commit (167 giorni) | stabili: 12/16 (75.0%) | fine: rottura_soglia@C2365
+  - Intervallo #4: Commit 1065 (2022-10-31) -> Commit 1241 (2023-01-23) | durata: 176 commit (83 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C1242
+  - Intervallo #5: Commit 1932 (2023-12-12) -> Commit 2075 (2024-03-07) | durata: 143 commit (85 giorni) | stabili: 11/15 (73.3%) | fine: rottura_soglia@C2076
+
+[Playwright #31] janhq/jan | Stelle: 13151 | Commit RQ3: 537 | File PW tracciati: 0 (DB: 4, picco attivo: 0) | Nota: 0 righe in *_only_gui RQ3
+  -> Nessun intervallo calcolabile dai dati *_only_gui disponibili.
+
+[Playwright #32] vercel/vercel | Stelle: 12053 | Commit RQ3: 1167 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 541 (2023-05-31) -> Commit 1167 (2024-03-28) | durata: 626 commit (302 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 2 (2022-12-14) -> Commit 540 (2023-05-30) | durata: 538 commit (167 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C541
+
+[Playwright #33] nhn/tui.calendar | Stelle: 11329 | Commit RQ3: 941 | File PW tracciati: 19 (DB: 19, picco attivo: 19)
+  - Intervallo #1: Commit 575 (2022-06-10) -> Commit 735 (2022-06-30) | durata: 160 commit (20 giorni) | stabili: 12/17 (70.6%) | fine: rottura_soglia@C736
+  - Intervallo #2: Commit 406 (2022-05-18) -> Commit 560 (2022-06-09) | durata: 154 commit (22 giorni) | stabili: 14/17 (82.4%) | fine: rottura_soglia@C561
+  - Intervallo #3: Commit 52 (2022-03-07) -> Commit 195 (2022-04-05) | durata: 143 commit (28 giorni) | stabili: 9/10 (90.0%) | fine: rottura_soglia@C196
+  - Intervallo #4: Commit 836 (2022-07-11) -> Commit 941 (2023-02-09) | durata: 105 commit (212 giorni) | stabili: 14/18 (77.8%) | fine: fine_storia_rq3
+  - Intervallo #5: Commit 736 (2022-06-30) -> Commit 822 (2022-07-08) | durata: 86 commit (7 giorni) | stabili: 13/18 (72.2%) | fine: rottura_soglia@C823
+
+[Playwright #34] nasa/openmct | Stelle: 11253 | Commit RQ3: 777 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 172 (2022-11-07) -> Commit 308 (2023-03-02) | durata: 136 commit (114 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C309
+  - Intervallo #2: Commit 429 (2023-05-18) -> Commit 555 (2023-09-18) | durata: 126 commit (122 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C556
+  - Intervallo #3: Commit 66 (2022-07-25) -> Commit 171 (2022-11-07) | durata: 105 commit (105 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C172
+  - Intervallo #4: Commit 333 (2023-03-17) -> Commit 428 (2023-05-18) | durata: 95 commit (62 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C429
+  - Intervallo #5: Commit 670 (2024-01-09) -> Commit 747 (2024-03-11) | durata: 77 commit (62 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C748
+
+[Playwright #35] reduxjs/redux-toolkit | Stelle: 10348 | Commit RQ3: 1035 | File PW tracciati: 4 (DB: 4, picco attivo: 4)
+  - Intervallo #1: Commit 352 (2023-09-30) -> Commit 1035 (2024-03-21) | durata: 683 commit (172 giorni) | stabili: 4/4 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 5 (2023-03-11) -> Commit 351 (2023-09-27) | durata: 346 commit (200 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C352
+
+[Playwright #36] wordpress/gutenberg | Stelle: 9791 | Commit RQ3: 7715 | File PW tracciati: 4 (DB: 4, picco attivo: 4)
+  - Intervallo #1: Commit 1829 (2023-02-12) -> Commit 7715 (2024-03-28) | durata: 5886 commit (410 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 2 (2022-09-22) -> Commit 1828 (2023-02-11) | durata: 1826 commit (142 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C1829
+
+[Playwright #37] rolling-scopes/rsschool-app | Stelle: 9639 | Commit RQ3: 761 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2022-02-20) -> Commit 701 (2023-11-14) | durata: 699 commit (632 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C702
+  - Intervallo #2: Commit 726 (2023-11-29) -> Commit 761 (2024-03-24) | durata: 35 commit (115 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 702 (2023-11-15) -> Commit 725 (2023-11-28) | durata: 23 commit (13 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C726
+
+[Playwright #38] ng-bootstrap/ng-bootstrap | Stelle: 8132 | Commit RQ3: 1168 | File PW tracciati: 1 (DB: 9, picco attivo: 1) | Nota: tracciati 1/9 file Playwright in RQ3
+  - Intervallo #1: Commit 55 (2019-01-21) -> Commit 561 (2021-02-19) | durata: 506 commit (759 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C562
+  - Intervallo #2: Commit 870 (2022-10-18) -> Commit 1168 (2024-08-28) | durata: 298 commit (679 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 726 (2022-02-23) -> Commit 869 (2022-10-18) | durata: 143 commit (236 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C870
+  - Intervallo #4: Commit 563 (2021-02-24) -> Commit 663 (2021-10-26) | durata: 100 commit (244 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C664
+  - Intervallo #5: Commit 664 (2021-11-08) -> Commit 724 (2022-02-23) | durata: 60 commit (106 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C725
+
+[Playwright #39] react-cosmos/react-cosmos | Stelle: 8073 | Commit RQ3: 12 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 3 (2024-02-28) -> Commit 9 (2024-03-11) | durata: 6 commit (11 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C10
+
+[Playwright #40] getsentry/sentry-javascript | Stelle: 7593 | Commit RQ3: 4438 | File PW tracciati: 45 (DB: 45, picco attivo: 45)
+  - Intervallo #1: Commit 3758 (2024-06-13) -> Commit 4438 (2024-10-18) | durata: 680 commit (127 giorni) | stabili: 32/45 (71.1%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 2443 (2024-01-03) -> Commit 2914 (2024-02-26) | durata: 471 commit (53 giorni) | stabili: 17/24 (70.8%) | fine: rottura_soglia@C2915
+  - Intervallo #3: Commit 3415 (2024-04-25) -> Commit 3665 (2024-05-31) | durata: 250 commit (35 giorni) | stabili: 26/37 (70.3%) | fine: rottura_soglia@C3666
+  - Intervallo #4: Commit 3042 (2024-03-12) -> Commit 3237 (2024-04-04) | durata: 195 commit (22 giorni) | stabili: 21/29 (72.4%) | fine: rottura_soglia@C3238
+  - Intervallo #5: Commit 3276 (2024-04-09) -> Commit 3414 (2024-04-25) | durata: 138 commit (16 giorni) | stabili: 27/33 (81.8%) | fine: rottura_soglia@C3415
+
+[Playwright #41] nhost/nhost | Stelle: 7468 | Commit RQ3: 1676 | File PW tracciati: 20 (DB: 20, picco attivo: 20)
+  - Intervallo #1: Commit 212 (2023-03-22) -> Commit 1649 (2024-09-02) | durata: 1437 commit (530 giorni) | stabili: 10/13 (76.9%) | fine: rottura_soglia@C1650
+  - Intervallo #2: Commit 1650 (2024-09-03) -> Commit 1676 (2024-10-11) | durata: 26 commit (38 giorni) | stabili: 14/20 (70.0%) | fine: fine_storia_rq3
+
+[Playwright #42] carbon-design-system/carbon | Stelle: 7433 | Commit RQ3: 3222 | File PW tracciati: 18 (DB: 18, picco attivo: 18)
+  - Intervallo #1: Commit 2506 (2024-03-21) -> Commit 3222 (2024-10-21) | durata: 716 commit (214 giorni) | stabili: 14/18 (77.8%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 1960 (2023-11-08) -> Commit 2440 (2024-03-06) | durata: 480 commit (119 giorni) | stabili: 15/16 (93.8%) | fine: rottura_soglia@C2441
+  - Intervallo #3: Commit 1812 (2023-10-18) -> Commit 1959 (2023-11-07) | durata: 147 commit (20 giorni) | stabili: 9/12 (75.0%) | fine: rottura_soglia@C1960
+  - Intervallo #4: Commit 2441 (2024-03-06) -> Commit 2505 (2024-03-21) | durata: 64 commit (15 giorni) | stabili: 13/16 (81.2%) | fine: rottura_soglia@C2506
+
+[Playwright #43] microsoft/azuredatastudio | Stelle: 7419 | Commit RQ3: 4569 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 211 (2021-06-17) -> Commit 2737 (2022-10-19) | durata: 2526 commit (489 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C2738
+  - Intervallo #2: Commit 2738 (2022-10-19) -> Commit 4318 (2023-10-30) | durata: 1580 commit (375 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C4319
+  - Intervallo #3: Commit 4319 (2023-10-30) -> Commit 4569 (2024-03-28) | durata: 250 commit (150 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 2 (2021-04-27) -> Commit 210 (2021-06-16) | durata: 208 commit (50 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C211
+
+[Playwright #44] artilleryio/artillery | Stelle: 7407 | Commit RQ3: 51 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2024-02-27) -> Commit 38 (2024-03-18) | durata: 36 commit (20 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C39
+
+[Playwright #45] activepieces/activepieces | Stelle: 6877 | Commit RQ3: 170 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 2 (2024-03-18) -> Commit 170 (2024-03-29) | durata: 168 commit (11 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #46] builderio/builder | Stelle: 6572 | Commit RQ3: 1370 | File PW tracciati: 29 (DB: 29, picco attivo: 29)
+  - Intervallo #1: Commit 897 (2024-03-22) -> Commit 1019 (2024-04-04) | durata: 122 commit (13 giorni) | stabili: 23/23 (100.0%) | fine: rottura_soglia@C1020
+  - Intervallo #2: Commit 1255 (2024-08-19) -> Commit 1367 (2024-10-18) | durata: 112 commit (60 giorni) | stabili: 22/29 (75.9%) | fine: rottura_soglia@C1368
+  - Intervallo #3: Commit 1107 (2024-06-11) -> Commit 1193 (2024-07-12) | durata: 86 commit (31 giorni) | stabili: 22/29 (75.9%) | fine: rottura_soglia@C1194
+  - Intervallo #4: Commit 830 (2024-02-07) -> Commit 896 (2024-03-22) | durata: 66 commit (44 giorni) | stabili: 15/21 (71.4%) | fine: rottura_soglia@C897
+  - Intervallo #5: Commit 1020 (2024-04-05) -> Commit 1080 (2024-05-04) | durata: 60 commit (28 giorni) | stabili: 21/24 (87.5%) | fine: rottura_soglia@C1081
+
+[Playwright #47] elementor/elementor | Stelle: 6376 | Commit RQ3: 3304 | File PW tracciati: 50 (DB: 48, picco attivo: 50)
+  - Intervallo #1: Commit 1904 (2023-08-23) -> Commit 2401 (2024-02-20) | durata: 497 commit (180 giorni) | stabili: 28/40 (70.0%) | fine: rottura_soglia@C2402
+  - Intervallo #2: Commit 2913 (2024-07-08) -> Commit 3302 (2024-10-22) | durata: 389 commit (105 giorni) | stabili: 35/50 (70.0%) | fine: rottura_soglia@C3303
+  - Intervallo #3: Commit 1347 (2023-03-13) -> Commit 1616 (2023-05-23) | durata: 269 commit (71 giorni) | stabili: 18/25 (72.0%) | fine: rottura_soglia@C1617
+  - Intervallo #4: Commit 2402 (2024-02-20) -> Commit 2565 (2024-04-10) | durata: 163 commit (50 giorni) | stabili: 37/47 (78.7%) | fine: rottura_soglia@C2566
+  - Intervallo #5: Commit 2566 (2024-04-11) -> Commit 2723 (2024-05-23) | durata: 157 commit (42 giorni) | stabili: 37/49 (75.5%) | fine: rottura_soglia@C2724
+
+[Playwright #48] getumbrel/umbrel | Stelle: 5822 | Commit RQ3: 1004 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 249 (2024-02-08) -> Commit 765 (2024-03-13) | durata: 516 commit (34 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C766
+  - Intervallo #2: Commit 766 (2024-03-13) -> Commit 1004 (2024-03-26) | durata: 238 commit (13 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 8 (2024-01-03) -> Commit 158 (2024-01-24) | durata: 150 commit (20 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C159
+  - Intervallo #4: Commit 180 (2024-01-26) -> Commit 248 (2024-02-08) | durata: 68 commit (13 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C249
+  - Intervallo #5: Commit 159 (2024-01-24) -> Commit 179 (2024-01-25) | durata: 20 commit (1 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C180
+
+[Playwright #49] documenso/documenso | Stelle: 5772 | Commit RQ3: 1171 | File PW tracciati: 19 (DB: 19, picco attivo: 19)
+  - Intervallo #1: Commit 829 (2024-04-19) -> Commit 1037 (2024-07-18) | durata: 208 commit (89 giorni) | stabili: 12/16 (75.0%) | fine: rottura_soglia@C1038
+  - Intervallo #2: Commit 1057 (2024-07-25) -> Commit 1132 (2024-09-11) | durata: 75 commit (47 giorni) | stabili: 16/19 (84.2%) | fine: rottura_soglia@C1133
+  - Intervallo #3: Commit 1133 (2024-09-16) -> Commit 1171 (2024-10-18) | durata: 38 commit (31 giorni) | stabili: 18/19 (94.7%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 739 (2024-03-23) -> Commit 759 (2024-03-27) | durata: 20 commit (4 giorni) | stabili: 10/10 (100.0%) | fine: rottura_soglia@C760
+  - Intervallo #5: Commit 760 (2024-03-28) -> Commit 779 (2024-04-03) | durata: 19 commit (5 giorni) | stabili: 11/14 (78.6%) | fine: rottura_soglia@C780
+
+[Playwright #50] valor-software/ngx-bootstrap | Stelle: 5515 | Commit RQ3: 37 | File PW tracciati: 6 (DB: 6, picco attivo: 6)
+  - Intervallo #1: Commit 3 (2023-07-08) -> Commit 37 (2024-10-17) | durata: 34 commit (466 giorni) | stabili: 6/6 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #51] rancher-sandbox/rancher-desktop | Stelle: 5456 | Commit RQ3: 7644 | File PW tracciati: 12 (DB: 12, picco attivo: 12)
+  - Intervallo #1: Commit 7252 (2024-07-23) -> Commit 7644 (2024-10-22) | durata: 392 commit (90 giorni) | stabili: 9/12 (75.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 4455 (2023-03-28) -> Commit 4791 (2023-05-05) | durata: 336 commit (38 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C4792
+  - Intervallo #3: Commit 5855 (2023-10-11) -> Commit 6147 (2023-11-21) | durata: 292 commit (40 giorni) | stabili: 9/12 (75.0%) | fine: rottura_soglia@C6148
+  - Intervallo #4: Commit 4900 (2023-05-19) -> Commit 5175 (2023-06-23) | durata: 275 commit (34 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C5176
+  - Intervallo #5: Commit 6693 (2024-03-25) -> Commit 6953 (2024-05-15) | durata: 260 commit (51 giorni) | stabili: 9/12 (75.0%) | fine: rottura_soglia@C6954
+
+[Playwright #52] altair-graphql/altair | Stelle: 4984 | Commit RQ3: 4772 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 444 (2018-05-11) -> Commit 2831 (2020-01-13) | durata: 2387 commit (612 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C2832
+  - Intervallo #2: Commit 3415 (2021-03-22) -> Commit 4173 (2023-03-20) | durata: 758 commit (727 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C4174
+  - Intervallo #3: Commit 4174 (2023-03-20) -> Commit 4772 (2024-03-21) | durata: 598 commit (367 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 2832 (2020-01-14) -> Commit 3414 (2021-03-22) | durata: 582 commit (432 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C3415
+  - Intervallo #5: Commit 1 (2017-03-25) -> Commit 317 (2018-01-12) | durata: 316 commit (292 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C318
+
+[Playwright #53] sanity-io/sanity | Stelle: 4868 | Commit RQ3: 2113 | File PW tracciati: 12 (DB: 14, picco attivo: 12) | Nota: tracciati 12/14 file Playwright in RQ3
+  - Intervallo #1: Commit 1745 (2024-02-12) -> Commit 2113 (2024-03-29) | durata: 368 commit (46 giorni) | stabili: 7/7 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 1414 (2023-12-19) -> Commit 1744 (2024-02-12) | durata: 330 commit (54 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C1745
+
+[Playwright #54] baptistearno/typebot.io | Stelle: 4640 | Commit RQ3: 2498 | File PW tracciati: 48 (DB: 50, picco attivo: 48) | Nota: tracciati 48/50 file Playwright in RQ3
+  - Intervallo #1: Commit 1741 (2023-11-23) -> Commit 2066 (2024-03-15) | durata: 325 commit (113 giorni) | stabili: 41/47 (87.2%) | fine: rottura_soglia@C2067
+  - Intervallo #2: Commit 2067 (2024-03-15) -> Commit 2372 (2024-08-20) | durata: 305 commit (157 giorni) | stabili: 34/47 (72.3%) | fine: rottura_soglia@C2373
+  - Intervallo #3: Commit 1223 (2023-04-26) -> Commit 1476 (2023-08-16) | durata: 253 commit (111 giorni) | stabili: 32/45 (71.1%) | fine: rottura_soglia@C1477
+  - Intervallo #4: Commit 282 (2022-04-04) -> Commit 485 (2022-06-09) | durata: 203 commit (65 giorni) | stabili: 21/30 (70.0%) | fine: rottura_soglia@C486
+  - Intervallo #5: Commit 1558 (2023-09-08) -> Commit 1695 (2023-11-08) | durata: 137 commit (60 giorni) | stabili: 33/47 (70.2%) | fine: rottura_soglia@C1696
+
+[Playwright #55] pinterest/gestalt | Stelle: 4204 | Commit RQ3: 2294 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2022-05-23) -> Commit 2294 (2024-03-27) | durata: 2292 commit (674 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #56] web-infra-dev/modern.js | Stelle: 4107 | Commit RQ3: 356 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2023-11-28) -> Commit 356 (2024-03-28) | durata: 354 commit (121 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #57] workadventure/workadventure | Stelle: 3849 | Commit RQ3: 3869 | File PW tracciati: 25 (DB: 25, picco attivo: 25)
+  - Intervallo #1: Commit 1960 (2023-03-14) -> Commit 2585 (2023-08-11) | durata: 625 commit (149 giorni) | stabili: 12/16 (75.0%) | fine: rottura_soglia@C2586
+  - Intervallo #2: Commit 3007 (2024-03-06) -> Commit 3415 (2024-06-25) | durata: 408 commit (111 giorni) | stabili: 16/22 (72.7%) | fine: rottura_soglia@C3416
+  - Intervallo #3: Commit 1533 (2022-12-05) -> Commit 1915 (2023-03-06) | durata: 382 commit (90 giorni) | stabili: 10/13 (76.9%) | fine: rottura_soglia@C1916
+  - Intervallo #4: Commit 3482 (2024-07-12) -> Commit 3857 (2024-10-17) | durata: 375 commit (97 giorni) | stabili: 18/25 (72.0%) | fine: rottura_soglia@C3858
+  - Intervallo #5: Commit 2623 (2023-09-04) -> Commit 2835 (2023-12-06) | durata: 212 commit (93 giorni) | stabili: 14/18 (77.8%) | fine: rottura_soglia@C2836
+
+[Playwright #58] jupyterlite/jupyterlite | Stelle: 3557 | Commit RQ3: 1193 | File PW tracciati: 7 (DB: 7, picco attivo: 7)
+  - Intervallo #1: Commit 678 (2022-06-29) -> Commit 925 (2022-12-14) | durata: 247 commit (167 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C926
+  - Intervallo #2: Commit 930 (2022-12-20) -> Commit 1083 (2023-08-24) | durata: 153 commit (247 giorni) | stabili: 4/4 (100.0%) | fine: rottura_soglia@C1084
+  - Intervallo #3: Commit 1113 (2023-10-04) -> Commit 1170 (2024-02-08) | durata: 57 commit (126 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C1171
+  - Intervallo #4: Commit 1087 (2023-09-14) -> Commit 1112 (2023-10-04) | durata: 25 commit (20 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C1113
+  - Intervallo #5: Commit 1171 (2024-02-14) -> Commit 1193 (2024-03-26) | durata: 22 commit (40 giorni) | stabili: 7/7 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #59] imolorhe/altair | Stelle: 3450 | Commit RQ3: 3653 | File PW tracciati: 1 (DB: 2, picco attivo: 1) | Nota: tracciati 1/2 file Playwright in RQ3
+  - Intervallo #1: Commit 444 (2018-05-11) -> Commit 2831 (2020-01-13) | durata: 2387 commit (612 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C2832
+  - Intervallo #2: Commit 2832 (2020-01-14) -> Commit 3414 (2021-03-22) | durata: 582 commit (432 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C3415
+  - Intervallo #3: Commit 1 (2017-03-25) -> Commit 317 (2018-01-12) | durata: 316 commit (292 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C318
+  - Intervallo #4: Commit 3415 (2021-03-22) -> Commit 3653 (2021-06-04) | durata: 238 commit (74 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #5: Commit 318 (2018-01-12) -> Commit 443 (2018-05-11) | durata: 125 commit (118 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C444
+
+[Playwright #60] tagspaces/tagspaces | Stelle: 3365 | Commit RQ3: 2671 | File PW tracciati: 0 (DB: 2, picco attivo: 0) | Nota: nessun file di test valido in *_only_gui RQ3
+  -> Nessun intervallo calcolabile dai dati *_only_gui disponibili.
+
+[Playwright #61] thecodingmachine/workadventure | Stelle: 3192 | Commit RQ3: 3869 | File PW tracciati: 25 (DB: 25, picco attivo: 25)
+  - Intervallo #1: Commit 1960 (2023-03-14) -> Commit 2585 (2023-08-11) | durata: 625 commit (149 giorni) | stabili: 12/16 (75.0%) | fine: rottura_soglia@C2586
+  - Intervallo #2: Commit 3007 (2024-03-06) -> Commit 3415 (2024-06-25) | durata: 408 commit (111 giorni) | stabili: 16/22 (72.7%) | fine: rottura_soglia@C3416
+  - Intervallo #3: Commit 1533 (2022-12-05) -> Commit 1915 (2023-03-06) | durata: 382 commit (90 giorni) | stabili: 10/13 (76.9%) | fine: rottura_soglia@C1916
+  - Intervallo #4: Commit 3482 (2024-07-12) -> Commit 3857 (2024-10-17) | durata: 375 commit (97 giorni) | stabili: 18/25 (72.0%) | fine: rottura_soglia@C3858
+  - Intervallo #5: Commit 2623 (2023-09-04) -> Commit 2835 (2023-12-06) | durata: 212 commit (93 giorni) | stabili: 14/18 (77.8%) | fine: rottura_soglia@C2836
+
+[Playwright #62] primer/react | Stelle: 2909 | Commit RQ3: 1755 | File PW tracciati: 58 (DB: 58, picco attivo: 58)
+  - Intervallo #1: Commit 925 (2023-10-30) -> Commit 1500 (2024-08-11) | durata: 575 commit (286 giorni) | stabili: 38/53 (71.7%) | fine: rottura_soglia@C1501
+  - Intervallo #2: Commit 342 (2023-03-08) -> Commit 861 (2023-10-06) | durata: 519 commit (211 giorni) | stabili: 24/34 (70.6%) | fine: rottura_soglia@C862
+  - Intervallo #3: Commit 1508 (2024-08-14) -> Commit 1627 (2024-09-23) | durata: 119 commit (40 giorni) | stabili: 41/58 (70.7%) | fine: rottura_soglia@C1628
+  - Intervallo #4: Commit 1649 (2024-09-27) -> Commit 1750 (2024-10-21) | durata: 101 commit (24 giorni) | stabili: 40/57 (70.2%) | fine: rottura_soglia@C1751
+
+[Playwright #63] opensumi/core | Stelle: 2700 | Commit RQ3: 1476 | File PW tracciati: 13 (DB: 13, picco attivo: 13)
+  - Intervallo #1: Commit 900 (2024-01-12) -> Commit 1476 (2024-10-18) | durata: 576 commit (280 giorni) | stabili: 10/13 (76.9%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 393 (2023-01-12) -> Commit 899 (2024-01-11) | durata: 506 commit (363 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C900
+  - Intervallo #3: Commit 204 (2022-10-31) -> Commit 346 (2022-12-28) | durata: 142 commit (58 giorni) | stabili: 6/8 (75.0%) | fine: rottura_soglia@C347
+  - Intervallo #4: Commit 347 (2022-12-28) -> Commit 362 (2023-01-03) | durata: 15 commit (6 giorni) | stabili: 7/9 (77.8%) | fine: rottura_soglia@C363
+
+[Playwright #64] quadratichq/quadratic | Stelle: 2667 | Commit RQ3: 3786 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 123 (2022-09-14) -> Commit 3786 (2024-03-28) | durata: 3663 commit (561 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 29 (2022-06-28) -> Commit 121 (2022-09-14) | durata: 92 commit (77 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C122
+
+[Playwright #65] pwa-builder/pwabuilder | Stelle: 2405 | Commit RQ3: 269 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 3 (2023-04-05) -> Commit 134 (2023-08-24) | durata: 131 commit (140 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C135
+  - Intervallo #2: Commit 135 (2023-08-24) -> Commit 187 (2023-10-16) | durata: 52 commit (53 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C188
+  - Intervallo #3: Commit 228 (2023-12-12) -> Commit 269 (2024-03-13) | durata: 41 commit (91 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 188 (2023-10-16) -> Commit 215 (2023-11-15) | durata: 27 commit (29 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C216
+
+[Playwright #66] codyogden/killedbygoogle | Stelle: 2317 | Commit RQ3: 986 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 819 (2022-02-11) -> Commit 986 (2024-03-23) | durata: 167 commit (771 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 785 (2022-02-05) -> Commit 801 (2022-02-05) | durata: 16 commit (0 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C802
+  - Intervallo #3: Commit 769 (2022-02-04) -> Commit 784 (2022-02-05) | durata: 15 commit (0 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C785
+
+[Playwright #67] modernweb-dev/web | Stelle: 2085 | Commit RQ3: 16 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2024-03-18) -> Commit 13 (2024-03-19) | durata: 11 commit (1 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C14
+
+[Playwright #68] oneuptime/oneuptime | Stelle: 2054 | Commit RQ3: 3608 | File PW tracciati: 4 (DB: 9, picco attivo: 4) | Nota: tracciati 4/9 file Playwright in RQ3
+  - Intervallo #1: Commit 550 (2023-05-16) -> Commit 2507 (2023-12-12) | durata: 1957 commit (210 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C2508
+  - Intervallo #2: Commit 2508 (2023-12-12) -> Commit 3608 (2024-03-29) | durata: 1100 commit (108 giorni) | stabili: 4/4 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 296 (2023-04-26) -> Commit 544 (2023-05-16) | durata: 248 commit (19 giorni) | stabili: 4/4 (100.0%) | fine: rottura_soglia@C545
+  - Intervallo #4: Commit 247 (2023-04-22) -> Commit 295 (2023-04-26) | durata: 48 commit (4 giorni) | stabili: 4/4 (100.0%) | fine: rottura_soglia@C296
+
+[Playwright #69] bigcapitalhq/bigcapital | Stelle: 2027 | Commit RQ3: 428 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 98 (2023-06-27) -> Commit 428 (2024-03-28) | durata: 330 commit (275 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #70] alephdata/aleph | Stelle: 1934 | Commit RQ3: 421 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2023-04-21) -> Commit 421 (2024-02-28) | durata: 419 commit (313 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #71] parabolinc/parabol | Stelle: 1829 | Commit RQ3: 1637 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 81 (2022-06-24) -> Commit 916 (2023-06-08) | durata: 835 commit (348 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C917
+  - Intervallo #2: Commit 1040 (2023-07-26) -> Commit 1637 (2024-03-28) | durata: 597 commit (246 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 917 (2023-06-08) -> Commit 1039 (2023-07-26) | durata: 122 commit (47 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C1040
+  - Intervallo #4: Commit 2 (2022-06-06) -> Commit 80 (2022-06-24) | durata: 78 commit (17 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C81
+
+[Playwright #72] klembot/twinejs | Stelle: 1741 | Commit RQ3: 118 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 66 (2023-10-12) -> Commit 118 (2024-02-29) | durata: 52 commit (139 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 20 (2023-01-07) -> Commit 65 (2023-10-07) | durata: 45 commit (273 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C66
+  - Intervallo #3: Commit 2 (2022-10-30) -> Commit 19 (2023-01-07) | durata: 17 commit (69 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C20
+
+[Playwright #73] master-co/css | Stelle: 1725 | Commit RQ3: 744 | File PW tracciati: 0 (DB: 6, picco attivo: 0) | Nota: nessun file di test valido in *_only_gui RQ3
+  -> Nessun intervallo calcolabile dai dati *_only_gui disponibili.
+
+[Playwright #74] brimdata/zui | Stelle: 1720 | Commit RQ3: 678 | File PW tracciati: 10 (DB: 10, picco attivo: 10)
+  - Intervallo #1: Commit 576 (2024-01-09) -> Commit 674 (2024-03-28) | durata: 98 commit (78 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C675
+  - Intervallo #2: Commit 481 (2023-10-23) -> Commit 554 (2023-12-21) | durata: 73 commit (58 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C555
+  - Intervallo #3: Commit 555 (2023-12-21) -> Commit 575 (2024-01-09) | durata: 20 commit (19 giorni) | stabili: 6/7 (85.7%) | fine: rottura_soglia@C576
+
+[Playwright #75] sourcegraph/cody | Stelle: 1631 | Commit RQ3: 409 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 223 (2024-02-25) -> Commit 377 (2024-03-26) | durata: 154 commit (30 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C378
+  - Intervallo #2: Commit 82 (2024-02-02) -> Commit 159 (2024-02-13) | durata: 77 commit (11 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C160
+  - Intervallo #3: Commit 378 (2024-03-26) -> Commit 409 (2024-03-28) | durata: 31 commit (2 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 192 (2024-02-16) -> Commit 222 (2024-02-23) | durata: 30 commit (7 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C223
+  - Intervallo #5: Commit 170 (2024-02-14) -> Commit 191 (2024-02-16) | durata: 21 commit (1 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C192
+
+[Playwright #76] xdan/jodit | Stelle: 1559 | Commit RQ3: 802 | File PW tracciati: 13 (DB: 13, picco attivo: 13)
+  - Intervallo #1: Commit 565 (2024-04-21) -> Commit 716 (2025-01-19) | durata: 151 commit (272 giorni) | stabili: 11/13 (84.6%) | fine: rottura_soglia@C717
+  - Intervallo #2: Commit 717 (2025-01-19) -> Commit 802 (2025-04-01) | durata: 85 commit (72 giorni) | stabili: 13/13 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #77] headlamp-k8s/headlamp | Stelle: 1538 | Commit RQ3: 1222 | File PW tracciati: 4 (DB: 5, picco attivo: 4) | Nota: tracciati 4/5 file Playwright in RQ3
+  - Intervallo #1: Commit 1090 (2024-01-23) -> Commit 1162 (2024-03-02) | durata: 72 commit (39 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C1163
+  - Intervallo #2: Commit 1184 (2024-03-18) -> Commit 1222 (2024-03-27) | durata: 38 commit (9 giorni) | stabili: 3/4 (75.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 1163 (2024-03-03) -> Commit 1183 (2024-03-15) | durata: 20 commit (11 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C1184
+
+[Playwright #78] kubeshop/monokle | Stelle: 1475 | Commit RQ3: 4516 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 1903 (2022-09-28) -> Commit 4516 (2024-02-28) | durata: 2613 commit (518 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 1426 (2022-07-08) -> Commit 1799 (2022-09-15) | durata: 373 commit (69 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C1800
+  - Intervallo #3: Commit 897 (2022-05-16) -> Commit 1212 (2022-06-15) | durata: 315 commit (30 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C1213
+  - Intervallo #4: Commit 401 (2022-03-07) -> Commit 655 (2022-04-14) | durata: 254 commit (38 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C656
+  - Intervallo #5: Commit 212 (2022-02-14) -> Commit 348 (2022-03-02) | durata: 136 commit (16 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C349
+
+[Playwright #79] brimdata/brim | Stelle: 1404 | Commit RQ3: 757 | File PW tracciati: 10 (DB: 10, picco attivo: 10)
+  - Intervallo #1: Commit 576 (2024-01-09) -> Commit 674 (2024-03-28) | durata: 98 commit (78 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C675
+  - Intervallo #2: Commit 675 (2024-03-28) -> Commit 757 (2024-06-28) | durata: 82 commit (92 giorni) | stabili: 8/10 (80.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 481 (2023-10-23) -> Commit 554 (2023-12-21) | durata: 73 commit (58 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C555
+  - Intervallo #4: Commit 555 (2023-12-21) -> Commit 575 (2024-01-09) | durata: 20 commit (19 giorni) | stabili: 6/7 (85.7%) | fine: rottura_soglia@C576
+
+[Playwright #80] aurelia/aurelia | Stelle: 1339 | Commit RQ3: 751 | File PW tracciati: 8 (DB: 8, picco attivo: 8)
+  - Intervallo #1: Commit 289 (2023-02-04) -> Commit 635 (2024-02-29) | durata: 346 commit (389 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C636
+  - Intervallo #2: Commit 674 (2024-05-06) -> Commit 751 (2024-10-01) | durata: 77 commit (148 giorni) | stabili: 6/8 (75.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 648 (2024-03-16) -> Commit 670 (2024-04-30) | durata: 22 commit (44 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C671
+
+[Playwright #81] primer/components | Stelle: 1270 | Commit RQ3: 1750 | File PW tracciati: 58 (DB: 58, picco attivo: 58)
+  - Intervallo #1: Commit 925 (2023-10-30) -> Commit 1500 (2024-08-11) | durata: 575 commit (286 giorni) | stabili: 38/53 (71.7%) | fine: rottura_soglia@C1501
+  - Intervallo #2: Commit 342 (2023-03-08) -> Commit 861 (2023-10-06) | durata: 519 commit (211 giorni) | stabili: 24/34 (70.6%) | fine: rottura_soglia@C862
+  - Intervallo #3: Commit 1508 (2024-08-14) -> Commit 1627 (2024-09-23) | durata: 119 commit (40 giorni) | stabili: 41/58 (70.7%) | fine: rottura_soglia@C1628
+  - Intervallo #4: Commit 1649 (2024-09-27) -> Commit 1750 (2024-10-21) | durata: 101 commit (24 giorni) | stabili: 40/57 (70.2%) | fine: fine_storia_rq3
+
+[Playwright #82] steedos/steedos-platform | Stelle: 1262 | Commit RQ3: 768 | File PW tracciati: 5 (DB: 5, picco attivo: 5)
+  - Intervallo #1: Commit 6 (2024-03-28) -> Commit 768 (2025-06-10) | durata: 762 commit (438 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #83] duckduckgo/duckduckgo-privacy-extension | Stelle: 1188 | Commit RQ3: 435 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 67 (2023-03-30) -> Commit 328 (2023-09-19) | durata: 261 commit (172 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C329
+  - Intervallo #2: Commit 329 (2023-09-19) -> Commit 435 (2024-03-27) | durata: 106 commit (190 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 2 (2023-03-10) -> Commit 66 (2023-03-30) | durata: 64 commit (19 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C67
+
+[Playwright #84] arnog/mathlive | Stelle: 1163 | Commit RQ3: 704 | File PW tracciati: 5 (DB: 5, picco attivo: 5)
+  - Intervallo #1: Commit 257 (2023-07-04) -> Commit 404 (2023-11-19) | durata: 147 commit (138 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C405
+  - Intervallo #2: Commit 449 (2023-12-01) -> Commit 580 (2024-03-01) | durata: 131 commit (90 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C581
+  - Intervallo #3: Commit 581 (2024-03-21) -> Commit 704 (2024-10-15) | durata: 123 commit (208 giorni) | stabili: 3/4 (75.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 103 (2023-04-28) -> Commit 198 (2023-05-18) | durata: 95 commit (20 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C199
+  - Intervallo #5: Commit 9 (2023-04-05) -> Commit 54 (2023-04-12) | durata: 45 commit (7 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C55
+
+[Playwright #85] adobe/spectrum-web-components | Stelle: 1156 | Commit RQ3: 1183 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 126 (2023-02-17) -> Commit 684 (2023-08-18) | durata: 558 commit (182 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C685
+  - Intervallo #2: Commit 685 (2023-08-22) -> Commit 1183 (2024-03-28) | durata: 498 commit (219 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 39 (2023-01-23) -> Commit 125 (2023-02-16) | durata: 86 commit (23 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C126
+  - Intervallo #4: Commit 14 (2023-01-11) -> Commit 38 (2023-01-23) | durata: 24 commit (12 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C39
+
+[Playwright #86] bemusic/bemuse | Stelle: 999 | Commit RQ3: 354 | File PW tracciati: 5 (DB: 5, picco attivo: 5)
+  - Intervallo #1: Commit 263 (2022-12-31) -> Commit 325 (2023-01-05) | durata: 62 commit (5 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C326
+  - Intervallo #2: Commit 332 (2023-01-05) -> Commit 354 (2023-01-07) | durata: 22 commit (1 giorni) | stabili: 3/4 (75.0%) | fine: fine_storia_rq3
+
+[Playwright #87] brimsec/brim | Stelle: 980 | Commit RQ3: 757 | File PW tracciati: 1 (DB: 10, picco attivo: 1) | Nota: tracciati 1/10 file Playwright in RQ3
+  - Intervallo #1: Commit 202 (2023-01-26) -> Commit 433 (2023-07-28) | durata: 231 commit (183 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C434
+  - Intervallo #2: Commit 539 (2023-12-05) -> Commit 757 (2024-06-28) | durata: 218 commit (206 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 42 (2022-09-22) -> Commit 201 (2023-01-26) | durata: 159 commit (126 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C202
+  - Intervallo #4: Commit 481 (2023-10-23) -> Commit 538 (2023-12-04) | durata: 57 commit (41 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C539
+  - Intervallo #5: Commit 434 (2023-07-28) -> Commit 480 (2023-10-23) | durata: 46 commit (86 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C481
+
+[Playwright #88] staltz/manyverse | Stelle: 923 | Commit RQ3: 120 | File PW tracciati: 7 (DB: 7, picco attivo: 7)
+  - Intervallo #1: Commit 32 (2023-01-20) -> Commit 120 (2024-08-13) | durata: 88 commit (570 giorni) | stabili: 4/4 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #89] mkosir/react-parallax-tilt | Stelle: 901 | Commit RQ3: 174 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 135 (2024-02-12) -> Commit 174 (2024-03-29) | durata: 39 commit (45 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 7 (2024-01-27) -> Commit 24 (2024-01-28) | durata: 17 commit (1 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C25
+
+[Playwright #90] clerk/javascript | Stelle: 819 | Commit RQ3: 2328 | File PW tracciati: 20 (DB: 20, picco attivo: 20)
+  - Intervallo #1: Commit 724 (2023-12-13) -> Commit 1254 (2024-03-13) | durata: 530 commit (90 giorni) | stabili: 7/10 (70.0%) | fine: rottura_soglia@C1255
+  - Intervallo #2: Commit 1827 (2024-07-17) -> Commit 2328 (2024-10-23) | durata: 501 commit (97 giorni) | stabili: 16/20 (80.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 1303 (2024-03-26) -> Commit 1774 (2024-07-09) | durata: 471 commit (104 giorni) | stabili: 13/18 (72.2%) | fine: rottura_soglia@C1775
+  - Intervallo #4: Commit 1775 (2024-07-10) -> Commit 1826 (2024-07-17) | durata: 51 commit (7 giorni) | stabili: 15/20 (75.0%) | fine: rottura_soglia@C1827
+  - Intervallo #5: Commit 1255 (2024-03-13) -> Commit 1302 (2024-03-25) | durata: 47 commit (12 giorni) | stabili: 10/13 (76.9%) | fine: rottura_soglia@C1303
+
+[Playwright #91] replayio/devtools | Stelle: 649 | Commit RQ3: 558 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2023-09-14) -> Commit 539 (2024-03-15) | durata: 537 commit (183 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C540
+  - Intervallo #2: Commit 540 (2024-03-15) -> Commit 558 (2024-03-27) | durata: 18 commit (12 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #92] getstream/stream-chat-react | Stelle: 638 | Commit RQ3: 533 | File PW tracciati: 4 (DB: 4, picco attivo: 4)
+  - Intervallo #1: Commit 307 (2023-01-04) -> Commit 533 (2024-02-23) | durata: 226 commit (415 giorni) | stabili: 4/4 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 146 (2022-07-29) -> Commit 306 (2022-12-16) | durata: 160 commit (139 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C307
+  - Intervallo #3: Commit 68 (2022-06-23) -> Commit 135 (2022-07-26) | durata: 67 commit (33 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C136
+  - Intervallo #4: Commit 34 (2022-05-15) -> Commit 50 (2022-05-26) | durata: 16 commit (10 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C51
+
+[Playwright #93] xcodebuild/codeterminal | Stelle: 636 | Commit RQ3: 19041 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 4164 (2021-03-30) -> Commit 15561 (2022-01-14) | durata: 11397 commit (290 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C15562
+  - Intervallo #2: Commit 15562 (2022-01-15) -> Commit 19011 (2022-04-08) | durata: 3449 commit (83 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C19012
+  - Intervallo #3: Commit 1184 (2021-01-28) -> Commit 4095 (2021-03-29) | durata: 2911 commit (59 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C4096
+  - Intervallo #4: Commit 35 (2020-12-30) -> Commit 1183 (2021-01-28) | durata: 1148 commit (29 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C1184
+  - Intervallo #5: Commit 4096 (2021-03-29) -> Commit 4163 (2021-03-30) | durata: 67 commit (0 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C4164
+
+[Playwright #94] sefaria/sefaria-project | Stelle: 631 | Commit RQ3: 1130 | File PW tracciati: 4 (DB: 5, picco attivo: 4) | Nota: tracciati 4/5 file Playwright in RQ3
+  - Intervallo #1: Commit 476 (2023-09-11) -> Commit 1081 (2024-03-05) | durata: 605 commit (176 giorni) | stabili: 4/4 (100.0%) | fine: rottura_soglia@C1082
+  - Intervallo #2: Commit 75 (2023-07-10) -> Commit 474 (2023-09-10) | durata: 399 commit (62 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C475
+  - Intervallo #3: Commit 2 (2023-06-27) -> Commit 55 (2023-07-04) | durata: 53 commit (6 giorni) | stabili: 4/4 (100.0%) | fine: rottura_soglia@C56
+  - Intervallo #4: Commit 1082 (2024-03-05) -> Commit 1130 (2024-03-28) | durata: 48 commit (22 giorni) | stabili: 4/4 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #5: Commit 56 (2023-07-04) -> Commit 72 (2023-07-06) | durata: 16 commit (1 giorni) | stabili: 4/4 (100.0%) | fine: rottura_soglia@C73
+
+[Playwright #95] trezor/trezor-suite | Stelle: 614 | Commit RQ3: 5109 | File PW tracciati: 6 (DB: 7, picco attivo: 6) | Nota: tracciati 6/7 file Playwright in RQ3
+  - Intervallo #1: Commit 1757 (2023-04-21) -> Commit 3112 (2023-10-10) | durata: 1355 commit (171 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C3113
+  - Intervallo #2: Commit 3471 (2023-11-14) -> Commit 4684 (2024-02-20) | durata: 1213 commit (98 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C4685
+  - Intervallo #3: Commit 941 (2023-01-06) -> Commit 1237 (2023-02-21) | durata: 296 commit (46 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C1238
+  - Intervallo #4: Commit 3113 (2023-10-10) -> Commit 3406 (2023-11-02) | durata: 293 commit (23 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C3407
+  - Intervallo #5: Commit 655 (2022-11-24) -> Commit 940 (2023-01-06) | durata: 285 commit (43 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C941
+
+[Playwright #96] jupyterlab/lumino | Stelle: 570 | Commit RQ3: 144 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 2 (2023-01-04) -> Commit 144 (2024-03-25) | durata: 142 commit (445 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #97] stripe-samples/accept-a-payment | Stelle: 542 | Commit RQ3: 655 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 2 (2022-10-27) -> Commit 655 (2024-09-30) | durata: 653 commit (703 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #98] audiusproject/audius-protocol | Stelle: 537 | Commit RQ3: 10 | File PW tracciati: 6 (DB: 9, picco attivo: 6) | Nota: tracciati 6/9 file Playwright in RQ3
+  - Intervallo #1: Commit 2 (2024-03-25) -> Commit 10 (2024-03-25) | durata: 8 commit (0 giorni) | stabili: 4/5 (80.0%) | fine: fine_storia_rq3
+
+[Playwright #99] clerkinc/javascript | Stelle: 532 | Commit RQ3: 2333 | File PW tracciati: 20 (DB: 20, picco attivo: 20)
+  - Intervallo #1: Commit 724 (2023-12-13) -> Commit 1254 (2024-03-13) | durata: 530 commit (90 giorni) | stabili: 7/10 (70.0%) | fine: rottura_soglia@C1255
+  - Intervallo #2: Commit 1827 (2024-07-17) -> Commit 2333 (2024-10-23) | durata: 506 commit (98 giorni) | stabili: 16/20 (80.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 1303 (2024-03-26) -> Commit 1774 (2024-07-09) | durata: 471 commit (104 giorni) | stabili: 13/18 (72.2%) | fine: rottura_soglia@C1775
+  - Intervallo #4: Commit 1775 (2024-07-10) -> Commit 1826 (2024-07-17) | durata: 51 commit (7 giorni) | stabili: 15/20 (75.0%) | fine: rottura_soglia@C1827
+  - Intervallo #5: Commit 1255 (2024-03-13) -> Commit 1302 (2024-03-25) | durata: 47 commit (12 giorni) | stabili: 10/13 (76.9%) | fine: rottura_soglia@C1303
+
+[Playwright #100] Oneirocom/Magick | Stelle: 529 | Commit RQ3: 2377 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2023-11-29) -> Commit 2377 (2024-03-27) | durata: 2375 commit (119 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #101] serenity-js/serenity-js | Stelle: 527 | Commit RQ3: 733 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 197 (2023-09-14) -> Commit 693 (2024-03-02) | durata: 496 commit (169 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C694
+  - Intervallo #2: Commit 2 (2023-07-11) -> Commit 52 (2023-07-25) | durata: 50 commit (13 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C53
+  - Intervallo #3: Commit 694 (2024-03-03) -> Commit 733 (2024-03-28) | durata: 39 commit (25 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #102] Laboratoria/curriculum | Stelle: 491 | Commit RQ3: 205 | File PW tracciati: 2 (DB: 2, picco attivo: 2)
+  - Intervallo #1: Commit 21 (2023-07-11) -> Commit 205 (2024-09-27) | durata: 184 commit (443 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 2 (2023-05-31) -> Commit 20 (2023-07-11) | durata: 18 commit (41 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C21
+
+[Playwright #103] relative-ci/bundle-stats | Stelle: 468 | Commit RQ3: 1098 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 369 (2023-08-11) -> Commit 969 (2024-02-12) | durata: 600 commit (185 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C970
+  - Intervallo #2: Commit 5 (2023-01-24) -> Commit 368 (2023-08-11) | durata: 363 commit (198 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C369
+  - Intervallo #3: Commit 970 (2024-02-12) -> Commit 1098 (2024-03-29) | durata: 128 commit (45 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #104] exogee-technology/graphweaver | Stelle: 440 | Commit RQ3: 1222 | File PW tracciati: 7 (DB: 14, picco attivo: 7) | Nota: tracciati 7/14 file Playwright in RQ3
+  - Intervallo #1: Commit 713 (2024-01-19) -> Commit 1222 (2024-03-28) | durata: 509 commit (68 giorni) | stabili: 3/4 (75.0%) | fine: fine_storia_rq3
+
+[Playwright #105] optuna/optuna-dashboard | Stelle: 437 | Commit RQ3: 945 | File PW tracciati: 4 (DB: 4, picco attivo: 4)
+  - Intervallo #1: Commit 736 (2024-01-08) -> Commit 945 (2024-03-29) | durata: 209 commit (81 giorni) | stabili: 3/4 (75.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 326 (2023-09-03) -> Commit 515 (2023-10-10) | durata: 189 commit (37 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C516
+  - Intervallo #3: Commit 66 (2023-07-02) -> Commit 237 (2023-08-19) | durata: 171 commit (48 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C238
+  - Intervallo #4: Commit 578 (2023-11-10) -> Commit 681 (2023-12-07) | durata: 103 commit (26 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C682
+  - Intervallo #5: Commit 239 (2023-08-20) -> Commit 325 (2023-09-01) | durata: 86 commit (12 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C326
+
+[Playwright #106] porsche-design-system/porsche-design-system | Stelle: 432 | Commit RQ3: 26859 | File PW tracciati: 102 (DB: 102, picco attivo: 102)
+  - Intervallo #1: Commit 24511 (2024-03-21) -> Commit 25669 (2024-07-23) | durata: 1158 commit (123 giorni) | stabili: 70/100 (70.0%) | fine: rottura_soglia@C25670
+  - Intervallo #2: Commit 25850 (2024-07-30) -> Commit 26859 (2024-10-18) | durata: 1009 commit (80 giorni) | stabili: 75/102 (73.5%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 24188 (2024-03-05) -> Commit 24360 (2024-03-12) | durata: 172 commit (7 giorni) | stabili: 68/85 (80.0%) | fine: rottura_soglia@C24361
+  - Intervallo #4: Commit 25768 (2024-07-29) -> Commit 25849 (2024-07-30) | durata: 81 commit (0 giorni) | stabili: 73/102 (71.6%) | fine: rottura_soglia@C25850
+  - Intervallo #5: Commit 25670 (2024-07-23) -> Commit 25747 (2024-07-26) | durata: 77 commit (3 giorni) | stabili: 82/102 (80.4%) | fine: rottura_soglia@C25748
+
+[Playwright #107] epam/ketcher | Stelle: 417 | Commit RQ3: 904 | File PW tracciati: 168 (DB: 169, picco attivo: 168) | Nota: tracciati 168/169 file Playwright in RQ3
+  - Intervallo #1: Commit 463 (2024-02-09) -> Commit 757 (2024-07-29) | durata: 294 commit (171 giorni) | stabili: 107/151 (70.9%) | fine: rottura_soglia@C758
+  - Intervallo #2: Commit 330 (2023-11-16) -> Commit 436 (2024-01-30) | durata: 106 commit (74 giorni) | stabili: 98/134 (73.1%) | fine: rottura_soglia@C437
+  - Intervallo #3: Commit 758 (2024-07-29) -> Commit 849 (2024-09-25) | durata: 91 commit (57 giorni) | stabili: 124/168 (73.8%) | fine: rottura_soglia@C850
+  - Intervallo #4: Commit 850 (2024-09-26) -> Commit 904 (2024-10-21) | durata: 54 commit (24 giorni) | stabili: 125/167 (74.9%) | fine: fine_storia_rq3
+  - Intervallo #5: Commit 263 (2023-10-05) -> Commit 303 (2023-10-31) | durata: 40 commit (25 giorni) | stabili: 75/107 (70.1%) | fine: rottura_soglia@C304
+
+[Playwright #108] cornerstonejs/cornerstone3d | Stelle: 408 | Commit RQ3: 1096 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 8 (2024-05-21) -> Commit 847 (2025-04-16) | durata: 839 commit (329 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C848
+  - Intervallo #2: Commit 848 (2025-04-15) -> Commit 1096 (2025-06-13) | durata: 248 commit (58 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #109] woocommerce/woocommerce-blocks | Stelle: 397 | Commit RQ3: 512 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 31 (2023-09-15) -> Commit 176 (2023-10-19) | durata: 145 commit (34 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C177
+  - Intervallo #2: Commit 177 (2023-10-20) -> Commit 285 (2023-11-06) | durata: 108 commit (17 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C286
+  - Intervallo #3: Commit 408 (2023-11-24) -> Commit 512 (2024-02-22) | durata: 104 commit (89 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 286 (2023-11-06) -> Commit 358 (2023-11-16) | durata: 72 commit (10 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C359
+  - Intervallo #5: Commit 2 (2023-09-12) -> Commit 30 (2023-09-15) | durata: 28 commit (3 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C31
+
+[Playwright #110] patternfly/patternfly-elements | Stelle: 372 | Commit RQ3: 1173 | File PW tracciati: 31 (DB: 31, picco attivo: 31)
+  - Intervallo #1: Commit 675 (2023-01-31) -> Commit 1121 (2024-08-16) | durata: 446 commit (562 giorni) | stabili: 20/20 (100.0%) | fine: rottura_soglia@C1122
+  - Intervallo #2: Commit 1122 (2024-08-16) -> Commit 1173 (2024-10-16) | durata: 51 commit (61 giorni) | stabili: 31/31 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #111] open-source-labs/reactype | Stelle: 366 | Commit RQ3: 630 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 246 (2023-10-26) -> Commit 630 (2024-03-06) | durata: 384 commit (131 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 2 (2023-05-02) -> Commit 245 (2023-10-25) | durata: 243 commit (176 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C246
+
+[Playwright #112] chia-network/chia-blockchain-gui | Stelle: 333 | Commit RQ3: 1215 | File PW tracciati: 20 (DB: 20, picco attivo: 20)
+  - Intervallo #1: Commit 163 (2022-11-15) -> Commit 808 (2023-05-16) | durata: 645 commit (181 giorni) | stabili: 12/12 (100.0%) | fine: rottura_soglia@C809
+  - Intervallo #2: Commit 809 (2023-05-18) -> Commit 1048 (2023-08-23) | durata: 239 commit (97 giorni) | stabili: 18/18 (100.0%) | fine: rottura_soglia@C1049
+  - Intervallo #3: Commit 1049 (2023-08-23) -> Commit 1196 (2024-03-10) | durata: 147 commit (199 giorni) | stabili: 20/20 (100.0%) | fine: rottura_soglia@C1197
+  - Intervallo #4: Commit 57 (2022-09-29) -> Commit 123 (2022-10-28) | durata: 66 commit (29 giorni) | stabili: 10/10 (100.0%) | fine: rottura_soglia@C124
+  - Intervallo #5: Commit 124 (2022-10-28) -> Commit 162 (2022-11-15) | durata: 38 commit (17 giorni) | stabili: 12/12 (100.0%) | fine: rottura_soglia@C163
+
+[Playwright #113] mui/material-ui-docs | Stelle: 309 | Commit RQ3: 5608 | File PW tracciati: 6 (DB: 6, picco attivo: 6)
+  - Intervallo #1: Commit 3423 (2023-06-25) -> Commit 5608 (2024-03-26) | durata: 2185 commit (274 giorni) | stabili: 5/6 (83.3%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 1514 (2022-08-09) -> Commit 3323 (2023-06-12) | durata: 1809 commit (307 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C3324
+  - Intervallo #3: Commit 696 (2022-04-08) -> Commit 1305 (2022-07-10) | durata: 609 commit (93 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C1306
+  - Intervallo #4: Commit 442 (2022-03-01) -> Commit 695 (2022-04-08) | durata: 253 commit (38 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C696
+  - Intervallo #5: Commit 198 (2022-01-24) -> Commit 434 (2022-02-28) | durata: 236 commit (34 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C435
+
+[Playwright #114] azerothcore/keira3 | Stelle: 298 | Commit RQ3: 2662 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 1550 (2021-12-25) -> Commit 2560 (2024-02-15) | durata: 1010 commit (782 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C2561
+  - Intervallo #2: Commit 2595 (2024-03-02) -> Commit 2662 (2024-03-21) | durata: 67 commit (18 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 2561 (2024-02-16) -> Commit 2594 (2024-03-02) | durata: 33 commit (15 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C2595
+
+[Playwright #115] ably/ably-js | Stelle: 292 | Commit RQ3: 317 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 12 (2023-11-14) -> Commit 172 (2024-02-21) | durata: 160 commit (98 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C173
+  - Intervallo #2: Commit 243 (2024-03-06) -> Commit 317 (2024-03-25) | durata: 74 commit (19 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 173 (2024-02-23) -> Commit 242 (2024-03-06) | durata: 69 commit (12 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C243
+
+[Playwright #116] cmsgov/design-system | Stelle: 287 | Commit RQ3: 310 | File PW tracciati: 3 (DB: 3, picco attivo: 3)
+  - Intervallo #1: Commit 196 (2023-11-17) -> Commit 270 (2024-02-12) | durata: 74 commit (86 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C271
+  - Intervallo #2: Commit 271 (2024-02-12) -> Commit 310 (2024-03-28) | durata: 39 commit (44 giorni) | stabili: 2/2 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #117] island-is/island.is | Stelle: 275 | Commit RQ3: 5694 | File PW tracciati: 43 (DB: 43, picco attivo: 43)
+  - Intervallo #1: Commit 2706 (2023-10-16) -> Commit 3997 (2024-03-20) | durata: 1291 commit (156 giorni) | stabili: 24/33 (72.7%) | fine: rottura_soglia@C3998
+  - Intervallo #2: Commit 4417 (2024-05-14) -> Commit 5694 (2024-10-18) | durata: 1277 commit (157 giorni) | stabili: 37/43 (86.0%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 2192 (2023-06-30) -> Commit 2705 (2023-10-16) | durata: 513 commit (107 giorni) | stabili: 22/31 (71.0%) | fine: rottura_soglia@C2706
+  - Intervallo #4: Commit 1907 (2023-05-24) -> Commit 2172 (2023-06-28) | durata: 265 commit (34 giorni) | stabili: 16/22 (72.7%) | fine: rottura_soglia@C2173
+  - Intervallo #5: Commit 4017 (2024-03-21) -> Commit 4190 (2024-04-16) | durata: 173 commit (25 giorni) | stabili: 34/38 (89.5%) | fine: rottura_soglia@C4191
+
+[Playwright #118] recordreplay/devtools | Stelle: 272 | Commit RQ3: 690 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2023-09-14) -> Commit 539 (2024-03-15) | durata: 537 commit (183 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C540
+  - Intervallo #2: Commit 540 (2024-03-15) -> Commit 690 (2025-04-15) | durata: 150 commit (396 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #119] graphcommerce-org/graphcommerce | Stelle: 264 | Commit RQ3: 6157 | File PW tracciati: 8 (DB: 8, picco attivo: 8)
+  - Intervallo #1: Commit 1984 (2022-04-04) -> Commit 5065 (2023-08-22) | durata: 3081 commit (504 giorni) | stabili: 7/8 (87.5%) | fine: rottura_soglia@C5066
+  - Intervallo #2: Commit 364 (2021-09-27) -> Commit 1927 (2022-03-28) | durata: 1563 commit (182 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C1928
+  - Intervallo #3: Commit 5066 (2023-08-22) -> Commit 6157 (2024-03-28) | durata: 1091 commit (218 giorni) | stabili: 8/8 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 159 (2021-08-17) -> Commit 333 (2021-09-24) | durata: 174 commit (38 giorni) | stabili: 4/4 (100.0%) | fine: rottura_soglia@C334
+  - Intervallo #5: Commit 22 (2021-07-29) -> Commit 158 (2021-08-17) | durata: 136 commit (18 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C159
+
+[Playwright #120] orbitalapi/orbital | Stelle: 260 | Commit RQ3: 1008 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 264 (2023-01-26) -> Commit 1008 (2024-05-15) | durata: 744 commit (475 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 2 (2022-10-07) -> Commit 236 (2023-01-11) | durata: 234 commit (96 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C237
+  - Intervallo #3: Commit 237 (2023-01-11) -> Commit 259 (2023-01-22) | durata: 22 commit (10 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C260
+
+[Playwright #121] woocommerce/woocommerce-gutenberg-products-block | Stelle: 252 | Commit RQ3: 512 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 31 (2023-09-15) -> Commit 176 (2023-10-19) | durata: 145 commit (34 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C177
+  - Intervallo #2: Commit 177 (2023-10-20) -> Commit 285 (2023-11-06) | durata: 108 commit (17 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C286
+  - Intervallo #3: Commit 408 (2023-11-24) -> Commit 512 (2024-02-22) | durata: 104 commit (89 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 286 (2023-11-06) -> Commit 358 (2023-11-16) | durata: 72 commit (10 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C359
+  - Intervallo #5: Commit 2 (2023-09-12) -> Commit 30 (2023-09-15) | durata: 28 commit (3 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C31
+
+[Playwright #122] 3liz/lizmap-web-client | Stelle: 243 | Commit RQ3: 2060 | File PW tracciati: 17 (DB: 17, picco attivo: 17)
+  - Intervallo #1: Commit 1349 (2024-02-02) -> Commit 1576 (2024-04-22) | durata: 227 commit (79 giorni) | stabili: 7/9 (77.8%) | fine: rottura_soglia@C1577
+  - Intervallo #2: Commit 1800 (2024-07-15) -> Commit 2006 (2024-09-30) | durata: 206 commit (76 giorni) | stabili: 12/17 (70.6%) | fine: rottura_soglia@C2007
+  - Intervallo #3: Commit 1700 (2024-05-25) -> Commit 1799 (2024-07-15) | durata: 99 commit (50 giorni) | stabili: 14/17 (82.4%) | fine: rottura_soglia@C1800
+  - Intervallo #4: Commit 1577 (2024-04-22) -> Commit 1652 (2024-05-14) | durata: 75 commit (22 giorni) | stabili: 10/12 (83.3%) | fine: rottura_soglia@C1653
+  - Intervallo #5: Commit 2007 (2024-09-30) -> Commit 2060 (2024-10-18) | durata: 53 commit (18 giorni) | stabili: 15/17 (88.2%) | fine: fine_storia_rq3
+
+[Playwright #123] guardian/dotcom-rendering | Stelle: 231 | Commit RQ3: 2512 | File PW tracciati: 15 (DB: 15, picco attivo: 15)
+  - Intervallo #1: Commit 1355 (2024-04-17) -> Commit 1955 (2024-07-26) | durata: 600 commit (100 giorni) | stabili: 11/15 (73.3%) | fine: rottura_soglia@C1956
+  - Intervallo #2: Commit 418 (2023-12-05) -> Commit 863 (2024-01-31) | durata: 445 commit (56 giorni) | stabili: 6/8 (75.0%) | fine: rottura_soglia@C864
+  - Intervallo #3: Commit 865 (2024-01-31) -> Commit 1242 (2024-03-25) | durata: 377 commit (54 giorni) | stabili: 13/15 (86.7%) | fine: rottura_soglia@C1243
+  - Intervallo #4: Commit 2241 (2024-09-05) -> Commit 2512 (2024-10-18) | durata: 271 commit (43 giorni) | stabili: 11/15 (73.3%) | fine: fine_storia_rq3
+  - Intervallo #5: Commit 1956 (2024-07-26) -> Commit 2208 (2024-08-30) | durata: 252 commit (34 giorni) | stabili: 11/15 (73.3%) | fine: rottura_soglia@C2209
+
+[Playwright #124] opengovsg/formsg | Stelle: 228 | Commit RQ3: 1124 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 436 (2023-03-16) -> Commit 889 (2023-10-17) | durata: 453 commit (214 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C890
+  - Intervallo #2: Commit 185 (2022-11-25) -> Commit 427 (2023-03-09) | durata: 242 commit (103 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C428
+  - Intervallo #3: Commit 890 (2023-10-17) -> Commit 1124 (2024-03-28) | durata: 234 commit (163 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 2 (2022-10-18) -> Commit 184 (2022-11-25) | durata: 182 commit (37 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C185
+
+[Playwright #125] netlify/build | Stelle: 210 | Commit RQ3: 594 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 103 (2023-05-04) -> Commit 594 (2024-03-28) | durata: 491 commit (328 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 2 (2023-02-17) -> Commit 73 (2023-03-27) | durata: 71 commit (37 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C74
+  - Intervallo #3: Commit 74 (2023-03-28) -> Commit 102 (2023-05-03) | durata: 28 commit (36 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C103
+
+[Playwright #126] mui-org/material-ui-docs | Stelle: 197 | Commit RQ3: 132 | File PW tracciati: 3 (DB: 6, picco attivo: 3) | Nota: tracciati 3/6 file Playwright in RQ3
+  - Intervallo #1: Commit 75 (2022-01-21) -> Commit 132 (2022-02-02) | durata: 57 commit (11 giorni) | stabili: 3/3 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 8 (2022-01-11) -> Commit 44 (2022-01-13) | durata: 36 commit (1 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C45
+  - Intervallo #3: Commit 45 (2022-01-14) -> Commit 74 (2022-01-21) | durata: 29 commit (6 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C75
+
+[Playwright #127] microsoftgraph/microsoft-graph-explorer-v4 | Stelle: 194 | Commit RQ3: 635 | File PW tracciati: 7 (DB: 7, picco attivo: 7)
+  - Intervallo #1: Commit 530 (2023-06-07) -> Commit 592 (2024-02-08) | durata: 62 commit (245 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C593
+  - Intervallo #2: Commit 593 (2024-02-12) -> Commit 635 (2024-10-07) | durata: 42 commit (237 giorni) | stabili: 6/7 (85.7%) | fine: fine_storia_rq3
+
+[Playwright #128] dxos/dxos | Stelle: 189 | Commit RQ3: 3425 | File PW tracciati: 18 (DB: 18, picco attivo: 18)
+  - Intervallo #1: Commit 1987 (2024-02-05) -> Commit 3292 (2024-09-24) | durata: 1305 commit (232 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C3293
+  - Intervallo #2: Commit 1300 (2023-09-15) -> Commit 1960 (2024-02-01) | durata: 660 commit (138 giorni) | stabili: 7/10 (70.0%) | fine: rottura_soglia@C1961
+  - Intervallo #3: Commit 3293 (2024-09-24) -> Commit 3425 (2024-10-19) | durata: 132 commit (25 giorni) | stabili: 13/18 (72.2%) | fine: fine_storia_rq3
+
+[Playwright #129] alfresco/alfresco-content-app | Stelle: 182 | Commit RQ3: 557 | File PW tracciati: 54 (DB: 54, picco attivo: 54)
+  - Intervallo #1: Commit 329 (2024-04-02) -> Commit 461 (2024-08-07) | durata: 132 commit (127 giorni) | stabili: 33/46 (71.7%) | fine: rottura_soglia@C462
+  - Intervallo #2: Commit 223 (2024-01-19) -> Commit 302 (2024-03-15) | durata: 79 commit (56 giorni) | stabili: 25/35 (71.4%) | fine: rottura_soglia@C303
+  - Intervallo #3: Commit 508 (2024-09-04) -> Commit 557 (2024-10-18) | durata: 49 commit (43 giorni) | stabili: 53/54 (98.1%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 462 (2024-08-08) -> Commit 507 (2024-09-04) | durata: 45 commit (27 giorni) | stabili: 46/54 (85.2%) | fine: rottura_soglia@C508
+  - Intervallo #5: Commit 188 (2023-12-11) -> Commit 222 (2024-01-16) | durata: 34 commit (35 giorni) | stabili: 21/28 (75.0%) | fine: rottura_soglia@C223
+
+[Playwright #130] osrd-project/osrd | Stelle: 173 | Commit RQ3: 2567 | File PW tracciati: 7 (DB: 7, picco attivo: 7)
+  - Intervallo #1: Commit 1806 (2023-11-09) -> Commit 2329 (2024-02-09) | durata: 523 commit (91 giorni) | stabili: 5/6 (83.3%) | fine: rottura_soglia@C2330
+  - Intervallo #2: Commit 2433 (2024-03-01) -> Commit 2563 (2024-03-28) | durata: 130 commit (26 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C2564
+  - Intervallo #3: Commit 2361 (2024-02-16) -> Commit 2432 (2024-03-01) | durata: 71 commit (14 giorni) | stabili: 5/6 (83.3%) | fine: rottura_soglia@C2433
+  - Intervallo #4: Commit 1739 (2023-10-31) -> Commit 1798 (2023-11-08) | durata: 59 commit (7 giorni) | stabili: 6/6 (100.0%) | fine: rottura_soglia@C1799
+  - Intervallo #5: Commit 2330 (2024-02-09) -> Commit 2359 (2024-02-15) | durata: 29 commit (6 giorni) | stabili: 6/6 (100.0%) | fine: rottura_soglia@C2360
+
+[Playwright #131] nordicsemiconductor/pc-nrfconnect-launcher | Stelle: 163 | Commit RQ3: 2138 | File PW tracciati: 5 (DB: 5, picco attivo: 5)
+  - Intervallo #1: Commit 1598 (2022-11-23) -> Commit 2138 (2024-10-21) | durata: 540 commit (698 giorni) | stabili: 4/5 (80.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 1261 (2022-02-09) -> Commit 1456 (2022-09-12) | durata: 195 commit (214 giorni) | stabili: 5/5 (100.0%) | fine: rottura_soglia@C1457
+  - Intervallo #3: Commit 1457 (2022-09-12) -> Commit 1597 (2022-11-23) | durata: 140 commit (72 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C1598
+  - Intervallo #4: Commit 1196 (2021-11-23) -> Commit 1260 (2022-02-09) | durata: 64 commit (78 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C1261
+
+[Playwright #132] podkrepi-bg/frontend | Stelle: 161 | Commit RQ3: 311 | File PW tracciati: 6 (DB: 6, picco attivo: 6)
+  - Intervallo #1: Commit 6 (2023-02-06) -> Commit 210 (2023-10-22) | durata: 204 commit (258 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C211
+  - Intervallo #2: Commit 211 (2023-10-26) -> Commit 311 (2024-03-29) | durata: 100 commit (155 giorni) | stabili: 5/5 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #133] tryghost/koenig | Stelle: 154 | Commit RQ3: 2988 | File PW tracciati: 50 (DB: 50, picco attivo: 50)
+  - Intervallo #1: Commit 2251 (2023-10-04) -> Commit 2847 (2024-06-24) | durata: 596 commit (264 giorni) | stabili: 32/44 (72.7%) | fine: rottura_soglia@C2848
+  - Intervallo #2: Commit 778 (2023-03-13) -> Commit 1043 (2023-04-17) | durata: 265 commit (34 giorni) | stabili: 18/25 (72.0%) | fine: rottura_soglia@C1044
+  - Intervallo #3: Commit 1667 (2023-06-09) -> Commit 1899 (2023-07-13) | durata: 232 commit (34 giorni) | stabili: 28/39 (71.8%) | fine: rottura_soglia@C1900
+  - Intervallo #4: Commit 1929 (2023-07-20) -> Commit 2123 (2023-08-30) | durata: 194 commit (40 giorni) | stabili: 30/42 (71.4%) | fine: rottura_soglia@C2124
+  - Intervallo #5: Commit 1329 (2023-05-12) -> Commit 1520 (2023-05-29) | durata: 191 commit (16 giorni) | stabili: 28/39 (71.8%) | fine: rottura_soglia@C1521
+
+[Playwright #134] internxt/drive-desktop | Stelle: 152 | Commit RQ3: 822 | File PW tracciati: 4 (DB: 4, picco attivo: 4)
+  - Intervallo #1: Commit 318 (2023-05-30) -> Commit 539 (2023-09-14) | durata: 221 commit (107 giorni) | stabili: 3/4 (75.0%) | fine: rottura_soglia@C540
+  - Intervallo #2: Commit 115 (2023-03-20) -> Commit 264 (2023-04-11) | durata: 149 commit (22 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C265
+  - Intervallo #3: Commit 677 (2023-11-24) -> Commit 822 (2024-03-28) | durata: 145 commit (125 giorni) | stabili: 3/4 (75.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 540 (2023-09-15) -> Commit 651 (2023-11-09) | durata: 111 commit (54 giorni) | stabili: 4/4 (100.0%) | fine: rottura_soglia@C652
+  - Intervallo #5: Commit 265 (2023-04-11) -> Commit 296 (2023-04-28) | durata: 31 commit (16 giorni) | stabili: 4/4 (100.0%) | fine: rottura_soglia@C297
+
+[Playwright #135] nasa-gcn/gcn.nasa.gov | Stelle: 144 | Commit RQ3: 561 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 2 (2024-04-11) -> Commit 561 (2025-06-12) | durata: 559 commit (427 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright #136] azure/communication-ui-library | Stelle: 143 | Commit RQ3: 3287 | File PW tracciati: 46 (DB: 46, picco attivo: 46)
+  - Intervallo #1: Commit 2678 (2024-04-18) -> Commit 3174 (2024-09-13) | durata: 496 commit (147 giorni) | stabili: 33/46 (71.7%) | fine: rottura_soglia@C3175
+  - Intervallo #2: Commit 2195 (2023-11-03) -> Commit 2541 (2024-03-19) | durata: 346 commit (137 giorni) | stabili: 31/43 (72.1%) | fine: rottura_soglia@C2542
+  - Intervallo #3: Commit 1802 (2023-05-26) -> Commit 2115 (2023-09-21) | durata: 313 commit (118 giorni) | stabili: 30/42 (71.4%) | fine: rottura_soglia@C2116
+  - Intervallo #4: Commit 1434 (2022-11-15) -> Commit 1661 (2023-03-31) | durata: 227 commit (135 giorni) | stabili: 24/34 (70.6%) | fine: rottura_soglia@C1662
+  - Intervallo #5: Commit 1672 (2023-04-04) -> Commit 1801 (2023-05-25) | durata: 129 commit (50 giorni) | stabili: 27/38 (71.1%) | fine: rottura_soglia@C1802
+
+[Playwright #137] shieldbattery/shieldbattery | Stelle: 135 | Commit RQ3: 987 | File PW tracciati: 8 (DB: 8, picco attivo: 8)
+  - Intervallo #1: Commit 519 (2023-06-28) -> Commit 821 (2023-09-27) | durata: 302 commit (90 giorni) | stabili: 5/5 (100.0%) | fine: rottura_soglia@C822
+  - Intervallo #2: Commit 201 (2022-09-18) -> Commit 435 (2023-06-15) | durata: 234 commit (270 giorni) | stabili: 5/5 (100.0%) | fine: rottura_soglia@C436
+  - Intervallo #3: Commit 22 (2022-01-15) -> Commit 200 (2022-09-17) | durata: 178 commit (245 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C201
+  - Intervallo #4: Commit 822 (2023-09-27) -> Commit 987 (2024-03-23) | durata: 165 commit (178 giorni) | stabili: 7/7 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #5: Commit 436 (2023-06-15) -> Commit 518 (2023-06-29) | durata: 82 commit (13 giorni) | stabili: 5/5 (100.0%) | fine: rottura_soglia@C519
+
+[Playwright #138] startupjs/startupjs | Stelle: 104 | Commit RQ3: 234 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 38 (2023-12-21) -> Commit 234 (2024-03-27) | durata: 196 commit (97 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 3 (2023-12-04) -> Commit 37 (2023-12-18) | durata: 34 commit (13 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C38
+
+[Playwright #139] altinn/altinn-studio | Stelle: 102 | Commit RQ3: 891 | File PW tracciati: 11 (DB: 11, picco attivo: 11)
+  - Intervallo #1: Commit 625 (2024-07-29) -> Commit 891 (2024-10-18) | durata: 266 commit (81 giorni) | stabili: 8/11 (72.7%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 423 (2024-05-29) -> Commit 609 (2024-07-22) | durata: 186 commit (54 giorni) | stabili: 8/11 (72.7%) | fine: rottura_soglia@C610
+  - Intervallo #3: Commit 245 (2024-03-15) -> Commit 422 (2024-05-28) | durata: 177 commit (73 giorni) | stabili: 8/9 (88.9%) | fine: rottura_soglia@C423
+  - Intervallo #4: Commit 170 (2024-02-21) -> Commit 227 (2024-03-07) | durata: 57 commit (15 giorni) | stabili: 7/8 (87.5%) | fine: rottura_soglia@C228
+  - Intervallo #5: Commit 126 (2024-02-06) -> Commit 169 (2024-02-21) | durata: 43 commit (14 giorni) | stabili: 5/7 (71.4%) | fine: rottura_soglia@C170
+
+[Playwright #140] royal-navy/design-system | Stelle: 101 | Commit RQ3: 218 | File PW tracciati: 1 (DB: 1, picco attivo: 1)
+  - Intervallo #1: Commit 4 (2022-10-05) -> Commit 154 (2023-04-10) | durata: 150 commit (187 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C155
+  - Intervallo #2: Commit 155 (2023-04-12) -> Commit 218 (2024-03-28) | durata: 63 commit (350 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright + Cypress #1] ionic-team/ionic-framework | Stelle: 50313 | Commit RQ3: 4581 | File PW tracciati: 356 (DB: 356, picco attivo: 356) | Nota: filtrati soli 356/356 file Playwright DB
+  - Intervallo #1: Commit 3958 (2023-10-10) -> Commit 4536 (2024-08-05) | durata: 578 commit (300 giorni) | stabili: 215/307 (70.0%) | fine: rottura_soglia@C4537
+  - Intervallo #2: Commit 3593 (2023-05-03) -> Commit 3920 (2023-09-20) | durata: 327 commit (139 giorni) | stabili: 133/190 (70.0%) | fine: rottura_soglia@C3921
+  - Intervallo #3: Commit 4537 (2024-08-07) -> Commit 4581 (2024-10-16) | durata: 44 commit (70 giorni) | stabili: 345/356 (96.9%) | fine: fine_storia_rq3
+
+[Playwright + Cypress #2] spacedriveapp/spacedrive | Stelle: 28563 | Commit RQ3: 1252 | File PW tracciati: 1 (DB: 1, picco attivo: 1) | Nota: filtrati soli 1/1 file Playwright DB
+  - Intervallo #1: Commit 2 (2023-02-27) -> Commit 1252 (2024-03-29) | durata: 1250 commit (396 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright + Cypress #3] nrwl/nx | Stelle: 21720 | Commit RQ3: 11361 | File PW tracciati: 5 (DB: 5, picco attivo: 5) | Nota: filtrati soli 5/5 file Playwright DB
+  - Intervallo #1: Commit 9930 (2024-04-25) -> Commit 11163 (2024-09-23) | durata: 1233 commit (151 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C11164
+  - Intervallo #2: Commit 8180 (2023-09-14) -> Commit 8893 (2023-12-08) | durata: 713 commit (84 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C8894
+  - Intervallo #3: Commit 9443 (2024-02-12) -> Commit 9929 (2024-04-24) | durata: 486 commit (72 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C9930
+  - Intervallo #4: Commit 8968 (2023-12-15) -> Commit 9301 (2024-02-01) | durata: 333 commit (48 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C9302
+  - Intervallo #5: Commit 8011 (2023-08-25) -> Commit 8179 (2023-09-14) | durata: 168 commit (19 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C8180
+
+[Playwright + Cypress #4] xyflow/xyflow | Stelle: 20615 | Commit RQ3: 3509 | File PW tracciati: 5 (DB: 5, picco attivo: 5) | Nota: filtrati soli 5/5 file Playwright DB
+  - Intervallo #1: Commit 2798 (2023-11-23) -> Commit 3077 (2024-03-05) | durata: 279 commit (103 giorni) | stabili: 5/5 (100.0%) | fine: rottura_soglia@C3078
+  - Intervallo #2: Commit 3078 (2024-03-06) -> Commit 3332 (2024-07-01) | durata: 254 commit (117 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C3333
+  - Intervallo #3: Commit 3333 (2024-07-01) -> Commit 3509 (2024-10-14) | durata: 176 commit (104 giorni) | stabili: 4/5 (80.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 2758 (2023-11-08) -> Commit 2790 (2023-11-16) | durata: 32 commit (8 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C2791
+
+[Playwright + Cypress #5] wbkd/react-flow | Stelle: 17183 | Commit RQ3: 3509 | File PW tracciati: 5 (DB: 5, picco attivo: 5) | Nota: filtrati soli 5/5 file Playwright DB
+  - Intervallo #1: Commit 2798 (2023-11-23) -> Commit 3077 (2024-03-05) | durata: 279 commit (103 giorni) | stabili: 5/5 (100.0%) | fine: rottura_soglia@C3078
+  - Intervallo #2: Commit 3078 (2024-03-06) -> Commit 3332 (2024-07-01) | durata: 254 commit (117 giorni) | stabili: 4/5 (80.0%) | fine: rottura_soglia@C3333
+  - Intervallo #3: Commit 3333 (2024-07-01) -> Commit 3509 (2024-10-14) | durata: 176 commit (104 giorni) | stabili: 4/5 (80.0%) | fine: fine_storia_rq3
+  - Intervallo #4: Commit 2758 (2023-11-08) -> Commit 2790 (2023-11-16) | durata: 32 commit (8 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C2791
+
+[Playwright + Cypress #6] redwoodjs/redwood | Stelle: 16697 | Commit RQ3: 9314 | File PW tracciati: 16 (DB: 16, picco attivo: 15) | Nota: filtrati soli 16/16 file Playwright DB
+  - Intervallo #1: Commit 7579 (2024-01-26) -> Commit 8958 (2024-08-16) | durata: 1379 commit (202 giorni) | stabili: 7/8 (87.5%) | fine: rottura_soglia@C8959
+  - Intervallo #2: Commit 8959 (2024-08-16) -> Commit 9314 (2024-10-19) | durata: 355 commit (64 giorni) | stabili: 14/15 (93.3%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 7334 (2023-12-01) -> Commit 7578 (2024-01-26) | durata: 244 commit (55 giorni) | stabili: 10/12 (83.3%) | fine: rottura_soglia@C7579
+  - Intervallo #4: Commit 7133 (2023-11-03) -> Commit 7333 (2023-12-01) | durata: 200 commit (27 giorni) | stabili: 9/12 (75.0%) | fine: rottura_soglia@C7334
+  - Intervallo #5: Commit 7101 (2023-10-22) -> Commit 7131 (2023-11-02) | durata: 30 commit (11 giorni) | stabili: 8/8 (100.0%) | fine: rottura_soglia@C7132
+
+[Playwright + Cypress #7] taiga-family/taiga-ui | Stelle: 3000 | Commit RQ3: 6699 | File PW tracciati: 34 (DB: 52, picco attivo: 34) | Nota: filtrati soli 34/52 file Playwright DB
+  - Intervallo #1: Commit 5931 (2024-08-12) -> Commit 6699 (2024-10-19) | durata: 768 commit (67 giorni) | stabili: 27/34 (79.4%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 5393 (2024-06-13) -> Commit 5930 (2024-08-12) | durata: 537 commit (59 giorni) | stabili: 28/34 (82.4%) | fine: rottura_soglia@C5931
+  - Intervallo #3: Commit 4574 (2024-01-17) -> Commit 4902 (2024-03-04) | durata: 328 commit (47 giorni) | stabili: 25/32 (78.1%) | fine: rottura_soglia@C4903
+  - Intervallo #4: Commit 5053 (2024-04-10) -> Commit 5294 (2024-05-28) | durata: 241 commit (47 giorni) | stabili: 24/34 (70.6%) | fine: rottura_soglia@C5295
+  - Intervallo #5: Commit 4913 (2024-03-06) -> Commit 5052 (2024-04-10) | durata: 139 commit (34 giorni) | stabili: 26/34 (76.5%) | fine: rottura_soglia@C5053
+
+[Playwright + Cypress #8] tinkoff/taiga-ui | Stelle: 2708 | Commit RQ3: 6699 | File PW tracciati: 34 (DB: 52, picco attivo: 34) | Nota: filtrati soli 34/52 file Playwright DB
+  - Intervallo #1: Commit 5931 (2024-08-12) -> Commit 6699 (2024-10-19) | durata: 768 commit (67 giorni) | stabili: 27/34 (79.4%) | fine: fine_storia_rq3
+  - Intervallo #2: Commit 5393 (2024-06-13) -> Commit 5930 (2024-08-12) | durata: 537 commit (59 giorni) | stabili: 28/34 (82.4%) | fine: rottura_soglia@C5931
+  - Intervallo #3: Commit 4574 (2024-01-17) -> Commit 4902 (2024-03-04) | durata: 328 commit (47 giorni) | stabili: 25/32 (78.1%) | fine: rottura_soglia@C4903
+  - Intervallo #4: Commit 5053 (2024-04-10) -> Commit 5294 (2024-05-28) | durata: 241 commit (47 giorni) | stabili: 24/34 (70.6%) | fine: rottura_soglia@C5295
+  - Intervallo #5: Commit 4913 (2024-03-06) -> Commit 5052 (2024-04-10) | durata: 139 commit (34 giorni) | stabili: 26/34 (76.5%) | fine: rottura_soglia@C5053
+
+[Playwright + Cypress #9] module-federation/universe | Stelle: 842 | Commit RQ3: 629 | File PW tracciati: 1 (DB: 1, picco attivo: 1) | Nota: filtrati soli 1/1 file Playwright DB
+  - Intervallo #1: Commit 288 (2024-04-26) -> Commit 466 (2024-07-07) | durata: 178 commit (72 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C467
+  - Intervallo #2: Commit 467 (2024-07-08) -> Commit 607 (2024-10-07) | durata: 140 commit (91 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C608
+  - Intervallo #3: Commit 210 (2024-04-02) -> Commit 287 (2024-04-26) | durata: 77 commit (23 giorni) | stabili: 1/1 (100.0%) | fine: rottura_soglia@C288
+  - Intervallo #4: Commit 608 (2024-10-07) -> Commit 629 (2024-10-17) | durata: 21 commit (9 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright + Cypress #10] sap/luigi | Stelle: 792 | Commit RQ3: 2140 | File PW tracciati: 1 (DB: 1, picco attivo: 1) | Nota: filtrati soli 1/1 file Playwright DB
+  - Intervallo #1: Commit 1766 (2023-06-23) -> Commit 2140 (2024-10-22) | durata: 374 commit (486 giorni) | stabili: 1/1 (100.0%) | fine: fine_storia_rq3
+
+[Playwright + Cypress #11] oasisprotocol/oasis-wallet-web | Stelle: 106 | Commit RQ3: 2466 | File PW tracciati: 17 (DB: 17, picco attivo: 17) | Nota: filtrati soli 17/17 file Playwright DB
+  - Intervallo #1: Commit 1745 (2023-08-25) -> Commit 1973 (2023-11-17) | durata: 228 commit (83 giorni) | stabili: 9/11 (81.8%) | fine: rottura_soglia@C1974
+  - Intervallo #2: Commit 2311 (2024-07-04) -> Commit 2466 (2024-10-08) | durata: 155 commit (96 giorni) | stabili: 14/17 (82.4%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 2055 (2023-12-21) -> Commit 2163 (2024-04-11) | durata: 108 commit (112 giorni) | stabili: 12/17 (70.6%) | fine: rottura_soglia@C2164
+  - Intervallo #4: Commit 2201 (2024-05-03) -> Commit 2263 (2024-05-20) | durata: 62 commit (17 giorni) | stabili: 12/17 (70.6%) | fine: rottura_soglia@C2264
+  - Intervallo #5: Commit 2265 (2024-05-20) -> Commit 2310 (2024-07-04) | durata: 45 commit (44 giorni) | stabili: 13/17 (76.5%) | fine: rottura_soglia@C2311
+
+[Playwright + Puppeteer #1] freecodecamp/freecodecamp | Stelle: 385467 | Commit RQ3: 19529 | File PW tracciati: 77 (DB: 77, picco attivo: 77) | Nota: filtrati soli 77/77 file Playwright DB
+  - Intervallo #1: Commit 17523 (2023-12-28) -> Commit 18168 (2024-03-20) | durata: 645 commit (82 giorni) | stabili: 44/62 (71.0%) | fine: rottura_soglia@C18169
+  - Intervallo #2: Commit 18905 (2024-07-12) -> Commit 19529 (2024-10-23) | durata: 624 commit (103 giorni) | stabili: 55/77 (71.4%) | fine: fine_storia_rq3
+  - Intervallo #3: Commit 18378 (2024-04-26) -> Commit 18850 (2024-07-02) | durata: 472 commit (67 giorni) | stabili: 47/67 (70.1%) | fine: rottura_soglia@C18851
+  - Intervallo #4: Commit 17050 (2023-10-18) -> Commit 17400 (2023-12-18) | durata: 350 commit (60 giorni) | stabili: 28/39 (71.8%) | fine: rottura_soglia@C17401
+  - Intervallo #5: Commit 18169 (2024-03-21) -> Commit 18377 (2024-04-26) | durata: 208 commit (36 giorni) | stabili: 49/64 (76.6%) | fine: rottura_soglia@C18378
+
+[Playwright + Puppeteer #2] mui/mui-x | Stelle: 3660 | Commit RQ3: 6851 | File PW tracciati: 3 (DB: 3, picco attivo: 3) | Nota: filtrati soli 3/3 file Playwright DB
+  - Intervallo #1: Commit 2962 (2022-11-07) -> Commit 3621 (2023-03-03) | durata: 659 commit (116 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C3622
+  - Intervallo #2: Commit 3641 (2023-03-09) -> Commit 3976 (2023-05-10) | durata: 335 commit (62 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C3977
+  - Intervallo #3: Commit 6211 (2024-07-11) -> Commit 6496 (2024-08-29) | durata: 285 commit (48 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C6497
+  - Intervallo #4: Commit 4566 (2023-08-31) -> Commit 4812 (2023-10-16) | durata: 246 commit (45 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C4813
+  - Intervallo #5: Commit 229 (2021-04-28) -> Commit 445 (2021-06-17) | durata: 216 commit (49 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C446
+
+[Playwright + Puppeteer #3] mui-org/material-ui-x | Stelle: 978 | Commit RQ3: 6825 | File PW tracciati: 3 (DB: 3, picco attivo: 3) | Nota: filtrati soli 3/3 file Playwright DB
+  - Intervallo #1: Commit 2962 (2022-11-07) -> Commit 3621 (2023-03-03) | durata: 659 commit (116 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C3622
+  - Intervallo #2: Commit 3641 (2023-03-09) -> Commit 3976 (2023-05-10) | durata: 335 commit (62 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C3977
+  - Intervallo #3: Commit 6211 (2024-07-11) -> Commit 6496 (2024-08-29) | durata: 285 commit (48 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C6497
+  - Intervallo #4: Commit 4566 (2023-08-31) -> Commit 4812 (2023-10-16) | durata: 246 commit (45 giorni) | stabili: 3/3 (100.0%) | fine: rottura_soglia@C4813
+  - Intervallo #5: Commit 229 (2021-04-28) -> Commit 445 (2021-06-17) | durata: 216 commit (49 giorni) | stabili: 2/2 (100.0%) | fine: rottura_soglia@C446
