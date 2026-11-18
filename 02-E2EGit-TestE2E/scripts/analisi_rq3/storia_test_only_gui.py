@@ -4,9 +4,9 @@ prende il file *_only_gui.xlsx/.csv da RQ3, lo copia nella cartella della repo
 e genera storia_test_<nome_repo>.txt con creazione e modifiche (%) di ogni test.
 
 Uso:
-    python3 02-E2EGit-TestE2E/scripts/storia_test_only_gui.py lizmap-web-client
-    python3 02-E2EGit-TestE2E/scripts/storia_test_only_gui.py altinn/altinn-studio
-    python3 02-E2EGit-TestE2E/scripts/storia_test_only_gui.py --all
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/storia_test_only_gui.py lizmap-web-client
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/storia_test_only_gui.py altinn/altinn-studio
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/storia_test_only_gui.py --all
 """
 
 import argparse

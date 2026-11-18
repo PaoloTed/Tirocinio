@@ -3,9 +3,9 @@
 più longevi senza modifiche in RQ3) per tutte le repository Node.js filtrate.
 
 Uso:
-    python3 02-E2EGit-TestE2E/scripts/classifica_b_rq3.py
-    python3 02-E2EGit-TestE2E/scripts/classifica_b_rq3.py --sort-by days
-    python3 02-E2EGit-TestE2E/scripts/classifica_b_rq3.py --sort-by ratio --top 30
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/classifica_b_rq3.py
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/classifica_b_rq3.py --sort-by days
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/classifica_b_rq3.py --sort-by ratio --top 30
 """
 
 from __future__ import annotations

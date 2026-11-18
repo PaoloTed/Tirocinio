@@ -4,8 +4,8 @@ per individuare le repository Node.js (JS/TS) con i range di non aggiornamento
 dei test E2E GUI più lunghi.
 
 Uso:
-    python3 02-E2EGit-TestE2E/scripts/classifica_repo_rq3.py
-    python3 02-E2EGit-TestE2E/scripts/classifica_repo_rq3.py --top 25
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/classifica_repo_rq3.py
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/classifica_repo_rq3.py --top 25
 """
 
 import argparse
@@ -16,9 +16,10 @@ import zipfile
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "data" / "E2EGit_e2e.db"
-RQ3_COMMIT_DIR = ROOT / "data" / "IST2025_Zenodo" / "RQ3" / "commit-analysis"
+ROOT = Path(__file__).resolve().parents[2]
+DATA_ROOT = ROOT if (ROOT / "data").is_dir() else ROOT.parent
+DB_PATH = DATA_ROOT / "data" / "E2EGit_e2e.db"
+RQ3_COMMIT_DIR = DATA_ROOT / "data" / "IST2025_Zenodo" / "RQ3" / "commit-analysis"
 OUT_TXT = ROOT / "repositories" / "repo_nodejs" / "classifica_rq3_non_aggiornamento.txt"
 OUT_CSV = ROOT / "repositories" / "repo_nodejs" / "classifica_rq3_non_aggiornamento.csv"
 

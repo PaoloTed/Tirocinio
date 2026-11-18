@@ -3,8 +3,8 @@
 con test > 10 e release > 5 che utilizzano esclusivamente Playwright.
 
 Uso:
-    python3 02-E2EGit-TestE2E/scripts/elenco_repo_playwright.py
-    python3 02-E2EGit-TestE2E/scripts/elenco_repo_playwright.py --min-tests 10 --min-releases 5
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/elenco_repo_playwright.py
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/elenco_repo_playwright.py --min-tests 10 --min-releases 5
 """
 
 from __future__ import annotations

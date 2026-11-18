@@ -3,9 +3,9 @@
 # dentro 02-E2EGit-TestE2E/repositories/<sottocartella>/<nome_repo>/repo
 #
 # Uso:
-#   bash 02-E2EGit-TestE2E/scripts/clona_repository.sh [--no-checkout] <owner/repo> [sottocartella]
+#   bash 02-E2EGit-TestE2E/scripts/git_versioni/clona_repository.sh [--no-checkout] <owner/repo> [sottocartella]
 # Esempio:
-#   bash 02-E2EGit-TestE2E/scripts/clona_repository.sh epam/ketcher
+#   bash 02-E2EGit-TestE2E/scripts/git_versioni/clona_repository.sh epam/ketcher
 set -euo pipefail
 
 NO_CHECKOUT=""
@@ -25,7 +25,7 @@ REPO_NAME="${INPUT#*/}"
 URL="https://github.com/${INPUT}.git"
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BASE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+BASE_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 DEST_DIR="$BASE_DIR/repositories/$SUBDIR/$REPO_NAME"
 
 if [ -e "$DEST_DIR/repo/.git" ]; then

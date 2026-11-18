@@ -10,9 +10,9 @@ Confronta gli SHA-1 dei blob dei file di test E2E tra tag consecutivi tramite `g
    (e gli intervalli esatti tag_inizio -> tag_fine).
 
 Uso:
-    python3 02-E2EGit-TestE2E/scripts/analizza_versioni_test_e2e.py --all
-    python3 02-E2EGit-TestE2E/scripts/analizza_versioni_test_e2e.py ketcher
-    python3 02-E2EGit-TestE2E/scripts/analizza_versioni_test_e2e.py angular-slickgrid --top 15
+    python3 02-E2EGit-TestE2E/scripts/git_versioni/analizza_versioni_test_e2e.py --all
+    python3 02-E2EGit-TestE2E/scripts/git_versioni/analizza_versioni_test_e2e.py ketcher
+    python3 02-E2EGit-TestE2E/scripts/git_versioni/analizza_versioni_test_e2e.py angular-slickgrid --top 15
 """
 
 from __future__ import annotations
@@ -26,8 +26,9 @@ import subprocess
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = ROOT / "data" / "E2EGit_e2e.db"
+ROOT = Path(__file__).resolve().parents[2]
+DATA_ROOT = ROOT if (ROOT / "data").is_dir() else ROOT.parent
+DB_PATH = DATA_ROOT / "data" / "E2EGit_e2e.db"
 REPOS_NODEJS_DIR = ROOT / "repositories" / "repo_nodejs"
 SUMMARY_TXT = REPOS_NODEJS_DIR / "classifica_versioni_tag.txt"
 SUMMARY_CSV = REPOS_NODEJS_DIR / "classifica_versioni_tag.csv"

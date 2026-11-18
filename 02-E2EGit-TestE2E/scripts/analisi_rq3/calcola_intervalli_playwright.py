@@ -13,9 +13,9 @@ Pulizia applicata ai file `*_only_gui.xlsx/.csv` di RQ3:
   in `microsoft/fluentui`, eliminato nel 2021 e ricreato nel 2024).
 
 Uso:
-    python3 02-E2EGit-TestE2E/scripts/calcola_intervalli_playwright.py
-    python3 02-E2EGit-TestE2E/scripts/calcola_intervalli_playwright.py --threshold 0.70 --max-intervals 5
-    python3 02-E2EGit-TestE2E/scripts/calcola_intervalli_playwright.py --repo microsoft/fluentui
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/calcola_intervalli_playwright.py
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/calcola_intervalli_playwright.py --threshold 0.70 --max-intervals 5
+    python3 02-E2EGit-TestE2E/scripts/analisi_rq3/calcola_intervalli_playwright.py --repo microsoft/fluentui
 """
 
 from __future__ import annotations
@@ -36,7 +36,7 @@ if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
 
 from classifica_b_rq3 import _load_only_gui_csv, _load_only_gui_xlsx  # noqa: E402
-from classifica_repo_rq3 import DB_PATH, ROOT, RQ3_COMMIT_DIR, format_table  # noqa: E402
+from classifica_repo_rq3 import DB_PATH, ROOT, RQ3_COMMIT_DIR  # noqa: E402
 
 PLAYWRIGHT_DIR = ROOT / "repositories" / "repo_nodejs" / "playwright"
 INPUT_LIST_TXT = PLAYWRIGHT_DIR / "repository_nodejs_playwright.txt"
@@ -315,16 +315,6 @@ def compute_disjoint_intervals(
     return chosen, peak_n
 
 
-def format_interval_compact(iv: dict | None) -> str:
-    if not iv:
-        return "-"
-    return (
-        f"C{iv['commit_a']}->C{iv['commit_b']} ({iv['date_a']}..{iv['date_b']}, "
-        f"{iv['durata_commit']}c/{iv['durata_giorni']}g, "
-        f"{iv['test_stabili']}/{iv['test_attivi']}={iv['pct_stabili']:.1f}%)"
-    )
-
-
 def build_reports(
     entries: list[RepoEntry],
     threshold: float,
@@ -362,13 +352,14 @@ def build_reports(
     top1_lens = [r["intervals"][0]["durata_commit"] for r in valid_recs]
     total_ivs = sum(len(r["intervals"]) for r in records)
     pct_label = int(round(threshold * 100))
+    suite_pct_label = int(round(min_suite_frac * 100))
 
     lines: list[str] = [
         "=" * 110,
         f"INTERVALLI CON >= {pct_label}% DEI TEST PLAYWRIGHT NON MODIFICATI (Dataset E2EGit / RQ3 IST2025)",
         "=" * 110,
         f"Fonte elenco           : {INPUT_LIST_TXT.relative_to(ROOT)}",
-        f"Fonte storia commit    : {RQ3_COMMIT_DIR.relative_to(ROOT)}/*_only_gui.{{xlsx,csv}}",
+        f"Fonte storia commit    : {RQ3_COMMIT_DIR.relative_to(ROOT if RQ3_COMMIT_DIR.is_relative_to(ROOT) else ROOT.parent)}/*_only_gui.{{xlsx,csv}}",
         f"Repository totali      : {len(records)} (valide con >=1 intervallo: {len(valid_recs)}, senza dati validi: {len(records) - len(valid_recs)})",
         f"Intervalli individuati : {total_ivs} (massimo {max_intervals} intervalli disgiunti per repo; soglia secondari >= {min_secondary_commits} commit)",
     ]
@@ -382,108 +373,33 @@ def build_reports(
         [
             "",
             "Metodologia e pulizia applicata:",
-            f"- Per ogni intervallo [Ca, Cb], all'inizio Ca devono essere attivi almeno {int(min_suite_frac*100)}% del picco di file Playwright della repo.",
+            f"- Per ogni intervallo [Ca, Cb], all'inizio Ca devono essere attivi almeno il {suite_pct_label}% del picco attivo di file Playwright della repo.",
             f"- Da Ca+1 a Cb almeno il {pct_label}% di quei file attivi non subisce alcuna modifica/rename/cancellazione.",
             "- Pulizia automatica RQ3: rimossa la riga spuria `df.iloc[0:1]` di commitAnalyzer.py se non e' un test reale;",
-            "  nelle 14 repo multi-framework sono mantenuti solo i file Playwright censiti in E2EGit_e2e.db;",
+            "  in eventuali repo multi-framework sono mantenuti solo i file Playwright censiti in E2EGit_e2e.db;",
             "  i file cancellati e ricreati con lo stesso path (es. `badge.spec.ts` in `fluentui`) sono fusi cronologicamente.",
-            "- Nota: gli indici `C<n>` sono gli indici di commit non-merge nell'archivio RQ3 (colonne `Commit <n>` in `*_only_gui`), non gli SHA Git.",
+            "- Nota sugli indici: `Commit <n>` / `C<n>` sono gli indici dei commit non-merge nell'archivio RQ3 (colonne di `*_only_gui`), non gli SHA Git.",
+            "",
+            "Legenda dei campi:",
+            "- Intestazione repo:",
+            "  * [<Framework> #<Pos>] : gruppo framework (es. `Playwright`) e posizione per stelle in `repository_nodejs_playwright.txt`.",
+            "  * Stelle               : numero di stelle GitHub nello snapshot E2EGit.",
+            "  * Commit RQ3           : numero totale di commit non-merge analizzati nei dati RQ3 per la repository.",
+            "  * File PW tracciati    : file di test Playwright distinti presenti nei dati puliti di RQ3 lungo l'intera storia.",
+            "  * DB                   : file di test Playwright censiti nello snapshot finale del database E2EGit (`gui_testing_test_details`).",
+            "  * picco attivo         : numero massimo di file Playwright vivi contemporaneamente in uno stesso commit (creati e non cancellati).",
+            "  * Nota                 : eventuali differenze rispetto al DB (es. repo multi-framework o copertura parziale in RQ3).",
+            "- Righe intervallo:",
+            "  * Intervallo #<k>      : rango dell'intervallo disgiunto ordinato per durata in commit (`#1` e' il piu' lungo).",
+            "  * Commit Ca -> Cb      : commit iniziale (`t_0`) e finale dell'intervallo con le rispettive date (YYYY-MM-DD).",
+            "  * durata               : ampiezza dell'intervallo in commit (`Cb - Ca`) e in giorni di calendario.",
+            f"  * stabili: X/Y (Z%)    : su Y file Playwright attivi a Ca, X file ({pct_label}%+) non sono mai stati toccati tra Ca+1 e Cb (non e' l'esito pass/fail).",
+            "  * fine                 : `rottura_soglia@C<k>` se al commit C<k> i file non toccati scendono sotto soglia; `fine_storia_rq3` se arriva a fine dataset.",
             "",
         ]
     )
 
-    # Sezione 1: Top 30 per durata intervallo #1
-    ranked = sorted(
-        valid_recs,
-        key=lambda r: (
-            r["intervals"][0]["durata_commit"],
-            r["intervals"][0]["pct_stabili"],
-            r["intervals"][0]["test_attivi"],
-        ),
-        reverse=True,
-    )
-    top30_rows = []
-    for idx, rec in enumerate(ranked[:30], start=1):
-        iv1 = rec["intervals"][0]
-        top30_rows.append(
-            {
-                "rk": idx,
-                "grp": rec["entry"].group,
-                "repo": rec["entry"].slug,
-                "tot_c": rec["max_c"],
-                "len_c": iv1["durata_commit"],
-                "days": iv1["durata_giorni"],
-                "span": f"C{iv1['commit_a']}->C{iv1['commit_b']}",
-                "dates": f"{iv1['date_a']}..{iv1['date_b']}",
-                "stab": f"{iv1['test_stabili']}/{iv1['test_attivi']} ({iv1['pct_stabili']:.1f}%)",
-                "n_iv": len(rec["intervals"]),
-            }
-        )
-    def col_w(rows_list: list[dict], key: str, label: str) -> int:
-        return max(len(label), max((len(str(r.get(key, ""))) for r in rows_list), default=0))
-
-    cols_top = [
-        ("rk", "Pos", 3),
-        ("grp", "Framework", col_w(top30_rows, "grp", "Framework")),
-        ("repo", "Repository", col_w(top30_rows, "repo", "Repository")),
-        ("tot_c", "TotC", col_w(top30_rows, "tot_c", "TotC")),
-        ("len_c", "DurataC", col_w(top30_rows, "len_c", "DurataC")),
-        ("days", "Giorni", col_w(top30_rows, "days", "Giorni")),
-        ("span", "Intervallo #1", col_w(top30_rows, "span", "Intervallo #1")),
-        ("dates", "Date", col_w(top30_rows, "dates", "Date")),
-        ("stab", "TestStabili", col_w(top30_rows, "stab", "TestStabili")),
-        ("n_iv", "NIv", 3),
-    ]
-    lines.extend(
-        [
-            f"--- TOP 30 REPOSITORY PER LUNGHEZZA DELL'INTERVALLO #1 (>= {pct_label}% STABILI) ---",
-            format_table(top30_rows, cols_top),
-            "",
-        ]
-    )
-
-    # Sezione 2: Riepilogo per tutte le repository divise per gruppo
-    groups_order: list[str] = []
-    for r in records:
-        if r["entry"].group not in groups_order:
-            groups_order.append(r["entry"].group)
-
-    lines.append("=" * 110)
-    lines.append(f"RIEPILOGO {len(records)} REPOSITORY (stesso ordine di repository_nodejs_playwright.txt)")
-    lines.append("=" * 110)
-
-    for grp in groups_order:
-        grp_recs = [r for r in records if r["entry"].group == grp]
-        tbl_rows = []
-        for rec in grp_recs:
-            e = rec["entry"]
-            iv1 = rec["intervals"][0] if rec["intervals"] else None
-            tbl_rows.append(
-                {
-                    "pos": e.pos,
-                    "repo": e.slug,
-                    "stars": e.stars,
-                    "pw_files": f"{rec['n_files']}/{rec['pw_db_cnt']}",
-                    "tot_c": rec["max_c"],
-                    "n_iv": len(rec["intervals"]),
-                    "iv1": format_interval_compact(iv1),
-                    "note": rec["note"] or "-",
-                }
-            )
-        cols_grp = [
-            ("pos", "Pos", 3),
-            ("repo", "Repository", col_w(tbl_rows, "repo", "Repository")),
-            ("stars", "Stelle", col_w(tbl_rows, "stars", "Stelle")),
-            ("pw_files", "FilePW", col_w(tbl_rows, "pw_files", "FilePW")),
-            ("tot_c", "TotC", col_w(tbl_rows, "tot_c", "TotC")),
-            ("n_iv", "NIv", 3),
-            ("iv1", "Intervallo Principale (#1)", col_w(tbl_rows, "iv1", "Intervallo Principale (#1)")),
-            ("note", "Note", col_w(tbl_rows, "note", "Note")),
-        ]
-        lines.extend(["", f"--- Framework: {grp} ({len(grp_recs)} repository) ---", format_table(tbl_rows, cols_grp)])
-
-    # Sezione 3: Dettaglio completo degli intervalli per ogni repository
-    lines.extend(["", "=" * 110, "DETTAGLIO COMPLETO INTERVALLI DISGIUNTI PER SINGOLA REPOSITORY", "=" * 110])
+    lines.extend(["=" * 110, "DETTAGLIO COMPLETO INTERVALLI DISGIUNTI PER SINGOLA REPOSITORY", "=" * 110])
     csv_rows: list[dict] = []
 
     for rec in records:

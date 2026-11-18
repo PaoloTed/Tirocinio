@@ -14,10 +14,10 @@ Caratteristiche principali:
   `results/esecuzione_test_report.txt` e `.csv`.
 
 Uso:
-    python3 02-E2EGit-TestE2E/scripts/esegui_test_docker.py equal-access --from 3.1.7 --to 3.1.15 -j 2
-    python3 02-E2EGit-TestE2E/scripts/esegui_test_docker.py equal-access --prune-images -j 2
-    python3 02-E2EGit-TestE2E/scripts/esegui_test_docker.py equal-access --no-terminals
-    python3 02-E2EGit-TestE2E/scripts/esegui_test_docker.py equal-access --dry-run
+    python3 02-E2EGit-TestE2E/scripts/docker/esegui_test_docker.py equal-access --from 3.1.7 --to 3.1.15 -j 2
+    python3 02-E2EGit-TestE2E/scripts/docker/esegui_test_docker.py equal-access --prune-images -j 2
+    python3 02-E2EGit-TestE2E/scripts/docker/esegui_test_docker.py equal-access --no-terminals
+    python3 02-E2EGit-TestE2E/scripts/docker/esegui_test_docker.py equal-access --dry-run
 """
 
 from __future__ import annotations
@@ -37,7 +37,7 @@ import time
 from pathlib import Path
 from typing import TextIO
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 REPOS_NODEJS_DIR = ROOT / "repositories" / "repo_nodejs"
 
 SEMVER_RE = re.compile(r"^v?(?P<major>\d+)\.(?P<minor>\d+)\.(?P<patch>\d+)(?P<suffix>[-+].+)?$")
