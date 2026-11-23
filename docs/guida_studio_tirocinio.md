@@ -67,7 +67,7 @@ Ogni versione di Playwright si aspetta una specifica *revision* interna del brow
 ## 3. Flusso Ricevimento 4: `COPY . .` vs Volume e Layer Caching
 
 ### Perché il vecchio flusso non basta per le finestre di commit
-Nel vecchio approccio per *tag* facevi `COPY . .` + `RUN npm ci` + `docker build` da zero per ogni versione. Ma le finestre Playwright del tuo studio hanno mediana **453 commit** (media **921.3**, fino a **20.806**, vedi [intervalli_playwright_70.txt](../02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/intervalli_playwright_70.txt)): rifare `docker build` e riscaricare `node_modules` a ogni commit è impraticabile.
+Nel vecchio approccio per *tag* facevi `COPY . .` + `RUN npm ci` + `docker build` da zero per ogni versione. Ma le finestre Playwright del tuo studio hanno mediana **453 commit** (media **921.3**, fino a **20.806**, vedi [intervalli_playwright_70.txt](../02-E2EGit-TestE2E/repositories/nodejs/playwright/intervalli_playwright_70.txt)): rifare `docker build` e riscaricare `node_modules` a ogni commit è impraticabile.
 
 Con il **Ricevimento 4** passi a **1 solo `Dockerfile` al commit $t_0$** + script uniformi (`start`, `restart`, `reset_t0`, `checkout <commit_x>`, `run_tests`, `get_results`). Ecco i due concetti Docker che rendono questo flusso veloce:
 
@@ -206,7 +206,7 @@ Quando apri per la prima volta una delle repository Playwright a $t_0$, non devi
 Come evidenziato anche nel riassunto del paper ([E2EGit_riassunto_e_concetti.md](./letteratura/E2EGit_riassunto_e_concetti.md#L86-L94)):
 * Il pacchetto `playwright` da solo è la libreria che comanda il browser.
 * **`@playwright/test`** è il pacchetto completo che include sia l'automazione del browser sia il **test runner** (`test(...)`, `expect(...)`, gestione retry, reporter JSON/HTML).
-* *(Nota dal tuo dataset [repository_nodejs_playwright.txt](../02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/repository_nodejs_playwright.txt#L34): su 154 repo Node+Playwright, molte usano il runner di Playwright/Jest/Mocha/Jasmine — quindi verifica sempre quale comando lancia i test.)*
+* *(Nota dal tuo dataset [repository_nodejs_playwright.txt](../02-E2EGit-TestE2E/repositories/nodejs/playwright/repository_nodejs_playwright.txt#L34): su 154 repo Node+Playwright, molte usano il runner di Playwright/Jest/Mocha/Jasmine — quindi verifica sempre quale comando lancia i test.)*
 
 ### Come leggere un file `.spec.ts` / `.spec.js`
 ```typescript
@@ -290,7 +290,7 @@ In teoria la ricerca binaria su una lista ordinata di commit `[C_0, C_1, ..., C_
 ### C. La statistica che ti serve per il report finale al professore
 
 1. **Media vs Mediana (e IQR):**
-   Guarda i numeri già usciti in [intervalli_playwright_70.txt](../02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/intervalli_playwright_70.txt#L8):
+   Guarda i numeri già usciti in [intervalli_playwright_70.txt](../02-E2EGit-TestE2E/repositories/nodejs/playwright/intervalli_playwright_70.txt#L8):
    * Intervallo `#1`: **mediana = 453 commit**, **media = 921.3 commit** (min 6, max **20.806**!).
    Perché la media è più del doppio della mediana? Perché poche repository enormi (outlier come 20.806) tirano verso l'alto la media. Nei dati di ingegneria del software (*skewed*, asimmetrici), si riportano sempre **mediana** e **IQR** (*Interquartile Range*, tra 25° e 75° percentile) accanto a min/max.
 2. **Correlazione: Pearson ($r$) vs Spearman ($\rho$):**
@@ -313,7 +313,7 @@ In teoria la ricerca binaria su una lista ordinata di commit `[C_0, C_1, ..., C_
 
 | Fase | Cosa studi prima | Cosa fai subito nel workspace |
 |---|---|---|
-| **Step 1 — Capire una repo** | Sezioni **4** (Git) e **5** (Node/CI) | Scegli una repo semplice dall'elenco di [intervalli_playwright_70.txt](../02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/intervalli_playwright_70.txt), guardane `package.json`, lockfile e `.github/workflows/` al commit $t_0$ (`git show`) |
+| **Step 1 — Capire una repo** | Sezioni **4** (Git) e **5** (Node/CI) | Scegli una repo semplice dall'elenco di [intervalli_playwright_70.txt](../02-E2EGit-TestE2E/repositories/nodejs/playwright/intervalli_playwright_70.txt), guardane `package.json`, lockfile e `.github/workflows/` al commit $t_0$ (`git show`) |
 | **Step 2 — Primo container $t_0$** | Sezioni **1, 2, 3** (Docker) e **6** (Playwright) | Costruisci **1 `Dockerfile` a $t_0$**, lancialo con `--ipc=host` e verifica che i test passino producendo `--reporter=json` |
 | **Step 3 — Script uniformi + bisezione** | Sezione **7A e 7B** (Python `subprocess` + bisezione) | Implementa i 6 comandi (`start`, `restart`, `reset_t0`, `checkout`, `run_tests`, `get_results`) e prova la ricerca binaria su 1 finestra |
 | **Step 4 — Scala e Analisi** | Sezione **7C** (Statistica) + [E2EGit_riassunto_e_concetti.md](./letteratura/E2EGit_riassunto_e_concetti.md) | Esegui sulle altre repo pilota, raccogli i CSV e calcola statistiche descrittive e correlazione lunghezza $\leftrightarrow$ fallimento |

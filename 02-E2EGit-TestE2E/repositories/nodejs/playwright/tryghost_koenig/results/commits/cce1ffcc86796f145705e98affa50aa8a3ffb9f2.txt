@@ -1,0 +1,23 @@
+COMMIT: cce1ffcc86796f145705e98affa50aa8a3ffb9f2
+DATA: 2023-10-04 22:32:46 +0000
+STATUS: TEST_FAIL
+TEST: total=574 passed=553 failed=1 flaky=1 skipped=19
+
+=== TEST FALLITI ===
+[chromium] card-behaviour.test.js:551 - moving through paragraph to card
+Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 220
+Received: 165
+    at assertSelection (/app/packages/koenig-lexical/test/utils/e2e.js:228:40)
+    at /app/packages/koenig-lexical/test/e2e/card-behaviour.test.js:566:13
+
+at ../utils/e2e.js:228
+
+  226 |         expect(selection.anchorOffset).toBeLessThanOrEqual(end);
+  227 |     } else {
+> 228 |         expect(selection.anchorOffset).toEqual(expected.anchorOffset);
+      |                                        ^
+  229 |     }
+  230 |
+  231 |     expect(selection.focusPath).toEqual(expected.focusPath);

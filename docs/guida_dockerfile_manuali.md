@@ -2,7 +2,7 @@
 
 Questa guida spiega **dove guardare** dentro una repository Git per ricavare la configurazione Playwright di una versione (tag), **cosa fa** ciascuna istruzione del `Dockerfile` e **quali comandi eseguire** per costruire, testare a mano ed eseguire in batch i test con [esegui_test_docker.py](file:///home/paolo/Scrivania/Universita/Tirocinio/02-E2EGit-TestE2E/scripts/docker/esegui_test_docker.py).
 
-Struttura attesa di un progetto sotto `02-E2EGit-TestE2E/repositories/repo_nodejs/<NOME_REPO>/`:
+Struttura attesa di un progetto sotto `02-E2EGit-TestE2E/repositories/nodejs/<NOME_REPO>/`:
 
 ```text
 <NOME_REPO>/
@@ -18,7 +18,7 @@ Struttura attesa di un progetto sotto `02-E2EGit-TestE2E/repositories/repo_nodej
 Spostati nella cartella del progetto:
 
 ```bash
-cd 02-E2EGit-TestE2E/repositories/repo_nodejs/<NOME_REPO>
+cd 02-E2EGit-TestE2E/repositories/nodejs/<NOME_REPO>
 ```
 
 Con i comandi `git` seguenti ispezioni qualsiasi tag direttamente da `repo/` senza fare checkout.

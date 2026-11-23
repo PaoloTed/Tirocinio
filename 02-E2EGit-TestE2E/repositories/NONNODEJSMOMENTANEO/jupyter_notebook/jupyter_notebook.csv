@@ -1,0 +1,5 @@
+repo,gruppo_linguaggio,linguaggio,framework,linguaggio_test,stelle,commits,num_test,num_file_test,in_rq3,url
+complat/chemotion_eln,jupyter_notebook,Jupyter Notebook,Cypress,JS,116,5630,56,19,si,https://github.com/complat/chemotion_eln
+jupyter-widgets/ipywidgets,jupyter_notebook,Jupyter Notebook,Playwright,TS,3032,7825,1,1,si,https://github.com/jupyter-widgets/ipywidgets
+jupyter/nbdime,jupyter_notebook,Jupyter Notebook,Playwright,TS,2588,2132,19,9,si,https://github.com/jupyter/nbdime
+apache/zeppelin,jupyter_notebook,Jupyter Notebook,Selenium,Java,6253,5342,40,7,si,https://github.com/apache/zeppelin

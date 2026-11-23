@@ -1,0 +1,9 @@
+# NON ignorare .git perché checkout.py e reset_t0.py lo usano dentro il container
+node_modules
+**/node_modules
+dist
+**/dist
+playwright-report
+test-results
+results
+

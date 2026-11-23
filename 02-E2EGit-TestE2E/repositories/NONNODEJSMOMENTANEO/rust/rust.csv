@@ -1,0 +1,6 @@
+repo,gruppo_linguaggio,linguaggio,framework,linguaggio_test,stelle,commits,num_test,num_file_test,in_rq3,url
+quickwit-oss/quickwit,rust,Rust,Cypress,JS,5786,2761,3,1,si,https://github.com/quickwit-oss/quickwit
+systeminit/si,rust,Rust,Cypress,TS,809,6984,9,9,si,https://github.com/systeminit/si
+vercel/turbo,rust,Rust,Playwright,TS,24674,6423,2,2,si,https://github.com/vercel/turbo
+mystenlabs/sui,rust,Rust,Playwright,TS,5624,12387,8,1,si,https://github.com/mystenlabs/sui
+mullvad/mullvadvpn-app,rust,Rust,Playwright,TS,4333,20228,50,13,si,https://github.com/mullvad/mullvadvpn-app

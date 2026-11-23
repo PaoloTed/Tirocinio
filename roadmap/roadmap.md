@@ -7,18 +7,18 @@
 ## 1. Stato attuale — Cosa è già stato fatto
 
 ### A. Selezione e filtraggio del dataset (Node.js + Playwright)
-- **Censimento completo Playwright**: generato [repository_nodejs_playwright.txt](../02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/repository_nodejs_playwright.txt) tramite [elenco_repo_playwright.py](../02-E2EGit-TestE2E/scripts/analisi_rq3/elenco_repo_playwright.py):
+- **Censimento completo Playwright**: generato [repository_nodejs_playwright.txt](../02-E2EGit-TestE2E/repositories/nodejs/playwright/repository_nodejs_playwright.txt) tramite [elenco_repo_playwright.py](../02-E2EGit-TestE2E/scripts/analisi_rq3/elenco_repo_playwright.py):
   - **154 repository Node.js** con Playwright (130 TypeScript, 24 JavaScript), di cui **140 esclusivamente Playwright** (138 JS/TS + 2 PW_PY) e **82 mature** (`TotTest > 10` e `Versioni > 5`, solo Playwright JS/TS).
 - **Classifiche preliminari RQ3**: implementati [classifica_repo_rq3.py](../02-E2EGit-TestE2E/scripts/analisi_rq3/classifica_repo_rq3.py), [classifica_b_rq3.py](../02-E2EGit-TestE2E/scripts/analisi_rq3/classifica_b_rq3.py) e [storia_test_only_gui.py](../02-E2EGit-TestE2E/scripts/analisi_rq3/storia_test_only_gui.py) per ispezionare i file `*_only_gui.xlsx/.csv` di `RQ3` senza clonare le repository.
 
 ### B. Analisi delle finestre di commit Playwright
-- **Calcolo intervalli disgiunti di stabilità ($\ge 70\%$ test invariati)**: lo script [calcola_intervalli_playwright.py](../02-E2EGit-TestE2E/scripts/analisi_rq3/calcola_intervalli_playwright.py) ha già elaborato tutte le 140 repository solo Playwright, producendo [intervalli_playwright_70.txt](../02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/intervalli_playwright_70.txt) e [intervalli_playwright_70.csv](../02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/intervalli_playwright_70.csv):
+- **Calcolo intervalli disgiunti di stabilità ($\ge 70\%$ test invariati)**: lo script [calcola_intervalli_playwright.py](../02-E2EGit-TestE2E/scripts/analisi_rq3/calcola_intervalli_playwright.py) ha già elaborato tutte le 140 repository solo Playwright, producendo [intervalli_playwright_70.txt](../02-E2EGit-TestE2E/repositories/nodejs/playwright/intervalli_playwright_70.txt) e [intervalli_playwright_70.csv](../02-E2EGit-TestE2E/repositories/nodejs/playwright/intervalli_playwright_70.csv):
   - **137 repository valide**, **482 intervalli disgiunti** individuati (massimo 5 per repository).
   - **Lunghezza dell'intervallo principale (`#1`)**: mediana = **453 commit**, media = **921.3 commit** (min 6, max 20.806).
   - Questi numeri confermano l'utilità dell'**esecuzione binaria (bisezione)** richiesta al Ricevimento 4 per evitare di testare linearmente centinaia o migliaia di commit.
 
 ### C. Predisposizione delle repository campione
-- In [02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/](../02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/) sono già presenti le **18 cartelle** delle repository selezionate (`css`, `fluentui`, `ketcher`, `koenig`, `lizmap-web-client`, `monokle`, `nocodb`, `novu`, `oneuptime`, `openmct`, `pc-nrfconnect-launcher`, `rocket.chat`, `sanity`, `sefaria-project`, `tldraw`, `trezor-suite`, `umbrel`, `xterm.js`), svuotate dai vecchi artefatti per ripartire con il nuovo flusso a singolo Dockerfile su finestre di commit.
+- In [02-E2EGit-TestE2E/repositories/nodejs/playwright/](../02-E2EGit-TestE2E/repositories/nodejs/playwright/) sono già presenti le **18 cartelle** delle repository selezionate (`css`, `fluentui`, `ketcher`, `koenig`, `lizmap-web-client`, `monokle`, `nocodb`, `novu`, `oneuptime`, `openmct`, `pc-nrfconnect-launcher`, `rocket.chat`, `sanity`, `sefaria-project`, `tldraw`, `trezor-suite`, `umbrel`, `xterm.js`), svuotate dai vecchi artefatti per ripartire con il nuovo flusso a singolo Dockerfile su finestre di commit.
 - L'infrastruttura precedente basata sui tag (`analizza_versioni_test_e2e.py`, `genera_docker_nodejs.py`, `esegui_test_docker.py`) ha prodotto un solo report di esecuzione su Cypress (`angular-slickgrid`, `v5.5.0`: `PASS`), mentre per Playwright non ci sono ancora esecuzioni reali.
 
 ---
@@ -40,7 +40,7 @@
 | **Ricognizione repo** | Ispezione di `package.json` e lockfile | Verifica sistematica se la repo contiene già `Dockerfile`, `docker-compose`, workflow CI o istruzioni di test | Parziale |
 | **Esecuzione test** | Container usa-e-getta (`docker build` + `docker run` per tag) | **Script di interfaccia uniformi** per tutte le repo (`start`, `restart`, `reset_t0`, `checkout`, `run_tests`, `get_results`) | **Manca** |
 | **Strategia sulla finestra** | Esecuzione lineare di tutti i tag | **Esecuzione binaria (bisezione)** sulla finestra quando troppo lunga | **Manca** |
-| **Analisi e correlazioni** | Report intervalli $\ge 70\%$ ([intervalli_playwright_70.csv](../02-E2EGit-TestE2E/repositories/repo_nodejs/playwright/intervalli_playwright_70.csv)) | Report statistico lunghezza finestre + **correlazione lunghezza finestra $\leftrightarrow$ probabilità di fallimento test** | **Manca** |
+| **Analisi e correlazioni** | Report intervalli $\ge 70\%$ ([intervalli_playwright_70.csv](../02-E2EGit-TestE2E/repositories/nodejs/playwright/intervalli_playwright_70.csv)) | Report statistico lunghezza finestre + **correlazione lunghezza finestra $\leftrightarrow$ probabilità di fallimento test** | **Manca** |
 
 ### Moduli e attività mancanti — Prossimi passi
 

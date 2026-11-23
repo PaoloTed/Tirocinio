@@ -1,0 +1,4 @@
+repo,gruppo_linguaggio,linguaggio,framework,linguaggio_test,stelle,commits,num_test,num_file_test,in_rq3,url
+chatwoot/chatwoot,ruby,Ruby,Cypress,JS,18322,3987,2,2,si,https://github.com/chatwoot/chatwoot
+zammad/zammad,ruby,Ruby,Cypress,TS,4028,14881,145,23,si,https://github.com/zammad/zammad
+primer/view_components,ruby,Ruby,Playwright,TS,421,4806,1,1,si,https://github.com/primer/view_components

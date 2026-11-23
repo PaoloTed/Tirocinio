@@ -1,0 +1,12 @@
+{
+  "image": "e2e-koenig:t0",
+  "container": "e2e-koenig",
+  "t0_commit": "25bc8a514eb8b080a4ed23959ac4229f18cb3cff",
+  "install_cmd": "yarn install --frozen-lockfile",
+  "build_cmd": "yarn lerna run build",
+  "app_start_cmd": "",
+  "app_url": "",
+  "test_workdir": "/app/packages/koenig-lexical",
+  "test_cmd": "NODE_ENV=test NODE_OPTIONS='--experimental-specifier-resolution=node --no-warnings' VITE_TEST=true npx playwright test"
+}
+

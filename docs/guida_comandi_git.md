@@ -1,6 +1,6 @@
 # Guida ai comandi Git per il Tirocinio
 
-Elenco pratico dei comandi Git utili per il lavoro quotidiano sul tirocinio (sincronizzazione tra PC fisso e portatile tramite `PaoloTed/Tirocinio`, gestione delle repository target in `repositories/repo_nodejs/*/repo`, ispezione di tag/release e risoluzione dei problemi più comuni).
+Elenco pratico dei comandi Git utili per il lavoro quotidiano sul tirocinio (sincronizzazione tra PC fisso e portatile tramite `PaoloTed/Tirocinio`, gestione delle repository target in `repositories/nodejs/*/repo`, ispezione di tag/release e risoluzione dei problemi più comuni).
 
 ---
 
@@ -23,7 +23,7 @@ Elenco pratico dei comandi Git utili per il lavoro quotidiano sul tirocinio (sin
 
 ---
 
-## 2. Clonazione delle repository target (`repo_nodejs/*/repo`)
+## 2. Clonazione delle repository target (`nodejs/*/repo`)
 
 * **`git clone <url> <percorso>`** — Clona una repository completa.
 * **`git clone --filter=blob:none <url> <percorso>`** — **Partial clone leggero**: scarica tutta la storia e i tag senza scaricare subito tutti i file storici pesanti (li scarica solo al bisogno). Ideale per `angular-slickgrid`, `equal-access`, `care_fe`, `gsender`, ecc.
