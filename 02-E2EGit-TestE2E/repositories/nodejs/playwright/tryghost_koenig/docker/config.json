@@ -1,12 +1,12 @@
 {
-  "image": "e2e-koenig:t0",
-  "container": "e2e-koenig",
-  "t0_commit": "25bc8a514eb8b080a4ed23959ac4229f18cb3cff",
+  "repo_name": "tryghost_koenig",
+  "image": "IMAGE_tryghost_koenig",
+  "container": "CONTAINER_tryghost_koenig",
   "install_cmd": "yarn install --frozen-lockfile",
   "build_cmd": "yarn lerna run build",
   "app_start_cmd": "",
   "app_url": "",
   "test_workdir": "/app/packages/koenig-lexical",
+  "_comment_test_cmd": "Preso dallo script 'test:e2e' in packages/koenig-lexical/package.json (con 'npx' davanti per eseguirlo da bash e accodare opzioni Playwright da menu.py).",
   "test_cmd": "NODE_ENV=test NODE_OPTIONS='--experimental-specifier-resolution=node --no-warnings' VITE_TEST=true npx playwright test"
 }
-

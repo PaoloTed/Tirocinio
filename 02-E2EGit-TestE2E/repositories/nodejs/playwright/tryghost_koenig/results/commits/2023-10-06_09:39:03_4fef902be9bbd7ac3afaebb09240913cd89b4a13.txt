@@ -1,0 +1,4 @@
+File: 2023-10-06_09:39:03_4fef902be9bbd7ac3afaebb09240913cd89b4a13.json
+Totale: 576 | OK: 556 | Falliti: 1 | Flaky: 0 | Skippati: 19
+Test falliti:
+  - [chromium] card-behaviour.test.js > Card behaviour > UP > moving through paragraph to card
